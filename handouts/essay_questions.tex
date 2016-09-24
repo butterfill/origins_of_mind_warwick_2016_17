@@ -1,5 +1,4 @@
- %!TEX TS-program = xelatex
-%!TEX encoding = UTF-8 Unicode
+% !TEX encoding = UTF-8 Unicode
 
 %\def \papersize {a5paper}
 \def \papersize {a4paper}
@@ -19,51 +18,21 @@
 %\def \iemail{}
 %\date{}
 
+% \usepackage{bibentry}
+% \nobibliography{$HOME/endnote/phd_biblio}
+
 %\input{$HOME/Documents/submissions/preamble_steve_paper3}
-\input{$HOME/Documents/submissions/preamble_steve_report2}
-
-%no indent, space between paragraphs
-\usepackage{parskip}
-
-%beautiful contents
-\usepackage{tocloft}
-
-%comment these out if not anonymous:
-%\author{}
-%\date{}
-
-%for e reader version: small margins
-% (remove all for paper!)
-%\geometry{headsep=2em} %keep running header away from text
-%\geometry{footskip=1.5cm} %keep page numbers away from text
-%\geometry{top=1cm} %increase to 3.5 if use header
-%\geometry{bottom=2cm} %increase to 3.5 if use header
-%\geometry{left=1cm} %increase to 3.5 if use header
-%\geometry{right=1cm} %increase to 3.5 if use header
+\input{$HOME/latex_imports/preamble_steve_report2_pdftex}
 
 % disables chapter, section and subsection numbering
-\setcounter{secnumdepth}{-1} 
+\setcounter{secnumdepth}{-1}
 
 %avoid overhang
 \tolerance=5000
 
-%\setromanfont[Mapping=tex-text]{Sabon LT Std} 
-
-
-%for putting citations into main text (for reading):
-% use bibentry command
-% nb this doesn’t work with mynewapa style; use apalike for \bibliographystyle
-% nb2: use \nobibliography to introduce the readings 
-\usepackage{bibentry}
-
-%screws up word count for some reason:
-%\bibliographystyle{$HOME/Documents/submissions/mynewapa} 
-\bibliographystyle{apalike} 
-
 
 \begin{document}
 
-\nobibliography{$HOME/endnote/phd_biblio}
 
 
 \setlength\footnotesep{1em}
@@ -71,7 +40,7 @@
 
 \maketitle
 
-\renewcommand{\cftsecfont}{\normalsize}
+%\renewcommand{\cftsecfont}{\normalsize}
 \setcounter{tocdepth}{1}
 \tableofcontents
 \clearpage
@@ -116,7 +85,7 @@ Which task should be completed before which seminar?  See the table below.
 \begin{table}[htbp]
 \begin{center}
 \footnotesize	%shrink for better spacing
-\begin{tabular*}{1\textwidth}{ l l m{0.80\textwidth} } 
+\begin{tabular*}{1\textwidth}{ l l m{0.80\textwidth} }
 
 \toprule
 
@@ -165,9 +134,10 @@ You should complete this task, either in addition to the tasks below or in place
 Your group will be assigned one of these papers:
 %
 \begin{itemize}
-\item \bibentry{baillargeon:1987_object}
-\item \bibentry{Shinskey:2001fk}
-\item \bibentry{chiandetti:2011_chicks_op}
+	\item \fullcite{baillargeon:1987_object}
+
+\item \fullcite{Shinskey:2001fk}
+\item \fullcite{chiandetti:2011_chicks_op}
 \end{itemize}
 %
 Your task, as a group, is to prepare a 7--10 minute presentation to introduce the paper.
@@ -217,7 +187,7 @@ In this essay you might:
 
 
 \subsection{Peer review}
-Your review essay will be subject to peer review (see next task). 
+Your review essay will be subject to peer review (see next task).
 Another student in your seminar group will be assigned as your reviewer.
 You should send the essay to your reviewer by 6pm on the Monday before your seminar.
 
@@ -226,27 +196,27 @@ You should send the essay to your reviewer by 6pm on the Monday before your semi
 \subsection{Reading: Essential}
 
 
-\bibentry{baillargeon:1987_object}
+\fullcite{baillargeon:1987_object}
 
-\bibentry{Shinskey:2001fk}
+\fullcite{Shinskey:2001fk}
 
-\bibentry{Spelke:1998im}  (You need read only as far as p.\ 189.)
+\fullcite{Spelke:1998im}  (You need read only as far as p.\ 189.)
 
 
 
 \subsection{Reading: Optional (*=hard)}
 
-\bibentry{Aguiar:2002ob}
+\fullcite{Aguiar:2002ob}
 
-*\bibentry{charles:2009_object}
+*\fullcite{charles:2009_object}
 
-\bibentry{mccurry:2009_beyond}
+\fullcite{mccurry:2009_beyond}
 
-*\bibentry{moore:2010_numerical}
+*\fullcite{moore:2010_numerical}
 
-*\bibentry{Spelke:1990jn}
+*\fullcite{Spelke:1990jn}
 
-\bibentry{Spelke:2001pg}
+\fullcite{Spelke:2001pg}
 
 
 
@@ -254,7 +224,7 @@ You should send the essay to your reviewer by 6pm on the Monday before your semi
 
 All the readings are available online unless otherwise noted.
 
-One fast way to find a paper is to copy its title into google scholar and search.  
+One fast way to find a paper is to copy its title into google scholar and search.
 To download the paper from the journal website, you may need to select ‘log in’ or ‘institutional log in’.
 
 If you have trouble locating a resource, check the list of journals available here: \url{http://fs6jr8lx8q.search.serialssolutions.com/}
@@ -283,10 +253,10 @@ Shorter is better, all things being equal.
 A student will send you a short essay by 6pm on the Monday before your seminar.
 Your task is to write a review of the essay and send the review to the student by 6pm the day before your seminar.
 
-\subsection{Hints} 
+\subsection{Hints}
 Your review should start by stating the essay’s aim and briefly outlining what it achieves.
 
-You should discuss one or more of the main claims defended in the essay.  
+You should discuss one or more of the main claims defended in the essay.
 It may be useful to mention sources the author has not considered, or to raise objections.
 
 Discussion of the essay’s flaws is important.
@@ -307,7 +277,7 @@ Later essays will demand more analysis.
 But for this essay it’s enough to provide a review of some scientific research.
 
 \subsection{Peer review}
-Your review essay will be subject to peer review (see Task 3). 
+Your review essay will be subject to peer review (see Task 3).
 Another student in your seminar group will be assigned as your reviewer.
 You should send the essay to your reviewer by 6pm on the Monday before your seminar.
 
@@ -323,32 +293,32 @@ In this essay you might:
 
 \subsection{Reading}
 
-\bibentry{Spelke:1993no}
+\fullcite{Spelke:1993no}
 
-\bibentry{Hood:2000bf}
+\fullcite{Hood:2000bf}
 
 
 
 \subsection{Further reading}
 
-\bibentry{spelke:1992_origins}
+\fullcite{spelke:1992_origins}
 
-\bibentry{Leslie:1987nr}
+\fullcite{Leslie:1987nr}
 
-\bibentry{Hood:2003yg}
+\fullcite{Hood:2003yg}
 
-\bibentry{santos:2006_cotton-top}
+\fullcite{santos:2006_cotton-top}
 
-\bibentry{Haith:1998aq}
+\fullcite{Haith:1998aq}
 
-\bibentry{Keen:2003xz}
+\fullcite{Keen:2003xz}
 
 
 \subsection{Where to find the readings}
 
 All the readings are available online unless otherwise noted.
 
-One fast way to find a paper is to copy its title into google scholar and search.  
+One fast way to find a paper is to copy its title into google scholar and search.
 To download the paper from the journal website, you may need to select ‘log in’ or ‘institutional log in’.
 
 If you have trouble locating a resource, check the list of journals available here: \url{http://fs6jr8lx8q.search.serialssolutions.com/}
@@ -394,15 +364,15 @@ What is the puzzle about when humans can first represent others’ beliefs?
 How might the puzzle be resolved?
 
 \subsubsection{---Reading}
-\bibentry{Onishi:2005hm}
+\fullcite{Onishi:2005hm}
 
-\bibentry{kovacs_social_2010}
+\fullcite{kovacs_social_2010}
 
-\bibentry{Baillargeon:gx}
+\fullcite{Baillargeon:gx}
 
-\bibentry{butterfill_minimal}
+\fullcite{butterfill_minimal}
 
-\bibentry{carruthers:2013_mindreading}
+\fullcite{carruthers:2013_mindreading}
 
 
 
@@ -412,13 +382,13 @@ What is core knowledge and what role, if any, could it play in explaining the tr
 
 \subsubsection{---Reading}
 
-\bibentry{Carey:1996hl}
+\fullcite{Carey:1996hl}
 
-\bibentry{spelke:1992_origins}
+\fullcite{spelke:1992_origins}
 
-\bibentry{Spelke:2007hb}
+\fullcite{Spelke:2007hb}
 
-\bibentry{carey:2009_origin}
+\fullcite{carey:2009_origin}
 
 \subsection{Innateness}
 What if anything is innate in humans?
@@ -427,31 +397,31 @@ Hint: You should be careful to examine the notion of innateness  (see \citealp{S
 
 \subsubsection{---Reading}
 
-\bibentry{Samuels:2004ho}
+\fullcite{Samuels:2004ho}
 
 \subsubsection{---Reading: comparative (cross-species)}
 
-\bibentry{chiandetti:2011_chicks_op}
+\fullcite{chiandetti:2011_chicks_op}
 
-\bibentry{haun:2010_origins}
+\fullcite{haun:2010_origins}
 
 
 \subsubsection{---Reading: syntax}
 
-Note: this is one-sided.  
+Note: this is one-sided.
 
-\bibentry{lidz:2003_what}
+\fullcite{lidz:2003_what}
 
-\bibentry{lidz:2004_reaffirming}
+\fullcite{lidz:2004_reaffirming}
 
 
 
 
 \subsubsection{---Reading: replying to Fodor’s argument}
 
-\bibentry{Fodor:1981ep}
+\fullcite{Fodor:1981ep}
 
-\bibentry{carey:2009_origin} chapters 4, 8
+\fullcite{carey:2009_origin} chapters 4, 8
 
 (There is also an exchange between Carey and Rey forthcoming in the journal Mind and Language---their papers may be available by the time you read this.)
 
@@ -466,15 +436,15 @@ Hint: you should discuss categorical perception of colour and its relation to kn
 
 \subsubsection{---Reading}
 
-\bibentry{Kowalski:2006hk}
+\fullcite{Kowalski:2006hk}
 
-\bibentry{Franklin:2005hp}
+\fullcite{Franklin:2005hp}
 
-\bibentry{Franklin:2005xk}
+\fullcite{Franklin:2005xk}
 
-%\bibentry{franklin:2010_hemispheric}
+%\fullcite{franklin:2010_hemispheric}
 
-\bibentry{Wiggett:2008xt}
+\fullcite{Wiggett:2008xt}
 
 
 
@@ -485,11 +455,11 @@ If humans were incapable of social interaction and could only observe each other
 \subsubsection{---Reading}
 
 
-\bibentry{tomasello:2008origins}
+\fullcite{tomasello:2008origins}
 
-\bibentry{Tomasello:2005wx} [Read the commentaries.]
+\fullcite{Tomasello:2005wx} [Read the commentaries.]
 
-\bibentry{butterfill:2012_interacting}
+\fullcite{butterfill:2012_interacting}
 
 
 
@@ -499,13 +469,13 @@ Could there be a role for joint action in explaining how humans come to know thi
 
 \subsubsection{---Reading}
 
-\bibentry{Moll:2007gu}
+\fullcite{Moll:2007gu}
 
-\bibentry{carpenter:2009_howjoint}
+\fullcite{carpenter:2009_howjoint}
 
-\bibentry{Tollefsen:2005vh}
+\fullcite{Tollefsen:2005vh}
 
-\bibentry{Butterfill:2011fk}
+\fullcite{Butterfill:2011fk}
 
 
 
@@ -517,15 +487,15 @@ Note: the reading for this is one-sided, which makes this question difficult.
 
 \subsubsection{---Reading}
 
-\bibentry{Bloom:2000qz}
+\fullcite{Bloom:2000qz}
 
-\bibentry{Baldwin:2000qq}
+\fullcite{Baldwin:2000qq}
 
-\bibentry{Sabbagh:2001sp}
+\fullcite{Sabbagh:2001sp}
 
-\bibentry{Matthews:2008yi}
+\fullcite{Matthews:2008yi}
 
-\bibentry{Dummett:1993xn}
+\fullcite{Dummett:1993xn}
 
 \subsection{}
 
@@ -533,10 +503,10 @@ Note: the reading for this is one-sided, which makes this question difficult.
 
 %nativism topic readings
 %on animals:
-% \bibentry{chiandetti:2011_chicks_op}
-% \bibentry{haun:2010_origins}
+% \fullcite{chiandetti:2011_chicks_op}
+% \fullcite{haun:2010_origins}
 %philosophy:
-% \bibentry{Samuels:2004ho}
+% \fullcite{Samuels:2004ho}
 
 
 
@@ -544,40 +514,40 @@ Note: the reading for this is one-sided, which makes this question difficult.
 \section{Task 6: Write an essay}
 
 \subsection{Suggested question}
-What is ‘shared intentionality’ and what might it explain?    
+What is ‘shared intentionality’ and what might it explain?
 
 Compare \citet[p. 688]{Tomasello:2005wx}: ‘Our ... hypothesis is that it is precisely these two developing capacities [to read intentions and to share psychological states]  that interact during the first year of life to create the normal human developmental pathway leading to participation in collaborative cultural practices.’
 
 %How (if at all) could  shared intentionality be involved in creating ‘the normal human developmental pathway leading to participation in collaborative cultural practices’?
 
-%(Tomasello, Carpenter, et al. 2005: 675): “it is only if a young child understands other persons as intentional agents that she can acquire and use linguistic symbols—because the learning and use of symbols requires an understanding that the partner can voluntarily direct actions and attention to outside entities.” 
+%(Tomasello, Carpenter, et al. 2005: 675): “it is only if a young child understands other persons as intentional agents that she can acquire and use linguistic symbols—because the learning and use of symbols requires an understanding that the partner can voluntarily direct actions and attention to outside entities.”
 
 
 \subsubsection{---Reading: theoretical}
 Pick one of these (first is probably the best; last is shortest; the middle one comes with critical commentaries).
 
-*\bibentry{Moll:2007gu}
+*\fullcite{Moll:2007gu}
 
-\bibentry{Tomasello:2005wx}
+\fullcite{Tomasello:2005wx}
 
-\bibentry{Tomasello:2007gl}
+\fullcite{Tomasello:2007gl}
 
 
 \subsubsection{---Reading: experimental (pick one or more)}
 
-\bibentry{Moll:2008fh}
+\fullcite{Moll:2008fh}
 
-\bibentry{Warneken:2006qe}
+\fullcite{Warneken:2006qe}
 
-\bibentry{Tomasello:2007fi}
+\fullcite{Tomasello:2007fi}
 
 \subsubsection{---Reading: background}
 
-\bibentry{Bratman:1992mi}
+\fullcite{Bratman:1992mi}
 
-\bibentry{Searle:1990em}
+\fullcite{Searle:1990em}
 
-\bibentry{Butterfill:2011fk}
+\fullcite{Butterfill:2011fk}
 
 
 %\bibliography{$HOME/endnote/phd_biblio}

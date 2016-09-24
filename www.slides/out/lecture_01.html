@@ -1,262 +1,24 @@
-
-<html>
-  <head>
-    <!-- (c) copyright 2013 Stephen A. Butterfill-->
-    <meta charset="utf-8"/>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <title>Lecture 01 | Origins of Mind</title>
-    <meta name="description" content="Origins of Mind: Lectures."/>
-    <meta name="keywords" content="philosophy, psychology, development, thought"/>
-    <meta name="author" content=""/><meta name="generator" content="DocPad v6.78.6" />
-    <meta name="viewport" content="width=device-width"/>
-    <!-- - lato font-->
-    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,900,400italic" rel="stylesheet" type="text/css"/>
-    <!--if lt IE 9
-    script(async src="http://html5shim.googlecode.com/svn/trunk/html5.js")
-    
-    --><style >html.wait {
-	cursor: wait !important;
-	opacity: 0;
-	transition: opacity 0.5s ease;
-}</style><link  rel="stylesheet" href="/vendor/normalize.css" /><link  rel="stylesheet" href="/vendor/deck.js/style.neon.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.core.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.menu.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.hash.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.notes.css" /><link  rel="stylesheet" href="/vendor/960_12_col_custom.css" /><link  rel="stylesheet" href="/styles/steve_deck_style.css" />
-  </head>
-  <body><script >(function(){
-	/* Did we just livereload? */
-var log = !!(localStorage && console && console.log && true);
-if ( log && localStorage.getItem('/docpad-livereload/reloaded') === 'yes' ) {
-	localStorage.removeItem('/docpad-livereload/reloaded');
-	console.log('LiveReload completed at', new Date())
-}
-
-/* Listen for the regenerated event and perform a reload of the page when the event occurs */
-var listen = function(){
-	var primus = new Primus('/docpad-livereload');
-	primus.on('data', function(data){
-		if ( data && data.message ) {
-			if ( data.message === 'generateBefore' ) {
-				if ( log ) {
-					console.log('LiveReload started at', new Date());
-				}
-				if ( typeof document.getElementsByTagName !== 'undefined' ) {
-	document.getElementsByTagName('html')[0].className += ' wait';
-}
-			}
-			else if ( data.message === 'generateAfter' ) {
-				if ( log ) {
-					localStorage.setItem('/docpad-livereload/reloaded', 'yes');
-				}
-				document.location.reload();
-			}
-		}
-	});
-};
-	/* Inject socket into our page */
-var inject = function(){
-	var t = document.createElement('script');
-	t.type = 'text/javascript';
-	t.async = 'async';
-	t.src = '/primus/primus.js';
-	t.onload = listen;
-	var s = document.getElementsByTagName('script')[0];
-	s.parentNode.insertBefore(t, s);
-};
-	if ( typeof Primus !== 'undefined' ) {
-		listen();
-	} else {
-		inject();
-	}
-})();</script><script defer="defer"  src="/vendor/jquery.min.js"></script><script defer="defer"  src="/vendor/jquery-svgfix.js"></script><script defer="defer"  src="/vendor/jquery.crSplineBkg.js"></script><script defer="defer"  src="/vendor/log.js"></script><script defer="defer"  src="/vendor/modernizr.min.js"></script><script defer="defer"  src="/vendor/deck.js/deck.core.js"></script><script defer="defer"  src="/vendor/deck.js/deck.menu.js"></script><script defer="defer"  src="/vendor/deck.js/deck.hash.js"></script><script defer="defer"  src="/vendor/deck.js/deck.notes.js"></script><script defer="defer"  src="/vendor/deck.js/deck.slide-clone.js"></script><script defer="defer"  src="/vendor/deck.js/deck.fit.js"></script><script defer="defer"  src="/vendor/deck.js/deck.step.js"></script><script defer="defer"  src="/vendor/deck.js/deck.events.js"></script><script defer="defer"  src="/vendor/deck.js/deck.anim.js"></script><script defer="defer"  src="/vendor/jquery.jsPlumb-1.3.16-all-min.js"></script><script defer="defer"  src="/scripts/script.js"></script>
-    <div class="deck-notes">
-      <div class="deck-notes-container"></div>
-    </div>
-    <div class="deck-handout">
-      <div class="deck-handout-container"></div>
-    </div>
-    <div class="deck-container">
-      <section id="instructions" class="slide">
-        <div class="words">
-          <div class="container_12">
-            <div class="grid_12">
-              <div class="middle">
-                <p class="center">Press the right key for the next slide (or swipe left)</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="slide">
-        <!-- .notes You won't believe how many people emailed me to say the slides don't work.-->
-        <div class="words">
-          <div class="container_12">
-            <div class="grid_12">
-              <p>also ...</p>
-              <p>Press the left key to go backwards (or swipe right)</p>
-              <p>Press n to toggle whether notes are shown (or add '?notes' to the url before the #)</p>
-              <p>Press m or double tap to see a menu of slides</p>
-            </div>
-          </div>
-        </div>
-      </section>
-<!---->
-<!-- short form:-->
-<!--  remove_class('.blur')-->
-<!-- long forms:-->
-<!--  remove_class('.elements', 'blur')-->
-<!--  remove_class(['.el1', '.el_group_2'], 'blur')-->
-<!---->
-<div class="notes notes-header-tex">\title {Origins of Mind: Lecture Notes \\ Lecture 01}</div>
-<div class="notes notes-header-tex">&nbsp;</div>
-<div class="notes notes-header-tex">\maketitle</div>
-<div id="title-slide" class="slide"><img src="/img/bkg/bees/ADSC_0172_crop.jpg" class="bkg"/>
-  <div class="spacer">&nbsp;</div>
-  <div class="fade-in">
-    <div style="" class="title-block">
-      <div class="title-container">
-        <h1 class="title1 fade-in">Origins of Mind</h1>
-        <h1 class="title2 fade-in">Lecture 01</h1>
-        <h3 class="email fade-in">s.butterfill@warwick.ac.uk</h3>
-      </div>
-    </div>
-  </div>
-  <div class="handout">\def \ititle {Origins of Mind}</div>
-  <div class="handout">\def \isubtitle {Lecture 01}</div>
-  <div class="handout">&nbsp;</div>
-  <div class="handout">\</div>
-  <div class="handout">&nbsp;</div>
-  <div class="handout">\begin{center}</div>
-  <div class="handout">{\Large</div>
-  <div class="handout">\textbf{\ititle}: \isubtitle</div>
-  <div class="handout">}</div>
-  <div class="handout">&nbsp;</div>
-  <div class="handout">\iemail %<s.butterfill@warwick.ac.uk></div>
-  <div class="handout">\end{center}</div>
-</div>
-<!-- the question-->
-<div class="handout">&nbsp;</div>
-<div class="handout">\section{The Question}</div>
-<div class="notes notes-header-tex">&nbsp;</div>
-<div class="notes notes-header-tex">\section{The Question}</div>
-<!---->
-<!-- short form:-->
-<!--  remove_class('.blur')-->
-<!-- long forms:-->
-<!--  remove_class('.elements', 'blur')-->
-<!--  remove_class(['.el1', '.el_group_2'], 'blur')-->
-<!---->
-<section class="slide">
-  <div class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p class="center">the question</p>
-          <div class="notes">This course is based on a simple question. The question is, </div>
-          <div class="handout">\textbf{Question}
-            <div class="notes">How do humans first come to know  about---and to knowingly manipulate---objects, 
-causes, words, numbers, colours, actions and minds?
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide"><img src="/img/DSC_AB_8736_bw.JPG" class="bkg"/>
-  <div class="notes">At the outset we know nothing, or not very much.  (Like Lucas here.)
+<html><head><!-- (c) copyright 2013 Stephen A. Butterfill--><meta charset="utf-8"/><meta http-equiv="content-type" content="text/html; charset=utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><title>Lecture 01 | Origins of Mind</title><meta name="description" content="Origins of Mind: Lectures."/><meta name="keywords" content="philosophy, psychology, development, thought"/><meta name="author" content=""/><meta name="generator" content="DocPad v6.78.6" /><meta name="viewport" content="width=device-width"/><!-- - lato font--><link href="http://fonts.googleapis.com/css?family=Lato:300,400,900,400italic" rel="stylesheet" type="text/css"/><!--if lt IE 9script(async src="http://html5shim.googlecode.com/svn/trunk/html5.js")
+--><link  rel="stylesheet" href="/vendor/normalize.css" /><link  rel="stylesheet" href="/vendor/deck.js/style.neon.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.core.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.menu.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.hash.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.notes.css" /><link  rel="stylesheet" href="/vendor/960_12_col_custom.css" /><link  rel="stylesheet" href="/styles/steve_deck_style.css" /></head><body><script defer="defer"  src="/vendor/jquery.min.js"></script><script defer="defer"  src="/vendor/jquery-svgfix.js"></script><script defer="defer"  src="/vendor/jquery.crSplineBkg.js"></script><script defer="defer"  src="/vendor/log.js"></script><script defer="defer"  src="/vendor/modernizr.min.js"></script><script defer="defer"  src="/vendor/deck.js/deck.core.js"></script><script defer="defer"  src="/vendor/deck.js/deck.menu.js"></script><script defer="defer"  src="/vendor/deck.js/deck.hash.js"></script><script defer="defer"  src="/vendor/deck.js/deck.notes.js"></script><script defer="defer"  src="/vendor/deck.js/deck.slide-clone.js"></script><script defer="defer"  src="/vendor/deck.js/deck.fit.js"></script><script defer="defer"  src="/vendor/deck.js/deck.step.js"></script><script defer="defer"  src="/vendor/deck.js/deck.events.js"></script><script defer="defer"  src="/vendor/deck.js/deck.anim.js"></script><script defer="defer"  src="/vendor/jquery.jsPlumb-1.3.16-all-min.js"></script><script defer="defer"  src="/scripts/script.js"></script><div class="deck-notes"><div class="deck-notes-container"></div></div><div class="deck-handout"><div class="deck-handout-container"></div></div><div class="deck-container"><section id="instructions" class="slide"><div class="words"><div class="container_12"><div class="grid_12"><div class="middle"><p class="center">Press the right key for the next slide (or swipe left)</p></div></div></div></div></section><section class="slide"><!-- .notes You won't believe how many people emailed me to say the slides don't work.--><div class="words"><div class="container_12"><div class="grid_12"><p>also ...</p><p>Press the left key to go backwards (or swipe right)</p><p>Press n to toggle whether notes are shown (or add '?notes' to the url before the #)</p><p>Press m or double tap to see a menu of slides</p></div></div></div></section><!----><!-- short form:--><!--  remove_class('.blur')--><!-- long forms:--><!--  remove_class('.elements', 'blur')--><!--  remove_class(['.el1', '.el_group_2'], 'blur')--><!----><div class="notes notes-header-tex">\title {Origins of Mind: Lecture Notes \\ Lecture 01}</div><div class="notes notes-header-tex">&nbsp;</div><div class="notes notes-header-tex">\maketitle</div><div id="title-slide" class="slide"><img src="/img/bkg/bees/ADSC_0172_crop.jpg" class="bkg"/><div class="spacer">&nbsp;</div><div class="fade-in"><div style="" class="title-block"><div class="title-container"><h1 class="title1 fade-in">Origins of Mind</h1><h1 class="title2 fade-in">Lecture 01</h1><h3 class="email fade-in">s.butterfill@warwick.ac.uk</h3></div></div></div><div class="handout">\def \ititle {Origins of Mind}</div><div class="handout">\def \isubtitle {Lecture 01}</div><div class="handout">&nbsp;</div><div class="handout">\</div><div class="handout">&nbsp;</div><div class="handout">\begin{center}</div><div class="handout">{\Large</div><div class="handout">\textbf{\ititle}: \isubtitle</div><div class="handout">}</div><div class="handout">&nbsp;</div><div class="handout">\iemail %<s.butterfill@warwick.ac.uk></div><div class="handout">\end{center}</div></div><!-- the question--><div class="handout">&nbsp;</div><div class="handout">\section{The Question}</div><div class="notes notes-header-tex">&nbsp;</div><div class="notes notes-header-tex">\section{The Question}</div><!----><!-- short form:--><!--  remove_class('.blur')--><!-- long forms:--><!--  remove_class('.elements', 'blur')--><!--  remove_class(['.el1', '.el_group_2'], 'blur')--><!----><section class="slide"><div class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="center">the question</p><div class="notes">This course is based on a simple question. The question is, </div><div class="handout">\textbf{Question}<div class="notes">How do humans first come to know  about---and to knowingly manipulate---objects, 
+causes, words, numbers, colours, actions and minds?</div></div></div></div></div></div></section><section class="slide"><img src="/img/DSC_AB_8736_bw.JPG" class="bkg"/><div class="notes">At the outset we know nothing, or not very much.  (Like Lucas here.)
 Sometime later we do know some things.
-How does the transition occur?
-  </div>
-  <div class="notes">We are going to approach this question by examining the evidence from developmental science, 
+How does the transition occur?</div><div class="notes">We are going to approach this question by examining the evidence from developmental science, 
 exploring how it bears on philosophical positions like nativism and empiricsm, 
-and identifying philosophical problems created by the evidence.
-  </div>
-  <div class="notes">But first let me try to reassure you that it's ok for a course in philosophy to focus on 
+and identifying philosophical problems created by the evidence.</div><div class="notes">But first let me try to reassure you that it's ok for a course in philosophy to focus on 
 this question.
 Far from being a new question, it belongs to a family of questions about the origins of mind 
-that philosophers have been asking since Plato or before.
-  </div>
-</section>
-<section class="slide">
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="step1">
-          <div class="notes">Here is John Locke asking a version of my question ...
-          </div>
-          <p class="handout notes show"><span class="blur1">‘... ’tis past doubt, that Men have in their Minds </span><span class="noblur">several Ideas</span><span class="blur1">, such as are those expressed by the words, Whiteness, Hardness, ... and others: It is in the first place to be enquired, </span><span class="noblur">How he comes by them</span><span class="blur1">?’</span><span class="handout notes ctd">\citep[p.\ 104]{Locke:1975qo} </span></p>
-          <p class="blur1 right">(Locke 1689)</p>
-        </div>
-        <div class="step2 hide">
-          <p class="handout notes show"><span class="blur2">‘How does it come about that the development of organic behavior into </span><span class="noblur">controlled inquiry </span><span class="blur2">brings about the differentiation and cooperation of </span><span class="noblur">observational and conceptual operations</span><span class="blur2">?’</span><span class="handout notes ctd">\citep[p.\ 12]{Dewey:1938yp}</span></p>
-          <p class="blur2 right">(Dewey 1938, p. 12)</p>
-        </div>
-        <div class="step3 hide"> 
-          <p class="handout notes show"><span class="blur3">‘the fundamental explicandum, is the organism and its propositional attitudes ... </span><span class="blur3 cognitive-psychologists">Cognitive psychologists </span><span class="blur3">accept ... the  ... necessity of explaining </span><span class="noblur">how organisms come to have the attitudes to propositions that they do</span><span class="blur3">.’</span><span class="handout notes ctd">\citep[p.\ 198]{Fodor:1975pb}</span></p>
-          <p class="blur3 right">(Fodor 1975, p.\ 198)</p>
-        </div>
-        <div data-what=".step1 p span" data-class="blur-text" class="slide anim-continue anim-addclass"></div>
-        <div data-what=".step3" data-class="hide" data-scope="" class="slide anim-removeclass"></div>
-        <div class="notes">And here is a nativist, Jerry Fodor, asking much the same question.
-        </div>
-        <div data-what=".step1 p span" data-class="blur-text" class="slide anim-continue anim-removeclass"></div>
-        <div data-what=".blur1, .blur3" data-class="blur-text" class="slide anim-continue anim-addclass"></div>
-        <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
-        <div class="notes">Note that whereas Locke puts the question in terms of Ideas, Fodor, writing much later,
+that philosophers have been asking since Plato or before.</div></section><section class="slide"><div class="words"><div class="container_12"><div class="grid_12"><div class="step1"><div class="notes">Here is John Locke asking a version of my question ...</div><p class="handout notes show"><span class="blur1">‘... ’tis past doubt, that Men have in their Minds </span><span class="noblur">several Ideas</span><span class="blur1">, such as are those expressed by the words, Whiteness, Hardness, ... and others: It is in the first place to be enquired, </span><span class="noblur">How he comes by them</span><span class="blur1">?’</span><span class="handout notes ctd">\citep[p.\ 104]{Locke:1975qo} </span></p><p class="blur1 right">(Locke 1689)</p></div><div class="step2 hide"><p class="handout notes show"><span class="blur2">‘How does it come about that the development of organic behavior into </span><span class="noblur">controlled inquiry </span><span class="blur2">brings about the differentiation and cooperation of </span><span class="noblur">observational and conceptual operations</span><span class="blur2">?’</span><span class="handout notes ctd">\citep[p.\ 12]{Dewey:1938yp}</span></p><p class="blur2 right">(Dewey 1938, p. 12)</p></div><div class="step3 hide"> <p class="handout notes show"><span class="blur3">‘the fundamental explicandum, is the organism and its propositional attitudes ... </span><span class="blur3 cognitive-psychologists">Cognitive psychologists </span><span class="blur3">accept ... the  ... necessity of explaining </span><span class="noblur">how organisms come to have the attitudes to propositions that they do</span><span class="blur3">.’</span><span class="handout notes ctd">\citep[p.\ 198]{Fodor:1975pb}</span></p><p class="blur3 right">(Fodor 1975, p.\ 198)</p></div><div data-what=".step1 p span" data-class="blur-text" class="slide anim-continue anim-addclass"></div><div data-what=".step3" data-class="hide" data-scope="" class="slide anim-removeclass"></div><div class="notes">And here is a nativist, Jerry Fodor, asking much the same question.</div><div data-what=".step1 p span" data-class="blur-text" class="slide anim-continue anim-removeclass"></div><div data-what=".blur1, .blur3" data-class="blur-text" class="slide anim-continue anim-addclass"></div><div data-what="#notanelement" data-class="" class="slide anim-addclass"></div><div class="notes">Note that whereas Locke puts the question in terms of Ideas, Fodor, writing much later,
 asks about propositional attitudes, that is, about states such as knowlegde and belief.
 This difference need not concern us; we now have a much better understanding of the metaphysics
-of mental states than Locke did.
-        </div>
-        <div data-what=".step2" data-class="hide" data-scope="" class="slide anim-removeclass"></div>
-        <div class="notes">Finally note that much the same question has been asked by philosophers coming at things from a 
-completely different---pragmatist, in this case---point of view.
-        </div>
-        <div data-what=".blur2" data-class="blur-text" class="slide anim-continue anim-addclass"></div>
-        <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
-        <div class="notes">Because he focusses on behaviour and mental operations rather than Ideas or states of mind,
+of mental states than Locke did.</div><div data-what=".step2" data-class="hide" data-scope="" class="slide anim-removeclass"></div><div class="notes">Finally note that much the same question has been asked by philosophers coming at things from a 
+completely different---pragmatist, in this case---point of view.</div><div data-what=".blur2" data-class="blur-text" class="slide anim-continue anim-addclass"></div><div data-what="#notanelement" data-class="" class="slide anim-addclass"></div><div class="notes">Because he focusses on behaviour and mental operations rather than Ideas or states of mind,
 he puts the question in terms of a transition from unthinking ('organic') behaviour 
-to capacities for observational and conceptual operations.
-        </div>
-        <div class="notes">So my question about how we first come to know things in various domains is an ok question
+to capacities for observational and conceptual operations.</div><div class="notes">So my question about how we first come to know things in various domains is an ok question
 for a philosopher to ask because it belongs to a family of questions that philosophers who 
-have been dead for a long time were asking.
-        </div>
-        <div data-what=".cognitive-psychologists" data-class="blur-text" class="slide anim-continue anim-removeclass"></div>
-        <div data-what=" .cognitive-psychologists" data-class="bkg-words-highlight-invert" class="slide anim-addclass"></div>
-        <div class="notes">One last thing.
+have been dead for a long time were asking.</div><div data-what=".cognitive-psychologists" data-class="blur-text" class="slide anim-continue anim-removeclass"></div><div data-what=" .cognitive-psychologists" data-class="bkg-words-highlight-invert" class="slide anim-addclass"></div><div class="notes">One last thing.
 Fodor mentions cognitive psychologists rather than philosophers.  We will need to face up to 
 the question of why philosophers are asking this question about the origins of knowledge, why 
-is isn't just a scientific question.  I'll come to this shortly.
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- myths to mechanisms-->
-<section id="unit_021" class="slide"><img src="/img/bkg/bees/DSC_0157_crop.jpg" class="bkg"/>
-  <div class="spacer">&nbsp;</div>
-  <div style="" class="title-block">
-    <div class="title-container">
-      <h2 class="title1">From Myths to Mechanisms</h2>
-    </div>
-  </div>
-</section>
-<div class="handout">&nbsp;</div>
-<div class="handout">\section{From Myths to Mechanisms}</div>
-<div class="notes notes-header-tex">&nbsp;</div>
-<div class="notes notes-header-tex">\section{From Myths to Mechanisms}</div>
-<!---->
-<!-- short form:-->
-<!--  remove_class('.blur')-->
-<!-- long forms:-->
-<!--  remove_class('.elements', 'blur')-->
-<!--  remove_class(['.el1', '.el_group_2'], 'blur')-->
-<!---->
-<section class="slide">
-  <div class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <div class="notes">How do humans first come to know  about---and to knowingly manipulate---objects, causes, words, 
+is isn't just a scientific question.  I'll come to this shortly.</div></div></div></div></section><!-- myths to mechanisms--><section id="unit_021" class="slide"><img src="/img/bkg/bees/DSC_0157_crop.jpg" class="bkg"/><div class="spacer">&nbsp;</div><div style="" class="title-block"><div class="title-container"><h2 class="title1">From Myths to Mechanisms</h2></div></div></section><div class="handout">&nbsp;</div><div class="handout">\section{From Myths to Mechanisms}</div><div class="notes notes-header-tex">&nbsp;</div><div class="notes notes-header-tex">\section{From Myths to Mechanisms}</div><!----><!-- short form:--><!--  remove_class('.blur')--><!-- long forms:--><!--  remove_class('.elements', 'blur')--><!--  remove_class(['.el1', '.el_group_2'], 'blur')--><!----><section class="slide"><div class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="notes">How do humans first come to know  about---and to knowingly manipulate---objects, causes, words, 
 numbers, colours, actions and minds?
 In a beautiful myth, Plato (who also asked this question) suggests that the answer is 
 recollection. 
@@ -264,256 +26,50 @@ Before we are born, in another world, we become acquainted with the truth.
 Then, in falling to earth, we forget everything. 
 But as we grow we are sometimes able to recall part of what we once knew.
 So it is by recollection that humans come to know about objects, causes, numbers and everything 
-else.
-          </div>
-          <p class="center">myths</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div style="z-index:-22;" class="right-half-white hide"></div>
-  <div class="container_12">
-    <div class="notes">Leibniz explicitly endorses a version of Plato's view.</div>
-    <div class="grid_6 words left-half">
-      <div style="padding-right:1em;">
-        <p class="handout notes show">‘the soul inherently contains the sources of various notions and doctrines which external objects merely rouse up on suitable occasions’</p>
-        <p class="right">Leibniz (1996, p. 48)</p>
-        <div class="handout notes ctd">\citep[p.\ 48]{Leibniz:1996bl}</div>
-        <div class="notes">The view is subtler than it seems: we'll return to the subtelties later.
-[*Actually that isn't in these lectures, but it should be.]
-        </div>
-      </div>
-    </div>
-    <div class="grid_6 words invert right-half hide">
-      <div style="padding-left:1em;">
-        <div data-what=".right-half-white, .right-half" data-class="hide" data-scope="" class="slide anim-removeclass"></div>
-        <div class="notes">Locke, as you probably know, was an empiricist.  Here's his manifesto.</div>
-        <p><span class="handout notes show">‘Men, barely by the Use of their natural Faculties, may attain to all the Knowledge they 
-have, without the help of any innate Impressions; [...]</span></p>
-        <div class="slide">
-          <div class="notes">This claim about colour isn't relevant yet but we'll return to it later.</div>
-          <p><span class="handout notes ctd show">‘it would be impertinent to suppose, the Ideas of Colours innate in a Creature, to whom God hath given Sight, and a Power to receive them by the Eyes from external Objects’</span></p>
-          <p class="right">(Locke 1975 [1689], p. 48)</p>
-          <div class="handout notes ctd">\citep[p.\ 48]{Locke:1975qo}</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!--section.slide-->
-<!--  .words: .container_12: .grid_12-->
-<!--    p ‘it is the knowledge of necessary and eternal truths that distinguishes us from mere animals and gives us reason and the sciences [...]-->
-<!--    p ‘It is also through the knowledge of necessary truths and their abstractions that we rise to reflective acts, which make us think of what is called I, and consider that this or that is within us: and thus, thinking of ourselves, we think of being, of substance [...].-->
-<!--    p ‘And these reflective acts furnish the chief objects of our reasonings.’-->
-<!--    p.right (Leibniz 1973 [1714], §§29-30)-->
-<section class="slide">
-  <div class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <div class="notes">Spelke is blunt.  </div>
-          <p class="handout notes show">‘Developmental science [...] has shown that both these views are false’</p>
-          <div class="handout notes ctd">\citep[p.\ 89]{Spelke:2007hb}.</div>
-          <p class="right">(Spelke and Kinzler 2007, p. 89)</p>
-          <p class="notes">Spelke doesn't have exactly Locke vs Leibniz in mind here, but rather modern descendants 
-of their views.
-          </p>
-          <p class="notes">[The quote continues ‘humans are endowed neither with a single, general-purpose learning system 
+else.</div><p class="center">myths</p></div></div></div></div></section><section class="slide"><div style="z-index:-22;" class="right-half-white hide"></div><div class="container_12"><div class="notes">Leibniz explicitly endorses a version of Plato's view.</div><div class="grid_6 words left-half"><div style="padding-right:1em;"><p class="handout notes show">‘the soul inherently contains the sources of various notions and doctrines which external objects merely rouse up on suitable occasions’</p><p class="right">Leibniz (1996, p. 48)</p><div class="handout notes ctd">\citep[p.\ 48]{Leibniz:1996bl}</div><div class="notes">The view is subtler than it seems: we'll return to the subtelties later.
+[*Actually that isn't in these lectures, but it should be.]</div></div></div><div class="grid_6 words invert right-half hide"><div style="padding-left:1em;"><div data-what=".right-half-white, .right-half" data-class="hide" data-scope="" class="slide anim-removeclass"></div><div class="notes">Locke, as you probably know, was an empiricist.  Here's his manifesto.</div><p><span class="handout notes show">‘Men, barely by the Use of their natural Faculties, may attain to all the Knowledge they 
+have, without the help of any innate Impressions; [...]</span></p><div class="slide"><div class="notes">This claim about colour isn't relevant yet but we'll return to it later.</div><p><span class="handout notes ctd show">‘it would be impertinent to suppose, the Ideas of Colours innate in a Creature, to whom God hath given Sight, and a Power to receive them by the Eyes from external Objects’</span></p><p class="right">(Locke 1975 [1689], p. 48)</p><div class="handout notes ctd">\citep[p.\ 48]{Locke:1975qo}</div></div></div></div></div></section><!--section.slide--><!--  .words: .container_12: .grid_12--><!--    p ‘it is the knowledge of necessary and eternal truths that distinguishes us from mere animals and gives us reason and the sciences [...]--><!--    p ‘It is also through the knowledge of necessary truths and their abstractions that we rise to reflective acts, which make us think of what is called I, and consider that this or that is within us: and thus, thinking of ourselves, we think of being, of substance [...].--><!--    p ‘And these reflective acts furnish the chief objects of our reasonings.’--><!--    p.right (Leibniz 1973 [1714], §§29-30)--><section class="slide"><div class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="notes">Spelke is blunt.  </div><p class="handout notes show">‘Developmental science [...] has shown that both these views are false’</p><div class="handout notes ctd">\citep[p.\ 89]{Spelke:2007hb}.</div><p class="right">(Spelke and Kinzler 2007, p. 89)</p><p class="notes">Spelke doesn't have exactly Locke vs Leibniz in mind here, but rather modern descendants 
+of their views.</p><p class="notes">[The quote continues ‘humans are endowed neither with a single, general-purpose learning system 
 nor with myriad special-purpose systems and predispositions. Instead, we believe that humans 
 are endowed with a small number of separable systems of core knowledge. New, flexible skills 
-and belief systems build on these core foundations.’]
-          </p>
-          <p class="notes">Spelke's claim may be too bold.  As we will see, there is surprisingly little evidence about
+and belief systems build on these core foundations.’]</p><p class="notes">Spelke's claim may be too bold.  As we will see, there is surprisingly little evidence about
 the conflict between empiricists and nativists.  
 A more cautious claim would be this.  when we look at particular cases in detail---for 
 instance, 
 when we look at how humans come to know about colours---we will discover complexities that seem 
-to be incompatible with any one of the stories.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <div class="center">
-            <p class="line-through">myths</p>
-            <p>mechanisms</p>
-          </div>
-          <div class="notes">To make progress we need to forget about the myths; we need to
-identify various mechanisms and attempt to model their interactions.
-          </div>
-          <div class="notes">The claim that we should shift from thinking about myths to mechanisms makes pressing
+to be incompatible with any one of the stories.</p></div></div></div></div></section><section class="slide"><div class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="center"><p class="line-through">myths</p><p>mechanisms</p></div><div class="notes">To make progress we need to forget about the myths; we need to
+identify various mechanisms and attempt to model their interactions.</div><div class="notes">The claim that we should shift from thinking about myths to mechanisms makes pressing
 the worry that there is no task here for philosophers and that its really just a job for
-scientists.
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!--inbetween mindless behaviour and thought (object permanence)-->
-<section id="unit_031" class="slide"><img src="/img/bkg/bees/DSC_0165_crop.jpg" class="bkg"/>
-  <div class="spacer">&nbsp;</div>
-  <div style="" class="title-block">
-    <div class="title-container">
-      <h2 class="title1">Davidon's Challenge</h2>
-    </div>
-  </div>
-</section>
-<div class="handout">&nbsp;</div>
-<div class="handout">\section{Davidon's Challenge}</div>
-<div class="notes notes-header-tex">&nbsp;</div>
-<div class="notes notes-header-tex">\section{Davidon's Challenge}</div>
-<!---->
-<!-- short form:-->
-<!--  remove_class('.blur')-->
-<!-- long forms:-->
-<!--  remove_class('.elements', 'blur')-->
-<!--  remove_class(['.el1', '.el_group_2'], 'blur')-->
-<!---->
-<!-- doesn't appear on a slide-->
-<div class="handout"><span>‘We have many vocabularies for describing nature when we regard it as </span><span class="highlight1">mindless</span><span>, and we have a mentalistic vocabulary for describing </span><span class="highlight1">thought and intentional action</span><span>; what we lack is a way of describing </span><span class="highlight1">what is in between</span><span>’ </span><span>\citep[p.\ 11]{Davidson:1999ju}</span></div>
-<section class="slide">
-  <div class="notes">Why suppose there is any role for philosophers rather than scientists?
-Part of the answer is provided by Donald Davidson.
-  </div>
-  <div class="notes">The question is how humans come to know about objects, words, thoughts and other things.
+scientists.</div></div></div></div></div></section><!--inbetween mindless behaviour and thought (object permanence)--><section id="unit_031" class="slide"><img src="/img/bkg/bees/DSC_0165_crop.jpg" class="bkg"/><div class="spacer">&nbsp;</div><div style="" class="title-block"><div class="title-container"><h2 class="title1">Davidon's Challenge</h2></div></div></section><div class="handout">&nbsp;</div><div class="handout">\section{Davidon's Challenge}</div><div class="notes notes-header-tex">&nbsp;</div><div class="notes notes-header-tex">\section{Davidon's Challenge}</div><!----><!-- short form:--><!--  remove_class('.blur')--><!-- long forms:--><!--  remove_class('.elements', 'blur')--><!--  remove_class(['.el1', '.el_group_2'], 'blur')--><!----><!-- doesn't appear on a slide--><div class="handout"><span>‘We have many vocabularies for describing nature when we regard it as </span><span class="highlight1">mindless</span><span>, and we have a mentalistic vocabulary for describing </span><span class="highlight1">thought and intentional action</span><span>; what we lack is a way of describing </span><span class="highlight1">what is in between</span><span>’ </span><span>\citep[p.\ 11]{Davidson:1999ju}</span></div><section class="slide"><div class="notes">Why suppose there is any role for philosophers rather than scientists?
+Part of the answer is provided by Donald Davidson.</div><div class="notes">The question is how humans come to know about objects, words, thoughts and other things.
 In pursuing this question we have to consider minds where the knowledge is neither clearly 
 present nor obviously absent. 
 This is challenging because both commonsense and theoretical tools for describing minds are 
-generally designed for characterising fully developed adults.
-  </div>
-  <div class="photobox-bottom-right"><img src="/img/davidson.gif" class="photo-right"/></div>
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <p><span>‘if you want to describe what is going on in the head of the child when it has a few words which it utters in appropriate situations,  </span><span class="you-will-fail">you will fail</span><span class="step2 hide">  for lack of the right sort of words of your own.</span></p>
-        <p class="step3 hide"><span>‘We have many vocabularies for describing nature when we regard it as </span><span class="highlight1">mindless</span><span>, and we have a mentalistic vocabulary for describing </span><span class="highlight1">thought and intentional action</span><span>; what we lack is a way of describing </span><span class="highlight1">what is in between</span><span>’</span></p>
-        <p class="right"><span>(Davidson 1999, p. 11)</span></p>
-        <div data-what=" .you-will-fail" data-class="bkg-words-highlight-red" class="slide anim-continue anim-addclass"></div>
-        <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
-        <div class="notes">I love this: Davidson says we will fail.  So encouraging.
-But why will we fail?
-        </div>
-        <div data-what=".step2" data-class="hide" data-scope="" class="slide anim-removeclass"></div>
-        <div class="notes">Is he suggesting the issue is merely terminological?  Not quite ...
-        </div>
-        <div data-what=".step3" data-class="hide" data-scope="" class="slide anim-removeclass"></div>
-        <div data-what=" .highlight1" data-class="bkg-words-highlight-invert" class="slide anim-addclass"></div>
-        <div class="notes">So this is the challenge.  We are describing something which is neither mindless 
+generally designed for characterising fully developed adults.</div><div class="photobox-bottom-right"><img src="/img/davidson.gif" class="photo-right"/></div><div class="words"><div class="container_12"><div class="grid_12"><p><span>‘if you want to describe what is going on in the head of the child when it has a few words which it utters in appropriate situations,  </span><span class="you-will-fail">you will fail</span><span class="step2 hide">  for lack of the right sort of words of your own.</span></p><p class="step3 hide"><span>‘We have many vocabularies for describing nature when we regard it as </span><span class="highlight1">mindless</span><span>, and we have a mentalistic vocabulary for describing </span><span class="highlight1">thought and intentional action</span><span>; what we lack is a way of describing </span><span class="highlight1">what is in between</span><span>’</span></p><p class="right"><span>(Davidson 1999, p. 11)</span></p><div data-what=" .you-will-fail" data-class="bkg-words-highlight-red" class="slide anim-continue anim-addclass"></div><div data-what="#notanelement" data-class="" class="slide anim-addclass"></div><div class="notes">I love this: Davidson says we will fail.  So encouraging.
+But why will we fail?</div><div data-what=".step2" data-class="hide" data-scope="" class="slide anim-removeclass"></div><div class="notes">Is he suggesting the issue is merely terminological?  Not quite ...</div><div data-what=".step3" data-class="hide" data-scope="" class="slide anim-removeclass"></div><div data-what=" .highlight1" data-class="bkg-words-highlight-invert" class="slide anim-addclass"></div><div class="notes">So this is the challenge.  We are describing something which is neither mindless 
 nor involving full-blown thought and action.  And, as Davidson observes, we lack
-a way of describing what is in between.
-        </div>
-        <div class="notes">Earlier I asked why philosophers rather than only scientists should investigate the 
+a way of describing what is in between.</div><div class="notes">Earlier I asked why philosophers rather than only scientists should investigate the 
 question about the origins of mind.  And this is the answer.  It's because tacking
-with the quesiton will require new conceptual tools.
-        </div>
-        <div class="notes">This challenge is one that we will face again and again.
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<div class="handout">&nbsp;</div>
-<div class="handout">\section{An Illustration of Davidon's Challenge}</div>
-<div class="notes notes-header-tex">&nbsp;</div>
-<div class="notes notes-header-tex">\section{An Illustration of Davidon's Challenge}</div>
-<!---->
-<!-- short form:-->
-<!--  remove_class('.blur')-->
-<!-- long forms:-->
-<!--  remove_class('.elements', 'blur')-->
-<!--  remove_class(['.el1', '.el_group_2'], 'blur')-->
-<!---->
-<div class="handout">\textit{Object permanence}:
-the ability to know facts about objects you aren't currently perceiving.
-</div>
-<section class="slide">
-  <div class="notes">If you've seen the outline of lectures, you'll know that my idea is to organise the lectures 
+with the quesiton will require new conceptual tools.</div><div class="notes">This challenge is one that we will face again and again.</div></div></div></div></section><div class="handout">&nbsp;</div><div class="handout">\section{An Illustration of Davidon's Challenge}</div><div class="notes notes-header-tex">&nbsp;</div><div class="notes notes-header-tex">\section{An Illustration of Davidon's Challenge}</div><!----><!-- short form:--><!--  remove_class('.blur')--><!-- long forms:--><!--  remove_class('.elements', 'blur')--><!--  remove_class(['.el1', '.el_group_2'], 'blur')--><!----><div class="handout">\textit{Object permanence}:
+the ability to know facts about objects you aren't currently perceiving.</div><section class="slide"><div class="notes">If you've seen the outline of lectures, you'll know that my idea is to organise the lectures 
 by domains of knowledge.
 As we will see, how we first come to know things about colours, say, isn't quite the same 
 as how we first come to know things about minds.
 But there is one very general point we can make: in all these domains, we will face 
 Davidson's challenge, the challenge of explaining what is inbetween mindless behaviour 
-and thought.
-  </div>
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_3">
-        <p>plan</p>
-      </div>
-      <div class="grid_9">
-        <div class="topics">
-          <p class="today">objects </p>
-          <p>causes</p>
-          <p>colours</p>
-          <p>words</p>
-          <p>non-verbal communications</p>
-          <p>minds</p>
-          <p>actions</p>
-        </div>
-        <div data-what=".topics :not(.today)" data-class="blur-text" class="slide anim-continue anim-addclass"></div>
-        <div data-what=" .today" data-class="bkg-white-row" class="slide anim-continue anim-addclass"></div>
-        <div data-what=" .today" data-class="invert" class="slide anim-continue anim-addclass"></div>
-        <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
-        <div class="notes">Let me preview how Davidson's challenge arises in the case of objects.
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p class="handout notes show">When do humans first come to know facts about the locations of objects they are not perceiving?</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="notes">A famous study by Renee Baillargeon and her collaborators provides evidence that humans can 
+and thought.</div><div class="words"><div class="container_12"><div class="grid_3"><p>plan</p></div><div class="grid_9"><div class="topics"><p class="today">objects </p><p>causes</p><p>colours</p><p>words</p><p>non-verbal communications</p><p>minds</p><p>actions</p></div><div data-what=".topics :not(.today)" data-class="blur-text" class="slide anim-continue anim-addclass"></div><div data-what=" .today" data-class="bkg-white-row" class="slide anim-continue anim-addclass"></div><div data-what=" .today" data-class="invert" class="slide anim-continue anim-addclass"></div><div data-what="#notanelement" data-class="" class="slide anim-addclass"></div><div class="notes">Let me preview how Davidson's challenge arises in the case of objects.</div></div></div></div></section><section class="slide"><div class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="handout notes show">When do humans first come to know facts about the locations of objects they are not perceiving?</p></div></div></div></div></section><section class="slide"><div class="words"><div class="container_12"><div class="grid_12"><div class="notes">A famous study by Renee Baillargeon and her collaborators provides evidence that humans can 
 represent unperceived objects from around four months of age or earlier.  
-This is called the 'drawbridge study'
-        </div>
-        <div class="notes">What you are about to see are the test events from Experiment 1 of Baillargeon et al's 
+This is called the 'drawbridge study'</div><div class="notes">What you are about to see are the test events from Experiment 1 of Baillargeon et al's 
 1987 study.  You're looking at them from the side whereas the subjects, four-month olds,
-were looking at them from the front (which is to your right).
-        </div>
-        <div class="notes">In showing you these test events,
+were looking at them from the front (which is to your right).</div><div class="notes">In showing you these test events,
 I need to explain the method used in this experiment, \emph{habituation}; 
 this is a method we will encounter repeatedly so it's good to understand how it is 
-supposed to work.
-        </div>
-        <div class="notes">%glossary: habituation</div>
-        <div class="notes">What you see here is a barrier rotating through 180 degrees.
+supposed to work.</div><div class="notes">%glossary: habituation</div><div class="notes">What you see here is a barrier rotating through 180 degrees.
 Infants were habituated to this; that is, they were shown it repeatedly until it no longer 
 held their interest.
 The first time they're shown this, they might spend 60 seconds looking at it, which is a long
 time for an infant; but after, say, five demonstrations, they'd only be looking at it for 
-around 10 seconds.  That is, they are habituated to this display.
-        </div>
-        <!--handout only:--><img data-src="img/baillargeon_1987_fig1.neg.png" class="handout"/>
-        <div class="handout">\begin{center} \citealp{baillargeon:1987_object} figure 1 \end{center}</div>
-        <div style="overflow:hidden;max-width:350px;max-height:200px;" class="img1"><img src="/img/baillargeon_1987_fig1.png" style="max-width:700px;max-height:527px;"/></div>
-        <div style="overflow:hidden;max-width:350px;" class="img2"><img src="/img/baillargeon_1987_fig1.png" style="max-width:700px;"/></div>
-        <div class="img3 hide"><img src="/img/baillargeon_1987_fig1.png" style="max-width:700px;"/></div>
-        <p class="source">Baillargeon (1987, figure 1)</p>
-        <div data-what=".img2" data-class="hide" data-scope="" class="slide anim-continue anim-removeclass"></div>
-        <div data-what=".img1" data-class="remove-me" class="slide anim-addclass"></div>
-        <div class="notes">Now there is a very small change to the display.
+around 10 seconds.  That is, they are habituated to this display.</div><!--handout only:--><img data-src="img/baillargeon_1987_fig1.neg.png" class="handout"/><div class="handout">\begin{center} \citealp{baillargeon:1987_object} figure 1 \end{center}</div><div style="overflow:hidden;max-width:350px;max-height:200px;" class="img1"><img src="/img/baillargeon_1987_fig1.png" style="max-width:700px;max-height:527px;"/></div><div style="overflow:hidden;max-width:350px;" class="img2"><img src="/img/baillargeon_1987_fig1.png" style="max-width:700px;"/></div><div class="img3 hide"><img src="/img/baillargeon_1987_fig1.png" style="max-width:700px;"/></div><p class="source">Baillargeon (1987, figure 1)</p><div data-what=".img2" data-class="hide" data-scope="" class="slide anim-continue anim-removeclass"></div><div data-what=".img1" data-class="remove-me" class="slide anim-addclass"></div><div class="notes">Now there is a very small change to the display.
 The display is just as before, except for before the drawbridge moves an object is placed 
 behind it.
 There are then two different things that could happen.  One is that the drawbridge moves 
@@ -527,185 +83,58 @@ find the
 from the event they have been habituated to.
 On the other hand, if infants are able know facts about the locations of unperceived objects,
 they should find the impossible event more novel than the possible event because, well,
-it's impossible.
-        </div>
-        <div class="notes">To find out what infants find more interesting, they are divided into two groups.  
+it's impossible.</div><div class="notes">To find out what infants find more interesting, they are divided into two groups.  
 One group sees the impossible event, the other the possible event.
 The experimenters measure how long the infants look at these events, which is the measure of 
 their dishabituation.  The background assumptions are that looking longer indicates more 
-interest, and that interest is driven by novelty.
-        </div>
-        <div data-what=".img3" data-class="hide" data-scope="" class="slide anim-continue anim-removeclass"></div>
-        <div data-what=".img2" data-class="remove-me" class="slide anim-addclass"></div>
-        <div class="notes">In the control condition,
+interest, and that interest is driven by novelty.</div><div data-what=".img3" data-class="hide" data-scope="" class="slide anim-continue anim-removeclass"></div><div data-what=".img2" data-class="remove-me" class="slide anim-addclass"></div><div class="notes">In the control condition,
 'The habituation event was exactly the same as the impossible event, except that the yellow 
-box was absent.' (Baillargeon et al 1985, 200)
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- *todo* display part of the image first (hide the control condition)-->
-<section class="slide">
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="notes">These are the results from Experiment 1 of Baillargeon et al's 1987 study.</div>
-        <div class="notes">This experiment provides evidence that infants know that the object is behind the barrier
+box was absent.' (Baillargeon et al 1985, 200)</div></div></div></div></section><!-- *todo* display part of the image first (hide the control condition)--><section class="slide"><div class="words"><div class="container_12"><div class="grid_12"><div class="notes">These are the results from Experiment 1 of Baillargeon et al's 1987 study.</div><div class="notes">This experiment provides evidence that infants know that the object is behind the barrier
 even when they can't see it, for their having such knowledge would explain why they appear
-surprised by the impossible event.
-        </div>
-        <!--handout only:--><img data-src="img/baillargeon_1987_fig2.neg.png" class="handout"/>
-        <div class="handout">\begin{center} \citealp{baillargeon:1987_object} figure 2 \end{center}</div>
-        <div style="overflow:hidden;max-height:220px;" class="img2-1"><img src="/img/baillargeon_1987_fig2.png" height="500"/></div>
-        <div style="overflow:hidden;max-height:250px;" class="img2-2 hide"><img src="/img/baillargeon_1987_fig2.png" height="500" style="position:relative;top:-220px;"/></div>
-        <p class="right">source: Baillargeon et al (1987, figure 2)</p>
-        <div data-what=".img2-2" data-class="hide" data-scope="" class="slide anim-removeclass"></div>
-        <div class="notes">Here you can see, reassuringly, that the effect is not present in the control condition
-where the box is absent.
-        </div>
-        <div class="notes">Some have been critical of the methods used in this experiment.
+surprised by the impossible event.</div><!--handout only:--><img data-src="img/baillargeon_1987_fig2.neg.png" class="handout"/><div class="handout">\begin{center} \citealp{baillargeon:1987_object} figure 2 \end{center}</div><div style="overflow:hidden;max-height:220px;" class="img2-1"><img src="/img/baillargeon_1987_fig2.png" height="500"/></div><div style="overflow:hidden;max-height:250px;" class="img2-2 hide"><img src="/img/baillargeon_1987_fig2.png" height="500" style="position:relative;top:-220px;"/></div><p class="right">source: Baillargeon et al (1987, figure 2)</p><div data-what=".img2-2" data-class="hide" data-scope="" class="slide anim-removeclass"></div><div class="notes">Here you can see, reassuringly, that the effect is not present in the control condition
+where the box is absent.</div><div class="notes">Some have been critical of the methods used in this experiment.
 But not everything hangs on this experiment.
 Fortunately there are at least a hundred further experiments which provide evidence pointing in the same direction.
-Later we'll look at this is more detail.
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <p class="notes show">When do humans first come to know facts about the locations of objects they are not perceiving?
-        </p>
-        <p class="em-above indent"><span class="look">look</span><span>: by 4 months of age or earlier </span><span class="grey-text">(Baillargeon 1987).</span></p>
-        <div class="notes">This result has been widely replicated, and it coheres with a large body of research we shall 
-explore later.
-        </div>
-        <div class="slide">
-          <p class="indent"><span class="look">look</span><span>: by around 2.5 months of age or earlier</span><span class="grey-text">(Aguiar & Baillargeon 1999)</span></p>
-        </div>
-        <div class="notes">By using more sensitive methods, \citet{Aguiar:1999jq} even demonstrated competence in a group
-of 2.5 month old infants.
-        </div>
-        <div class="notes">So far so good, but there is a problem ...
-What happens if instead of measuring how infants look, we measure how they reach?
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="notes">\citet{Shinskey:2001fk} did just this.
+Later we'll look at this is more detail.</div></div></div></div></section><section class="slide"><div class="words"><div class="container_12"><div class="grid_12"><p class="notes show">When do humans first come to know facts about the locations of objects they are not perceiving?</p><p class="em-above indent"><span class="look">look</span><span>: by 4 months of age or earlier </span><span class="grey-text">(Baillargeon 1987).</span></p><div class="notes">This result has been widely replicated, and it coheres with a large body of research we shall 
+explore later.</div><div class="slide"><p class="indent"><span class="look">look</span><span>: by around 2.5 months of age or earlier</span><span class="grey-text">(Aguiar & Baillargeon 1999)</span></p></div><div class="notes">By using more sensitive methods, \citet{Aguiar:1999jq} even demonstrated competence in a group
+of 2.5 month old infants.</div><div class="notes">So far so good, but there is a problem ...
+What happens if instead of measuring how infants look, we measure how they reach?</div></div></div></div></section><section class="slide"><div class="words"><div class="container_12"><div class="grid_12"><div class="notes">\citet{Shinskey:2001fk} did just this.
 Here you can see their appratus, which is quite similar to what \citet{baillargeon:1987_object} 
 used.
 They had a screen that infants could pull forwards to get to an object that was sometimes
 hidden behind it.
 They made two comparisons.
 First, were infants more likely to pull the screen forwards when an object was placed behind it?
-Second, were how did infants' performance compare when the barrier was not opaque but transparent?
-        </div>
-        <div style="position:relative;"><img src="/img/shinskey_munakata_2001_fig1.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div>
-        <p class="source">Shinskey and Munakata 2001, figure 1</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="notes">Here are their results with 7-month old infants.
-        </div>
-        <div style="position:relative;"><img src="/img/shinskey_munakata_2001_fig2.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div>
-        <p class="source">Shinskey and Munakata 2001, figure 2</p>
-        <div class="notes">We are interested in whether infants were more likely to pull the screen forwards when the 
+Second, were how did infants' performance compare when the barrier was not opaque but transparent?</div><div style="position:relative;"><img src="/img/shinskey_munakata_2001_fig1.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div><p class="source">Shinskey and Munakata 2001, figure 1</p></div></div></div></section><section class="slide"><div class="words"><div class="container_12"><div class="grid_12"><div class="notes">Here are their results with 7-month old infants.</div><div style="position:relative;"><img src="/img/shinskey_munakata_2001_fig2.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div><p class="source">Shinskey and Munakata 2001, figure 2</p><div class="notes">We are interested in whether infants were more likely to pull the screen forwards when the 
 object was present than when it was absent.
 Since infants wanted the toy, if they knew it was behind the barrier they should have pulled
 forward the barrier more often when the toy was behind it.
 This is exactly what they did when the barrier was transparent.
 But look what happens when the barrier is opaque, so that the toy is not visible to infants 
 when they have to prepare the pulling action: they no longer pull the barrier more often
-when the toy was behind it.
-        </div>
-        <div class="notes">This is good evidence that 7 month olds do not know facts about the locations of objects 
+when the toy was behind it.</div><div class="notes">This is good evidence that 7 month olds do not know facts about the locations of objects 
 they cannot perceive.
 And this is not isolated evidence; for example, \citet{moore:2008_factors} use a different 
 methods also involving manual search to provide converging evidence for this conclusion. 
-But now we have a problem ...
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section id="032-discrepant-findings" class="slide">
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <p class="notes show">When do humans first come to know facts about the locations of objects they are not perceiving?
-        </p>
-        <div class="notes">The evidence appears to be contradictory.
-        </div>
-        <p class="em-above indent"><span class="look">look</span><span>: by 4 months of age or earlier </span><span class="grey-text">(Baillargeon 1987).</span></p>
-        <p class="indent"><span class="look">look</span><span>: by around 2.5 months of age or earlier</span><span class="grey-text">(Aguiar & Baillargeon 1999)</span></p>
-        <p class="em-above indent"><span class="search">search</span><span>: not until after 7 months of age </span><span class="grey-text">(Shinskey & Munakata 2001)</span></p>
-        <div data-what=" .look" data-class="bkg-words-highlight-yellow" class="slide anim-continue anim-addclass"></div>
-        <div data-what=" .search" data-class="bkg-words-highlight-blue" class="slide anim-continue anim-addclass"></div>
-        <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
-        <div class="notes">By measuring looking actions, we find infants can distinguish situations in ways that indicate
+But now we have a problem ...</div></div></div></div></section><section id="032-discrepant-findings" class="slide"><div class="words"><div class="container_12"><div class="grid_12"><p class="notes show">When do humans first come to know facts about the locations of objects they are not perceiving?</p><div class="notes">The evidence appears to be contradictory.</div><p class="em-above indent"><span class="look">look</span><span>: by 4 months of age or earlier </span><span class="grey-text">(Baillargeon 1987).</span></p><p class="indent"><span class="look">look</span><span>: by around 2.5 months of age or earlier</span><span class="grey-text">(Aguiar & Baillargeon 1999)</span></p><p class="em-above indent"><span class="search">search</span><span>: not until after 7 months of age </span><span class="grey-text">(Shinskey & Munakata 2001)</span></p><div data-what=" .look" data-class="bkg-words-highlight-yellow" class="slide anim-continue anim-addclass"></div><div data-what=" .search" data-class="bkg-words-highlight-blue" class="slide anim-continue anim-addclass"></div><div data-what="#notanelement" data-class="" class="slide anim-addclass"></div><div class="notes">By measuring looking actions, we find infants can distinguish situations in ways that indicate
 they do know facts about the locations of particular unperceived objects.
 But when measuring retrieval or searching actions, we find infants cannot distinguish these 
-situations; this indicates that they cannot know this.
-        </div>
-        <div class="slide shinskey">
-          <div class="notes">You might hope there would be a simple solution.  Perhaps, for example, infants have 
+situations; this indicates that they cannot know this.</div><div class="slide shinskey"><div class="notes">You might hope there would be a simple solution.  Perhaps, for example, infants have 
 difficulties reaching that mask their real knowledge of the facts about unperceived objects' 
 locations.
-But As Jeanne Shinskey, one of the researchers most dedicated to this issue says,
-          </div>
-          <p class="em-above handout notes show">‘action demands are not the only cause of failures on occlusion tasks’</p>
-          <div class="handout notes ctd">\citep[p.\ 291]{shinskey:2012_disappearing}</div>
-          <p class="right">Shinskey (2012, p. 291)</p>
-          <div class="notes">Many such explanations have been tried because many researchers have been puzzled by this;
+But As Jeanne Shinskey, one of the researchers most dedicated to this issue says,</div><p class="em-above handout notes show">‘action demands are not the only cause of failures on occlusion tasks’</p><div class="handout notes ctd">\citep[p.\ 291]{shinskey:2012_disappearing}</div><p class="right">Shinskey (2012, p. 291)</p><div class="notes">Many such explanations have been tried because many researchers have been puzzled by this;
 \citet{Meltzoff:1998wp} go as far as to call it a paradox (the 'paradox of early permanence').
 No explanation positing extraneous task requirements, such as difficulties performing
-an the actions required, has yet succeeded.
-          </div>
-        </div>
-        <div data-what=".shinskey" data-class="blur-text" class="slide anim-continue anim-addclass"></div>
-        <div class="notes">This is a discrepancy between two types of measure; one involves looking, other other 
+an the actions required, has yet succeeded.</div></div><div data-what=".shinskey" data-class="blur-text" class="slide anim-continue anim-addclass"></div><div class="notes">This is a discrepancy between two types of measure; one involves looking, other other 
 searching. 
 We find this pattern--discrepant findings pointing to opposite conclusions about what 
-infants and adults know--in many different domains.
-        </div>
-        <div class="slide">
-          <p class="em-above">‘the tip of an iceberg’ <span class="grey-text">Charles & Rivera (2009, p. 994)</span></p>
-          <div class="notes">As \citet[p.\ 994]{charles:2009_object} put it, these findings are ‘the tip of an iceberg’.
-          </div>
-          <div class="handout notes">‘violation-of-expectation experiments, using looking-time measures, suggested that infants 
+infants and adults know--in many different domains.</div><div class="slide"><p class="em-above">‘the tip of an iceberg’ <span class="grey-text">Charles & Rivera (2009, p. 994)</span></p><div class="notes">As \citet[p.\ 994]{charles:2009_object} put it, these findings are ‘the tip of an iceberg’.</div><div class="handout notes">‘violation-of-expectation experiments, using looking-time measures, suggested that infants 
 have object permanence in occlusion conditions; but simplified-search studies confirm that 
 infants fail to reach towards occluded objects, suggesting that infants do not have object 
 permanence in occlusion conditions. This discrepancy, however, is only the tip of the 
 iceberg. Results of studies attempting to measure infants’ cognitive abilities using reaching 
 measures often contradict results gained while using looking-time measures.’ 
-\citep[p.\ 994]{charles:2009_object}
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p class="center">What is the problem?</p>
-          <div class="notes">You might be wondering whether there's a philosophical problem here.
+\citep[p.\ 994]{charles:2009_object}</div></div></div></div></div></section><section class="slide"><div class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="center">What is the problem?</p><div class="notes">You might be wondering whether there's a philosophical problem here.
 Science is a messy business and you get conflicting results all the time.
 But this particular pattern of conflicting results is extremely interesting philosophically.
 It shows that we cannot say that, at, say, five months of age, infants know facts about the 
@@ -715,66 +144,24 @@ We cannot say this because doing so generates predictions which are clearly fals
 about where they will search for an unperceived object).
 But it also shows that we cannot say that they have no sense at all concerning facts about the 
 locations of particular unperceived objects.  We cannot say this because of the
-competence they manifest in distinguishing possible from impossible events.
-          </div>
-          <div class="notes">The problem, then, is that understanding the origins of knowledge requires us to identify 
+competence they manifest in distinguishing possible from impossible events.</div><div class="notes">The problem, then, is that understanding the origins of knowledge requires us to identify 
 something inbetween knowledge and its absence, something that is like knowledge in some 
 respects but falls short of it in others.
-This is an instance of Davidson's challenge ...
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div class="notes">Here's the challenge I mentioned earlier, Davidson's challenge.
-  </div>
-  <div class="photobox-bottom-right"><img src="/img/davidson.gif" class="photo-right"/></div>
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <p><span>‘if you want to describe what is going on in the head of the child when it has a few words which it utters in appropriate situations,  </span><span class="you-will-fail">you will fail</span><span class="step2">  for lack of the right sort of words of your own.</span></p>
-        <p class="step3"><span>‘We have many vocabularies for describing nature when we regard it as </span><span class="highlight1">mindless</span><span>, and we have a mentalistic vocabulary for describing </span><span class="highlight1">thought and intentional action</span><span>; what we lack is a way of describing </span><span class="highlight1">what is in between</span><span>’</span></p>
-        <p class="right"><span>(Davidson 1999, p. 11)</span></p>
-      </div>
-    </div>
-  </div>
-  <div data-what=" .highlight1" data-class="bkg-words-highlight-invert" class="slide anim-addclass"></div>
-  <div class="notes">The sort of findings I've just reviewed indicate that infants have some way  of representing
+This is an instance of Davidson's challenge ...</div></div></div></div></div></section><section class="slide"><div class="notes">Here's the challenge I mentioned earlier, Davidson's challenge.</div><div class="photobox-bottom-right"><img src="/img/davidson.gif" class="photo-right"/></div><div class="words"><div class="container_12"><div class="grid_12"><p><span>‘if you want to describe what is going on in the head of the child when it has a few words which it utters in appropriate situations,  </span><span class="you-will-fail">you will fail</span><span class="step2">  for lack of the right sort of words of your own.</span></p><p class="step3"><span>‘We have many vocabularies for describing nature when we regard it as </span><span class="highlight1">mindless</span><span>, and we have a mentalistic vocabulary for describing </span><span class="highlight1">thought and intentional action</span><span>; what we lack is a way of describing </span><span class="highlight1">what is in between</span><span>’</span></p><p class="right"><span>(Davidson 1999, p. 11)</span></p></div></div></div><div data-what=" .highlight1" data-class="bkg-words-highlight-invert" class="slide anim-addclass"></div><div class="notes">The sort of findings I've just reviewed indicate that infants have some way  of representing
 facts about the locations of unperceived objects which is not knowledge but something like
 it.  
-The challenge is, in effect, to characterise the nature of these representations.
-  </div>
-</section>
-<section class="slide">
-  <div class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <div class="notes">Hood and colleagues suggest an extreme version of this view; they say there are many 
-kinds of knowledge ...
-          </div>
-          <p class="handout notes show"><span class="blur1">‘there are many </span><span class="noblur">separable systems of mental representations </span><span class="blur1">... and thus many </span><span class="noblur">different kinds of <span class="highlight2">knowledge. </span></span><span class="blur1">... the task ... is to contribute to the enterprise of finding the distinct systems of mental representation and to understand their development and integration’</span></p>
-          <div class="handout notes ctd">\citep[p.\ 1522]{Hood:2000bf}.</div>
-          <p class="right grey-text">(Hood et al 2000, p.\ 1522)</p>
-          <div data-what=".blur1" data-class="blur-text" class="slide anim-continue anim-addclass"></div>
-          <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
-          <div class="notes">I think we should be cautious about the inference from separable systems to kinds of knowledge.  
+The challenge is, in effect, to characterise the nature of these representations.</div></section><section class="slide"><div class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="notes">Hood and colleagues suggest an extreme version of this view; they say there are many 
+kinds of knowledge ...</div><p class="handout notes show"><span class="blur1">‘there are many </span><span class="noblur">separable systems of mental representations </span><span class="blur1">... and thus many </span><span class="noblur">different kinds of <span class="highlight2">knowledge. </span></span><span class="blur1">... the task ... is to contribute to the enterprise of finding the distinct systems of mental representation and to understand their development and integration’</span></p><div class="handout notes ctd">\citep[p.\ 1522]{Hood:2000bf}.</div><p class="right grey-text">(Hood et al 2000, p.\ 1522)</p><div data-what=".blur1" data-class="blur-text" class="slide anim-continue anim-addclass"></div><div data-what="#notanelement" data-class="" class="slide anim-addclass"></div><div class="notes">I think we should be cautious about the inference from separable systems to kinds of knowledge.  
 (Think about modularity.)
 It should be an open question for us whether what underpins infants' abilities to distinguish
 possible from impossible events is really a kind knowledge or something else.
-(This is a question we'll explore in some detail later.)
-          </div>
-          <div class="notes">I mention this quote just to show you that we have a problem which is partly philosophical
+(This is a question we'll explore in some detail later.)</div><div class="notes">I mention this quote just to show you that we have a problem which is partly philosophical
 and partly scientific.  
 The scientific part involves identifying distinct systems of representation and understanding
 their development.
 The philosophical part is to make sense of the idea that there can
 be different kinds of knowledge, or things that are like knowledge but not knowledge, and
-to explore how different kinds of knowledge are related.
-          </div>
-          <div class="notes">[*aside: move]
+to explore how different kinds of knowledge are related.</div><div class="notes">[*aside: move]
 At this point you might object.  The question is about knowledge.  
 But does either searching or distinguishing really provide evidence of knowing?
 You might insist that neithermanifest knowledge in infants.
@@ -784,44 +171,17 @@ even more pressing -- more pressing because we now need two distinct kinds of st
 are like knowledge in some respects but not in others, not just one!
 It's perhaps also worth mentioning that whether or not the things manifested in searching and 
 distinguishing are knowledge proper, they are surely things that matter for explaining how 
-knowledge is eventually acquired.
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <div class="notes">To sum up so far, the question for this course is, How do humans first come to know  about--and
+knowledge is eventually acquired.</div></div></div></div></div></section><section class="slide"><div class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="notes">To sum up so far, the question for this course is, How do humans first come to know  about--and
 to knowingly manipulate--objects, causes, words, numbers, colours, actions and minds?
 I've been suggesting we can't answer it simply by appealing to nativism, empiricism or other 
 grand myths.
-Instead we need to focus on the particular mechanisms that are involved in different cases.
-          </div>
-          <div class="notes">But then you might wonder, What philosophical questions arise here?  Isn't this a narrowly
+Instead we need to focus on the particular mechanisms that are involved in different cases.</div><div class="notes">But then you might wonder, What philosophical questions arise here?  Isn't this a narrowly
 pscyhological--and therefore scientific--issue?
 The answer is no because thinking about how humans come to know things requires us to meet 
 Davidson's challenge, to understand things that are neither mindless nor thought or knowledge 
 but somewhere in between.
 As Hood suggests in the quote I just showed you, this might involve rethinking what knowledge 
-is.
-          </div>
-          <p class="center">summary</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <div class="notes">I hope I've given you a flavour of the approach we're going to take.
+is.</div><p class="center">summary</p></div></div></div></div></section><section class="slide"><div class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="notes">I hope I've given you a flavour of the approach we're going to take.
 Good philosophy of mind has always been driven by scientific findings about the mind.
 John Locke, David Hume as well as more recent philosophers like Jerry Fodor and Andy Clark all 
 start with a deep understanding of the science of the mind.
@@ -839,151 +199,25 @@ This might sound too modest to be interesting.
 You'd probably prefer to be the architect whose plans guide the scientists rather than the 
 underlabourer who makes tools for them; who wouldn't?
 But, as we'll see, it turns out that attention to the details will give us new perspectives on 
-some key philosophical issues about the nature of knowledge, perception and action.
-          </div>
-          <p class="center">architect or tool maker?</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p class="center">So what are we going to do in this module?</p>
-          <div class="notes">We're going to try to understand how humans come to know about things by examining what 
+some key philosophical issues about the nature of knowledge, perception and action.</div><p class="center">architect or tool maker?</p></div></div></div></div></section><section class="slide"><div class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="center">So what are we going to do in this module?</p><div class="notes">We're going to try to understand how humans come to know about things by examining what 
 developmental psychology tells us about the acquisition of knowledge.
 This turns out to be a partly philosophical project because understanding the apparently 
 conflicting evidence requires us to re-think notions like knowledge and representation.
 In practice, this means looking carefully, and in detail, at the scientific evidence.
-If you want to know how minds work, you have to start with the evidence.
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section id="" class="slide"><img src="/img/bkg/bees/DSC_0169_crop.jpg" class="bkg"/>
-  <div class="spacer">&nbsp;</div>
-  <div style="" class="title-block">
-    <div class="title-container">
-      <h2 class="title1">Admin</h2>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="words">
-          <div class="container_12">
-            <div class="grid_12">
-              <p class="dimafter">lectures </p>
-              <div class="notes">lectures are at this time every week</div>
-              <p class="slide">web </p>
-              <div class="notes">there is a web page where you can find slides and handouts from lectures.</div>
-              <p class="slide">unassessed essay</p>
-              <div class="notes">submit a 1500 word unassessed essay by the standard deadline (which I think is 12 noon on 
-Thursday of week 7 but you should check).
-              </div>
-              <p class="slide">seminars</p>
-              <div class="notes">seminars start next week and run every week</div>
-              <p class="slide">reading week</p>
-              <div class="notes">there are no lectures or seminars in reading week (week 6)</div>
-              <p class="slide">seminar groups</p>
-              <div class="notes">sign up on tabula, as usual.</div>
-              <p class="slide">seminar tasks</p>
-              <div class="notes">I've assigned you a series of tasks to do in seminars; these are specified in the 
-document going around, which is also on the web page.
-              </div>
-              <p class="slide">first seminar task</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <p>first seminar</p>
-        <div class="notes">I need to set you up for your first seminar, which starts next week.
-Recall these findings ...
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div data-which="#032-discrepant-findings" class="slide-clone"></div>
-  <div class="notes">I want you to look at this discrepancy more carefully in your first seminar.
+If you want to know how minds work, you have to start with the evidence.</div></div></div></div></div></section><section id="" class="slide"><img src="/img/bkg/bees/DSC_0169_crop.jpg" class="bkg"/><div class="spacer">&nbsp;</div><div style="" class="title-block"><div class="title-container"><h2 class="title1">Admin</h2></div></div></section><section class="slide"><div class="words"><div class="container_12"><div class="grid_12"><div class="words"><div class="container_12"><div class="grid_12"><p class="dimafter">lectures </p><div class="notes">lectures are at this time every week</div><p class="slide">web </p><div class="notes">there is a web page where you can find slides and handouts from lectures.</div><p class="slide">unassessed essay</p><div class="notes">submit a 1500 word unassessed essay by the standard deadline (which I think is 12 noon on 
+Thursday of week 7 but you should check).</div><p class="slide">seminars</p><div class="notes">seminars start next week and run every week</div><p class="slide">reading week</p><div class="notes">there are no lectures or seminars in reading week (week 6)</div><p class="slide">seminar groups</p><div class="notes">sign up on tabula, as usual.</div><p class="slide">seminar tasks</p><div class="notes">I've assigned you a series of tasks to do in seminars; these are specified in the 
+document going around, which is also on the web page.</div><p class="slide">first seminar task</p></div></div></div></div></div></div></section><section class="slide"><div class="words"><div class="container_12"><div class="grid_12"><p>first seminar</p><div class="notes">I need to set you up for your first seminar, which starts next week.
+Recall these findings ...</div></div></div></div></section><section class="slide"><div data-which="#032-discrepant-findings" class="slide-clone"></div><div class="notes">I want you to look at this discrepancy more carefully in your first seminar.
 This is partly because the discrepancy matters, and partly because part of doing this module
-means becoming familiar with reading scientific papers.
-  </div>
-</section>
-<section class="slide">
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <p>first seminar</p>
-        <p class="em-above">each seminar group:</p>
-        <ul>
-          <li>Baillargeon (1987)</li>
-          <li>Shinskey and Munakata (2001)</li>
-          <li>[optional] Chiandetti and Vallortigara (2011)</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-<section id="unit_051" class="slide"><img src="/img/bkg/bees/DSC_0170_crop.jpg" class="bkg"/>
-  <div class="spacer">&nbsp;</div>
-  <div style="" class="title-block">
-    <div class="title-container">
-      <h2 class="title1">Two Breakthroughs</h2>
-    </div>
-  </div>
-</section>
-<div class="handout">&nbsp;</div>
-<div class="handout">\section{Two Breakthroughs}</div>
-<div class="notes notes-header-tex">&nbsp;</div>
-<div class="notes notes-header-tex">\section{Two Breakthroughs}</div>
-<!---->
-<!-- short form:-->
-<!--  remove_class('.blur')-->
-<!-- long forms:-->
-<!--  remove_class('.elements', 'blur')-->
-<!--  remove_class(['.el1', '.el_group_2'], 'blur')-->
-<!---->
-<section class="slide nodim">
-  <div class="notes">Recall that the question for this course is ...
+means becoming familiar with reading scientific papers.</div></section><section class="slide"><div class="words"><div class="container_12"><div class="grid_12"><p>first seminar</p><p class="em-above">each seminar group:</p><ul><li>Baillargeon (1987)</li><li>Shinskey and Munakata (2001)</li><li>[optional] Chiandetti and Vallortigara (2011)</li></ul></div></div></div></section><section id="unit_051" class="slide"><img src="/img/bkg/bees/DSC_0170_crop.jpg" class="bkg"/><div class="spacer">&nbsp;</div><div style="" class="title-block"><div class="title-container"><h2 class="title1">Two Breakthroughs</h2></div></div></section><div class="handout">&nbsp;</div><div class="handout">\section{Two Breakthroughs}</div><div class="notes notes-header-tex">&nbsp;</div><div class="notes notes-header-tex">\section{Two Breakthroughs}</div><!----><!-- short form:--><!--  remove_class('.blur')--><!-- long forms:--><!--  remove_class('.elements', 'blur')--><!--  remove_class(['.el1', '.el_group_2'], 'blur')--><!----><section class="slide nodim"><div class="notes">Recall that the question for this course is ...
 Our focus is on two breakthrough sets of findings.
-One concerns core knowledge, the other social interaction.
-  </div>
-  <div class="words top-slide">
-    <div class="container_12">
-      <div class="grid_5 left_half">
-        <p class="center"><strong>core knowledge</strong></p>
-        <div class="notes">Take core knowledge first. </div>
-        <div class="notes">We will see that infants can tackle physics, number, agents and minds thanks to a set of 
-innate or early-developing abilities, often labelled `core knowledge'.
-        </div>
-        <div class="slide nodim">
-          <p>We don't understand it.</p>
-          <div class="notes">For now, let us use the term `core knowledge' to mean whatever infants have concerning
+One concerns core knowledge, the other social interaction.</div><div class="words top-slide"><div class="container_12"><div class="grid_5 left_half"><p class="center"><strong>core knowledge</strong></p><div class="notes">Take core knowledge first. </div><div class="notes">We will see that infants can tackle physics, number, agents and minds thanks to a set of 
+innate or early-developing abilities, often labelled `core knowledge'.</div><div class="slide nodim"><p>We don't understand it.</p><div class="notes">For now, let us use the term `core knowledge' to mean whatever infants have concerning
 the locations of particular objects which is not knowledge but which underpins their
 abilities to discriminate between phyiscally possible and physically impossible
 sitatuions where the difference between possibile and impossibile depends on facts about
-objects the infants are not currently perceiving.
-          </div>
-          <div class="notes">It is important that we don't (yet) know what core knowledge is; `core knowledge' is a 
-term of art. I haven't explained what it is.
-          </div>
-          <div class="notes">[*needs updating!]
+objects the infants are not currently perceiving.</div><div class="notes">It is important that we don't (yet) know what core knowledge is; `core knowledge' is a 
+term of art. I haven't explained what it is.</div><div class="notes">[*needs updating!]
 Our position is this.
 Some scientists talk about core knowledge, and formulate hypotheses in terms of it.
 Since these hypotheses are supported by evidence, we can reasonably suppose they are true.
@@ -993,111 +227,27 @@ So we know some truths about core knowledge, but we don't know what it is.
 You'd probably prefer it if I could tell you what core knowledge is first.
 But here we have to work backwards.
 We have to gather truths about this unknown thing, core knowledge.
-And then we have to ask, What could core knowledge be given that these things are true?
-          </div>
-        </div>
-        <div class="slide nodim vanish">
-          <p>is like knowledge:</p>
-          <ul>
-            <li>guides behaviour</li>
-            <li>involves something like inference</li>
-            <li>concerns abstract features</li>
-          </ul>
-        </div>
-        <div class="slide nodim">
-          <p>is unlike knowledge:</p>
-          <ul>
-            <li>no introspection</li>
-            <li>judgement-independent</li>
-            <li>domain-specific</li>
-            <li>signature limits</li>
-          </ul>
-          <div class="notes">Several features distinguish core knowledge from adult-like understanding: its content is 
+And then we have to ask, What could core knowledge be given that these things are true?</div></div><div class="slide nodim vanish"><p>is like knowledge:</p><ul><li>guides behaviour</li><li>involves something like inference</li><li>concerns abstract features</li></ul></div><div class="slide nodim"><p>is unlike knowledge:</p><ul><li>no introspection</li><li>judgement-independent</li><li>domain-specific</li><li>signature limits</li></ul><div class="notes">Several features distinguish core knowledge from adult-like understanding: its content is 
 unknowable by introspection and judgement-independent; it is specific to quite narrow 
 categories of event and does not grow by means of generalization; it is best understood 
 as a collection of rules rather than a coherent theory; and it has limited application 
 being usually manifest in the control of attention (as measured by dishabituation, gaze, 
-and looking times) and rarely or never manifest in purposive actions such as reaching.
-          </div>
-        </div>
-      </div>
-      <div data-what=".left_half" data-class="blur-text" class="slide anim-continue anim-addclass"></div>
-      <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
-      <div class="notes">Now, what about social interaction?  First let me mention what people say about it.</div>
-      <div class="slide interlude-vygotsky">
-        <div style="position: absolute; top:0; left:0; width:100%; height:100%;">
-          <div style="position: absolute; top:0; left:0; width:100%; height:100%" class="background-color">
-            <div class="notes">Here is a bold conjecture about how humans come to know things.</div>
-            <div class="words">
-              <div class="container_12">
-                <div class="grid_12">
-                  <div class="middle">
-                    <div class="handout">\subsection{A Conjecture}</div>
-                    <p class="handout notes show"><span>‘humans acquire knowledge at a pace far outstripping that found in any other </span><span>species. Recent evidence indicates that </span><span class="interaction">interpersonal understanding</span><span> [...]  plays a pivotal role in this achievement.’</span></p>
-                    <div class="handout notes ctd">\citep[p.\ 40]{Baldwin:2000qq}</div>
-                    <p class="right">(Baldwin 2000, p. 40)</p>
-                    <!-- not on slides:-->
-                    <div class="handout">‘functions traditionally considered hallmarks of individual cognition originated through the need to interact with others ...\ perception, action, and cognition are grounded in social interaction.’</div>
-                    <!-- p.right (Knoblich & Sebanz 2006, p. 103)-->
-                    <div class="handout ctd">\citep[p.\ 103]{Knoblich:2006bn}</div>
-                    <div class="slide vygostky-hypothesis">
-                      <div class="notes">And here's a related claim which I take to be interesting ...</div>
-                      <div class="handout">Vygotskian Intelligence Hypothesis:</div>
-                      <p class="handout notes ctd show"><span>‘the unique aspects of human cognition ... were driven by, or even </span><span>constituted by, </span><span class="interaction">social co-operation</span><span>.’</span></p>
-                      <div class="handout notes ctd">\citep[p.\ 1]{Moll:2007gu}</div>
-                      <p class="right">(Moll & Tomasello 2007, p. 1)</p>
-                      <!-- not on slides:-->
-                      <div class="handout">‘human cognitive abilities ... [are] built upon social interaction’</div>
-                      <div class="handout ctd">\citep{sinigaglia:2008_roots} %*page</div>
-                      <!-- p.right (Sinigaglia &Sparaci 2008)-->
-                    </div>
-                    <div data-what=" .interaction" data-class="bkg-words-highlight-invert" class="slide anim-addclass"></div>
-                    <div class="notes">The challenge, of course, is to say *how* social interaction enables humans to come 
+and looking times) and rarely or never manifest in purposive actions such as reaching.</div></div></div><div data-what=".left_half" data-class="blur-text" class="slide anim-continue anim-addclass"></div><div data-what="#notanelement" data-class="" class="slide anim-addclass"></div><div class="notes">Now, what about social interaction?  First let me mention what people say about it.</div><div class="slide interlude-vygotsky"><div style="position: absolute; top:0; left:0; width:100%; height:100%;"><div style="position: absolute; top:0; left:0; width:100%; height:100%" class="background-color"><div class="notes">Here is a bold conjecture about how humans come to know things.</div><div class="words"><div class="container_12"><div class="grid_12"><div class="middle"><div class="handout">\subsection{A Conjecture}</div><p class="handout notes show"><span>‘humans acquire knowledge at a pace far outstripping that found in any other </span><span>species. Recent evidence indicates that </span><span class="interaction">interpersonal understanding</span><span> [...]  plays a pivotal role in this achievement.’</span></p><div class="handout notes ctd">\citep[p.\ 40]{Baldwin:2000qq}</div><p class="right">(Baldwin 2000, p. 40)</p><!-- not on slides:--><div class="handout">‘functions traditionally considered hallmarks of individual cognition originated through the need to interact with others ...\ perception, action, and cognition are grounded in social interaction.’</div><!-- p.right (Knoblich & Sebanz 2006, p. 103)--><div class="handout ctd">\citep[p.\ 103]{Knoblich:2006bn}</div><div class="slide vygostky-hypothesis"><div class="notes">And here's a related claim which I take to be interesting ...</div><div class="handout">Vygotskian Intelligence Hypothesis:</div><p class="handout notes ctd show"><span>‘the unique aspects of human cognition ... were driven by, or even </span><span>constituted by, </span><span class="interaction">social co-operation</span><span>.’</span></p><div class="handout notes ctd">\citep[p.\ 1]{Moll:2007gu}</div><p class="right">(Moll & Tomasello 2007, p. 1)</p><!-- not on slides:--><div class="handout">‘human cognitive abilities ... [are] built upon social interaction’</div><div class="handout ctd">\citep{sinigaglia:2008_roots} %*page</div><!-- p.right (Sinigaglia &Sparaci 2008)--></div><div data-what=" .interaction" data-class="bkg-words-highlight-invert" class="slide anim-addclass"></div><div class="notes">The challenge, of course, is to say *how* social interaction enables humans to come 
 to know things.
 To this end, the first question we should ask is, What forms of interaction are 
 relevant?  When we are talking about tiny humans
 in the first year or two of life, we can't expect much in the way of social
-interactions.  Or can we?
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div data-what=".interlude-vygotsky, .vygostky-hypothesis" data-class="hide" class="slide anim-addclass"></div>
-      <div class="right-half-white">
-        <div class="grid_5 prefix_1">
-          <div class="words">
-            <p class="center"><strong>social interaction</strong></p>
-            <div class="slide">
-              <div class="notes">Preverbal infants manfiest a surprising range of social abilities.  
+interactions.  Or can we?</div></div></div></div></div></div></div></div><div data-what=".interlude-vygotsky, .vygostky-hypothesis" data-class="hide" class="slide anim-addclass"></div><div class="right-half-white"><div class="grid_5 prefix_1"><div class="words"><p class="center"><strong>social interaction</strong></p><div class="slide"><div class="notes">Preverbal infants manfiest a surprising range of social abilities.  
 These include imitation, which can occur just days and even minutes after birth 
 (Meltzoff & Moore 1977; Field et al. 1982; Meltzoff & Moore 1983), imitative learning 
 (Carpenter et al. 1998), gaze following (Csibra & Volein 2008), goal ascription 
 (Gergely et al. 1995; Woodward & Sommerville 2000), social referencing (Baldwin 2000) 
 and pointing (Liszkowski et al. 2006).
 Taken together, the evidence reveals that preverbal infants have surprisingly rich 
-social abilities.
-              </div>
-              <ul>
-                <li>imitation</li>
-                <li>gaze following</li>
-                <li>secondary intersubjectivity</li>
-                <li>social referencing</li>
-                <li>pointing</li>
-                <li>goal ascription</li>
-                <li class="language-creation">language creation</li>
-              </ul>
-              <div data-what=" .language-creation" data-class="bkg-words-highlight-pink" class="slide anim-continue anim-addclass"></div>
-              <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
-              <div class="notes">Perhaps the best evidence how sophisticated infant social interaction can be comes
+social abilities.</div><ul><li>imitation</li><li>gaze following</li><li>secondary intersubjectivity</li><li>social referencing</li><li>pointing</li><li>goal ascription</li><li class="language-creation">language creation</li></ul><div data-what=" .language-creation" data-class="bkg-words-highlight-pink" class="slide anim-continue anim-addclass"></div><div data-what="#notanelement" data-class="" class="slide anim-addclass"></div><div class="notes">Perhaps the best evidence how sophisticated infant social interaction can be comes
 from studies of language creation. 
 (This will be a key topic when we come to study knowledge of language, but let me 
-give you a tiny preview.)
-              </div>
-              <div class="notes">Children with no experience of others' languages can create their own languages.
+give you a tiny preview.)</div><div class="notes">Children with no experience of others' languages can create their own languages.
 We know this from studies of profoundly deaf children brought up in purely oral 
 environments and therefore without experience of language 
 \citep{Kegl:1999es,Senghas:2001zm,Goldin-Meadow:2003pj}.
@@ -1108,9 +258,7 @@ including lexicons and syntax (*refs: Goldin-Meadow 2002, 2003).
 The children invent gesture forms for words which they use with the same meanings 
 in different contexts, they adopt standard orderings for combining words into 
 sentences, and they use sentences in constructing narratives about past, present, 
-future and hypothetical events (*ref: Goldin-Meadow 2003: 170).
-              </div>
-              <div class="notes">But it is not just children in extreme circumstances that create words.
+future and hypothetical events (*ref: Goldin-Meadow 2003: 170).</div><div class="notes">But it is not just children in extreme circumstances that create words.
 Children in ordinary environments will create their own words before they learn to 
 use those of the adults; when children start speaking, it is often the adults who 
 are learning new words.
@@ -1118,79 +266,28 @@ are learning new words.
 instance, at the age of about 12 months, Max would point to different objects and 
 say “doh?,” sometimes with the intent that we do something with the objects, such as 
 bring them to him, and sometimes just wanting us to appreciate their existence’
-(\citealp[p.\ 122]{Bloom:2000qz}; see further \citealp{Clark:1981bi,Clark:1982hj}).)
-              </div>
-              <div class="notes">And even where children have mastered a lexical convention, they will readily violate 
+(\citealp[p.\ 122]{Bloom:2000qz}; see further \citealp{Clark:1981bi,Clark:1982hj}).)</div><div class="notes">And even where children have mastered a lexical convention, they will readily violate 
 it in their own utterances in order to get a point across.
 (‘From the time they first use words until they are about two or two-and-a-half, 
 children noticeably and systematically overextend words.  For example, one child used 
 the word “apple” to refer to balls of soap, a rubber-ball, a ball-lamp, a tomato, 
 cherries, peaches, strawberries, an orange, a pear, an onion, and round biscuits’
-\citep[p.\ 35]{Clark:1993bv}.)
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p class="center">core knowlegde + social interaction</p>
-          <div class="notes">One problem for us is that these two sets of findings are typically considered in 
+\citep[p.\ 35]{Clark:1993bv}.)</div></div></div></div></div></div></div></section><section class="slide"><div class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="center">core knowlegde + social interaction</p><div class="notes">One problem for us is that these two sets of findings are typically considered in 
 isolation, 
 although I think there are strong reasons to suppose that understanding the origins 
 of knowledge 
-will require thinking about both core knowledge and social interaction.
-          </div>
-          <div class="notes">One of our challenges will be to understand how core knowledge and social interaction
-conspire in driving the emergence of knowledge in particular domains.
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p>working hypothesis:</p>
-          <p>core knowledge in certain domains is necesary for early forms of social interaction</p>
-          <p>and these are necessary to get from core knowledge of Xs to knowledge knowledge Xs</p>
-          <div class="notes">My working hypothesis (in two parts)
+will require thinking about both core knowledge and social interaction.</div><div class="notes">One of our challenges will be to understand how core knowledge and social interaction
+conspire in driving the emergence of knowledge in particular domains.</div></div></div></div></div></section><section class="slide"><div class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p>working hypothesis:</p><p>core knowledge in certain domains is necesary for early forms of social interaction</p><p>and these are necessary to get from core knowledge of Xs to knowledge knowledge Xs</p><div class="notes">My working hypothesis (in two parts)
 is that core knowledge in certain domains is necesary for early forms of 
 social interaction  
 and that these early forms of social interaction are necessary to get from core knowledge
-to knowledge knowledge.
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p class="center">development as rediscovery</p>
-          <div class="notes">The idea, in essence, is that cognitive development is a kind of rediscovery.
-(But not exactly as Plato's myth had it.)
-          </div>
-          <div class="notes">How do humans get from core knowledge to knowledge knowledge?
+to knowledge knowledge.</div></div></div></div></div></section><section class="slide"><div class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="center">development as rediscovery</p><div class="notes">The idea, in essence, is that cognitive development is a kind of rediscovery.
+(But not exactly as Plato's myth had it.)</div><div class="notes">How do humans get from core knowledge to knowledge knowledge?
 I want to suggest that it involves a process of rediscovery.
 I don't think it's a case of partial knowledge becoming gradually more complete, or of
 the core knowledge providing content for later knowledge states.
 Rather, I think the core knowledge shapes the  
-subject's body, behaviour and attention in ways that facilitate discovery at the next stage.
-          </div>
-          <div class="notes">And, most importantly, core knowledge enables increasingly sophisticated forms of social 
+subject's body, behaviour and attention in ways that facilitate discovery at the next stage.</div><div class="notes">And, most importantly, core knowledge enables increasingly sophisticated forms of social 
 interaction.
 It is these social interactions---together with the bodily, behavioural and mental changes---that 
 enable subsequent re-discoveries. 
@@ -1198,20 +295,7 @@ So, on this view, the role of some early-developing abilities in explaining the 
 of conceptual understanding does not involve direct representational connections; 
 rather the early developing abilities facilitate or enable social interaction, 
 influence attention and inform behaviour; 
-and these influences facilitate development.
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p class="center"><img src="/img/fig_rediscovery.png"/></p>
-          <div class="notes">To make this vague idea slightly more concrete, let me zoom in. 
+and these influences facilitate development.</div></div></div></div></div></section><section class="slide"><div class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="center"><img src="/img/fig_rediscovery.png"/></p><div class="notes">To make this vague idea slightly more concrete, let me zoom in. 
 I think having verbal labels for things sometimes helps with acquiring concepts of them.
 Now this sounds paradoxical. 
 Doesn't having a label for something mean being able to label correctly? 
@@ -1219,9 +303,7 @@ And how could you label correctly without the corresponding concept?
 My suggestion is that having core knowledge is not having a concept (many disagree); 
 but core knowledge could underpin your correct use of a label. 
 Now labels are acquired through social interaction, or so I suggested earlier. 
-Hence the picture.
-          </div>
-          <div class="notes">Now this picture needs two qualifications. 
+Hence the picture.</div><div class="notes">Now this picture needs two qualifications. 
 First, it's missing some details, and these details will vary from case to case 
 (what's true of knowledge of objects might not be true of knowledge of number). 
 Second, the picture might be completely wrong. 
@@ -1233,24 +315,4 @@ mind.
 Instead my hope is this. 
 I'll give you the background on social interaction and core knowledge. 
 And you'll tell me how these two (or perhaps other factors) are involved in explaining how 
-humans come to know things about objects, colours, actions, numbers and the rest.
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!--mixin section({title:'*todo*', images:images})-->
-<!---->
-<!--section.slide-->
-<!--  .words: .container_12: .grid_12-->
-<!--    p *todo*-->
-<!--    ol-->
-<!--      li What is representation? Dretske  [Not sure where this should go]-->
-<!--      li nb: representation matters for the view about language acquisition.-->
-<!--        span If Fodor on representation then the Bloom private language view looks more plausible.-->
-<!--      li Core knowledge (first breakthrough) [use Spelke on principles of object perception]-->
-<!--      li Social Interaction (second breakthrough)---use the stuff on word learning from Chapter_02-->
-    </div>
-  </body>
-</html>
+humans come to know things about objects, colours, actions, numbers and the rest.</div></div></div></div></div></section><!--mixin section({title:'*todo*', images:images})--><!----><!--section.slide--><!--  .words: .container_12: .grid_12--><!--    p *todo*--><!--    ol--><!--      li What is representation? Dretske  [Not sure where this should go]--><!--      li nb: representation matters for the view about language acquisition.--><!--        span If Fodor on representation then the Bloom private language view looks more plausible.--><!--      li Core knowledge (first breakthrough) [use Spelke on principles of object perception]--><!--      li Social Interaction (second breakthrough)---use the stuff on word learning from Chapter_02--></div></body></html>

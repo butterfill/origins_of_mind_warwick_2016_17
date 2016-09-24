@@ -1,0 +1,551 @@
+
+<html>
+  <head>
+    <!-- (c) copyright 2013 Stephen A. Butterfill-->
+    <meta charset="utf-8"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>An Illustration of Davidon's Challenge | Origins of Mind</title>
+    <meta name="description" content="We encounter Davidson's challenge in some form in every domain of knowlegde, including knowledge of objects."/>
+    <meta name="keywords" content="philosophy, psychology, development, thought"/>
+    <meta name="author" content=""/><meta name="generator" content="DocPad v6.78.6" />
+    <meta name="viewport" content="width=device-width"/>
+    <!-- - lato font-->
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,900,400italic" rel="stylesheet" type="text/css"/>
+    <!--if lt IE 9
+    script(async src="http://html5shim.googlecode.com/svn/trunk/html5.js")
+    
+    --><style >html.wait {
+	cursor: wait !important;
+	opacity: 0;
+	transition: opacity 0.5s ease;
+}</style><link  rel="stylesheet" href="/vendor/normalize.css" /><link  rel="stylesheet" href="/vendor/deck.js/style.neon.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.core.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.menu.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.hash.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.notes.css" /><link  rel="stylesheet" href="/vendor/960_12_col_custom.css" /><link  rel="stylesheet" href="/styles/steve_deck_style.css" />
+  </head>
+  <body><script >(function(){
+	/* Did we just livereload? */
+var log = !!(localStorage && console && console.log && true);
+if ( log && localStorage.getItem('/docpad-livereload/reloaded') === 'yes' ) {
+	localStorage.removeItem('/docpad-livereload/reloaded');
+	console.log('LiveReload completed at', new Date())
+}
+
+/* Listen for the regenerated event and perform a reload of the page when the event occurs */
+var listen = function(){
+	var primus = new Primus('/docpad-livereload');
+	primus.on('data', function(data){
+		if ( data && data.message ) {
+			if ( data.message === 'generateBefore' ) {
+				if ( log ) {
+					console.log('LiveReload started at', new Date());
+				}
+				if ( typeof document.getElementsByTagName !== 'undefined' ) {
+	document.getElementsByTagName('html')[0].className += ' wait';
+}
+			}
+			else if ( data.message === 'generateAfter' ) {
+				if ( log ) {
+					localStorage.setItem('/docpad-livereload/reloaded', 'yes');
+				}
+				document.location.reload();
+			}
+		}
+	});
+};
+	/* Inject socket into our page */
+var inject = function(){
+	var t = document.createElement('script');
+	t.type = 'text/javascript';
+	t.async = 'async';
+	t.src = '/primus/primus.js';
+	t.onload = listen;
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(t, s);
+};
+	if ( typeof Primus !== 'undefined' ) {
+		listen();
+	} else {
+		inject();
+	}
+})();</script><script defer="defer"  src="/vendor/jquery.min.js"></script><script defer="defer"  src="/vendor/jquery-svgfix.js"></script><script defer="defer"  src="/vendor/log.js"></script><script defer="defer"  src="/vendor/modernizr.min.js"></script><script defer="defer"  src="/vendor/deck.js/deck.core.js"></script><script defer="defer"  src="/vendor/deck.js/deck.menu.js"></script><script defer="defer"  src="/vendor/deck.js/deck.hash.js"></script><script defer="defer"  src="/vendor/deck.js/deck.notes.js"></script><script defer="defer"  src="/vendor/deck.js/deck.slide-clone.js"></script><script defer="defer"  src="/vendor/deck.js/deck.fit.js"></script><script defer="defer"  src="/vendor/deck.js/deck.step.js"></script><script defer="defer"  src="/vendor/deck.js/deck.events.js"></script><script defer="defer"  src="/vendor/deck.js/deck.anim.js"></script><script defer="defer"  src="/vendor/jquery.jsPlumb-1.3.16-all-min.js"></script><script defer="defer"  src="/scripts/script.js"></script>
+    <div class="deck-notes">
+      <div class="deck-notes-container"></div>
+    </div>
+    <div class="deck-handout">
+      <div class="deck-handout-container"></div>
+    </div>
+    <div class="deck-container">
+      <section id="instructions" class="slide">
+        <div class="words">
+          <div class="container_12">
+            <div class="grid_12">
+              <div class="middle">
+                <p class="center">Press the right key for the next slide (or swipe left)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="slide">
+        <!--.notes You won't believe how many people emailed me to say the slides don't work.-->
+        <div class="words">
+          <div class="container_12">
+            <div class="grid_12">
+              <p>also ...</p>
+              <p>Press the left key to go backwards (or swipe right)</p>
+              <p>Press n to toggle whether notes are shown (or add '?notes' to the url before the #)</p>
+              <p>Press m or double tap to see a menu of slides</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="unit_032" class="slide">
+        <div class="spacer">&nbsp;</div>
+        <div style="" class="title-block">
+          <div class="title-container">
+            <h2 class="title1">An Illustration of Davidon's Challenge</h2>
+          </div>
+        </div>
+      </section>
+<!---->
+<!-- short form:-->
+<!--  remove_class('.blur')-->
+<!-- long forms:-->
+<!--  remove_class('.elements', 'blur')-->
+<!--  remove_class(['.el1', '.el_group_2'], 'blur')-->
+<!---->
+<div class="handout">\textit{Object permanence}:
+the ability to know facts about objects you aren't currently perceiving.
+</div>
+<section class="slide">
+  <div class="notes">If you've seen the outline of lectures, you'll know that my idea is to organise the lectures 
+by domains of knowledge.
+As we will see, how we first come to know things about colours, say, isn't quite the same 
+as how we first come to know things about minds.
+But there is one very general point we can make: in all these domains, we will face 
+Davidson's challenge, the challenge of explaining what is inbetween mindless behaviour 
+and thought.
+  </div>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_3">
+        <p>plan</p>
+      </div>
+      <div class="grid_9">
+        <div class="topics">
+          <p class="today">objects </p>
+          <p>causes</p>
+          <p>colours</p>
+          <p>words</p>
+          <p>non-verbal communications</p>
+          <p>minds</p>
+          <p>actions</p>
+        </div>
+        <div data-what=".topics :not(.today)" data-class="blur-text" class="slide anim-continue anim-addclass"></div>
+        <div data-what=" .today" data-class="bkg-white-row" class="slide anim-continue anim-addclass"></div>
+        <div data-what=" .today" data-class="invert" class="slide anim-continue anim-addclass"></div>
+        <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+        <div class="notes">Let me preview how Davidson's challenge arises in the case of objects.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p class="handout notes show">When do humans first come to know facts about the locations of objects they are not perceiving?</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">A famous study by Renee Baillargeon and her collaborators provides evidence that humans can 
+represent unperceived objects from around four months of age or earlier.  
+This is called the 'drawbridge study'
+        </div>
+        <div class="notes">What you are about to see are the test events from Experiment 1 of Baillargeon et al's 
+1987 study.  You're looking at them from the side whereas the subjects, four-month olds,
+were looking at them from the front (which is to your right).
+        </div>
+        <div class="notes">In showing you these test events,
+I need to explain the method used in this experiment, \emph{habituation}; 
+this is a method we will encounter repeatedly so it's good to understand how it is 
+supposed to work.
+        </div>
+        <div class="notes">%glossary: habituation</div>
+        <div class="notes">What you see here is a barrier rotating through 180 degrees.
+Infants were habituated to this; that is, they were shown it repeatedly until it no longer 
+held their interest.
+The first time they're shown this, they might spend 60 seconds looking at it, which is a long
+time for an infant; but after, say, five demonstrations, they'd only be looking at it for 
+around 10 seconds.  That is, they are habituated to this display.
+        </div>
+        <!--handout only:--><img data-src="img/baillargeon_1987_fig1.neg.png" class="handout"/>
+        <div class="handout">\begin{center} \citealp{baillargeon:1987_object} figure 1 \end{center}</div>
+        <div style="overflow:hidden;max-width:350px;max-height:200px;" class="img1"><img src="/img/baillargeon_1987_fig1.png" style="max-width:700px;max-height:527px;"/></div>
+        <div style="overflow:hidden;max-width:350px;" class="img2"><img src="/img/baillargeon_1987_fig1.png" style="max-width:700px;"/></div>
+        <div class="img3 hide"><img src="/img/baillargeon_1987_fig1.png" style="max-width:700px;"/></div>
+        <p class="source">Baillargeon (1987, figure 1)</p>
+        <div data-what=".img2" data-class="hide" data-scope="" class="slide anim-continue anim-removeclass"></div>
+        <div data-what=".img1" data-class="remove-me" class="slide anim-addclass"></div>
+        <div class="notes">Now there is a very small change to the display.
+The display is just as before, except for before the drawbridge moves an object is placed 
+behind it.
+There are then two different things that could happen.  One is that the drawbridge moves 
+exactly as before, rotating a full 180 degrees.  This is called the 'impossible event'.
+The other is that the drawbridge now rotates for 120 degrees, which is the 'possible event'.
+In no case is the object visible after the drawbridge has started moving.
+We want to know which events infants find more novel.
+If they are unable to know facts about  the locations of unperceived objects, then they should 
+find the
+'possible event' more novel than the 'impossible event' because it is more different
+from the event they have been habituated to.
+On the other hand, if infants are able know facts about the locations of unperceived objects,
+they should find the impossible event more novel than the possible event because, well,
+it's impossible.
+        </div>
+        <div class="notes">To find out what infants find more interesting, they are divided into two groups.  
+One group sees the impossible event, the other the possible event.
+The experimenters measure how long the infants look at these events, which is the measure of 
+their dishabituation.  The background assumptions are that looking longer indicates more 
+interest, and that interest is driven by novelty.
+        </div>
+        <div data-what=".img3" data-class="hide" data-scope="" class="slide anim-continue anim-removeclass"></div>
+        <div data-what=".img2" data-class="remove-me" class="slide anim-addclass"></div>
+        <div class="notes">In the control condition,
+'The habituation event was exactly the same as the impossible event, except that the yellow 
+box was absent.' (Baillargeon et al 1985, 200)
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- *todo* display part of the image first (hide the control condition)-->
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">These are the results from Experiment 1 of Baillargeon et al's 1987 study.</div>
+        <div class="notes">This experiment provides evidence that infants know that the object is behind the barrier
+even when they can't see it, for their having such knowledge would explain why they appear
+surprised by the impossible event.
+        </div>
+        <!--handout only:--><img data-src="img/baillargeon_1987_fig2.neg.png" class="handout"/>
+        <div class="handout">\begin{center} \citealp{baillargeon:1987_object} figure 2 \end{center}</div>
+        <div style="overflow:hidden;max-height:220px;" class="img2-1"><img src="/img/baillargeon_1987_fig2.png" height="500"/></div>
+        <div style="overflow:hidden;max-height:250px;" class="img2-2 hide"><img src="/img/baillargeon_1987_fig2.png" height="500" style="position:relative;top:-220px;"/></div>
+        <p class="right">source: Baillargeon et al (1987, figure 2)</p>
+        <div data-what=".img2-2" data-class="hide" data-scope="" class="slide anim-removeclass"></div>
+        <div class="notes">Here you can see, reassuringly, that the effect is not present in the control condition
+where the box is absent.
+        </div>
+        <div class="notes">Some have been critical of the methods used in this experiment.
+But not everything hangs on this experiment.
+Fortunately there are at least a hundred further experiments which provide evidence pointing in the same direction.
+Later we'll look at this is more detail.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <p class="notes show">When do humans first come to know facts about the locations of objects they are not perceiving?
+        </p>
+        <p class="em-above indent"><span class="look">look</span><span>: by 4 months of age or earlier </span><span class="grey-text">(Baillargeon 1987).</span></p>
+        <div class="notes">This result has been widely replicated, and it coheres with a large body of research we shall 
+explore later.
+        </div>
+        <div class="slide">
+          <p class="indent"><span class="look">look</span><span>: by around 2.5 months of age or earlier</span><span class="grey-text">(Aguiar & Baillargeon 1999)</span></p>
+        </div>
+        <div class="notes">By using more sensitive methods, \citet{Aguiar:1999jq} even demonstrated competence in a group
+of 2.5 month old infants.
+        </div>
+        <div class="notes">So far so good, but there is a problem ...
+What happens if instead of measuring how infants look, we measure how they reach?
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">\citet{Shinskey:2001fk} did just this.
+Here you can see their appratus, which is quite similar to what \citet{baillargeon:1987_object} 
+used.
+They had a screen that infants could pull forwards to get to an object that was sometimes
+hidden behind it.
+They made two comparisons.
+First, were infants more likely to pull the screen forwards when an object was placed behind it?
+Second, were how did infants' performance compare when the barrier was not opaque but transparent?
+        </div>
+        <div style="position:relative;"><img src="/img/shinskey_munakata_2001_fig1.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div>
+        <p class="source">Shinskey and Munakata 2001, figure 1</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">Here are their results with 7-month old infants.
+        </div>
+        <div style="position:relative;"><img src="/img/shinskey_munakata_2001_fig2.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div>
+        <p class="source">Shinskey and Munakata 2001, figure 2</p>
+        <div class="notes">We are interested in whether infants were more likely to pull the screen forwards when the 
+object was present than when it was absent.
+Since infants wanted the toy, if they knew it was behind the barrier they should have pulled
+forward the barrier more often when the toy was behind it.
+This is exactly what they did when the barrier was transparent.
+But look what happens when the barrier is opaque, so that the toy is not visible to infants 
+when they have to prepare the pulling action: they no longer pull the barrier more often
+when the toy was behind it.
+        </div>
+        <div class="notes">This is good evidence that 7 month olds do not know facts about the locations of objects 
+they cannot perceive.
+And this is not isolated evidence; for example, \citet{moore:2008_factors} use a different 
+methods also involving manual search to provide converging evidence for this conclusion. 
+But now we have a problem ...
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="032-discrepant-findings" class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <p class="notes show">When do humans first come to know facts about the locations of objects they are not perceiving?
+        </p>
+        <div class="notes">The evidence appears to be contradictory.
+        </div>
+        <p class="em-above indent"><span class="look">look</span><span>: by 4 months of age or earlier </span><span class="grey-text">(Baillargeon 1987).</span></p>
+        <p class="indent"><span class="look">look</span><span>: by around 2.5 months of age or earlier</span><span class="grey-text">(Aguiar & Baillargeon 1999)</span></p>
+        <p class="em-above indent"><span class="search">search</span><span>: not until after 7 months of age </span><span class="grey-text">(Shinskey & Munakata 2001)</span></p>
+        <div data-what=" .look" data-class="bkg-words-highlight-yellow" class="slide anim-continue anim-addclass"></div>
+        <div data-what=" .search" data-class="bkg-words-highlight-blue" class="slide anim-continue anim-addclass"></div>
+        <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+        <div class="notes">By measuring looking actions, we find infants can distinguish situations in ways that indicate
+they do know facts about the locations of particular unperceived objects.
+But when measuring retrieval or searching actions, we find infants cannot distinguish these 
+situations; this indicates that they cannot know this.
+        </div>
+        <div class="slide shinskey">
+          <div class="notes">You might hope there would be a simple solution.  Perhaps, for example, infants have 
+difficulties reaching that mask their real knowledge of the facts about unperceived objects' 
+locations.
+But As Jeanne Shinskey, one of the researchers most dedicated to this issue says,
+          </div>
+          <p class="em-above handout notes show">‘action demands are not the only cause of failures on occlusion tasks’</p>
+          <div class="handout notes ctd">\citep[p.\ 291]{shinskey:2012_disappearing}</div>
+          <p class="right">Shinskey (2012, p. 291)</p>
+          <div class="notes">Many such explanations have been tried because many researchers have been puzzled by this;
+\citet{Meltzoff:1998wp} go as far as to call it a paradox (the 'paradox of early permanence').
+No explanation positing extraneous task requirements, such as difficulties performing
+an the actions required, has yet succeeded.
+          </div>
+        </div>
+        <div data-what=".shinskey" data-class="blur-text" class="slide anim-continue anim-addclass"></div>
+        <div class="notes">This is a discrepancy between two types of measure; one involves looking, other other 
+searching. 
+We find this pattern--discrepant findings pointing to opposite conclusions about what 
+infants and adults know--in many different domains.
+        </div>
+        <div class="slide">
+          <p class="em-above">‘the tip of an iceberg’ <span class="grey-text">Charles & Rivera (2009, p. 994)</span></p>
+          <div class="notes">As \citet[p.\ 994]{charles:2009_object} put it, these findings are ‘the tip of an iceberg’.
+          </div>
+          <div class="handout notes">‘violation-of-expectation experiments, using looking-time measures, suggested that infants 
+have object permanence in occlusion conditions; but simplified-search studies confirm that 
+infants fail to reach towards occluded objects, suggesting that infants do not have object 
+permanence in occlusion conditions. This discrepancy, however, is only the tip of the 
+iceberg. Results of studies attempting to measure infants’ cognitive abilities using reaching 
+measures often contradict results gained while using looking-time measures.’ 
+\citep[p.\ 994]{charles:2009_object}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p class="center">What is the problem?</p>
+          <div class="notes">You might be wondering whether there's a philosophical problem here.
+Science is a messy business and you get conflicting results all the time.
+But this particular pattern of conflicting results is extremely interesting philosophically.
+It shows that we cannot say that, at, say, five months of age, infants know facts about the 
+locations
+of particular unperceived objects.  
+We cannot say this because doing so generates predictions which are clearly false (predictions
+about where they will search for an unperceived object).
+But it also shows that we cannot say that they have no sense at all concerning facts about the 
+locations of particular unperceived objects.  We cannot say this because of the
+competence they manifest in distinguishing possible from impossible events.
+          </div>
+          <div class="notes">The problem, then, is that understanding the origins of knowledge requires us to identify 
+something inbetween knowledge and its absence, something that is like knowledge in some 
+respects but falls short of it in others.
+This is an instance of Davidson's challenge ...
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="notes">Here's the challenge I mentioned earlier, Davidson's challenge.
+  </div>
+  <div class="photobox-bottom-right"><img src="/img/davidson.gif" class="photo-right"/></div>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <p><span>‘if you want to describe what is going on in the head of the child when it has a few words which it utters in appropriate situations,  </span><span class="you-will-fail">you will fail</span><span class="step2">  for lack of the right sort of words of your own.</span></p>
+        <p class="step3"><span>‘We have many vocabularies for describing nature when we regard it as </span><span class="highlight1">mindless</span><span>, and we have a mentalistic vocabulary for describing </span><span class="highlight1">thought and intentional action</span><span>; what we lack is a way of describing </span><span class="highlight1">what is in between</span><span>’</span></p>
+        <p class="right"><span>(Davidson 1999, p. 11)</span></p>
+      </div>
+    </div>
+  </div>
+  <div data-what=" .highlight1" data-class="bkg-words-highlight-invert" class="slide anim-addclass"></div>
+  <div class="notes">The sort of findings I've just reviewed indicate that infants have some way  of representing
+facts about the locations of unperceived objects which is not knowledge but something like
+it.  
+The challenge is, in effect, to characterise the nature of these representations.
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <div class="notes">Hood and colleagues suggest an extreme version of this view; they say there are many 
+kinds of knowledge ...
+          </div>
+          <p class="handout notes show"><span class="blur1">‘there are many </span><span class="noblur">separable systems of mental representations </span><span class="blur1">... and thus many </span><span class="noblur">different kinds of <span class="highlight2">knowledge. </span></span><span class="blur1">... the task ... is to contribute to the enterprise of finding the distinct systems of mental representation and to understand their development and integration’</span></p>
+          <div class="handout notes ctd">\citep[p.\ 1522]{Hood:2000bf}.</div>
+          <p class="right grey-text">(Hood et al 2000, p.\ 1522)</p>
+          <div data-what=".blur1" data-class="blur-text" class="slide anim-continue anim-addclass"></div>
+          <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+          <div class="notes">I think we should be cautious about the inference from separable systems to kinds of knowledge.  
+(Think about modularity.)
+It should be an open question for us whether what underpins infants' abilities to distinguish
+possible from impossible events is really a kind knowledge or something else.
+(This is a question we'll explore in some detail later.)
+          </div>
+          <div class="notes">I mention this quote just to show you that we have a problem which is partly philosophical
+and partly scientific.  
+The scientific part involves identifying distinct systems of representation and understanding
+their development.
+The philosophical part is to make sense of the idea that there can
+be different kinds of knowledge, or things that are like knowledge but not knowledge, and
+to explore how different kinds of knowledge are related.
+          </div>
+          <div class="notes">[*aside: move]
+At this point you might object.  The question is about knowledge.  
+But does either searching or distinguishing really provide evidence of knowing?
+You might insist that neithermanifest knowledge in infants.
+It is a good question whether searching or distinguishing manifests knowledge.
+For now I just want to note that if you think neither is, then Davidson's challenge becomes 
+even more pressing -- more pressing because we now need two distinct kinds of state which
+are like knowledge in some respects but not in others, not just one!
+It's perhaps also worth mentioning that whether or not the things manifested in searching and 
+distinguishing are knowledge proper, they are surely things that matter for explaining how 
+knowledge is eventually acquired.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <div class="notes">To sum up so far, the question for this course is, How do humans first come to know  about--and
+to knowingly manipulate--objects, causes, words, numbers, colours, actions and minds?
+I've been suggesting we can't answer it simply by appealing to nativism, empiricism or other 
+grand myths.
+Instead we need to focus on the particular mechanisms that are involved in different cases.
+          </div>
+          <div class="notes">But then you might wonder, What philosophical questions arise here?  Isn't this a narrowly
+pscyhological--and therefore scientific--issue?
+The answer is no because thinking about how humans come to know things requires us to meet 
+Davidson's challenge, to understand things that are neither mindless nor thought or knowledge 
+but somewhere in between.
+As Hood suggests in the quote I just showed you, this might involve rethinking what knowledge 
+is.
+          </div>
+          <p class="center">summary</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <div class="notes">I hope I've given you a flavour of the approach we're going to take.
+Good philosophy of mind has always been driven by scientific findings about the mind.
+John Locke, David Hume as well as more recent philosophers like Jerry Fodor and Andy Clark all 
+start with a deep understanding of the science of the mind.
+But there is a difference.
+Fodor and many other contemporary philosophers are working on the big picture, trying to make 
+explicit general features of the conceptual framework which scientists have more or less 
+implicitly adopted.
+They are also often intrested in questions about the foundations of psychology itself.
+By contrast, what I want us to do in this course is to look at specific problems that arise 
+from the evidence,
+and to provide philosophical tools for tackling this problem.
+So you might say that whereas others are trying to be the architect, we're trying more 
+modestly to build the tools.
+This might sound too modest to be interesting.
+You'd probably prefer to be the architect whose plans guide the scientists rather than the 
+underlabourer who makes tools for them; who wouldn't?
+But, as we'll see, it turns out that attention to the details will give us new perspectives on 
+some key philosophical issues about the nature of knowledge, perception and action.
+          </div>
+          <p class="center">architect or tool maker?</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p class="center">So what are we going to do in this module?</p>
+          <div class="notes">We're going to try to understand how humans come to know about things by examining what 
+developmental psychology tells us about the acquisition of knowledge.
+This turns out to be a partly philosophical project because understanding the apparently 
+conflicting evidence requires us to re-think notions like knowledge and representation.
+In practice, this means looking carefully, and in detail, at the scientific evidence.
+If you want to know how minds work, you have to start with the evidence.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    </div>
+  </body>
+</html>

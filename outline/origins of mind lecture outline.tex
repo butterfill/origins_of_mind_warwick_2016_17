@@ -1,0 +1,177 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\def \papersize {a4paper}
+\documentclass[12pt,\papersize]{extarticle}
+% extarticle is like article but can handle 8pt, 9pt, 10pt, 11pt, 12pt, 14pt, 17pt, and 20pt text
+
+\def \ititle {Origins of Mind: \\ Philosophical Issues in Cognitive Development}
+\def \isubtitle {}
+\def \iauthor {Università degli Studi di Milano, Autumn 2014-5}
+\def \iemail{s.butterfill@warwick.ac.uk}
+%\def \iauthor {}
+%\def \iemail{}
+\date{}
+
+
+%\input{$HOME/Documents/submissions/preamble_steve_report}
+\input{$HOME/Documents/submissions/preamble_steve_paper3}
+
+
+%for putting citations into main text (for reading):
+% use bibentry command
+% nb this doesn’t work with mynewapa style; use apalike for \bibliographystyle
+% nb2: use \nobibliography to introduce the readings 
+\usepackage{bibentry}
+
+
+%adjust title size & font
+\pretitle{
+	\begin{center}
+	%\sffamily
+	\LARGE
+} 
+
+%\author{}
+
+%change fonts (not anonymous)
+%\setromanfont[Mapping=tex-text]{Linux Libertine O} 
+%\setsansfont[Mapping=tex-text]{Linux Biolinum O} 
+%\setmonofont[Scale=MatchLowercase]{Andale Mono}
+
+
+%use titlesec package to make subsections bold italics
+%\titleformat*{\section}{\bfseries\itshape}  
+
+
+%\setromanfont[Mapping=tex-text]{Sabon LT Std} 
+
+\begin{document}
+
+\setlength\footnotesep{1em}
+
+\bibliographystyle{apalike} %newapa
+
+\nobibliography{$HOME/endnote/phd_biblio}
+
+\tolerance=5000
+
+
+\maketitle
+%\tableofcontents
+
+% disables chapter, section and subsection numbering
+\setcounter{secnumdepth}{-1} 
+
+%\begin{abstract}
+%\noindent
+%***
+%\end{abstract}
+
+\section{Introduction}
+How do humans first come to know about things like objects, causes, words, numbers, colours, actions and minds?  
+This question goes back to Plato or earlier and remains unanswered.
+%Philosophers have been pursuing this question since Plato or before. 
+%More recently it has become the focus of a branch of psychology, developmental psychology.
+%So far no one has convincingly answered the question, but two major breakthroughs have been made in the last three decades or so.
+Two recent scientific breakthroughs appear to bring us closer to an answer, and to show that the question is even less straightforward than previously  assumed.
+The first breakthrough concerns social interaction;
+it is the discovery that preverbal infants enjoy surprisingly rich social abilities.
+These abilities enable infants to engage in some forms of social interaction. 
+This may well facilitate the subsequent acquisition of linguistic abilities and enable the emergence of knowledge \citep[e.g.][]{Csibra:2009xr,Meltzoff:2007pj,Tomasello:2005wx}. 
+A second breakthrough involves the use of increasingly sensitive---and sometimes controversial---methods to detect  expectations without relying on subjects' abilities to talk or act.  
+These methods have revealed sophisticated expectations about  causal interactions, numerosity, actions, mental states and more besides in preverbal infants \citep[e.g.][]{Spelke:1990jn,Baillargeon:gx}.
+These expectations or the representations and processes underpinning them arguably also enable the emergence of knowledge. 
+This course aims to introduce readers to  
+%example of new---the question about simple joint action
+new philosophical issues raised by these findings  
+%example of existing question: modularity
+and to explain their relevance to longstanding philosophical questions about the mind.  
+
+\section{Outline of Lectures}
+The course will be organised by domains of knowledge, so that one session concerns knowledge of objects, another knowledge of causes, and so on.  
+See table \vref{table:schedule} for a provisional schedule.
+The schedule may change depending on group discussion and research interests.
+
+{
+	%increase space between rows
+	\renewcommand{\arraystretch}{1.5}
+\begin{table}[htbp]
+\begin{center}
+\footnotesize	%shrink for better spacing
+\begin{tabular*}{1\textwidth}{ l l m{0.80\textwidth} } 
+
+\toprule
+
+\newcounter{num}
+\stepcounter{num}
+\arabic{num}. & sept 23 
+	&  \textit{Objects}
+		\newline Reading: \citet{Spelke:1998im,moore:2008_factors}
+\\  \stepcounter{num}
+\arabic{num}. & sept 23
+	& \textit{Causes}
+		\newline Reading: \citet{Spelke:1993no,Hood:2000bf}
+\\ \stepcounter{num}
+\arabic{num}. & sept 23 
+	& \textit{Colours}
+		\newline  Reading: \citet{Franklin:2005hp,Kowalski:2006hk}
+%
+\\
+%
+% go from colours to language --- illustrates role for cooperation
+% to understand how that might be so, we need to investigate language
+%
+\midrule
+%
+\stepcounter{num}
+\arabic{num}. & sept 24 
+	& 	\textit{Languages}
+		\newline Reading: \citet{lidz:2003_what, lidz:2004_reaffirming}
+\\ \stepcounter{num}
+\arabic{num}. & sept 24 
+	& 	\textit{Communication}
+		\newline Reading: \citet{Tomasello:2007fi,Baldwin:2000qq}
+\\ \stepcounter{num}
+\arabic{num}. & sept 24 
+	&  \textit{Minds}
+		\newline Reading: \citet{Baillargeon:gx}
+%
+\\
+%
+\midrule
+
+\stepcounter{num}
+\arabic{num}. & sept 25  am
+	& 	\textit{Actions}
+		\newline Reading: \citet{Csibra:2003kp}
+
+\\
+%
+\bottomrule
+%
+\end{tabular*}
+\caption{Provisional schedule}
+\label{table:schedule}
+\end{center}	%careful -- position of this affects distance between table and caption(!)
+\end{table}
+}
+
+
+
+
+\section{Preparatory Reading}
+It would be useful to read these items before the course, ideally in addition to the papers in  table \vref{table:schedule}.
+
+\begin{itemize}
+%\item \bibentry{Fodor:1983dg}
+\item \bibentry{Moll:2007gu}
+\item \bibentry{robbins:2010_modularity}
+\item \bibentry{Spelke:2007hb}
+\end{itemize}
+
+
+
+\bibliography{$HOME/endnote/phd_biblio}
+
+\end{document}

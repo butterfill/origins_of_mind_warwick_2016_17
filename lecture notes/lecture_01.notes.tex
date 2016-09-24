@@ -1,0 +1,546 @@
+ %!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+%\def \papersize {a5paper}
+\def \papersize {a4paper}
+%\def \papersize {letterpaper}
+
+%\documentclass[14pt,\papersize]{extarticle}
+\documentclass[12pt,\papersize]{extarticle}
+% extarticle is like article but can handle 8pt, 9pt, 10pt, 11pt, 12pt, 14pt, 17pt, and 20pt text
+
+\def \ititle {Origins of Mind: Lecture Notes}
+\def \isubtitle {Lecture 01}
+%comment some of the following out depending on whether anonymous
+\def \iauthor {Stephen A.\ Butterfill}
+\def \iemail{s.butterfill@warwick.ac.uk% \& corrado.sinigaglia@unimi.it
+}
+%\def \iauthor {}
+%\def \iemail{}
+%\date{}
+
+%\input{$HOME/Documents/submissions/preamble_steve_paper4}
+\input{$HOME/Documents/submissions/preamble_steve_lecture_notes}
+
+%no indent, space between paragraphs
+\usepackage{parskip}
+
+%comment these out if not anonymous:
+%\author{}
+%\date{}
+
+%for e reader version: small margins
+% (remove all for paper!)
+%\geometry{headsep=2em} %keep running header away from text
+%\geometry{footskip=1.5cm} %keep page numbers away from text
+%\geometry{top=1cm} %increase to 3.5 if use header
+%\geometry{bottom=2cm} %increase to 3.5 if use header
+%\geometry{left=1cm} %increase to 3.5 if use header
+%\geometry{right=1cm} %increase to 3.5 if use header
+
+% disables chapter, section and subsection numbering
+\setcounter{secnumdepth}{-1} 
+
+%avoid overhang
+\tolerance=5000
+
+%\setromanfont[Mapping=tex-text]{Sabon LT Std} 
+
+
+%for putting citations into main text (for reading):
+% use bibentry command
+% nb this doesn’t work with mynewapa style; use apalike for \bibliographystyle
+% nb2: use \nobibliography to introduce the readings 
+\usepackage{bibentry}
+
+%screws up word count for some reason:
+%\bibliographystyle{$HOME/Documents/submissions/mynewapa} 
+\bibliographystyle{apalike} 
+
+
+\begin{document}
+
+
+
+\setlength\footnotesep{1em}
+
+
+
+
+
+
+%--------------- 
+%--- start paste
+\title {Origins of Mind: Lecture Notes \\ Lecture 01}
+ 
+ 
+ 
+\maketitle
+ 
+ 
+ 
+\subsection{title-slide}
+ 
+ 
+\section{The Question}
+ 
+ 
+ 
+\subsection{slide-3}
+This course is based on a simple question. The question is,
+ 
+How do humans first come to know about---and to knowingly manipulate---objects, causes, words, numbers, colours, actions and minds?
+ 
+ 
+ 
+\subsection{slide-4}
+At the outset we know nothing, or not very much. (Like Lucas here.) Sometime later we do know some things. How does the transition occur?
+ 
+We are going to approach this question by examining the evidence from developmental science, exploring how it bears on philosophical positions like nativism and empiricsm, and identifying philosophical problems created by the evidence.
+ 
+But first let me try to reassure you that it's ok for a course in philosophy to focus on this question. Far from being a new question, it belongs to a family of questions about the origins of mind that philosophers have been asking since Plato or before.
+ 
+ 
+ 
+\subsection{slide-5}
+Here is John Locke asking a version of my question ...
+ 
+‘... ’tis past doubt, that Men have in their Minds several Ideas, such as are those expressed by the words, Whiteness, Hardness, ... and others: It is in the first place to be enquired, How he comes by them?’
+\citep[p.\ 104]{Locke:1975qo}
+\citep[p.\ 104]{Locke:1975qo}
+ 
+‘How does it come about that the development of organic behavior into controlled inquiry brings about the differentiation and cooperation of observational and conceptual operations?’
+\citep[p.\ 12]{Dewey:1938yp}
+\citep[p.\ 12]{Dewey:1938yp}
+ 
+‘the fundamental explicandum, is the organism and its propositional attitudes ... Cognitive psychologists accept ... the ... necessity of explaining how organisms come to have the attitudes to propositions that they do.’
+\citep[p.\ 198]{Fodor:1975pb}
+\citep[p.\ 198]{Fodor:1975pb}
+ 
+ 
+ 
+\subsection{slide-8}
+And here is a nativist, Jerry Fodor, asking much the same question.
+ 
+ 
+ 
+\subsection{slide-11}
+Note that whereas Locke puts the question in terms of Ideas, Fodor, writing much later, asks about propositional attitudes, that is, about states such as knowlegde and belief. This difference need not concern us; we now have a much better understanding of the metaphysics of mental states than Locke did.
+ 
+ 
+ 
+\subsection{slide-13}
+Finally note that much the same question has been asked by philosophers coming at things from a completely different---pragmatist, in this case---point of view.
+ 
+ 
+ 
+\subsection{slide-15}
+Because he focusses on behaviour and mental operations rather than Ideas or states of mind, he puts the question in terms of a transition from unthinking ('organic') behaviour to capacities for observational and conceptual operations.
+ 
+ 
+ 
+\subsection{slide-18}
+One last thing. Fodor mentions cognitive psychologists rather than philosophers. We will need to face up to the question of why philosophers are asking this question about the origins of knowledge, why is isn't just a scientific question. But that's something for later.
+ 
+ 
+ 
+\subsection{unit\_021}
+ 
+ 
+\section{From Myths to Mechanisms}
+ 
+ 
+ 
+\subsection{slide-20}
+How do humans first come to know about---and to knowingly manipulate---objects, causes, words, numbers, colours, actions and minds? In a beautiful myth, Plato (who also asked this question) suggests that the answer is recollection. Before we are born, in another world, we become acquainted with the truth. Then, in falling to earth, we forget everything. But as we grow we are sometimes able to recall part of what we once knew. So it is by recollection that humans come to know about objects, causes, numbers and everything else.
+ 
+ 
+ 
+\subsection{slide-21}
+Leibniz explicitly endorses a version of Plato's view.
+ 
+‘the soul inherently contains the sources of various notions and doctrines which external objects merely rouse up on suitable occasions’
+\citep[p.\ 48]{Leibniz:1996bl}
+ 
+The view is subtler than it seems: we'll return to the subtelties later. [*Actually that isn't in these lectures, but it should be.]
+ 
+ 
+ 
+\subsection{slide-23}
+Locke, as you probably know, was an empiricist. Here's his manifesto.
+ 
+ 
+ 
+\subsection{slide-21}
+‘Men, barely by the Use of their natural Faculties, may attain to all the Knowledge they have, without the help of any innate Impressions; [...]
+ 
+ 
+ 
+\subsection{slide-24}
+This claim about colour isn't relevant yet but we'll return to it later.
+‘it would be impertinent to suppose, the Ideas of Colours innate in a Creature, to whom God hath given Sight, and a Power to receive them by the Eyes from external Objects’
+\citep[p.\ 48]{Locke:1975qo}
+ 
+ 
+ 
+\subsection{slide-25}
+Spelke is blunt.
+ 
+‘Developmental science [...] has shown that both these views are false’
+\citep[p.\ 89]{Spelke:2007hb}.
+ 
+Spelke doesn't have exactly Locke vs Leibniz in mind here, but it's close enough.
+ 
+[The quote continues ‘humans are endowed neither with a single, general-purpose learning system nor with myriad special-purpose systems and predispositions. Instead, we believe that humans are endowed with a small number of separable systems of core knowledge. New, flexible skills and belief systems build on these core foundations.’]
+ 
+ 
+ 
+\subsection{slide-29}
+The claim that we should shift from thinking about myths to mechanisms raises two questions. First, what are the mechanisms? And, second, why suppose there is any role for philosophers rather than scientists? Let me take the second question first ...
+ 
+ 
+ 
+\subsection{unit\_031}
+ 
+ 
+\section{Davidon's Challenge}
+ 
+ 
+ 
+\subsection{slide-31}
+Why suppose there is any role for philosophers rather than scientists? Part of the answer is provided by Donald Davidson.
+ 
+The question is how humans come to know about objects, words, thoughts and other things. In pursuing this question we have to consider minds where the knowledge is neither clearly present nor obviously absent. This is challenging because both commonsense and theoretical tools for describing minds are generally designed for characterising fully developed adults.
+ 
+ 
+ 
+\subsection{slide-33}
+I love this: Davidson says we will fail. So encouraging. But why will we fail?
+ 
+ 
+ 
+\subsection{slide-35}
+Is he suggesting the issue is merely terminological? Not quite ...
+ 
+ 
+ 
+\subsection{slide-39}
+So this is the challenge. We are describing something which is neither mindless nor involving full-blown thought and action. And, as Davidson observes, we lack a way of describing what is in between.
+ 
+Earlier I asked why philosophers rather than only scientists should investigate the question about the origins of mind. And this is the answer. It's because tacking with the quesiton will require new conceptual tools.
+ 
+This challenge is one that we will face again and again.
+ 
+ 
+ 
+\subsection{slide-31}
+ 
+ 
+\section{An Illustration of Davidon's Challenge}
+ 
+ 
+ 
+\subsection{slide-40}
+If you've seen the outline of lectures, you'll know that my idea is to organise the lectures by domains of knowledge. As we will seen, how we first come to know things about colours, say, isn't quite the same as how we first come to know things about minds. But there is one very general point we can make: in all these domains, we will face Davidson's challenge, the challenge of explaining what is inbetween mindless behaviour and thought.
+ 
+ 
+ 
+\subsection{slide-44}
+Let me preview how Davidson's challenge arises in the case of objects.
+ 
+ 
+ 
+\subsection{slide-45}
+When do humans first come to know facts about the locations of objects they are not perceiving?
+ 
+ 
+ 
+\subsection{slide-46}
+A famous study by Renee Baillargeon and her collaborators provides evidence that humans can represent unperceived objects from around four months of age or earlier. This is called the 'drawbridge study'
+ 
+What you are about to see are the test events from Experiment 1 of Baillargeon et al's 1987 study. You're looking at them from the side whereas the subjects, four-month olds, were looking at them from the front.
+ 
+In showing you these test events, I need to explain the method used in this experiment, \emph{habituation}; this is a method we will encounter repeatedly so it's good to understand how it is supposed to work. %glossary: habituation
+ 
+What you see here is a barrier rotating through 180 degrees. Infants were habituated to this; that is, they were shown it repeatedly until it no longer held their interest. The first time they're shown this, they might spend 60 seconds looking at it, which is a long time for an infant; but after, say, five demonstrations, they'd only be looking at it for around 10 seconds. That is, they are habituated to this display.
+ 
+ 
+ 
+\subsection{slide-49}
+Now there is a very small change to the display. The display is just as before, except for before the drawbridge moves an object is placed behind it. There are then two different things that could happen. One is that the drawbridge moves exactly as before, rotating a full 180 degrees. This is called the 'impossible event'. The other is that the drawbridge now rotates for 120 degrees, which is the 'possible event'. In no case is the object visible after the drawbridge has started moving. We want to know which events infants find more novel. If they are unable to know facts about the locations of unperceived objects, then they should find the 'possible event' more novel than the 'impossible event' because it is more different from the event they have been habituated to. On the other hand, if infants are able know facts about the locations of unperceived objects, they should find the impossible event more novel than the possible event because, well, it's impossible.
+ 
+To find out what infants find more interesting, they are divided into two groups. One group sees the impossible event, the other the possible event. The experimenters measure how long the infants look at these events, which is the measure of their dishabituation. The background assumptions are that looking longer indicates more interest, and that interest is driven by novelty.
+ 
+ 
+ 
+\subsection{slide-52}
+In the control condition, 'The habituation event was exactly the same as the impossible event, except that the yellow box was absent.' (Baillargeon et al 1985, 200)
+ 
+ 
+ 
+\subsection{slide-53}
+These are the results from Experiment 1 of Baillargeon et al's 1987 study.
+ 
+This experiment provides evidence that infants know that the object is behind the barrier even when they can't see it, for their having such knowledge would explain why they appear surprised by the impossible event.
+ 
+ 
+ 
+\subsection{slide-55}
+Here you can see, reassuringly, that the effect is not present in the control condition where the box is absent.
+ 
+Some have been critical of the methods used in this experiment. But not everything hangs on this experiment. Fortunately there are at least a hundred further experiments which provide evidence pointing in the same direction. Later we'll look at this is more detail.
+ 
+ 
+ 
+\subsection{slide-56}
+When do humans first come to know facts about the locations of objects they are not perceiving?
+ 
+This result has been widely replicated, and it coheres with a large body of research we shall explore later.
+ 
+ 
+ 
+\subsection{slide-57}
+By using more sensitive methods, \citet{Aguiar:1999jq} even demonstrated competence in a group of 2.5 month old infants.
+ 
+So far so good, but there is a problem ... What happens if instead of measuring how infants look, we measure how they reach?
+ 
+ 
+ 
+\subsection{slide-58}
+\citet{Shinskey:2001fk} did just this. Here you can see their appratus, which is quite similar to what \citet{baillargeon:1987_object} used. They had a screen that infants could pull forwards to get to an object that was sometimes hidden behind it. They made two comparisons. First, were infants more likely to pull the screen forwards when an object was placed behind it? Second, were how did infants' performance compare when the barrier was not opaque but transparent?
+ 
+ 
+ 
+\subsection{slide-59}
+Here are their results with 7-month old infants.
+ 
+We are interested in whether infants were more likely to pull the screen forwards when the object was present than when it was absent. Since infants wanted the toy, if they knew it was behind the barrier they should have pulled forward the barrier more often when the toy was behind it. This is exactly what they did when the barrier was transparent. But look what happens when the barrier is opaque, so that the toy is not visible to infants when they have to prepare the pulling action: they no longer pull the barrier more often when the toy was behind it.
+ 
+This is good evidence that 7 month olds do not know facts about the locations of objects they cannot perceive. And this is not isolated evidence; for example, \citet{moore:2008_factors} use a different methods also involving manual search to provide converging evidence for this conclusion. But now we have a problem ...
+ 
+ 
+ 
+\subsection{032-discrepant-findings}
+When do humans first come to know facts about the locations of objects they are not perceiving?
+ 
+The evidence appears to be contradictory.
+ 
+ 
+ 
+\subsection{slide-61}
+You might hope there would be a simple solution. Perhaps, for example, infants have difficulties reaching that mask their real knowledge of the facts about unperceived objects' locations. But As Jeanne Shinskey, one of the researchers most dedicated to this issue says,
+ 
+‘action demands are not the only cause of failures on occlusion tasks’
+\citep[p.\ 291]{shinskey:2012_disappearing}
+ 
+Many such explanations have been tried because many researchers have been puzzled by this; \citet{Meltzoff:1998wp} go as far as to call it a paradox (the 'paradox of early permanence'). No explanation positing extraneous task requirements, such as difficulties performing an the actions required, has yet succeeded.
+ 
+ 
+ 
+\subsection{slide-65}
+This is a discrepancy between two types of measure; one involves looking, other other searching. We find this pattern--discrepant findings pointing to opposite conclusions about what infants and adults know--in many different domains.
+ 
+ 
+ 
+\subsection{slide-66}
+As \citet[p.\ 994]{charles:2009_object} put it, these findings are ‘the tip of an iceberg’.
+ 
+‘violation-of-expectation experiments, using looking-time measures, suggested that infants have object permanence in occlusion conditions; but simplified-search studies confirm that infants fail to reach towards occluded objects, suggesting that infants do not have object permanence in occlusion conditions. This discrepancy, however, is only the tip of the iceberg. Results of studies attempting to measure infants’ cognitive abilities using reaching measures often contradict results gained while using looking-time measures.’ \citep[p.\ 994]{charles:2009_object}
+ 
+ 
+ 
+\subsection{slide-67}
+You might be wondering whether there's a philosophical problem here. Science is a messy business and you get conflicting results all the time. But this particular pattern of conflicting results is extremely interesting philosophically. It shows that we cannot say that, at, say, five months of age, infants know facts about the locations of particular unperceived objects. We cannot say this because doing so generates predictions which are clearly false (predictions about where they will search for an unperceived object). But it also shows that we say that they have no sense at all concerning facts about the locations of particular unperceived objects. We cannot say this because of the competence they manifest in distinguishing possible from impossible events.
+ 
+The problem, then, that understanding infants cognition requires us to identify something inbetween knowledge and its absence, something that is like knowledge in some respects but falls short of it in others. This is an instance of Davidson's challenge ...
+ 
+ 
+ 
+\subsection{slide-68}
+Here's the challenge I mentioned earlier, Davidson's challenge.
+ 
+ 
+ 
+\subsection{slide-70}
+This challenge is sometimes met by saying that infants have some way of representing facts about the locations of unperceived objects which is not knowledge but something like it ...
+ 
+ 
+ 
+\subsection{slide-71}
+Hood and colleagues suggest an extreme version of this view; they say there are many kinds of knowledge ...
+ 
+‘there are many separable systems of mental representations ... and thus many different kinds of knowledge. ... the task ... is to contribute to the enterprise of finding the distinct systems of mental representation and to understand their development and integration’
+\citep[p.\ 1522]{Hood:2000bf}.
+ 
+ 
+ 
+\subsection{slide-73}
+I think we should be cautious about the inference from separable systems to kinds of knowledge. (Think about modularity.) It should be an open question for us whether what underpins infants' abilities to distinguish possible from impossible events is really a kind knowledge or something else. (This is a question we'll explore in some detail later.)
+ 
+I mention this quote just to show you that we have a problem which is partly philosophical and partly scientific. The scientific part involves identifying distinct systems of representation and understanding their development. The philosophical part is to make sense of the idea that there can be different kinds of knowledge, or things that are like knowledge but not knowledge, and to explore how different kinds of knowledge are related.
+ 
+[*aside: move] At this point you might object. The question is about knowledge. But does either searching or distinguishing really provide evidence of knowing? You might insist that neithermanifest knowledge in infants. It is a good question whether searching or distinguishing manifests knowledge. For now I just want to note that if you think neither is, then Davidson's challenge becomes even more pressing -- more pressing because we now need two distinct kinds of state which are like knowledge in some respects but not in others, not just one! It's perhaps also worth mentioning that whether or not the things manifested in searching and distinguishing are knowledge proper, they are surely things that matter for explaining how knowledge is eventually acquired.
+ 
+ 
+ 
+\subsection{slide-74}
+To sum up so far, the question for this course is, How do humans first come to know about--and to knowingly manipulate--objects, causes, words, numbers, colours, actions and minds? I've been suggesting we can't answer it simply by appealing to nativism, empiricism or other grand myths. Instead we need to focus on the particular mechanisms that are involved in different cases.
+ 
+But then you might wonder, What philosophical questions arise here? Isn't this a narrowly pscyhological--and therefore scientific--issue? The answer is no because thinking about how humans come to know things requires us to meet Davidson's challenge, to understand things that are neither mindless nor thought or knowledge but somewhere in between. As Hood suggests in the quote I just showed you, this might involve rethinking what knowledge is.
+ 
+ 
+ 
+\subsection{slide-75}
+I hope I've given you a flavour of the approach we're going to take. Good philosophy of mind has always been driven by scientific findings about the mind. John Locke, David Hume as well as more recent philosophers like Jerry Fodor and Andy Clark all start with a deep understanding of the science of the mind. But there is a difference. Locke, Fodor and the rest are working on the big picture, trying to make explicit general features of the conceptual framework which scientists have more or less implicitly adopted. By contrast, what I want us to do in this course is to look at specific problems that arise from the evidence, and to provide philosophical tools for tackling this problem. So you might say that whereas John Locke was trying to be the architect, we're trying more modestly to build the tools. Now this might sound too modest to be interesting. But, as we'll see, it turns out that attention to the details will give us new perspectives on some key philosophical issues about the nature of knowledge, perception and action.
+ 
+ 
+ 
+\subsection{slide-76}
+We're going to try to understand how humans come to know about things by examining what developmental psychology tells us about the acquisition of knowledge. This turns out to be a partly philosophical project because understanding the apparently conflicting evidence requires us to re-think notions like knowledge and representation. In practice, this means looking carefully, and in detail, at the scientific evidence. If you want to know how minds work, you have to start with the evidence.
+ 
+ 
+ 
+\subsection{slide-78}
+lectures are at this time every week
+ 
+ 
+ 
+\subsection{slide-79}
+there is a web page where you can find slides and handouts from lectures.
+ 
+ 
+ 
+\subsection{slide-80}
+submit a 1500 word unassessed essay by the standard deadline (which I think is 12 noon on Thursday of week 7 but you should check).
+ 
+ 
+ 
+\subsection{slide-81}
+seminars start next week and run every week
+ 
+ 
+ 
+\subsection{slide-82}
+there are no lectures or seminars in reading week (week 6)
+ 
+ 
+ 
+\subsection{slide-83}
+sign up on tabula, as usual.
+ 
+ 
+ 
+\subsection{slide-84}
+I've assigned you a series of tasks to do in seminars; these are specified in the document going around, which is also on the web page.
+ 
+ 
+ 
+\subsection{slide-86}
+I need to set you up for your first seminar, which starts next week. Recall these findings ...
+ 
+ 
+ 
+\subsection{slide-87}
+I want you to look at this discrepancy more carefully in your first seminar. This is partly because the discrepancy matters, and partly because part of doing this module means becoming familiar with reading scientific papers.
+ 
+ 
+ 
+\subsection{unit\_051}
+ 
+ 
+\section{Two Breakthroughs}
+ 
+ 
+ 
+\subsection{slide-90}
+Recall that the question for this course is ... Our focus is on two breakthrough sets of findings. One concerns core knowledge, the other social interaction.
+ 
+Take core knowledge first.
+ 
+We will see that infants can tackle physics, number, agents and minds thanks to a set of innate or early-developing abilities, often labelled `core knowledge'.
+ 
+ 
+ 
+\subsection{slide-91}
+It is important that we don't (yet) know what core knowledge is; `core knowledge' is a term of art.
+ 
+I haven't explained what it is.
+ 
+Rather, our position is this.
+ 
+Some scientists talk about core knowledge, and formulate hypotheses in terms of it.
+ 
+Since these hypotheses are supported by evidence, we can reasonably suppose they are true.
+ 
+So there are some things we suppose are truths about core knowledge.
+ 
+For instance, infants' core knowledge enables them to represent unperceived objects.
+ 
+So we know some truths about core knowledge, but we don't know what it is.
+ 
+You'd probably prefer it if I could tell you what core knowledge is first.
+ 
+But here we have to work backwards.
+ 
+We have to gather truths about this unknown thing, core knowledge.
+ 
+And then we have to ask, What could core knowledge be given that these things are true?
+ 
+ 
+ 
+\subsection{slide-93}
+Several features distinguish core knowledge from adult-like understanding: its content is unknowable by introspection and judgement-independent; it is specific to quite narrow categories of event and does not grow by means of generalization; it is best understood as a collection of rules rather than a coherent theory; and it has limited application being usually manifest in the control of attention (as measured by dishabituation, gaze, and looking times) and rarely or never manifest in purposive actions such as reaching.
+ 
+ 
+ 
+\subsection{slide-96}
+Here is a bold conjecture about how humans come to know things.
+ 
+ 
+ 
+\subsection{slide-97}
+The challenge, of course, is to say *how* social interaction enables humans to come to know things.
+ 
+ 
+ 
+\subsection{slide-100}
+Now turn to social interaction. Preverbal infants manfiest a surprising range of social abilities. These include imitation, which can occur just days and even minutes after birth (Meltzoff \& Moore 1977; Field et al. 1982; Meltzoff \& Moore 1983), imitative learning (Carpenter et al. 1998), gaze following (Csibra \& Volein 2008), goal ascription (Gergely et al. 1995; Woodward \& Sommerville 2000), social referencing (Baldwin 2000) and pointing (Liszkowski et al. 2006). Taken together, the evidence reveals that preverbal infants have surprisingly rich social abilities.
+ 
+One problem for us is that these two sets of findings are typically considered in isolation, although I think there are strong reasons to suppose that understanding the origins of knowledge will require thinking about both core knowledge and social interaction.
+ 
+ 
+ 
+\subsection{slide-101}
+My working hypothesis is that we can't understand early forms of social interaction without core knowledge; and that we can't understand how core knowledge leads to knowledge proper without social interaction.
+ 
+The challenge is to understand how core knowledge and social interaction conspire in the emergence of knowledge.
+ 
+ 
+ 
+\subsection{slide-102}
+To flesh this out, I want to introduce the idea that cognitive development is rediscovery. (But not exactly as Plato's myth had it.)
+ 
+We can ask how humans get from one manifestation to the next. I want to suggest that it involves a process of rediscovery. I don't think it's a case of partial knowledge becoming gradually more complete. Rather, I think the representations at earlier stages shape subject's body, behaviour and attention in ways that facilitate discovery at the next stage.
+ 
+And, most importantly, they enable increasingly right forms of social interaction. It is these social interactions---together with the bodily, behavioural and mental changes---that enable subsequent re-discoveries. So, on this view, the role of some early-developing abilities in explaining the later acquisition of conceptual understanding does not involve direct representational connections; rather the early developing abilities facilitate or enable social interaction and influence attention and inform behaviour, and these influences facilitate development.
+ 
+ 
+ 
+\subsection{slide-103}
+To make this vague idea slightly more concrete, let me zoom in. I think having verbal labels for things sometimes helps with acquiring concepts of them. Now this sounds paradoxical. Doesn't having a label for something mean being able to label correctly? And how could you label correctly without the corresponding concept? My suggestion is that having core knowledge is not having a concept (many disagree); but core knowledge could underpin your correct use of a label. Now labels are acquired through social interaction, or so I suggested earlier. Hence the picture.
+ 
+Now this picture needs two qualifications. First, it's missing some details, and these details will vary from case to case (what's true of knowledge of objects might not be true of knowledge of number). Second, the picture might be completely wrong. But even if the picture is wrong, I'll bet that social interaction and core knowledge are both essential for explaining how humans come to know things. So I don't claim to know how these two are necessary, only that they are. In fact my aim isn't primarily to explain to you how these two factors explain the origins of mind. Instead my hope is this. I'll give you the background on social interaction and core knowledge. And you'll tell me how these two (or perhaps other factors) are involved in explaining how humans come to know things about objects, colours, actions, numbers and the rest.
+  
+%--- end paste
+%--------------- 
+ 
+
+
+
+
+
+\bibliography{$HOME/endnote/phd_biblio}
+
+
+
+\end{document}

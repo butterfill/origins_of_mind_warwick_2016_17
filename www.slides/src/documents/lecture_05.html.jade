@@ -1,0 +1,109 @@
+---
+layout: 'default2'
+title: 'Lecture 05'
+weburl: ''
+units: []
+lecture_date: '2014/10/30'
+---
+
+include ../../fragments/lecture_mixins
+include ../../fragments/unit_mixins
+
+- var images = get_images('bees')
+
+mixin title_slide({document:document, images:images})
+
+// *todo* too long and not clear enough
+
+
+//- Knowledge of Mind
++insert_unit({unit:'401', title_slide:false, images:images})
+
+//- First Puzzle (infants vs 4 year olds)
++insert_unit({unit:'411', title_slide:true, images:images})
+
+//- Second Puzzle (automaticity)
++insert_unit({unit:'421', title_slide:true, images:images})
+
+//- evaluation
++section({title:'Essays: Evaluation',images:images})
++slide
+  +img_clip('marks_2013_4.png')
+  .notes mark distribution from 2013-4
++slide
+  p (2i)
+  p high quality work demonstrating 
+    span.knowledge good knowledge and understanding
+    span , 
+    span.analysis analysis
+    span , 
+    span.organisation organisation
+    span , 
+    span.accuracy accuracy
+    span , 
+    span.relevance relevance
+    span , 
+    span.presentation presentation 
+    span and appropriate skills" (for an Upper Second)
+  +invert('.knowledge, .accuracy')
+  .notes: :t()
+    You've done some reading and you are demonstrating understanding by presenting
+    ideas accurately.  E.g. if you are talking about object permanence, you are correctly
+    specifying what that is (unlike many people in their first essay).  You can
+    present both experiemntal findings and arguments in a way that allows people not 
+    already familiar with them to understand them.
+    A key cause of failure here is relying too heavily on recycling material from other
+    courses.  It's good to make connections, of course, but relying almost entirely on
+    what you learnt in Epistemology or that psychology module on language won't fly.
+  +uninvert_('.knowledge, .accuracy')
+  +invert('.presentation')
+  .notes: :t()
+    No typos.  Accurate referencing using the Chicago style (few undergraduates can 
+    correctly cite research).  
+  +uninvert_('.presentation')
+  +invert('.organisation')
+  .notes: :t()
+    Sentences are coherent and not too long.  Each paragraph makes a single point.
+    There is a natural transition from one to the next.  The essay as a whole has a 
+    coherent structure.  The main conclusions are reviewed at the end.
+    This is something where Warwick students are very strong.
+  +uninvert_('.organisation')
+  +invert('.relevance')
+  .notes: :t()
+    The essay answers the question or questions.
+    There are no extraneous ideas (I just reviewed a paper about Satre, development and 
+    self-awareness).
+    Every paragraph makes a significant contribution to answering the question.
+    No sentence could be removed.  
+  +uninvert_('.relevance')
+  +highlight('.analysis', 'pink')
+  .notes: :t()
+    Most important, most difficult.  
+    You aren't just describing.  You are objecting to, clarifying, improving.
+  .slide
+    p.em-above (1st)
+    .notes What are the things that will get you into the first class category?
+    ol
+      li full understanding
+      li appropriate ambition
+      .notes You are attempting to do something that is hard.
+      li independent research
+      li discovery
+  .slide
+    p.em-above (module-specific)
+    .notes Your work should lead to an empirically motivated philosophical conclusion
+    p empirically motivated philosophical conclusion
+    
+    
+  
+    
+  
+
+//- modularity & efficiency
++insert_unit({unit:'431_new', title_slide:true, images:images})
+
+//- minimal theory of mind
++insert_unit({unit:'441', title_slide:true, images:images})
+
+//- Signature Limits Generate Predictions
++insert_unit({unit:'451', title_slide:true, images:images})

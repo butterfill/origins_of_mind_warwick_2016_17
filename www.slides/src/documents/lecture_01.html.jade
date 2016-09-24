@@ -1,0 +1,135 @@
+---
+layout: 'default2'
+title: 'Lecture 01'
+weburl: ''
+units: []
+lecture_date: '2014/10/2'
+---
+
+include ../../fragments/lecture_mixins
+include ../../fragments/unit_mixins
+
+- var images = get_images('bees')
+
++title_slide({document:document, images:images})
+
+//- *TODO* need to get some preliminary sense of what core knowledge is into this lecture
+//- can't get very far without explaining it.
+//- provisionally it's defined as whatever underpins abilities to discriminate possible from impossible ...
+
+// the question
++insert_unit({unit:'001', title_slide:false, images:images, handout:true})
+ 
+// myths to mechanisms
++insert_unit({unit:'021', title_slide:true, images:images})
+
+//inbetween mindless behaviour and thought (object permanence)
++insert_unit({unit:'031', title_slide:true, images:images})
++insert_unit({unit:'032', title_slide:false, images:images})
+
+
+//- --------------------------
+//- admin
+
++section({title:'Admin', images:images, handout:false})
++slide
+  .words: .container_12: .grid_12
+    p.dimafter lectures 
+    .notes lectures are at this time every week
+    p.slide web 
+    .notes there is a web page where you can find slides and handouts from lectures.
+    p.slide unassessed essay
+    .notes: :t()
+      submit a 1500 word unassessed essay by the standard deadline (which I think is 12 noon on 
+      Thursday of week 7 but you should check).
+    p.slide seminars
+    .notes seminars start next week and run every week
+    p.slide reading week
+    .notes there are no lectures or seminars in reading week (week 6)
+    p.slide seminar groups
+    .notes sign up on tabula, as usual.
+    p.slide seminar tasks
+    .notes: :t()
+      I've assigned you a series of tasks to do in seminars; these are specified in the 
+      document going around, which is also on the web page.
+    p.slide first seminar task
+
++slide
+  p first seminar
+  .notes: :t()
+    I need to set you up for your first seminar, which starts next week.
+    Recall these findings ...
+section.slide
+  .slide-clone(data-which='#032-discrepant-findings')
+  .notes: :t()
+    I want you to look at this discrepancy more carefully in your first seminar.
+    This is partly because the discrepancy matters, and partly because part of doing this module
+    means becoming familiar with reading scientific papers.
++slide
+  p first seminar
+  p.em-above each seminar group:
+  ul
+    li Baillargeon (1987)
+    li Shinskey and Munakata (2001)
+    li [optional] Chiandetti and Vallortigara (2011)
+  
+
+//- --------------------------
+//- back to lecture
+
+//- if really lots of time, could do first part of unit_601_milan here (on core knowledge)
+//- the idea would be to show that Davidson's challenge is serious  
+
+
+//- two breakthroughs
++insert_unit({unit:'051', title_slide:true, images:images})
+
+//-
+  // first breakthrough: social interaction
+  mixin insert_unit({unit:'061', title_slide:true, images:images})
+
+//-
+  // *todo* skipped this in 2013/4
+  // second breakthrough: core knowledge
+  mixin insert_unit({unit:'071', title_slide:true, images:images})
+
+//-
+  // bringing core knowledge and social interaction together
+  mixin insert_unit({unit:'081', title_slide:true, images:images, handout:false})
+
+
+//-
+  *todo*: development as rediscovery insert?
+
+//- 
+  background units needed
+  // representation 
+  mixin insert_unit({unit:'091', title_slide:true, images:images})
+
+  // methods:
+    - habituation
+    - violation of expectations
+    - EEG
+
+
+//-
+  // more on object permanence
+  mixin insert_unit({unit:'101', title_slide:true, images:images})
+
+
+ 
+
+//mixin section({title:'*todo*', images:images})
+//
+//section.slide
+//  .words: .container_12: .grid_12
+//    p *todo*
+//    ol
+//      li What is representation? Dretske  [Not sure where this should go]
+//      li nb: representation matters for the view about language acquisition.
+//        span If Fodor on representation then the Bloom private language view looks more plausible.
+//      li Core knowledge (first breakthrough) [use Spelke on principles of object perception]
+//      li Social Interaction (second breakthrough)---use the stuff on word learning from Chapter_02
+
+
+

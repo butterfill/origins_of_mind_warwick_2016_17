@@ -1,0 +1,170 @@
+---
+layout: 'default2'
+title: 'Lecture 09'
+weburl: ''
+units: [] 
+lecture_date: '2014/12/03'
+---
+
+include ../../fragments/lecture_mixins
+include ../../fragments/unit_mixins
+include ../../fragments/origins_mixins
+
+- var images = get_images('bees')
+
++title_slide({document:document, images:images})
+
+
+
+//- models, systems and the Emergence Challenge
++insert_unit({unit:'995', title_slide:true, images:images})
+
+
+
++section({images:images, title:'Action'})
+
+//- from origins mixins
++slide_diagram_core_knowledge_to_concept
+
+
++slide
+  svg(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', width='527px', height='524px', version='1.1', style='background-color: rgb(0, 0, 0);')
+    defs
+      linearGradient(x1="0",x2="0",y1="0",y2="1")#fade_up
+        stop(offset='0', stop-color='black', stop-opacity='1')
+        stop(offset='0.75', stop-color='black', stop-opacity='.75')
+        stop(offset='1', stop-color='black', stop-opacity='0')
+      linearGradient(x1="0",x2="0",y1="0",y2="1")#fade_down
+        stop(offset='0', stop-color='black', stop-opacity='0')
+        stop(offset='0.25', stop-color='black', stop-opacity='.75')
+        stop(offset='1', stop-color='black', stop-opacity='1')
+    g(transform='translate(0.5,0.5)')
+      g(transform='translate(5,17)')
+        switch
+          foreignobject(pointer-events='all', width='132', height='32', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+            div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; overflow: hidden; max-height: 56px; max-width: 136px; width: 132px; white-space: normal; text-align: center;')
+              div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                font(color='#ffffff', face='Lato', style='font-size: 24px') discriminate
+          text(x='66', y='22', fill='#000000', text-anchor='middle', font-size='12px', font-family='Helvetica') [Not supported by viewer]
+      g.person-labelling.hide
+        ellipse(cx='408', cy='107', rx='15', ry='15', fill='none', stroke='#ffffff', stroke-width='3', pointer-events='none')
+        path(d='M 408 122 L 408 172 M 408 132 L 378 132 M 408 132 L 438 132 M 408 172 L 378 212 M 408 172 L 438 212', fill='none', stroke='#ffffff', stroke-width='3', stroke-miterlimit='10', pointer-events='none')
+      g.label-label.hide
+        g(transform='translate(382,27)')
+          switch
+            foreignobject(pointer-events='all', width='52', height='32', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+              div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; overflow: hidden; max-height: 56px; max-width: 136px; width: 52px; white-space: normal; text-align: center;')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                  font(color='#ffffff', face='Lato', style='font-size: 24px') label
+            text(x='26', y='22', fill='#000000', text-anchor='middle', font-size='12px', font-family='Helvetica') [Not supported by viewer]
+      g.speech-bubble.hide
+        path(d='M 442.76 85.85 C 425.67 77.27 424 63.14 438.95 53.5 C 453.89 43.86 480.36 42 499.52 49.25 C 518.68 56.49 524 70.37 511.7 81.01 C 499.4 91.65 473.67 95.42 452.81 89.65 C 448.12 96.8 440.55 101.34 432.25 102 C 437.47 98.07 441.19 92.35 442.76 85.85 Z', fill='none', stroke='#ffffff', stroke-width='2', stroke-miterlimit='15', pointer-events='none')
+        g(transform='translate(445,57)')
+          switch
+            foreignobject(pointer-events='all', width='58', height='32', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+              div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 58px; white-space: normal; text-align: center;')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                  font(color='#ffffff') blue
+            text(x='29', y='28', fill='#000000', text-anchor='middle', font-size='24px', font-family='Lato') [Not supported by viewer]
+      ellipse(cx='71', cy='127', rx='15', ry='15', fill='none', stroke='#ffffff', stroke-width='3', pointer-events='none')
+      path(d='M 71 142 L 71 192 M 71 152 L 41 152 M 71 152 L 101 152 M 71 192 L 41 232 M 71 192 L 101 232', fill='none', stroke='#ffffff', stroke-width='3', stroke-miterlimit='10', pointer-events='none')
+      //- the star (target object)
+      path(d='M 215.17 261.17 L 215.17 232 L 236 252.83 L 256.83 232 L 256.83 261.17 L 286 261.17 L 265.17 282 L 286 302.83 L 256.83 302.83 L 256.83 332 L 236 311.17 L 215.17 332 L 215.17 302.83 L 186 302.83 L 206.83 282 L 186 261.17 Z', fill='#3399ff', stroke='#ffffff', stroke-width='3', stroke-miterlimit='10', pointer-events='none')
+      rect(x='166', y='462', width='140', height='60', fill='none', stroke='none', pointer-events='none')
+      g(transform='translate(168,465)')
+        switch
+          foreignobject(pointer-events='all', width='136', height='56', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+            div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; overflow: hidden; max-height: 56px; max-width: 136px; width: 136px; white-space: normal; text-align: center;')
+              div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                font(color='#ffffff', face='Lato', style='font-size: 24px') stimulus sequence
+          text(x='68', y='34', fill='#000000', text-anchor='middle', font-size='12px', font-family='Helvetica') [Not supported by viewer]
+      //- the circle
+      ellipse(cx='236', cy='162', rx='40', ry='40', fill='#9933ff', stroke='#ffffff', stroke-width='3', pointer-events='none')
+      path(d='M 206 352 L 266 392 L 206 432 Z', fill='#ff3333', stroke='#ffffff', stroke-width='3', stroke-miterlimit='10', transform='rotate(-30,236,392)', pointer-events='none')
+      path(d='M 236 22 L 276 62 L 236 102 L 196 62 Z', fill='#0066cc', stroke='#ffffff', stroke-width='3', stroke-miterlimit='10', pointer-events='none')
+      rect(x='176', y='2', width='120', height='220', stroke='none', pointer-events='none', fill='url(#fade_up)')
+      rect(x='176', y='342', width='120', height='110', stroke='none', pointer-events='none', fill='url(#fade_down)')
+
+      g(transform="translate(-40,0)")
+        g.stimulus-to-discriminate
+          path(d='M 218 288 L 168.72 216.33', fill='none', stroke='#cccccc', stroke-width='3', stroke-miterlimit='10', pointer-events='none')
+          path(d='M 164.9 210.76 L 173.71 215.63 L 168.72 216.33 L 166.29 220.73 Z', fill='#cccccc', stroke='#cccccc', stroke-width='3', stroke-miterlimit='10', pointer-events='none')
+        g.stimulus-to-label.hide
+          path(d='M 353 288 L 397.64 216.57', fill='none', stroke='#cccccc', stroke-width='3', stroke-miterlimit='10', pointer-events='none')
+          path(d='M 401.22 210.84 L 400.27 220.86 L 397.64 216.57 L 392.64 216.09 Z', fill='#cccccc', stroke='#cccccc', stroke-width='3', stroke-miterlimit='10', pointer-events='none')
+        g.discriminate-to-label.hide
+          path(d='M 178 165 L 402.9 165', fill='none', stroke='#cccccc', stroke-width='3', stroke-miterlimit='10', pointer-events='none')
+          path(d='M 409.65 165 L 400.65 169.5 L 402.9 165 L 400.65 160.5 Z', fill='#cccccc', stroke='#cccccc', stroke-width='3', stroke-miterlimit='10', pointer-events='none')
+          path(d='M 188 165 L 168.1 165', fill='none', stroke='#cccccc', stroke-width='3', stroke-miterlimit='10', pointer-events='none')
+          path(d='M 161.35 165 L 170.35 160.5 L 168.1 165 L 170.35 169.5 Z', fill='#cccccc', stroke='#cccccc', stroke-width='3', stroke-miterlimit='10', pointer-events='none')
+
+  .notes: :t()
+    This is about the step from discrimination to learning the correct use of a verbal label.
+  .notes: :t()
+    So there's you and you're observing sequence of stimuli and thanks to core knowledge
+    you're able to discriminate them.
+  +show('.person-labelling')
+  .notes: :t()
+    And now along comes another person.  What are they doing?  Nothing yet.  But ...
+  +show('.label-label, .speech-bubble, .stimulus-to-label')
+  .notes: :t()
+    Oh look they're labelling stimuli.
+    So now the blue ones (say) are special.  You respond to them in one way and the 
+    other responds to them in her way, which is by labelling.
+  +show('.discriminate-to-label')
+  .notes: :t()
+    Now you can observe that your responses are correlated with her responses.
+    So when you discriminate in a certain way, she applies the label.
+    Observing this correspondence enables you to learn the label (say).
+    This is triangulation roughly as Davidson describes it.
+  .notes: :t()
+    And having got this far you can ask yourself what all the things labelled 
+    have in common.
+
++slide
+  img(src='/img/fig_action_communicative_linguistic.png')
+  .notes: :t()
+    We asked about linguistic communication and didn't get a good answer.
+    So we asked about non-linguistic communication and still didn't get a good answer.
+    (There the problem was a divide between mere use (in the 'block-slab' sense) and
+    a Grice-inspired view of communication as involving a nested structure of knowledge and intention.)
+  .notes: :t()
+    So let's go back one step further to action and see if that helps.
+
+    
+
+//- action
++insert_unit({unit:'701', title_slide:true, images:images})
+
+//- how do infants model actions?
++insert_unit({unit:'706', title_slide:true, images:images})
+
+//- which model of action
++insert_unit({unit:'711', title_slide:true, images:images})
+ 
+//- pure goal ascription: teleological stance
++insert_unit({unit:'712', title_slide:true, images:images})
+
+//- problems for the teleological stance?
+//- NB : this was cut from Milan; should probably go from here too
+//- NB some of this has been merged with unit 712 !!
+//- +insert_unit({unit:'731', title_slide:true, images:images})
+
++insert_unit({unit:'741', title_slide:true, images:images})
+
+//- +insert_unit({unit:'751', title_slide:true, images:images})
+
+
+//- joint action
+
+//- misunderstanding communicative actions through joint action (?)
+
+//- shared intentionality
+
+//- things we haven't covered (number; more on mindreading; speech perception; motor representation)
+
+
+
+
+//- conclusion
++insert_unit({unit:'999', title_slide:true, images:images})

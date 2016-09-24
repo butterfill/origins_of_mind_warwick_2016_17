@@ -1,0 +1,587 @@
+ %!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+%\def \papersize {a5paper}
+\def \papersize {a4paper}
+%\def \papersize {letterpaper}
+
+%\documentclass[14pt,\papersize]{extarticle}
+\documentclass[12pt,\papersize]{extarticle}
+% extarticle is like article but can handle 8pt, 9pt, 10pt, 11pt, 12pt, 14pt, 17pt, and 20pt text
+
+\def \ititle {Origins of Mind}
+\def \isubtitle {Seminar Tasks}
+%comment some of the following out depending on whether anonymous
+\def \iauthor {Stephen A.\ Butterfill}
+\def \iemail{s.butterfill@warwick.ac.uk% \& corrado.sinigaglia@unimi.it
+}
+%\def \iauthor {}
+%\def \iemail{}
+%\date{}
+
+%\input{$HOME/Documents/submissions/preamble_steve_paper3}
+\input{$HOME/Documents/submissions/preamble_steve_report2}
+
+%no indent, space between paragraphs
+\usepackage{parskip}
+
+%beautiful contents
+\usepackage{tocloft}
+
+%comment these out if not anonymous:
+%\author{}
+%\date{}
+
+%for e reader version: small margins
+% (remove all for paper!)
+%\geometry{headsep=2em} %keep running header away from text
+%\geometry{footskip=1.5cm} %keep page numbers away from text
+%\geometry{top=1cm} %increase to 3.5 if use header
+%\geometry{bottom=2cm} %increase to 3.5 if use header
+%\geometry{left=1cm} %increase to 3.5 if use header
+%\geometry{right=1cm} %increase to 3.5 if use header
+
+% disables chapter, section and subsection numbering
+\setcounter{secnumdepth}{-1} 
+
+%avoid overhang
+\tolerance=5000
+
+%\setromanfont[Mapping=tex-text]{Sabon LT Std} 
+
+
+%for putting citations into main text (for reading):
+% use bibentry command
+% nb this doesn’t work with mynewapa style; use apalike for \bibliographystyle
+% nb2: use \nobibliography to introduce the readings 
+\usepackage{bibentry}
+
+%screws up word count for some reason:
+%\bibliographystyle{$HOME/Documents/submissions/mynewapa} 
+\bibliographystyle{apalike} 
+
+
+\begin{document}
+
+\nobibliography{$HOME/endnote/phd_biblio}
+
+
+\setlength\footnotesep{1em}
+
+
+\maketitle
+
+\renewcommand{\cftsecfont}{\normalsize}
+\setcounter{tocdepth}{1}
+\tableofcontents
+\clearpage
+
+%
+%\section{Guidelines}
+%
+%\subsection{Deadline}
+%Essays are due 6pm on the Tuesday before your tutorial.
+%
+%I will not normally read late essays.
+%
+
+
+\section*{Warning}
+This document may be updated during the course.
+Tasks might change.
+Please always check you have the latest version from \url{http://origins-of-mind.butterfill.com} before completing a task.
+This version was last edited \today.
+
+
+\section*{Formal requirement}
+All students are required to submit a 1500 word unassessed essay by 12 noon on Thursday of week 7.
+
+I will provide essay questions and reading lists in Week 4 for this unassessed essay.
+I am also happy to discuss your essay plan individually.
+
+I will return unassessed essays with comments and we will discuss them in weeks 8 and 9.
+
+All other tasks are optional.
+
+
+\section*{About the seminars}
+Seminars focus on the tasks described below.
+Some tasks need to be completed by the Monday or Tuesday before the seminar (at least if you want feedback).
+Which task should be completed before which seminar?  See the table below.
+
+
+{
+	%increase space between rows
+	\renewcommand{\arraystretch}{1.5}
+\begin{table}[htbp]
+\begin{center}
+\footnotesize	%shrink for better spacing
+\begin{tabular*}{1\textwidth}{ l l m{0.80\textwidth} } 
+
+\toprule
+
+1. & week 2
+	&  \textit{Task 1}  Introduce a scientific paper
+\\  2. & week 3
+	& \textit{Task 2 or 3}  Write a review
+\\ 3. & week 4
+		& \textit{Task 3 or 2} Peer-review a review essay
+\\  4. & week 5
+	&  \textit{Task 4} Plan an essay
+\\ & week 6
+	&  (No seminar)
+\\ 5. & week 7
+	& 	\textit{Task 5} Submit unassessed essay early
+\\ 6. & week 8
+	& \textit{Task 5 ctd} Discussion of unassessed essays
+\\ 7. & week 9
+	& \textit{Task 6 or 7} Write a third essay
+\\ 8. & week 10
+	&  \textit{Task 7 or 6} Peer-review an essay
+\\
+%
+\bottomrule
+%
+\end{tabular*}
+\caption{Provisional seminar schedule}
+\label{table:schedule}
+\end{center}	%careful -- position of this affects distance between table and caption(!)
+\end{table}
+}
+
+
+
+
+\section{Wildcard Task: Ask a Question}
+Ask a question in or after a lecture, in person or by email.
+Write up the question you asked, the answer you got, and your reflections on the question and answer.
+
+You should complete this task, either in addition to the tasks below or in place of one of them (you can choose which task to substitute).
+
+
+\clearpage
+\section{Task 1: Introduce a scientific paper}
+
+Your group will be assigned one of these papers:
+%
+\begin{itemize}
+\item \bibentry{baillargeon:1987_object}
+\item \bibentry{Shinskey:2001fk}
+\item \bibentry{chiandetti:2011_chicks_op}
+\end{itemize}
+%
+Your task, as a group, is to prepare a 7--10 minute presentation to introduce the paper.
+This presentation should answer the following questions:
+\begin{enumerate}
+\item What question is the paper intended to answer?
+\item Who are the subjects of the experiment(s)?
+\item What materials did the experiment(s) involve?
+\item What was the procedure?
+\item What were the main results?
+\item What did the researchers conclude from these results?
+\item What further questions arise from all of this?
+\end{enumerate}
+%
+If the paper has multiple experiments, don’t describe them all.
+Pick the most interesting.
+
+You should probably not describe all the control conditions.  But you should be prepared to explain them in response to questions.
+
+
+
+\clearpage
+\section{Task 2: Write a review of some scientific research}
+
+\subsection{Suggested question}
+Can 4-month-old infants represent objects they are not perceiving?
+
+\subsection{Aim}
+The aim of this first essay is just to get you reading scientific papers and to practice writing about evidence.
+Later essays will demand more analysis.
+But for this essay it’s enough to provide a review of some scientific research.
+
+
+\subsection{Hint}
+In this essay you might:
+\begin{enumerate}
+\item review some of evidence that infants can represent objects they are not perceiving (see readings, especially \citealp{baillargeon:1987_object});
+\item consider the apparently conflicting findings that infants cannot do this \citep{Shinskey:2001fk};
+\item attempt to resolve the conflict.
+\end{enumerate}
+%
+%And, if ambitious, you could further:
+%%
+%\begin{enumerate}[resume]
+%\item link your discussion to the conflict between empiricists  and nativists.
+%\end{enumerate}
+
+
+\subsection{Peer review}
+Your review essay will be subject to peer review (see next task). 
+Another student in your seminar group will be assigned as your reviewer.
+You should send the essay to your reviewer by 6pm on the Monday before your seminar.
+
+
+
+\subsection{Reading: Essential}
+
+
+\bibentry{baillargeon:1987_object}
+
+\bibentry{Shinskey:2001fk}
+
+\bibentry{Spelke:1998im}  (You need read only as far as p.\ 189.)
+
+
+
+\subsection{Reading: Optional (*=hard)}
+
+\bibentry{Aguiar:2002ob}
+
+*\bibentry{charles:2009_object}
+
+\bibentry{mccurry:2009_beyond}
+
+*\bibentry{moore:2010_numerical}
+
+*\bibentry{Spelke:1990jn}
+
+\bibentry{Spelke:2001pg}
+
+
+
+\subsection{Where to find the readings}
+
+All the readings are available online unless otherwise noted.
+
+One fast way to find a paper is to copy its title into google scholar and search.  
+To download the paper from the journal website, you may need to select ‘log in’ or ‘institutional log in’.
+
+If you have trouble locating a resource, check the list of journals available here: \url{http://fs6jr8lx8q.search.serialssolutions.com/}
+
+
+\subsection{Citations}
+When citing articles in your essay, use the same system that my handouts and nearly all the readings use.
+That is, put author-year in the main text (e.g.\ ‘Spelke et al have argued that ... (Spelke et al 1993, p.\ 22).’) and include the full citation in a list of references at the end.
+
+A bibliography manager like Zotero can save you a lot of time.
+
+
+\subsection{Length}
+Your review may not exceed 2000 words.
+Reviews longer than this words may be rejected without review.
+
+Shorter is better, all things being equal.
+
+
+
+
+
+\clearpage
+\section{Task 3: Peer-review an essay}
+
+A student will send you a short essay by 6pm on the Monday before your seminar.
+Your task is to write a review of the essay and send the review to the student by 6pm the day before your seminar.
+
+\subsection{Hints} 
+Your review should start by stating the essay’s aim and briefly outlining what it achieves.
+
+You should discuss one or more of the main claims defended in the essay.  
+It may be useful to mention sources the author has not considered, or to raise objections.
+
+Discussion of the essay’s flaws is important.
+But make sure that adverse criticism is carefully justified.
+
+If you can, suggest how the essay could be improved.
+
+\clearpage
+\section{Alternative Essay Question for Task 2}
+
+\subsection{Suggested question}
+
+What do 6-month-olds know about physical objects’ causal interactions?
+
+\subsection{Aim}
+The aim of this first essay is just to get you reading scientific papers and to practice writing about evidence.
+Later essays will demand more analysis.
+But for this essay it’s enough to provide a review of some scientific research.
+
+\subsection{Peer review}
+Your review essay will be subject to peer review (see Task 3). 
+Another student in your seminar group will be assigned as your reviewer.
+You should send the essay to your reviewer by 6pm on the Monday before your seminar.
+
+
+
+\subsection{Hint}
+In this essay you might:
+\begin{enumerate}
+\item review some of the evidence that infants can track causal interactions (see readings, \citealp{spelke:1992_origins} or \citealp{Leslie:1987nr});
+\item consider findings that are hard to reconcile with the claim that infants’ simply know that barriers stop objects (see \citealp{Hood:2000bf,Hood:2003yg})
+\item attempt to resolve the conflict (potentially useful sources include \citealp{Haith:1998aq,Keen:2003xz})
+\end{enumerate}
+
+\subsection{Reading}
+
+\bibentry{Spelke:1993no}
+
+\bibentry{Hood:2000bf}
+
+
+
+\subsection{Further reading}
+
+\bibentry{spelke:1992_origins}
+
+\bibentry{Leslie:1987nr}
+
+\bibentry{Hood:2003yg}
+
+\bibentry{santos:2006_cotton-top}
+
+\bibentry{Haith:1998aq}
+
+\bibentry{Keen:2003xz}
+
+
+\subsection{Where to find the readings}
+
+All the readings are available online unless otherwise noted.
+
+One fast way to find a paper is to copy its title into google scholar and search.  
+To download the paper from the journal website, you may need to select ‘log in’ or ‘institutional log in’.
+
+If you have trouble locating a resource, check the list of journals available here: \url{http://fs6jr8lx8q.search.serialssolutions.com/}
+
+
+\subsection{Citations}
+When citing articles in your essay, use the same system that my handouts and nearly all the readings use.
+That is, put author-year in the main text (e.g.\ ‘Spelke et al have argued that ... (Spelke et al 1993, p.\ 22).’) and include the full citation in a list of references at the end.
+
+A bibliography manager like Zotero can save you a lot of time.
+
+
+\subsection{Length}
+Your review may not exceed 2000 words.
+Reviews longer than this words may be rejected without review.
+
+Shorter is better, all things being equal.
+
+
+
+
+
+\clearpage
+\section{Task 4: Plan an essay}
+In this task you identify a question for your unassessed essay, do some background reading and produce an outline for the essay plus a list of readings.
+
+You can take one of the suggested questions from the list provided.  Or, if you prefer, you can propose your own question (which will need to be approved before you can submit the essay).
+
+Send your essay plan to your seminar leader by 6pm on the Monday before your seminar.
+
+
+
+\clearpage
+\section{Pre-approved essay questions}
+
+\textit{For any of these questions, your answer may focus on a particular domain, such as core knowledge of objects or of number.  You are not required to provide a comprehensive survey.}
+
+\emph{The readings suggested here are for general guidance.  You’re welcome to see me to discuss readings in relation to your plans for the essay.}
+
+
+\subsection{Mindreading}
+What is the puzzle about when humans can first represent others’ beliefs?
+How might the puzzle be resolved?
+
+\subsubsection{---Reading}
+\bibentry{Onishi:2005hm}
+
+\bibentry{kovacs_social_2010}
+
+\bibentry{Baillargeon:gx}
+
+\bibentry{butterfill_minimal}
+
+\bibentry{carruthers:2013_mindreading}
+
+
+
+\subsection{Core knowledge}
+What is core knowledge and what role, if any, could it play in explaining the transition from being unable to know things to being able to know things?
+
+
+\subsubsection{---Reading}
+
+\bibentry{Carey:1996hl}
+
+\bibentry{spelke:1992_origins}
+
+\bibentry{Spelke:2007hb}
+
+\bibentry{carey:2009_origin}
+
+\subsection{Innateness}
+What if anything is innate in humans?
+
+Hint: You should be careful to examine the notion of innateness  (see \citealp{Samuels:2004ho}).  Otherwise the reading is divided into topics; you should not try to cover all topics.  I also suggest \emph{not} structuring your essay by topic.
+
+\subsubsection{---Reading}
+
+\bibentry{Samuels:2004ho}
+
+\subsubsection{---Reading: comparative (cross-species)}
+
+\bibentry{chiandetti:2011_chicks_op}
+
+\bibentry{haun:2010_origins}
+
+
+\subsubsection{---Reading: syntax}
+
+Note: this is one-sided.  
+
+\bibentry{lidz:2003_what}
+
+\bibentry{lidz:2004_reaffirming}
+
+
+
+
+\subsubsection{---Reading: replying to Fodor’s argument}
+
+\bibentry{Fodor:1981ep}
+
+\bibentry{carey:2009_origin} chapters 4, 8
+
+(There is also an exchange between Carey and Rey forthcoming in the journal Mind and Language---their papers may be available by the time you read this.)
+
+
+
+
+\subsection{Knowledge of colour}
+At birth humans do not know this lime fruit is green whereas that tomato is red.
+How could some humans come to be in a position to know this?
+
+Hint: you should discuss categorical perception of colour and its relation to knowledge.  There was a lecture on this topic; the handout includes many references.
+
+\subsubsection{---Reading}
+
+\bibentry{Kowalski:2006hk}
+
+\bibentry{Franklin:2005hp}
+
+\bibentry{Franklin:2005xk}
+
+%\bibentry{franklin:2010_hemispheric}
+
+\bibentry{Wiggett:2008xt}
+
+
+
+
+\subsection{Social interaction}
+If humans were incapable of social interaction and could only observe each other from behind one-way mirrors (if such a thing existed), how if at all would this affect the processes by which they get to know things?
+
+\subsubsection{---Reading}
+
+
+\bibentry{tomasello:2008origins}
+
+\bibentry{Tomasello:2005wx} [Read the commentaries.]
+
+\bibentry{butterfill:2012_interacting}
+
+
+
+\subsection{Joint action}
+
+Could there be a role for joint action in explaining how humans come to know things about other minds?
+
+\subsubsection{---Reading}
+
+\bibentry{Moll:2007gu}
+
+\bibentry{carpenter:2009_howjoint}
+
+\bibentry{Tollefsen:2005vh}
+
+\bibentry{Butterfill:2011fk}
+
+
+
+\subsection{Language}
+‘Children learn words through the exercise of reason’ (BLOOM).  Discuss.
+
+Note: the reading for this is one-sided, which makes this question difficult.
+
+
+\subsubsection{---Reading}
+
+\bibentry{Bloom:2000qz}
+
+\bibentry{Baldwin:2000qq}
+
+\bibentry{Sabbagh:2001sp}
+
+\bibentry{Matthews:2008yi}
+
+\bibentry{Dummett:1993xn}
+
+\subsection{}
+
+
+
+%nativism topic readings
+%on animals:
+% \bibentry{chiandetti:2011_chicks_op}
+% \bibentry{haun:2010_origins}
+%philosophy:
+% \bibentry{Samuels:2004ho}
+
+
+
+\clearpage
+\section{Task 6: Write an essay}
+
+\subsection{Suggested question}
+What is ‘shared intentionality’ and what might it explain?    
+
+Compare \citet[p. 688]{Tomasello:2005wx}: ‘Our ... hypothesis is that it is precisely these two developing capacities [to read intentions and to share psychological states]  that interact during the first year of life to create the normal human developmental pathway leading to participation in collaborative cultural practices.’
+
+%How (if at all) could  shared intentionality be involved in creating ‘the normal human developmental pathway leading to participation in collaborative cultural practices’?
+
+%(Tomasello, Carpenter, et al. 2005: 675): “it is only if a young child understands other persons as intentional agents that she can acquire and use linguistic symbols—because the learning and use of symbols requires an understanding that the partner can voluntarily direct actions and attention to outside entities.” 
+
+
+\subsubsection{---Reading: theoretical}
+Pick one of these (first is probably the best; last is shortest; the middle one comes with critical commentaries).
+
+*\bibentry{Moll:2007gu}
+
+\bibentry{Tomasello:2005wx}
+
+\bibentry{Tomasello:2007gl}
+
+
+\subsubsection{---Reading: experimental (pick one or more)}
+
+\bibentry{Moll:2008fh}
+
+\bibentry{Warneken:2006qe}
+
+\bibentry{Tomasello:2007fi}
+
+\subsubsection{---Reading: background}
+
+\bibentry{Bratman:1992mi}
+
+\bibentry{Searle:1990em}
+
+\bibentry{Butterfill:2011fk}
+
+
+%\bibliography{$HOME/endnote/phd_biblio}
+
+
+
+\end{document}

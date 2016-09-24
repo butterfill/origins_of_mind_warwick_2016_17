@@ -1,0 +1,438 @@
+---
+layout: 'deck_unit'
+title: 'Systems, Models and the Emergence Challenge'
+tags: []
+description: 'To understand how humans first come to know things about objects, causes, minds and the rest, we need to understand infants’ cognition of these things and how it differs from, and related to, adults’ cognition.  The key to doing this is to identify how infants models their world and which systems underpin their abilities.'
+depends: ['']  
+source: ['']
+duration: 5
+book: []
+exercises: []
+exercises_fast: []
+---
+
+
+include ../../../fragments/unit_mixins
+
+
++slide_middle
+  p.center systems
+  .notes: :t()
+    There are several options for explaining what is meant by systems:
+    we looked at the notion of a core system, and of modularity.
+    (Also consider Kahnemann, thinking fast and slow).
+    I don't think any is fully satisfactory but I do think that the 
+    systems---the representations and processess---that underpin infant 
+    cognition differ from those involved in having, acquiring and using knowledge.
+    
+
+
+
++slide_middle
+  p.center the Emergence Challenge
+  .notes: :t()
+    How do you get from the systems and models that characterise infant 
+    cognition to their adult counterparts---those involved in having, acquiring and using knowledge?
+  .slide
+    p.center.em-above interface + social interaction  
+    .notes: :t()
+      I think two ingredients are needed. 
+      There has to be an interface linking the outputs of the core system to knowledge,
+      and there has to be social interaction (including communication by language).
+
+
+
+
++slide_middle
+  p.center models
+  .notes: :t()
+    I want to spend a long time on models ...
+
+
++slide_middle({bkg:'DSC_AB_9882.JPG',hide_bkg:true})
+  p.notes.show How do physical thinkers model the physical?
+  .notes: :t()
+    To say that a certain group of subjects can represent physical properties 
+    like weight and momentum leaves open the question 
+    of how they represent those things.
+  +show('img.bkg')
+  .notes: :t()
+    In asking how the subjects, infants say, weight or momentum, we are aiming to
+    understand these things as infants understand them;
+    we are aiming to see them as infants see them.
+    (NB: I'm going to focus on human adults!)
+  .notes: :t()
+    How can we do this?
+    We need a couple of things [STEPS: (1) theories; (2) models; (3) signature limits; (4) trade-offs]
+  
+
+section.slide
+  .words: .middle
+    p.center.huge-glow-150(style='margin-left:-1em;transform:rotate(5deg);') 1
+  +reset
+    .words: .middle
+      p.center theories of the physical
+    .notes: :t()
+      The first thing we need is theories of the physical.
+
++slide_middle
+  p.center
+    +img('kozhevnikov_2001_fig1.png')
+  p.source Kozhevnikov & Hegarty (2001, figure 1)
+  .notes: :t()
+    It is a familiar idea,
+    from the history of science,
+    that there are multiple \textbf{theories} of the physical:
+    impetus and Newtonian mechancs, for example.
+    The impetus theory says that moving objects have something, impetus, that they gradually loose.
+    When they loose their impetus they stop moving.
+    If you push them you impart impetus to them, and that is why they move.
+    With Newtonian mechanics this is not the case; there is no impetus.
+  .notes: :t()
+    In limited but common range of cases, impetus and Newtonian mechanics 
+    coincide.
+    However, the two theories make different predictions about the acceleration of falling objects,
+    and of a ascending objects (those launched vertically, in the manner of a rocket).
+  .notes: :t()
+    Consider ascending objects.  We're fixing density and shape and considering how the size 
+    of objects changes things.
+  .notes: :t()
+    According to Newtonian mechanics, if we ignore air resistance, then size makes no difference to
+    accelleration.  If we include air resistance, larger objects accellerate faster (because of the 
+    difference in ratio of mass to surface).
+  .notes: :t()
+    By contrast, according to an impetus principle:
+    ‘More massive objects accelerate at a slower rate. An object’s initial impetus continually 
+    dissipates because it is overcome by the effect of gravity. The more massive the ascending object, 
+    the more gravity counteracts its impetus.’ \citep[p.\ 445]{kozhevnikov:2001_impetus}
+
+
+
++slide
+  p.center
+    +img('mccloskey_1983_fig1.png')
+  p.source McCloskey et al (1983, figure 1)
+  .notes: :t()
+    A person is walking along and releases a ball.  
+    What is the trajectory the ball will follow?
+    Will it fall straight down, go forwards like this, or go backwards like this?
+  .notes: :t()
+    The two theories may also make different predictions about what happens when
+    a walking person drops a moving object.
+  .notes: :t()
+    [I don't really need this example, but I think it makes the point more vivid
+    somehow.]
+  .notes: :t()
+    [[not relevant yet:]
+    \citep[p.\ 648]{mccloskey:1983_intuitive}:
+    ‘A recent study by McCloskey and Kohl (Note 2) suggests that the straight-down belief is related to 
+    the impetus view of motion. In this study subjects completed several pencil-and-paper problems 
+    and then explained their answers. Subjects who evidenced the straight-down belief explained 
+    that when an object is pushed or thrown, it acquires force (i.e., impetus). However, they argued, 
+    an object that is passively carried by another moving object does not acquire force.’]
+
+
+section.slide
+  .words: .middle
+    p.center.huge-glow-150(style='margin-left:-1em;transform:rotate(-5deg);') 2
+  +reset
+    .words: .middle
+      p.center models of the physical
+    .notes: :t()
+      The second thing we need is models of the physical.
+
+
++slide_rh_white({step:true})
+  .blur-later
+    +run_across
+      p.notes.show.center What is a model of the physical?
+      .notes: :t()
+        A model is something that you could use for thinking about the physical.
+        We (as theorists) can specify models by with a theory.
+        The impetus theory specifies one model, the Newtonian theory specifies another.
+      .notes: :t()
+        In order to specify a model of the physical, a theory needs to do at least two
+        things.  It needs to specify the basic entities, things like force and mass,
+        which is usually done by describing their relations.
+        And it needs to specify measurement schemes so that we can distinguish
+        different quantities of the basic items.
+    .slide
+      +left_half
+        p.center entities
+        p.em-above e.g. 
+        p momentum = mass * velocity 
+      +right_half({step:true})
+        p.center measurement scheme(s)
+        p.em-above e.g. 
+        p mass measured in grams using real numbers
+  +blur2_('.blur-later, .right-half-white')
+  .slide
+    +run_across
+      p.center model != theory
+      .notes: :t()
+        Note that a model is not a theory.
+        A person or a process can use a model without having a theory.
+        We, as theorists, use theories to specify models.
+        Someone faced with a concrete problem may use the model to solve it
+        despite not in any interesting sense knowing the theory.
+
+
+section.slide
+  .words: .middle
+    p.center.huge-glow-150(style='margin-left:-1em;transform:rotate(-5deg);') 3
+  +reset
+    .words: .middle
+      p.center signature limits
+    .notes: :t()
+      The third thing we need is to identify signature limits if the models.
+    .notes: :t()
+      Let me first say what signature limits in general are:
+    .notes.handout: :t()
+      A signature limit of a model is a set of predictions derivable from the model which 
+      are incorrect, and which are not predictions of other models under consideration.
+    .notes.handout: :t()
+    
+  
++slide_middle
+  .notes: :t()
+    To illustrate the use of siganture limits, let me ask you a question ...
+  p.center.notes.show What model of the physical are you using?
+  .notes: :t()
+    I know you are capable of thinking about physical things and 
+    I want to know what model of the physical you are using.
+    I will compare two hypotheses.
+    One hypotheses says you use the model of the physical specified by an impetus theory.
+    The other hypothesis says you use the model of the physical specified by
+    a Newtonian theory.
+    How can I distinguish these hypotheses?
+
++slide
+  p.center
+    +img('mccloskey_1983_fig1.png')
+  p.source McCloskey et al (1983, figure 1)
+  .notes: :t()
+    Here's a man walking along holding a ball in his hand and he drops it.  Where do you think it will fall?
+  .notes: :t()
+    The Newtonian theory predicts B, the impetus theory predicts C.
+    So if you said B, I take this to be evidence to prefer the hypothesis that 
+    you are using a Newtonian model of the physical over the hypothesis that you are using
+    an impetus-based model.
+
+section.slide
+  .part1
+    +_slide_inner
+      +img('mccloskey_1983.png')
+      p.source drawn from McCloskey et al (1983)
+      .notes: :t()
+        [\citep[p.\ 639]{mccloskey:1983_intuitive}
+        ‘In the walker condition 14 subjects (38%) gave forward responses, 
+        19 (51%) made straight-down responses, and the remaining 4 (11%) indicated 
+        that the ball would move backward after it was released.’]
+  +blur2_('.part1')
+  +slide_reset
+    +_slide_middle_inner
+      p.center.huge-glow-50(style='line-height:50px'): :t()
+        Different people use different models.
+
+
+section.slide
+  .notes: :t()
+    Let me pause to spell out the logic of this.
+  +_slide_inner
+    p.center.invert signature limits
+  .right-half-white
+  .container_12.notes.show
+    +left_half
+      .hypothesis
+        p Hypothesis 1
+        p.indent 
+          span.response Response R
+          span  is the product of a process using a model characterised by Theory 1
+        .notes: :t()
+          These are the hypotheses I wanted to test.
+      .fact.hide
+        p.em-above Fact
+        p.indent Theory 1 predicts that objects will F.
+      .prediction
+        p.em-above Prediction of Hypothesis 1
+        p.indent Response R will proceed as if objects will F
+    +right_half
+      .hypothesis
+        p Hypothesis 2
+        p.indent 
+          span.response Response R
+          span  is the product of a process using a model characterised by Theory 2
+      .fact.hide
+        p.em-above Fact
+        p.indent Theory 2 predicts that objects will not F.
+      .prediction.hide
+        p.em-above Prediction of Hypothesis 2
+        p.indent Response R will proceed as if objects will not F
+    +show('.fact')
+    .notes: :t()
+      To test the hypotheses, I need to identify an area where the theories describing the models
+      make incompatible predictions.
+      This is a signature limit of impetus mechanics.
+    +show('.prediction')
+    .notes: :t()
+      The fact allows me to derive different predicts from the hypotheses.
+    +invert('.response')
+    .notes: :t()
+      So far we looked at explicit verbal responses. 
+      Now lets look at an implicit measure called representational momentum.
+      (It doesn't really matter what representational momentum is,
+      but ask me after if you like.)
+    
++slide_middle
+  p.center What model of the physical are your object-tracking systems using?
+
++slide_middle
+  p.center
+    +img('kozhevnikov_2001_fig1.png')
+  p.source Kozhevnikov & Hegarty (2001, figure 1)
+  .notes: :t()
+    This time we're using a different paradigm: smaller and larger
+    objects launched vertically.
+
+section.slide
+  .part1
+    +_slide_middle_inner
+      p.center
+        +img('kozhevnikov_2001_fig2.png')
+      p.source Kozhevnikov & Hegarty (2001, figure 2)
+      .notes: :t()
+        What you see in the figure is that experts and novices alike think small objects launched
+        vertically will have more momentum than large ones.
+        Note that the trend is for experts to worse than novices: the line should be flat
+        (if no air resistance) or sloping the other way.)
+      .notes.handout: :t()
+        \citet[p.\ 449]{kozhevnikov:2001_impetus}: ‘although people with physics training make 
+        correct explicit judgments about the 
+        effects of mass on ascending objects, their implicit knowledge, as revealed by RM
+        [representational momentum], 
+        is not different from novices’ knowledge and is consistent with impetus principles’
+  +blur2_('.part1')
+  +slide_reset
+    +_slide_middle_inner
+      p.center.huge-glow-50(style='line-height:50px;transform: rotate(-2deg);').notes.show: :t()
+        Within a person, different processes use different models.
+    .notes: :t()
+      Different cognitive processes involved 
+      in predicting objects’ movements use different models of the physical.
+      In particular, a phenomenon called representational momentum makes predictions about objects’
+      future locations in line with an impetus principle regardless of how much the subject in
+      which it occurs knows about the physical.
+
+
+section.slide
+  .words: .middle
+    p.center.huge-glow-150(style='margin-left:-0.5em;transform:rotate(5deg);') 4
+  +reset
+    .words: .middle
+      p.center efficiency-flexibility trade offs
+    .notes: :t()
+      The fourth and last thing we need 
+      (in order to answer the question about how humans model the physical)
+      is to understand 
+      why different humans use different models of the physical.
+
+
+
+
++slide_middle
+  .notes: :t()
+    Why do human cognitive and perceptual processes use different models of the phyiscal?
+    One reason may be that different models permit differet trade offs between 
+    efficiency and flexibility.
+  .handout: :t()
+    Different models of the physical permit different trade offs between cognitive efficiency 
+    (necessary for achieving the speeds needed to stay ahead of one or more moving objects) 
+    with flexibility (necessary for accuracy across the widest range of situations), 
+    (\citealp[p.\ 640]{hubbard:2013_launching}; \citealp[p.\ 450]{kozhevnikov:2001_impetus}).
+  //- 
+    p.em-above: :t()
+      ‘the process of extrapolation should be fast and effortless, without much conscious 
+      deliberation.’
+    p.right Kozhevnikov & Hegarty (2001, p. 450)
+  p.em-above
+    span ‘an impetus heuristic could yield an approximately 
+    span correct (and adequate) solution 
+    span ... but would require 
+    span less effort or fewer resources 
+    span than would prediction based on a correct understanding of physical principles.’  
+  p.right Hubbard (2014, p. 640)
+  .handout: :t()
+    \citet[p.\ 450]{kozhevnikov:2001_impetus}: 
+    ‘To extrapolate objects’ motion on the basis of physical 
+    principles, one should have assessed and evaluated the presence and magnitude of such 
+    imperceptible forces as friction and air resistance operating in the real world.  This would 
+    require a time-consuming analysis that is not always possible. In order to have a survival 
+    advantage, the process of extrapolation should be fast and effortless, without much conscious 
+    deliberation. Impetus theory allows us to extrapolate objects’ motion quickly and without large 
+    demands on attentional resources.’ 
+  .handout: :t()
+    \citep[p.\ 640]{hubbard:2013_launching}:
+    ‘prediction based on an impetus heuristic could yield an approximately 
+    correct (and adequate) solution 
+    ...] but would require less effort or fewer 
+    resources than would prediction based on a correct understanding of physical principles.’
+
+  
++slide_middle
+  p.center How do infants model objects, minds, colours, ...?
+  .notes: :t()
+    So I've been explaining why I think this is a pressing question.
+    If you want to know about particular processes of physical cognition, you have to know 
+    what model of the physical they use.
+    Similarly for mindreading, colour and all the other cases.
+
+
+
+
+
+
+
+
+
+
+// *todo : reveal first column from start 
+mixin table_models_systems(p)
+  if !p
+    - p = {step:true}
+  table.data
+    thead
+      tr
+        td domain
+        td model
+        td system
+        td interface
+    tbody
+      tr.odd.case-colour(class="#{p.step ? 'slide' : ''}")
+        td phyiscal objects
+        td impetus mechanics
+        td object indexes
+        td phenomenal expectations
+      tr.even.case-objects(class="#{p.step ? 'slide' : ''}")
+        td colour
+        td infant categories
+        td categorical perception
+        td visual experiences
+      tr.odd.case-minds(class="#{p.step ? 'slide' : ''}")
+        td minds
+        td minimal theory of mind
+        td automatic
+        td ?
+      tr.even.case-syntax(class="#{p.step ? 'slide' : ''}")
+        td actions
+        td Dennettian
+        td motoric
+        td ???
+      tr.odd.case-number(class="#{p.step ? 'slide' : ''}")
+        td words
+        td ???
+        td ???
+        td ???
+
+
++slide
+  +table_models_systems

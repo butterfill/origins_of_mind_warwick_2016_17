@@ -1,0 +1,182 @@
+---
+layout: 'default2'
+title: 'Lecture 02'
+weburl: ''
+units: []
+lecture_date: '2014/10/09'
+---
+
+include ../../fragments/lecture_mixins
+include ../../fragments/unit_mixins
+include ../../fragments/origins_mixins
+
+
+- var images = get_images('twins_2008')
+
++title_slide({document:document, images:images})
+
+
++slide_middle
+  p.center recap
+  .notes: :t()
+    The question for this course is ...
+    We are going to approach this question by examining the evidence from developmental science, 
+    exploring how it bears on philosophical positions like nativism and empiricsm, 
+    and identifying philosophical problems created by the evidence.
+    Our focus is on two breakthrough sets of findings.
+    One concerns core knowledge, the other social interaction.
+    One problem for us is that these two sets of findings are typically considered in isolation, 
+    although I think there are strong reasons to suppose that understanding the origins of knowledge 
+    will require thinking about both core knowledge and social interaction.
+
++slide_middle
+  p.center challenge
+  .notes: :t()
+    My working hypothesis is that we can't understand early forms of social interaction without core knowledge;  
+    and that we can't understand how core knowledge leads to knowledge proper without social interaction.
+    The challenge is to understand how core knowledge and social interaction conspire in the emergence of knowledge.
+    Well, that's the big picture.
+    But at this stage in the course I simply want to introduce you to some of the key findings and the puzzles they raise.
+
+//- 
+  section.slide 
+    .notes If you've seen the outline of lectures, you'll know that my idea is to organise the lectures by domains of knowledge.
+    .words: .container_12
+      .grid_3
+        p plan
+      .slide
+        .notes The topics are these.
+        .notes I'm not always intending to do one lecture per topic.  
+        .notes Rather, in most of these lectures I'm planning to talk about two or more topics.
+        .notes This risks making things seem fractured.
+        .notes But I hope it will make the material easier to absorb and the lectures more interesting.
+        .grid_9
+          .topics
+            p social interaction
+            p objects and how they interact
+            p numbers
+            p.today seeing and talking about colours
+            p words and other communicative tools
+            p actions: teleology and motor awareness
+            p minds
+          +blur_('.topics :not(.today)')
+          +highlight-row('.today', 'white')
+          .notes Today's topic is colour.
+          .notes In some ways this is an odd topic to do first, or at all.
+          .notes I've chosen to do colour for three reasons.
+            ul
+              li It's fun
+              li It's a relatively simple case, and one that provides a model for other cases.
+              li It challenges almost any prior assumption you might make about the emergence of knowledge.
+
+
+//- objects vs features segmentation, persistence and interaction
++insert_unit({unit:'161', title_slide:true, images:images})
+
+//- Segmentation and the Principles of Object Perception
++insert_unit({unit:'171', title_slide:true, images:images})
+
+//- From Segmentation to Permanence
++insert_unit({unit:'181', title_slide:true, images:images})
+
+//- this unit has been cut up and moved
+// +insert_unit({unit:'191', title_slide:true, images:images})
+
+
++section({title:'Essays', images:images})
+
++slide_middle
+  p.center peer review: what are you looking for?
+  
++slide_middle
+  .notes: :t()
+    This is going to be a bit awkward, especially as we don't really know each other yet, 
+    but I want to discuss feedback before submission of an assessed essay ...
+  .notes: :t()
+    Last week I mentioned that I want to give you feedback on work prior to submitting it.
+    In particular, I want to discuss an essay outline and a draft of your essay.
+  .notes: :t()
+    My aim is to improve feedack to that: you  have opportunities to act on feedback (by, 
+    for instance, revising an outline or essay), (b) you receive feedback from peers as well as 
+    tutors or lecturers, and you can combine feedback from others (peers, and lecturers or 
+    tutors) with self-assessment.
+    Overall, my aim is to make feedback part of a continuing dialog rather than something you get
+    only after you've done all the thinking on an issue that you're going to do.
+  .notes: :t()
+    I can only do this---and it only makes sense to do this---if you think this is a good idea.
+    You might think that it involves too much work on your part, or that it is somehow unfair.
+    Now I was assuming it would be ok because the students last year seemed to like it a lot.
+    But then it struck me that maybe you are different.  So please let me know.  
+  .notes: :t()
+    Are you happy with the system of feedback I'm proposing or would you prefer it if I stick to 
+    the default approach?
+  p.center feedback and assessment
+
+
+//- Causal Interaction
++insert_unit({unit:'201', title_slide:true, images:images})
+
+
+//- Recap
++insert_unit({unit:'206', title_slide:true, images:images})
+
+//- The problem
++insert_unit({unit:'207', title_slide:true, images:images})
+
+//- Explanation of the problem
++insert_unit({unit:'211', title_slide:true, images:images})
+
++section({title:'Summary of Lecture 02', images:images})
+//- conclude lecture 02
++slide
+  .notes To conclude, the question for this lecture concerned knowledge of physical objects.
+  .notes We examined how three requirements on having knowledge of physical objects are met.
+  .notes Knowledge of objects depends on abilities to (i) segment objects, (ii) represent them as persisting and (iii) track their interactions.
+  p Three requirements
+  ul
+    li segment objects
+    li represent objects as persisting (‘permanence’)
+    li track objects’ interactions
+  .notes: :t()
+    We looked at each of these in turn and found evidence for two discoveries.
+    First infants meet these requirements in the first months of their lives.
++slide
+  p Principles of Object Perception
+  ul
+    li cohesion
+      span.step2.grey-text —‘two surface points lie on the same object only if the points are linked by a path of connected surface points’
+    li boundedness
+      span.step3.grey-text —‘two surface points lie on distinct objects only if no path of connected surface points links them’
+      // … the boundedness principle implies that … two distinct objects cannot interpenetrate.’
+    li rigidity
+      span.step4.grey-text —‘objects are interpreted as moving rigidly if such an interpretation exists’
+    li no action at a distance
+      span.step5.grey-text —‘separated objects are interpreted as moving independently of one another if such an interpretation exists’
+  p.right (Spelke 1990)
+  .notes: :t()
+    Second, a single set of principles is formally adequate to explain how someone could 
+    meet these requirements, and to describe infants' abilities with segmentation, 
+    representing objects as persisting and tracking objects' interactions.
+  .notes: :t()
+    This left us with the a question about mechanism: What is the relation between these principles
+    and infants' competence?
++slide_middle
+  p.center.false the simple view
+  .notes: :t()
+    A natuaral answer is the Simple View: #{origins.simple_view}
+  +line-through('.false')
+  .notes: :t()
+    However, as we saw, the Simple View must be wrong because it generates incorrect predictions.
+    This was the lesson of the discrepancy bewteen looking and search measures for both 
+    infants' abilities to represent objects as persisting and their abilities to track causal 
+    interactions.
+  .notes: :t()
+    As I've just been arguing, the failure of the Simple View presents us with a problem.
+    The problem is to understand the nature of infants' apprehension of the principles given
+    that it doesn't involve knowledge.
+    This is a problem that will permeate our discussion of the origins of mind because it 
+    problems of this form come up again and again in different domains. 
+    It isn't the only problem we'll encounter, but none of the problems are more important or more
+    general than this one.
+    
+    

@@ -1,0 +1,109 @@
+---
+layout: 'deck_unit'
+title: "Inbetween mindless behaviour and thought"
+tags: []
+description: "Why does the question about the origins of knowledge require philosophical inquiry?"
+depends: ['']
+source: ['']
+duration: 5
+book: []
+exercises: []
+exercises_fast: []
+---
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/compatibility_mixins
+
+
+// doesn't appear on a slide
+.handout
+  span ‘We have many vocabularies for describing nature when we regard it as 
+  span.highlight1 mindless
+  span , and we have a mentalistic vocabulary for describing 
+  span.highlight1 thought and intentional action
+  span ; what we lack is a way of describing 
+  span.highlight1 what is in between
+  span ’ 
+  span \citep[p.\ 11]{Davidson:1999ju}
+
+
+mixin davidson_inbetween()
+  p
+    span ‘if you want to describe what is going on in the head of the child when it has a few words which it utters in appropriate situations,  
+    span.you-will-fail you will fail
+    span.step2.hide   for lack of the right sort of words of your own.
+  p.step3.hide
+    span ‘We have many vocabularies for describing nature when we regard it as 
+    span.highlight1 mindless
+    span , and we have a mentalistic vocabulary for describing 
+    span.highlight1 thought and intentional action
+    span ; what we lack is a way of describing 
+    span.highlight1 what is in between
+    span ’
+  p.right
+    span (Davidson 1999, p. 11)
+  +highlight('.you-will-fail','red')
+  +show('.step2')
+  +show('.step3')
+  +invert('.highlight1')
+    block
+
+section.slide
+  .notes: :t()
+    Why suppose there is any role for philosophers rather than scientists?
+    Part of the answer is provided by Donald Davidson.
+  .photobox-bottom-right
+    img.photo-right(src='/img/davidson.gif')
+  .words: .container_12: .grid_12
+    .notes The question is how humans come to know about objects, words, thoughts and other things.
+    .notes In pursuing this question we have to consider minds where the knowledge is neither clearly present nor obviously absent. 
+    .notes This is challenging because both commonsense and theoretical tools for describing minds are generally designed for characterising fully developed adults.
+    +davidson_inbetween()
+      .notes: :t()
+        So this is the challenge.  We are describing something which is neither mindless 
+        nor involving full-blown thought and action.  And, as Davidson observes, we lack
+        a way of describing what is in between.
+
+
+section.slide
+  .notes Hood and colleagues make a related point.
+  .words: .container_12: .grid_12
+    .middle
+      p.handout.show
+        span.blur1 ‘there are 
+        span.noblur many separable systems of mental representations 
+        span.blur1 ... and 
+        span.noblur thus many different kinds of 
+          span.highlight2 knowledge. 
+        span.blur1 ... the task ... is to contribute to the enterprise of finding the distinct systems of mental representation and to understand their development and integration’
+        span.handout \citep[p.\ 1522]{Hood:2000bf}.
+      p.right.blur1 (Hood et al 2000, p.\ 1522)
+      mixin blur('.blur1')
+      .notes This quote raises two issues
+      .notes First, we should be cautious about the inference from separable systems to kinds of knowledge.  (Think about modularity.)
+      mixin invert('.highlight2')
+      .notes Second, we should be cautious here in talking about knowledge at all.
+
+
+section.slide
+  .notes To sum up so far, the question for this course is, How do humans come to know  about---and to knowingly manipulate---objects, causes, words, numbers, colours, actions and minds?
+  .notes I've been suggesting we can't answer it simply by appealing to nativism, empiricism or other grand myths.
+  .notes Instead we need to focus on the particular mechanisms that are involved in different cases.
+  .notes But then you might wonder, What philosophical questions arise here?  Isn't this a narrowly pscyhological---and therefore scientific---issue?
+  .notes The answer is no because thinking about how humans come to know things requires us to meet Davidson's challenge, to understand things that are neither mindless nor thought or knowledge but somewhere in between.
+  .notes As Hood suggests in the quote I just showed you, this might involve rethinking what knowledge is.
+  .words: .container_12: .grid_12
+    .middle.center
+      p summary
+
+
+
+section.slide
+  .words: .container_12: .grid_12
+    .middle
+      p.center so what are we going to do in 3 days?
+    .notes We're going to try to understand how humans come to know about things by examining what developmental psychology tells us about the acquisition of knowledge.
+    .notes This turns out to be a partly philosophical project because understanding the apparently conflicting evidence requires us to re-think notions like knowledge and representation.
+    .notes In practice, this means looking carefully, and in detail, at the scientific evidence.
+    .notes If you want to know how minds work, you have to start with the evidence.
+

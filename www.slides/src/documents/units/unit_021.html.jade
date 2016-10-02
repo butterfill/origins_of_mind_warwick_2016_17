@@ -41,12 +41,12 @@ include ../../../fragments/unit_mixins
       span.handout.notes.show: :t()
         ‘Men, barely by the Use of their natural Faculties, may attain to all the Knowledge they 
         have, without the help of any innate Impressions; [...]
-    .slide
-      .notes This claim about colour isn't relevant yet but we'll return to it later.
-      p
-        span.handout.notes.ctd.show ‘it would be impertinent to suppose, the Ideas of Colours innate in a Creature, to whom God hath given Sight, and a Power to receive them by the Eyes from external Objects’
-      p.right (Locke 1975 [1689], p. 48)
-      .handout.notes.ctd \citep[p.\ 48]{Locke:1975qo}
+    //- .slide
+    //-   .notes This claim about colour isn't relevant yet but we'll return to it later.
+    //-   p
+    //-     span.handout.notes.ctd.show ‘it would be impertinent to suppose, the Ideas of Colours innate in a Creature, to whom God hath given Sight, and a Power to receive them by the Eyes from external Objects’
+    //-   p.right (Locke 1975 [1689], p. 48)
+    //-   .handout.notes.ctd \citep[p.\ 48]{Locke:1975qo}
 
 //section.slide
 //  .words: .container_12: .grid_12
@@ -55,11 +55,14 @@ include ../../../fragments/unit_mixins
 //    p ‘And these reflective acts furnish the chief objects of our reasonings.’
 //    p.right (Leibniz 1973 [1714], §§29-30)
 
-+slide_middle
+
++slide_middle({photo:'spelke.jpg'})
   .notes Spelke is blunt.  
   p.handout.notes.show ‘Developmental science [...] has shown that both these views are false’
   .handout.notes.ctd \citep[p.\ 89]{Spelke:2007hb}.
+  
   p.right (Spelke and Kinzler 2007, p. 89)
+  
   p.notes: :t()
     Spelke doesn't have exactly Locke vs Leibniz in mind here, but rather modern descendants 
     of their views.

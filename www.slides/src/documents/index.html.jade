@@ -40,6 +40,8 @@ html
           ul
             li
               a(href='https://yyrama.butterfill.com/course/view/OriginsOfMind', target="_blank") Tasks for seminars --- undergraduates
+            li
+              a(href='/pdf/preapproved_essay_questions.pdf', target="_blank")  Pre-approved essay questions
             //- li
             //-   a(href='/handouts/essay_questions_ma.pdf', target="_blank") Essays, readings and tasks for seminars --- MA and MPhil students
 
@@ -64,32 +66,33 @@ html
 
         //- now do a section for each lecture
         each lecture in getCollection("lectures").toJSON()
-          div(id='#{lecture.basename}')
-            .page-header
-              h2: a(href='#{lecture.url}',target='_blank') #{lecture.title}
-              if lecture.lecture_date
-                p Date given: #{moment(lecture.lecture_date).format('dddd Do MMMM YYYY')}
-              p 
-                a(href='#{lecture.url}',target='_blank') slides
-                |  , 
-                a(href='/handouts/#{lecture.basename}.handout.pdf',target='_blank') handout [pdf]
+          unless lecture.hidden
+            div(id='#{lecture.basename}')
+              .page-header
+                h2: a(href='#{lecture.url}',target='_blank') #{lecture.title}
+                if lecture.lecture_date
+                  p Date given: #{moment(lecture.lecture_date).format('dddd Do MMMM YYYY')}
+                p 
+                  a(href='#{lecture.url}',target='_blank') slides
+                  |  , 
+                  a(href='/handouts/#{lecture.basename}.handout.pdf',target='_blank') handout [pdf]
               
-              .units(style='border-left: 1px dotted grey;margin-left: -1px;')
-                div(style="padding-left:2em;")
-                  if lecture.units
-                    - each unit_num in lecture.units
-                      - unit = get_unit(unit_num)
-                      h3
-                        a(href="#{unit.url}") #{unit.title}
-                        span(style="font-size:50%;color:grey;")  (#{unit_num})
-                      if unit.tags && unit.tags.length && unit.tags.length > 0
-                        p(style="text-align:right;margin:0;padding:0;margin-top:-2.5em;") 
-                          each t in unit.tags
-                            span.label.label-info #{t}
-                            | 
-                      p #{unit.description}
-                      if unit.book && unit.book.length > 0 
-                        p Reading:  §#{unit.book.join(', §')}
-                      if unit.exercises && unit.exercises.length > 0 
-                        p Exercises (regular): #{unit.exercises.join(', ')}
+                .units(style='border-left: 1px dotted grey;margin-left: -1px;')
+                  div(style="padding-left:2em;")
+                    if lecture.units
+                      - each unit_num in lecture.units
+                        - unit = get_unit(unit_num)
+                        h3
+                          a(href="#{unit.url}") #{unit.title}
+                          span(style="font-size:50%;color:grey;")  (#{unit_num})
+                        if unit.tags && unit.tags.length && unit.tags.length > 0
+                          p(style="text-align:right;margin:0;padding:0;margin-top:-2.5em;") 
+                            each t in unit.tags
+                              span.label.label-info #{t}
+                              | 
+                        p #{unit.description}
+                        if unit.book && unit.book.length > 0 
+                          p Reading:  §#{unit.book.join(', §')}
+                        if unit.exercises && unit.exercises.length > 0 
+                          p Exercises (regular): #{unit.exercises.join(', ')}
             

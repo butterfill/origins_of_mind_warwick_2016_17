@@ -1,8 +1,17 @@
----
+---cson
 layout: 'deck_unit'
-title: "Davidon's Challenge"
+title: "Davidon’s Challenge"
 tags: []
-description: "Why does the question about the origins of knowledge require philosophical inquiry?"
+description: """
+  There is an obstacle to understanding the emergence of knowledge in development.
+  As Davidson (1999, 11) puts it,
+  ‘We have many vocabularies for describing nature when we regard it as 
+  mindless
+  and we have a mentalistic vocabulary for describing 
+  thought and intentional action
+  what we lack is a way of describing 
+  what is in between’ 
+  """
 depends: ['']
 source: ['']
 duration: 5
@@ -12,7 +21,7 @@ exercises_fast: []
 ---
 
 include ../../../fragments/unit_mixins
-include ../../../fragments/compatibility_mixins
+include ../../../fragments/origins_mixins
 
 
 // doesn't appear on a slide
@@ -26,63 +35,80 @@ include ../../../fragments/compatibility_mixins
   span ’ 
   span \citep[p.\ 11]{Davidson:1999ju}
 
-
-mixin davidson_inbetween(p)
-  if typeof(p) === 'undefined' 
-    - p = {}
-  if !('step' in p)
-    - p.step = false
-
-  .photobox-bottom-right
-    img.photo-right(src='/img/davidson.gif')
-  .words: .container_12: .grid_12
-    p
-      span ‘if you want to describe what is going on in the head of the child when it has a few words which it utters in appropriate situations,  
-      span.you-will-fail you will fail
-      span.step2(class="#{p.step ? 'hide' : ''}")   for lack of the right sort of words of your own.
-    p.step3(class="#{p.step ? 'hide' : ''}")
-      span ‘We have many vocabularies for describing nature when we regard it as 
-      span.highlight1 mindless
-      span , and we have a mentalistic vocabulary for describing 
-      span.highlight1 thought and intentional action
-      span ; what we lack is a way of describing 
-      span.highlight1 what is in between
-      span ’
-    p.right
-      span (Davidson 1999, p. 11)
-    if p.step
-      +highlight('.you-will-fail','red')
-      .notes: :t()
-        I love this: Davidson says we will fail.  So encouraging.
-        But why will we fail?
-      +show('.step2')
-      .notes: :t()
-        Is he suggesting the issue is merely terminological?  Not quite ...
-      +show('.step3')
-      +invert('.highlight1')
-    block
-
 section.slide
-  .notes: :t()
+  .notes: :t
     Why suppose there is any role for philosophers rather than scientists?
     Part of the answer is provided by Donald Davidson.
-  .notes: :t()
+  .notes: :t
     The question is how humans come to know about objects, words, thoughts and other things.
     In pursuing this question we have to consider minds where the knowledge is neither clearly 
     present nor obviously absent. 
     This is challenging because both commonsense and theoretical tools for describing minds are 
     generally designed for characterising fully developed adults.
   +davidson_inbetween({step:true})
-    .notes: :t()
+    .notes: :t
       So this is the challenge.  We are describing something which is neither mindless 
       nor involving full-blown thought and action.  And, as Davidson observes, we lack
       a way of describing what is in between.
-    .notes: :t()
-      Earlier I asked why philosophers rather than only scientists should investigate the 
-      question about the origins of mind.  And this is the answer.  It's because tacking
-      with the quesiton will require new conceptual tools.
-    .notes: :t()
+    .notes: :t
+      The question about the origins of mind is in part a philosophical question because
+      answering it will require new conceptual tools.
+    .notes: :t
       This challenge is one that we will face again and again.
 
 
++slide_middle
+  .notes: :t
+    What does Davidson have in mind?  Let me introduce 
+    what I’ll call the ‘Uncomplicated Account of Minds and Actions’.
+  .notes.handout.show
+    p Uncomplicated Account of Minds and Actions 
+    .slide
+      p.em-above.generalise.hide For any given proposition [There’s a spider behind the book] and any given human [Wy] ...
+      p.em-above.indent 1. Either Wy   
+        span.believes believes
+        span   that there’s a spider behind the book, or she does not.
+      p.em-above.indent 2. Either Wy can act for the reason that there is, or seems to be, a spider behind the book, or else she cannot.
+      p.em-above.indent 3. The first alternatives of (1) and (2) are either both true or both false.
+  .slide
+    +show('.generalise')
+  .slide
+    +invert('.believes')
+    .notes: :t
+      The Uncomplicated Account could be elaborated to take into account
+      the fact that how people act depends on attitudes other than belief.
+      For example, much may depend on whether Wy likes, or fears, spiders.
+    .notes: :t
+      Philosophers have done much of this elaboration, building on the Uncomplicated
+      Account by identifying features of belief adding attitudes like desire
+      and intention as well as fear and pride.  
+  .slide
+    +uninvert('.believes')
+    .notes: :t
+      But there is a fundamental problem with the Uncomplicated Account,
+      one that probably can’t be fixed by elaborating it with further attitudes.
+      The problem is that, as we will see in a moment, there are cases in which
+      (2) turns out to be wrong and the connection between (1) and (2) breaks down.
+    .notes: :t
+      If we want to understand what is going on in the head of an infant who is 
+      in the process of developing capacities for knowledge, we will have to
+      fundamentally revise the Uncomplicated Account.
 
+
+
+//- MOVE!
++slide_middle
+  .notes: :t
+    So I agree with 
+    Hood and colleagues about a central challenge involved in understanding 
+    the developmental emergence of knowledge.  
+  p.handout.notes.show
+    span.blur1 ‘there are 
+    span.noblur many separable systems of mental representations 
+    span.blur1 ... the task ... is to ... [find] the distinct systems of mental representation and to understand their development and integration’
+    span.handout \citep[p.\ 1522]{Hood:2000bf}.
+  p.right.blur1 (Hood et al 2000, p.\ 1522)
+  .notes: :t
+    I don’t think this is the only challenge, by the way.
+    A further challenge concerns the role of social interaction in 
+    explaining development.  We’ll come to that later.

@@ -14,7 +14,7 @@ exercises_fast: []
 include ../../../fragments/unit_mixins
   
 section.slide.nodim
-  .notes: :t()
+  .notes: :t
     Recall that the question for this course is ...
     Our focus is on two breakthrough sets of findings.
     One concerns core knowledge, the other social interaction.
@@ -23,21 +23,21 @@ section.slide.nodim
       p.center
         strong core knowledge
       .notes Take core knowledge first. 
-      .notes: :t()
+      .notes: :t
         We will see that infants can tackle physics, number, agents and minds thanks to a set of 
         innate or early-developing abilities, often labelled `core knowledge'.
       .slide.nodim
         p We don't understand it.
-        .notes: :t()
+        .notes: :t
           For now, let us use the term `core knowledge' to mean whatever infants have concerning
           the locations of particular objects which is not knowledge but which underpins their
           abilities to discriminate between phyiscally possible and physically impossible
           sitatuions where the difference between possibile and impossibile depends on facts about
           objects the infants are not currently perceiving.
-        .notes: :t()
+        .notes: :t
           It is important that we don't (yet) know what core knowledge is; `core knowledge' is a 
           term of art. I haven't explained what it is.
-        .notes: :t()
+        .notes: :t
           [*needs updating!]
           Our position is this.
           Some scientists talk about core knowledge, and formulate hypotheses in terms of it.
@@ -62,15 +62,16 @@ section.slide.nodim
           li judgement-independent
           li domain-specific
           li signature limits
-        .notes: :t()
+        .notes: :t
           Several features distinguish core knowledge from adult-like understanding: its content is 
           unknowable by introspection and judgement-independent; it is specific to quite narrow 
           categories of event and does not grow by means of generalization; it is best understood 
           as a collection of rules rather than a coherent theory; and it has limited application 
           being usually manifest in the control of attention (as measured by dishabituation, gaze, 
           and looking times) and rarely or never manifest in purposive actions such as reaching.
-    +blur('.left_half')
-    .notes Now, what about social interaction?  First let me mention what people say about it.
+    .slide
+      +blur('.left_half')
+      .notes Now, what about social interaction?  First let me mention what people say about it.
     //- vygotsky hypothesis
     .slide.interlude-vygotsky
       +reset
@@ -104,16 +105,17 @@ section.slide.nodim
                 .handout ‘human cognitive abilities ... [are] built upon social interaction’
                 .handout.ctd \citep{sinigaglia:2008_roots} %*page
                 // p.right (Sinigaglia &Sparaci 2008)
-              +invert('.interaction')
-              .notes: :t()
-                The challenge, of course, is to say *how* social interaction enables humans to come 
-                to know things.
-                To this end, the first question we should ask is, What forms of interaction are 
-                relevant?  When we are talking about tiny humans
-                in the first year or two of life, we can't expect much in the way of social
-                interactions.  Or can we?
-
-    +hide('.interlude-vygotsky, .vygostky-hypothesis')
+              .slide
+                +invert('.interaction')
+                .notes: :t
+                  The challenge, of course, is to say *how* social interaction enables humans to come 
+                  to know things.
+                  To this end, the first question we should ask is, What forms of interaction are 
+                  relevant?  When we are talking about tiny humans
+                  in the first year or two of life, we can't expect much in the way of social
+                  interactions.  Or can we?
+    .slide
+      +hide('.interlude-vygotsky, .vygostky-hypothesis')
       
     
     .right-half-white
@@ -122,7 +124,7 @@ section.slide.nodim
           p.center
             strong social interaction
           .slide
-            .notes: :t()
+            .notes: :t
               Preverbal infants manfiest a surprising range of social abilities.  
               These include imitation, which can occur just days and even minutes after birth 
               (Meltzoff & Moore 1977; Field et al. 1982; Meltzoff & Moore 1983), imitative learning 
@@ -139,54 +141,55 @@ section.slide.nodim
               li pointing
               li goal ascription
               li.language-creation language creation
-            +highlight('.language-creation')
-            .notes: :t()
-              Perhaps the best evidence how sophisticated infant social interaction can be comes
-              from studies of language creation. 
-              (This will be a key topic when we come to study knowledge of language, but let me 
-              give you a tiny preview.)
-            .notes: :t()
-              Children with no experience of others' languages can create their own languages.
-              We know this from studies of profoundly deaf children brought up in purely oral 
-              environments and therefore without experience of language 
-              \citep{Kegl:1999es,Senghas:2001zm,Goldin-Meadow:2003pj}.
-              Individually or in groups these children invent their own signed languages.
-              These languages are not as rich as those of children with experience of other 
-              people's languages but they have all of the essential features of language 
-              including lexicons and syntax (*refs: Goldin-Meadow 2002, 2003).
-              The children invent gesture forms for words which they use with the same meanings 
-              in different contexts, they adopt standard orderings for combining words into 
-              sentences, and they use sentences in constructing narratives about past, present, 
-              future and hypothetical events (*ref: Goldin-Meadow 2003: 170).  
-            .notes: :t()
-              But it is not just children in extreme circumstances that create words.
-              Children in ordinary environments will create their own words before they learn to 
-              use those of the adults; when children start speaking, it is often the adults who 
-              are learning new words.
-              (‘Some children are so impatient that they coin their own demonstrative pronoun.  For 
-              instance, at the age of about 12 months, Max would point to different objects and 
-              say “doh?,” sometimes with the intent that we do something with the objects, such as 
-              bring them to him, and sometimes just wanting us to appreciate their existence’
-              (\citealp[p.\ 122]{Bloom:2000qz}; see further \citealp{Clark:1981bi,Clark:1982hj}).)
-            .notes: :t()
-              And even where children have mastered a lexical convention, they will readily violate 
-              it in their own utterances in order to get a point across.
-              (‘From the time they first use words until they are about two or two-and-a-half, 
-              children noticeably and systematically overextend words.  For example, one child used 
-              the word “apple” to refer to balls of soap, a rubber-ball, a ball-lamp, a tomato, 
-              cherries, peaches, strawberries, an orange, a pear, an onion, and round biscuits’
-              \citep[p.\ 35]{Clark:1993bv}.)
+            .slide
+              +highlight('.language-creation')
+              .notes: :t
+                Perhaps the best evidence how sophisticated infant social interaction can be comes
+                from studies of language creation. 
+                (This will be a key topic when we come to study knowledge of language, but let me 
+                give you a tiny preview.)
+              .notes: :t
+                Children with no experience of others' languages can create their own languages.
+                We know this from studies of profoundly deaf children brought up in purely oral 
+                environments and therefore without experience of language 
+                \citep{Kegl:1999es,Senghas:2001zm,Goldin-Meadow:2003pj}.
+                Individually or in groups these children invent their own signed languages.
+                These languages are not as rich as those of children with experience of other 
+                people's languages but they have all of the essential features of language 
+                including lexicons and syntax (*refs: Goldin-Meadow 2002, 2003).
+                The children invent gesture forms for words which they use with the same meanings 
+                in different contexts, they adopt standard orderings for combining words into 
+                sentences, and they use sentences in constructing narratives about past, present, 
+                future and hypothetical events (*ref: Goldin-Meadow 2003: 170).  
+              .notes: :t
+                But it is not just children in extreme circumstances that create words.
+                Children in ordinary environments will create their own words before they learn to 
+                use those of the adults; when children start speaking, it is often the adults who 
+                are learning new words.
+                (‘Some children are so impatient that they coin their own demonstrative pronoun.  For 
+                instance, at the age of about 12 months, Max would point to different objects and 
+                say “doh?,” sometimes with the intent that we do something with the objects, such as 
+                bring them to him, and sometimes just wanting us to appreciate their existence’
+                (\citealp[p.\ 122]{Bloom:2000qz}; see further \citealp{Clark:1981bi,Clark:1982hj}).)
+              .notes: :t
+                And even where children have mastered a lexical convention, they will readily violate 
+                it in their own utterances in order to get a point across.
+                (‘From the time they first use words until they are about two or two-and-a-half, 
+                children noticeably and systematically overextend words.  For example, one child used 
+                the word “apple” to refer to balls of soap, a rubber-ball, a ball-lamp, a tomato, 
+                cherries, peaches, strawberries, an orange, a pear, an onion, and round biscuits’
+                \citep[p.\ 35]{Clark:1993bv}.)
 
 
 +slide_middle
   p.center core knowlegde + social interaction
-  .notes: :t()
+  .notes: :t
     One problem for us is that these two sets of findings are typically considered in 
     isolation, 
     although I think there are strong reasons to suppose that understanding the origins 
     of knowledge 
     will require thinking about both core knowledge and social interaction.
-  .notes: :t()
+  .notes: :t
     One of our challenges will be to understand how core knowledge and social interaction
     conspire in driving the emergence of knowledge in particular domains.
 
@@ -195,7 +198,7 @@ section.slide.nodim
   p working hypothesis:
   p core knowledge in certain domains is necesary for early forms of social interaction
   p and these are necessary to get from core knowledge of Xs to knowledge knowledge Xs
-  .notes: :t()
+  .notes: :t
     My working hypothesis (in two parts)
     is that core knowledge in certain domains is necesary for early forms of 
     social interaction  
@@ -204,17 +207,17 @@ section.slide.nodim
 
 +slide_middle
   p.center development as rediscovery
-  .notes: :t()
+  .notes: :t
     The idea, in essence, is that cognitive development is a kind of rediscovery.
     (But not exactly as Plato's myth had it.)
-  .notes: :t()
+  .notes: :t
     How do humans get from core knowledge to knowledge knowledge?
     I want to suggest that it involves a process of rediscovery.
     I don't think it's a case of partial knowledge becoming gradually more complete, or of
     the core knowledge providing content for later knowledge states.
     Rather, I think the core knowledge shapes the  
     subject's body, behaviour and attention in ways that facilitate discovery at the next stage. 
-  .notes: :t()
+  .notes: :t
     And, most importantly, core knowledge enables increasingly sophisticated forms of social 
     interaction.
     It is these social interactions---together with the bodily, behavioural and mental changes---that 
@@ -228,7 +231,7 @@ section.slide.nodim
 +slide_middle
   p.center
     img(src='/img/fig_rediscovery.png')
-  .notes: :t()
+  .notes: :t
     To make this vague idea slightly more concrete, let me zoom in. 
     I think having verbal labels for things sometimes helps with acquiring concepts of them.
     Now this sounds paradoxical. 
@@ -238,7 +241,7 @@ section.slide.nodim
     but core knowledge could underpin your correct use of a label. 
     Now labels are acquired through social interaction, or so I suggested earlier. 
     Hence the picture. 
-  .notes: :t()
+  .notes: :t
     Now this picture needs two qualifications. 
     First, it's missing some details, and these details will vary from case to case 
     (what's true of knowledge of objects might not be true of knowledge of number). 

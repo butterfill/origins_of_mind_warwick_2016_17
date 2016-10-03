@@ -675,10 +675,6 @@ only toggle the notes panel for this cloned window.
       $[deck]('toggleNotes');
     }
     
-    // work out window size (to position notes)
-    var notes_below = ( $(window).height()/$(window).width() > (1024/768) );
-    
-    
     // Bind key events 
     $d.unbind('keydown.decknotes').bind('keydown.decknotes', function(e) {
       if (e.which === opts.keys.notes || $.inArray(e.which, opts.keys.notes) > -1) {
@@ -847,19 +843,16 @@ only toggle the notes panel for this cloned window.
 
 		
   });
-  
-  var $notesContainer;
+    
 	$d.bind('deck.change', function(e, from, to) {
 		//show notes for current slide
     var slideTo = $[deck]('getSlide', to);
-    if( typeof($notesContainer) === 'undefined' ) {
-      $notesContainer = $("."+$[deck]('getOptions').classes.notesContainer);
-  		$('.divider, .notes-header, .notes-header-tex', $notesContainer).hide();
-    }
+		var $notesContainer = $("."+$[deck]('getOptions').classes.notesContainer);
 		$('.notes', $notesContainer).hide();
+		$('.divider, .notes-header, .notes-header-tex', $notesContainer).hide();
 		var slide_id = $(slideTo).attr('id');
-		var $notes = $('.for-'+slide_id, $notesContainer).not('.notes-header-tex').not('.divider');
+		var $notes = $('.for-'+slide_id, $notesContainer).not('.notes-header-tex');
 		$notes.show();
-    });
+  });
 
 })(jQuery, 'deck');

@@ -1,65 +1,28 @@
----
+---cson
 layout: 'deck_unit'
-title: "An Illustration of Davidon's Challenge"
-tags: []
-description: "We encounter Davidson's challenge in some form in every domain of knowlegde, including knowledge of objects."
-depends: ['']
-source: ['']
-duration: 5
-book: []
-exercises: []
-exercises_fast: []
+title: """
+  An Illustration of Davidon's Challenge
+"""
+tags: ['objects','habituation']
+description: """
+  We encounter Davidson's challenge in some form in every domain of knowlegde,
+  including knowledge of objects.
+  """
 ---
 
 include ../../../fragments/unit_mixins
-include ../../../fragments/compatibility_mixins
+include ../../../fragments/origins_mixins
 
-
-//- repeated from unit 31!
-mixin davidson_inbetween(p)
-  if typeof(p) === 'undefined' 
-    - p = {}
-  if !('step' in p)
-    - p.step = false
-
-  .photobox-bottom-right
-    img.photo-right(src='/img/davidson.gif')
-  .words: .container_12: .grid_12
-    p
-      span ‘if you want to describe what is going on in the head of the child when it has a few words which it utters in appropriate situations,  
-      span.you-will-fail you will fail
-      span.step2(class="#{p.step ? 'hide' : ''}")   for lack of the right sort of words of your own.
-    p.step3(class="#{p.step ? 'hide' : ''}")
-      span ‘We have many vocabularies for describing nature when we regard it as 
-      span.highlight1 mindless
-      span , and we have a mentalistic vocabulary for describing 
-      span.highlight1 thought and intentional action
-      span ; what we lack is a way of describing 
-      span.highlight1 what is in between
-      span ’
-    p.right
-      span (Davidson 1999, p. 11)
-    if p.step
-      +highlight('.you-will-fail','red')
-      .notes: :t()
-        I love this: Davidson says we will fail.  So encouraging.
-        But why will we fail?
-      +show('.step2')
-      .notes: :t()
-        Is he suggesting the issue is merely terminological?  Not quite ...
-      +show('.step3')
-      +invert('.highlight1')
-    block
 
 //- needed for some of the material on the handouts later (a quote)
-.handout: :t()
+.handout: :t
   \textit{Object permanence}:
   the ability to know facts about objects you aren't currently perceiving. 
 
 
 
 section.slide 
-  .notes: :t()
+  .notes: :t
     If you've seen the outline of lectures, you'll know that my idea is to organise the lectures 
     by domains of knowledge.
     As we will see, how we first come to know things about colours, say, isn't quite the same 
@@ -79,9 +42,10 @@ section.slide
         p non-verbal communications
         p minds
         p actions
-      +blur_('.topics :not(.today)')
-      +row-bkg('.today', 'white')
-      .notes: :t()
+      .slide
+        +blur('.topics :not(.today)')
+        +highlight-row('.today', 'white')
+      .notes: :t
         Let me preview how Davidson's challenge arises in the case of objects.
 
 
@@ -91,21 +55,21 @@ section.slide
 
 //- Baillargeon's drawbridge is a solidity violation
 +slide
-  .notes: :t()
+  .notes: :t
     A famous study by Renee Baillargeon and her collaborators provides evidence that humans can 
     represent unperceived objects from around four months of age or earlier.  
     This is called the 'drawbridge study'
-  .notes: :t()
+  .notes: :t
     What you are about to see are the test events from Experiment 1 of Baillargeon et al's 
     1987 study.  You're looking at them from the side whereas the subjects, four-month olds,
     were looking at them from the front (which is to your right).
-  .notes: :t()
+  .notes: :t
     In showing you these test events,
     I need to explain the method used in this experiment, \emph{habituation}; 
     this is a method we will encounter repeatedly so it's good to understand how it is 
     supposed to work.
   .notes %glossary: habituation
-  .notes: :t()
+  .notes: :t
     What you see here is a barrier rotating through 180 degrees.
     Infants were habituated to this; that is, they were shown it repeatedly until it no longer 
     held their interest.
@@ -117,46 +81,48 @@ section.slide
   .handout \begin{center} \citealp{baillargeon:1987_object} figure 1 \end{center}
   .img1(style="overflow:hidden;max-width:350px;max-height:200px;")
     img(src='/img/baillargeon_1987_fig1.png', style="max-width:700px;max-height:527px;")
-  .img2(style="overflow:hidden;max-width:350px;")
+  .img2.hide(style="overflow:hidden;max-width:350px;")
     img(src='/img/baillargeon_1987_fig1.png', style="max-width:700px;")
   .img3.hide
     img(src='/img/baillargeon_1987_fig1.png', style="max-width:700px;")
   p.source Baillargeon (1987, figure 1)
-  +show_('.img2')
-  +remove('.img1')
-  .notes: :t()
-    Now there is a very small change to the display.
-    The display is just as before, except for before the drawbridge moves an object is placed 
-    behind it.
-    There are then two different things that could happen.  One is that the drawbridge moves 
-    exactly as before, rotating a full 180 degrees.  This is called the 'impossible event'.
-    The other is that the drawbridge now rotates for 120 degrees, which is the 'possible event'.
-    In no case is the object visible after the drawbridge has started moving.
-    We want to know which events infants find more novel.
-    If they are unable to know facts about  the locations of unperceived objects, then they should 
-    find the
-    'possible event' more novel than the 'impossible event' because it is more different
-    from the event they have been habituated to.
-    On the other hand, if infants are able know facts about the locations of unperceived objects,
-    they should find the impossible event more novel than the possible event because, well,
-    it's impossible.
-  .notes: :t()
-    To find out what infants find more interesting, they are divided into two groups.  
-    One group sees the impossible event, the other the possible event.
-    The experimenters measure how long the infants look at these events, which is the measure of 
-    their dishabituation.  The background assumptions are that looking longer indicates more 
-    interest, and that interest is driven by novelty.
-  +show_('.img3')
-  +remove('.img2')
-  .notes: :t()
-    In the control condition,
-    'The habituation event was exactly the same as the impossible event, except that the yellow 
-    box was absent.' (Baillargeon et al 1985, 200)
+  .slide
+    +show('.img2',0)
+    +remove('.img1')
+    .notes: :t
+      Now there is a very small change to the display.
+      The display is just as before, except for before the drawbridge moves an object is placed 
+      behind it.
+      There are then two different things that could happen.  One is that the drawbridge moves 
+      exactly as before, rotating a full 180 degrees.  This is called the 'impossible event'.
+      The other is that the drawbridge now rotates for 120 degrees, which is the 'possible event'.
+      In no case is the object visible after the drawbridge has started moving.
+      We want to know which events infants find more novel.
+      If they are unable to know facts about  the locations of unperceived objects, then they should 
+      find the
+      'possible event' more novel than the 'impossible event' because it is more different
+      from the event they have been habituated to.
+      On the other hand, if infants are able know facts about the locations of unperceived objects,
+      they should find the impossible event more novel than the possible event because, well,
+      it's impossible.
+    .notes: :t
+      To find out what infants find more interesting, they are divided into two groups.  
+      One group sees the impossible event, the other the possible event.
+      The experimenters measure how long the infants look at these events, which is the measure of 
+      their dishabituation.  The background assumptions are that looking longer indicates more 
+      interest, and that interest is driven by novelty.
+  .slide
+    +show('.img3',0)
+    +remove('.img2')
+    .notes: :t
+      In the control condition,
+      'The habituation event was exactly the same as the impossible event, except that the yellow 
+      box was absent.' (Baillargeon et al 1985, 200)
 
 // *todo* display part of the image first (hide the control condition)
 +slide
   .notes These are the results from Experiment 1 of Baillargeon et al's 1987 study.
-  .notes: :t()
+  .notes: :t
     This experiment provides evidence that infants know that the object is behind the barrier
     even when they can't see it, for their having such knowledge would explain why they appear
     surprised by the impossible event.
@@ -168,24 +134,25 @@ section.slide
   .img2-2.hide(style="overflow:hidden;max-height:250px;")
     img(src='/img/baillargeon_1987_fig2.png',height="500",style="position:relative;top:-220px;")
   p.right source: Baillargeon et al (1987, figure 2)
-  +show('.img2-2')
-  .notes: :t()
-    Here you can see, reassuringly, that the effect is not present in the control condition
-    where the box is absent.
-  .notes: :t()
-    Some have been critical of the methods used in this experiment.
-    But not everything hangs on this experiment.
-    Fortunately there are at least a hundred further experiments which provide evidence pointing in the same direction.
-    Later we'll look at this is more detail.
+  .slide
+    +show('.img2-2')
+    .notes: :t
+      Here you can see, reassuringly, that the effect is not present in the control condition
+      where the box is absent.
+    .notes: :t
+      Some have been critical of the methods used in this experiment.
+      But not everything hangs on this experiment.
+      Fortunately there are at least a hundred further experiments which provide evidence pointing in the same direction.
+      Later we'll look at this is more detail.
 
 +slide
-  p.notes.show: :t()
+  p.notes.show: :t
     When do humans first come to know facts about the locations of objects they are not perceiving?
   p.em-above.indent 
     span.look look
     span : by 4 months of age or earlier 
     span.grey-text (Baillargeon 1987).
-  .notes: :t()
+  .notes: :t
     This result has been widely replicated, and it coheres with a large body of research we shall 
     explore later.
   .slide
@@ -193,16 +160,16 @@ section.slide
       span.look look
       span : by around 2.5 months of age or earlier
       span.grey-text (Aguiar & Baillargeon 1999)
-  .notes: :t()
+  .notes: :t
     By using more sensitive methods, \citet{Aguiar:1999jq} even demonstrated competence in a group
     of 2.5 month old infants.
-  .notes: :t()
+  .notes: :t
     So far so good, but there is a problem ...
     What happens if instead of measuring how infants look, we measure how they reach?
 
     
 +slide
-  .notes: :t()
+  .notes: :t
     \citet{Shinskey:2001fk} did just this.
     Here you can see their appratus, which is quite similar to what \citet{baillargeon:1987_object} 
     used.
@@ -215,11 +182,11 @@ section.slide
   p.source Shinskey and Munakata 2001, figure 1
 
 +slide
-  .notes: :t()
+  .notes: :t
     Here are their results with 7-month old infants.
   +img_clip('shinskey_munakata_2001_fig2.png')
   p.source Shinskey and Munakata 2001, figure 2
-  .notes: :t()
+  .notes: :t
     We are interested in whether infants were more likely to pull the screen forwards when the 
     object was present than when it was absent.
     Since infants wanted the toy, if they knew it was behind the barrier they should have pulled
@@ -228,7 +195,7 @@ section.slide
     But look what happens when the barrier is opaque, so that the toy is not visible to infants 
     when they have to prepare the pulling action: they no longer pull the barrier more often
     when the toy was behind it.
-  .notes: :t()
+  .notes: :t
     This is good evidence that 7 month olds do not know facts about the locations of objects 
     they cannot perceive.
     And this is not isolated evidence; for example, \citet{moore:2008_factors} use a different 
@@ -237,9 +204,9 @@ section.slide
 
 //- this slide will be recalled in the admin part of the lecture!
 +slide({id:'032-discrepant-findings'})
-  p.notes.show: :t()
+  p.notes.show: :t
     When do humans first come to know facts about the locations of objects they are not perceiving?
-  .notes: :t()
+  .notes: :t
     The evidence appears to be contradictory.
   p.em-above.indent 
     span.look look
@@ -253,15 +220,16 @@ section.slide
     span.search search
     span : not until after 7 months of age 
     span.grey-text (Shinskey & Munakata 2001)
-  +highlight_('.look','yellow')
-  +highlight('.search','blue')
-  .notes: :t()
-    By measuring looking actions, we find infants can distinguish situations in ways that indicate
-    they do know facts about the locations of particular unperceived objects.
-    But when measuring retrieval or searching actions, we find infants cannot distinguish these 
-    situations; this indicates that they cannot know this.
+  .slide
+    +highlight('.look','yellow')
+    +highlight('.search','blue')
+    .notes: :t
+      By measuring looking actions, we find infants can distinguish situations in ways that indicate
+      they do know facts about the locations of particular unperceived objects.
+      But when measuring retrieval or searching actions, we find infants cannot distinguish these 
+      situations; this indicates that they cannot know this.
   .slide.shinskey
-    .notes: :t()
+    .notes: :t
       You might hope there would be a simple solution.  Perhaps, for example, infants have 
       difficulties reaching that mask their real knowledge of the facts about unperceived objects' 
       locations.
@@ -269,37 +237,37 @@ section.slide
     p.em-above.handout.notes.show ‘action demands are not the only cause of failures on occlusion tasks’
     .handout.notes.ctd \citep[p.\ 291]{shinskey:2012_disappearing}
     p.right Shinskey (2012, p. 291)
-    .notes: :t()
+    .notes: :t
       Many such explanations have been tried because many researchers have been puzzled by this;
       \citet{Meltzoff:1998wp} go as far as to call it a paradox (the 'paradox of early permanence').
       No explanation positing extraneous task requirements, such as difficulties performing
       an the actions required, has yet succeeded.
-  +blur_('.shinskey')
-  .notes: :t()
-    This is a discrepancy between two types of measure; one involves looking, other other 
-    searching. 
-    We find this pattern--discrepant findings pointing to opposite conclusions about what 
-    infants and adults know--in many different domains.
   .slide
-    p.em-above ‘the tip of an iceberg’ 
-      span.grey-text Charles & Rivera (2009, p. 994)
-    .notes: :t()
-      As \citet[p.\ 994]{charles:2009_object} put it, these findings are ‘the tip of an iceberg’.
-    .handout.notes: :t()
-      ‘violation-of-expectation experiments, using looking-time measures, suggested that infants 
-      have object permanence in occlusion conditions; but simplified-search studies confirm that 
-      infants fail to reach towards occluded objects, suggesting that infants do not have object 
-      permanence in occlusion conditions. This discrepancy, however, is only the tip of the 
-      iceberg. Results of studies attempting to measure infants’ cognitive abilities using reaching 
-      measures often contradict results gained while using looking-time measures.’ 
-      \citep[p.\ 994]{charles:2009_object}
-    
-      
-    
-      
+    +blur('.shinskey')
+    .notes: :t
+      This is a discrepancy between two types of measure; one involves looking, other other 
+      searching. 
+      We find this pattern--discrepant findings pointing to opposite conclusions about what 
+      infants and adults know--in many different domains.
+    .slide
+      p.em-above ‘the tip of an iceberg’ 
+        span.grey-text Charles & Rivera (2009, p. 994)
+      .notes: :t
+        As \citet[p.\ 994]{charles:2009_object} put it, these findings are ‘the tip of an iceberg’.
+      .handout.notes: :t
+        ‘violation-of-expectation experiments, using looking-time measures, suggested that infants 
+        have object permanence in occlusion conditions; but simplified-search studies confirm that 
+        infants fail to reach towards occluded objects, suggesting that infants do not have object 
+        permanence in occlusion conditions. This discrepancy, however, is only the tip of the 
+        iceberg. Results of studies attempting to measure infants’ cognitive abilities using reaching 
+        measures often contradict results gained while using looking-time measures.’ 
+        \citep[p.\ 994]{charles:2009_object}
+
+
+
 +slide_middle
   p.center What is the problem?
-  .notes: :t()
+  .notes: :t
     You might be wondering whether there's a philosophical problem here.
     Science is a messy business and you get conflicting results all the time.
     But this particular pattern of conflicting results is extremely interesting philosophically.
@@ -311,7 +279,7 @@ section.slide
     But it also shows that we cannot say that they have no sense at all concerning facts about the 
     locations of particular unperceived objects.  We cannot say this because of the
     competence they manifest in distinguishing possible from impossible events.
-  .notes: :t()
+  .notes: :t
     The problem, then, is that understanding the origins of knowledge requires us to identify 
     something inbetween knowledge and its absence, something that is like knowledge in some 
     respects but falls short of it in others.
@@ -319,67 +287,29 @@ section.slide
 
 
 section.slide
-  .notes: :t()
+  .notes: :t
     Here's the challenge I mentioned earlier, Davidson's challenge.  
   +davidson_inbetween
-  +invert('.highlight1')
-  .notes: :t()
-    The sort of findings I've just reviewed indicate that infants have some way  of representing
-    facts about the locations of unperceived objects which is not knowledge but something like
-    it.  
-    The challenge is, in effect, to characterise the nature of these representations.
+  .slide
+    +invert('.highlight1')
+    .notes: :t
+      The findings I’ve just reviewed indicate that infants behaviours in the face of 
+      objects that disappear from view is not mindless,
+      but nor does it involve knowledge or belief about the objects.
+      They seem to have have some way  of representing
+      facts about the locations of unperceived objects which is not knowledge but something like
+      it.
+    .notes: :t
+      The challenge is to characterise the nature of these representations.
 
 +slide_middle
-  .notes: :t()
-    Hood and colleagues suggest an extreme version of this view; they say there are many 
-    kinds of knowledge ...
-  p.handout.notes.show
-    span.blur1 ‘there are many 
-    span.noblur separable systems of mental representations 
-    span.blur1 ... and thus many 
-    span.noblur different kinds of 
-      span.highlight2 knowledge. 
-    span.blur1 ... the task ... is to contribute to the enterprise of finding the distinct systems of mental representation and to understand their development and integration’
-  .handout.notes.ctd \citep[p.\ 1522]{Hood:2000bf}.
-  p.right.grey-text (Hood et al 2000, p.\ 1522)
-  +blur('.blur1')
-  .notes: :t()
-    I think we should be cautious about the inference from separable systems to kinds of knowledge.  
-    (Think about modularity.)
-    It should be an open question for us whether what underpins infants' abilities to distinguish
-    possible from impossible events is really a kind knowledge or something else.
-    (This is a question we'll explore in some detail later.)
-  .notes: :t()
-    I mention this quote just to show you that we have a problem which is partly philosophical
-    and partly scientific.  
-    The scientific part involves identifying distinct systems of representation and understanding
-    their development.
-    The philosophical part is to make sense of the idea that there can
-    be different kinds of knowledge, or things that are like knowledge but not knowledge, and
-    to explore how different kinds of knowledge are related.
-  .notes: :t()
-    [*aside: move]
-    At this point you might object.  The question is about knowledge.  
-    But does either searching or distinguishing really provide evidence of knowing?
-    You might insist that neithermanifest knowledge in infants.
-    It is a good question whether searching or distinguishing manifests knowledge.
-    For now I just want to note that if you think neither is, then Davidson's challenge becomes 
-    even more pressing -- more pressing because we now need two distinct kinds of state which
-    are like knowledge in some respects but not in others, not just one!
-    It's perhaps also worth mentioning that whether or not the things manifested in searching and 
-    distinguishing are knowledge proper, they are surely things that matter for explaining how 
-    knowledge is eventually acquired.
-
-
-
-+slide_middle
-  .notes: :t()
+  .notes: :t
     To sum up so far, the question for this course is, How do humans first come to know  about--and
     to knowingly manipulate--objects, causes, words, numbers, colours, actions and minds?
     I've been suggesting we can't answer it simply by appealing to nativism, empiricism or other 
     grand myths.
     Instead we need to focus on the particular mechanisms that are involved in different cases.
-  .notes: :t()
+  .notes: :t
     But then you might wonder, What philosophical questions arise here?  Isn't this a narrowly
     pscyhological--and therefore scientific--issue?
     The answer is no because thinking about how humans come to know things requires us to meet 
@@ -391,30 +321,32 @@ section.slide
 
 
 +slide_middle
-  .notes: :t()
+  p.center architect or builder?
+  .notes: :t
     I hope I've given you a flavour of the approach we're going to take.
     Good philosophy of mind has always been driven by scientific findings about the mind.
     John Locke, David Hume as well as more recent philosophers like Jerry Fodor and Andy Clark all 
     start with a deep understanding of the science of the mind.
     But there is a difference.
+  .notes: :t
     Fodor and many other contemporary philosophers are working on the big picture, trying to make 
     explicit general features of the conceptual framework which scientists have more or less 
     implicitly adopted.
     They are also often intrested in questions about the foundations of psychology itself.
+  .notes: :t
     By contrast, what I want us to do in this course is to look at specific problems that arise 
     from the evidence,
     and to provide philosophical tools for tackling this problem.
     So you might say that whereas others are trying to be the architect, we're trying more 
-    modestly to build the tools.
+    modestly to build bits of the picture.
+  .notes: :t
     This might sound too modest to be interesting.
     You'd probably prefer to be the architect whose plans guide the scientists rather than the 
-    underlabourer who makes tools for them; who wouldn't?
+    underlabourer who puts the bricks in place; who wouldn't?
     But, as we'll see, it turns out that attention to the details will give us new perspectives on 
     some key philosophical issues about the nature of knowledge, perception and action.
-  p.center architect or tool maker?
   
-//- 
-
+//-
   mixin simple_theory_of_the_mind(no_steps)
     p the simple theory of the mind
     div(class="#{no_steps ? '' : 'nodim slide'}")
@@ -424,20 +356,20 @@ section.slide
         li Thinkers’ actions are causally explained by their representations.
       .notes What the findings about infants' representations of objects they can't see show is this:
       .notes we must reject the simple theory of the mind.
-
+  
   section.slide#simple_theory_of_the_mind
     .notes To illustrate how the modest approach of the tool maker might give us new perspectives on some key philosophical issues, 
     .notes consider how the conflicting evidence about object permanence bears on the nature of minds quite generally.
     .words: .container_12: .grid_12
       mixin simple_theory_of_the_mind()
-
+  
   section.slide
     .notes Recall the apparently contradictory pattern of findings.
     .notes The findings are apparently contradictory only if we accept the simple theory of the mind.
     .words: .container_12: .grid_12
       p *TODO* fix!
       //- mixin slide_object_permenance(true)
-
+  
   section.slide
     .notes So we must reject the simple theory.
     .notes Of course this doesn't follow just from the data I've mentioned so far.
@@ -446,7 +378,7 @@ section.slide
     .notes But what are we to replace it with?
     .words: .container_12: .grid_12
       mixin simple_theory_of_the_mind(true)
-
+  
   section.slide#intentional_stance
     .notes We can make a similar point about Dennett's intentional stance.
     .notes The intentional stance is a theory about the nature of mental states like beliefs.
@@ -491,7 +423,7 @@ section.slide
 
 +slide_middle
   p.center So what are we going to do in this module?
-  .notes: :t()
+  .notes: :t
     We're going to try to understand how humans come to know about things by examining what 
     developmental psychology tells us about the acquisition of knowledge.
     This turns out to be a partly philosophical project because understanding the apparently 

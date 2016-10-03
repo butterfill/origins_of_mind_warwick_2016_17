@@ -1,4 +1,9 @@
 
+
+<!-- - scripts.add(["/vendor/deck.js/deck.core.js"])-->
+<!-- - scripts.add(["/vendor/deck.js/deck.menu.js"])-->
+<!-- - scripts.add(["/vendor/deck.js/deck.hash.js"])-->
+<!-- - scripts.add(["/vendor/deck.js/deck.notes.js"])-->
 <html>
   <head>
     <!-- (c) copyright 2013 Stephen A. Butterfill-->
@@ -11,15 +16,16 @@
     <meta name="author" content=""/><meta name="generator" content="DocPad v6.78.6" />
     <meta name="viewport" content="width=device-width"/>
     <!-- - lato font-->
-    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,900,400italic" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900,400italic" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=The+Girl+Next+Door" rel="stylesheet" type="text/css"/>
     <!--if lt IE 9
-    script(async src="http://html5shim.googlecode.com/svn/trunk/html5.js")
+    script(async src="https://html5shim.googlecode.com/svn/trunk/html5.js")
     
     --><style >html.wait {
 	cursor: wait !important;
 	opacity: 0;
 	transition: opacity 0.5s ease;
-}</style><link  rel="stylesheet" href="/vendor/normalize.css" /><link  rel="stylesheet" href="/vendor/deck.js/style.neon.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.core.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.menu.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.hash.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.notes.css" /><link  rel="stylesheet" href="/vendor/960_12_col_custom.css" /><link  rel="stylesheet" href="/styles/steve_deck_style.css" />
+}</style><link  rel="stylesheet" href="/vendor/boilerplate.min.css" /><link  rel="stylesheet" href="/vendor/normalize.min.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.all.min.css" /><link  rel="stylesheet" href="/vendor/960_12_col_custom.min.css" /><link  rel="stylesheet" href="/styles/steve_deck_style.css" /><link  rel="stylesheet" href="/vendor/questionmark.js/question.mark.css" />
   </head>
   <body><script >(function(){
 	/* Did we just livereload? */
@@ -56,7 +62,7 @@ var inject = function(){
 	var t = document.createElement('script');
 	t.type = 'text/javascript';
 	t.async = 'async';
-	t.src = '/primus/primus.js';
+	t.src = '/docpad-livereload/primus.js';
 	t.onload = listen;
 	var s = document.getElementsByTagName('script')[0];
 	s.parentNode.insertBefore(t, s);
@@ -66,7 +72,34 @@ var inject = function(){
 	} else {
 		inject();
 	}
-})();</script><script defer="defer"  src="/vendor/jquery.min.js"></script><script defer="defer"  src="/vendor/jquery-svgfix.js"></script><script defer="defer"  src="/vendor/log.js"></script><script defer="defer"  src="/vendor/modernizr.min.js"></script><script defer="defer"  src="/vendor/deck.js/deck.core.js"></script><script defer="defer"  src="/vendor/deck.js/deck.menu.js"></script><script defer="defer"  src="/vendor/deck.js/deck.hash.js"></script><script defer="defer"  src="/vendor/deck.js/deck.notes.js"></script><script defer="defer"  src="/vendor/deck.js/deck.slide-clone.js"></script><script defer="defer"  src="/vendor/deck.js/deck.fit.js"></script><script defer="defer"  src="/vendor/deck.js/deck.step.js"></script><script defer="defer"  src="/vendor/deck.js/deck.events.js"></script><script defer="defer"  src="/vendor/deck.js/deck.anim.js"></script><script defer="defer"  src="/vendor/jquery.jsPlumb-1.3.16-all-min.js"></script><script defer="defer"  src="/scripts/script.js"></script>
+})();</script><script defer="defer"  src="/vendor/jquery.min.js"></script><script defer="defer"  src="/vendor/jquery-svgfix.js"></script><script defer="defer"  src="/vendor/velocity.min.js"></script><script defer="defer"  src="/vendor/modernizr.custom.01932.js"></script><script defer="defer"  src="/vendor/deck.js/deck.all.min.js"></script><script defer="defer"  src="/vendor/jquery.jsPlumb-1.3.16-all-min.js"></script><script defer="defer"  src="/scripts/script.js"></script><script defer="defer"  src="/vendor/questionmark.js/question.mark.min.js"></script>
+    <div id="helpUnderlay" class="help-underlay">
+      <div id="helpModal" class="help-modal">
+        <h1>Keyboard Shortcuts<kbd class="help-key"><span>?</span></kbd></h1>
+        <div id="helpClose" class="help-close">×</div>
+        <!-- .help-close-->
+        <div id="helpModalContent" class="help-modal-content">
+          <div id="helpListWrap" class="help-list-wrap">
+            <ul class="help-list">
+              <li class="help-key-unit"><kbd class="help-key"><span>→</span></kbd><span class="help-key-def">Next step</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>←</span></kbd><span class="help-key-def">Previous step</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>↓</span></kbd><span class="help-key-def">Skip this slide</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>↑</span></kbd><span class="help-key-def">Previous slide</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>m</span></kbd><span class="help-key-def">Show slide thumbnails</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>n</span></kbd><span class="help-key-def">Show notes</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>h</span></kbd><span class="help-key-def">Show handout latex source</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>N</span></kbd><span class="help-key-def">Show talk notes latex source</span></li>
+            </ul>
+            <!-- .help-list-->
+          </div>
+          <!-- .help-list-wrap-->
+        </div>
+        <!-- .help-modal-content-->
+      </div>
+      <!-- .help-modal-->
+    </div>
+    <!-- .help-underlay-->
+    
     <div class="deck-notes">
       <div class="deck-notes-container"></div>
     </div>
@@ -79,21 +112,22 @@ var inject = function(){
           <div class="container_12">
             <div class="grid_12">
               <div class="middle">
-                <p class="center">Press the right key for the next slide (or swipe left)</p>
+                <p class="center">Click here and press the right key for the next slide (or swipe left)</p>
               </div>
             </div>
           </div>
         </div>
       </section>
       <section class="slide">
-        <!--.notes You won't believe how many people emailed me to say the slides don't work.-->
+        <!-- .notes You won't believe how many people emailed me to say the slides don't work.-->
         <div class="words">
           <div class="container_12">
             <div class="grid_12">
               <p>also ...</p>
               <p>Press the left key to go backwards (or swipe right)</p>
               <p>Press n to toggle whether notes are shown (or add '?notes' to the url before the #)</p>
-              <p>Press m or double tap to see a menu of slides</p>
+              <p>Press m or double tap to slide thumbnails (menu)</p>
+              <p>Press ? at any time to show the keyboard shortcuts</p>
             </div>
           </div>
         </div>
@@ -106,13 +140,12 @@ var inject = function(){
           </div>
         </div>
       </section>
-<!---->
-<!-- short form:-->
-<!--  remove_class('.blur')-->
-<!-- long forms:-->
-<!--  remove_class('.elements', 'blur')-->
-<!--  remove_class(['.el1', '.el_group_2'], 'blur')-->
-<!---->
+
+<!-- param @cls and param @options should be objects-->
+
+
+
+
 <section class="slide nodim">
   <div class="notes">Recall that the question for this course is ...
 Our focus is on two breakthrough sets of findings.
@@ -175,12 +208,13 @@ and looking times) and rarely or never manifest in purposive actions such as rea
           </div>
         </div>
       </div>
-      <div data-what=".left_half" data-class="blur-text" class="slide anim-continue anim-addclass"></div>
-      <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
-      <div class="notes">Now, what about social interaction?  First let me mention what people say about it.</div>
+      <div class="slide">
+        <div data-what=".left_half" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div>
+        <div class="notes">Now, what about social interaction?  First let me mention what people say about it.</div>
+      </div>
       <div class="slide interlude-vygotsky">
         <div style="position: absolute; top:0; left:0; width:100%; height:100%;">
-          <div style="position: absolute; top:0; left:0; width:100%; height:100%" class="background-color">
+          <div style="position: absolute; top:0; left:0; width:100%; height:100%;" class="background-color">
             <div class="notes">Here is a bold conjecture about how humans come to know things.</div>
             <div class="words">
               <div class="container_12">
@@ -197,7 +231,7 @@ and looking times) and rarely or never manifest in purposive actions such as rea
                     <div class="slide vygostky-hypothesis">
                       <div class="notes">And here's a related claim which I take to be interesting ...</div>
                       <div class="handout">Vygotskian Intelligence Hypothesis:</div>
-                      <p class="handout notes ctd show"><span>‘the unique aspects of human cognition ... were driven by, or even </span><span>constituted by, </span><span class="interaction">social co-operation</span><span>.’</span></p>
+                      <p class="handout notes ctd show"> <span>‘the unique aspects of human cognition ... were driven by, or even </span><span>constituted by, </span><span class="interaction">social co-operation</span><span>.’</span></p>
                       <div class="handout notes ctd">\citep[p.\ 1]{Moll:2007gu}</div>
                       <p class="right">(Moll & Tomasello 2007, p. 1)</p>
                       <!-- not on slides:-->
@@ -205,13 +239,16 @@ and looking times) and rarely or never manifest in purposive actions such as rea
                       <div class="handout ctd">\citep{sinigaglia:2008_roots} %*page</div>
                       <!-- p.right (Sinigaglia &Sparaci 2008)-->
                     </div>
-                    <div data-what=" .interaction" data-class="bkg-words-highlight-invert" class="slide anim-addclass"></div>
-                    <div class="notes">The challenge, of course, is to say *how* social interaction enables humans to come 
+                    <div class="slide">
+                      <div data-what=".interaction" data-cls="transition-04" class="dv dv-addclass"></div>
+                      <div data-what=".interaction" data-cls="bkg-invert" class="dv dv-addclass"></div>
+                      <div class="notes">The challenge, of course, is to say *how* social interaction enables humans to come 
 to know things.
 To this end, the first question we should ask is, What forms of interaction are 
 relevant?  When we are talking about tiny humans
 in the first year or two of life, we can't expect much in the way of social
 interactions.  Or can we?
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -220,7 +257,9 @@ interactions.  Or can we?
           </div>
         </div>
       </div>
-      <div data-what=".interlude-vygotsky, .vygostky-hypothesis" data-class="hide" class="slide anim-addclass"></div>
+      <div class="slide">
+        <div data-what=".interlude-vygotsky, .vygostky-hypothesis" data-css="{&quot;opacity&quot;:0}" data-options="{&quot;visibility&quot;:&quot;hidden&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+      </div>
       <div class="right-half-white">
         <div class="grid_5 prefix_1">
           <div class="words">
@@ -244,14 +283,15 @@ social abilities.
                 <li>goal ascription</li>
                 <li class="language-creation">language creation</li>
               </ul>
-              <div data-what=" .language-creation" data-class="bkg-words-highlight-pink" class="slide anim-continue anim-addclass"></div>
-              <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
-              <div class="notes">Perhaps the best evidence how sophisticated infant social interaction can be comes
+              <div class="slide">
+                <div data-what=".language-creation" data-cls="transition-04" class="dv dv-addclass"></div>
+                <div data-what=".language-creation" data-cls="bkg-pink" class="dv dv-addclass"></div>
+                <div class="notes">Perhaps the best evidence how sophisticated infant social interaction can be comes
 from studies of language creation. 
 (This will be a key topic when we come to study knowledge of language, but let me 
 give you a tiny preview.)
-              </div>
-              <div class="notes">Children with no experience of others' languages can create their own languages.
+                </div>
+                <div class="notes">Children with no experience of others' languages can create their own languages.
 We know this from studies of profoundly deaf children brought up in purely oral 
 environments and therefore without experience of language 
 \citep{Kegl:1999es,Senghas:2001zm,Goldin-Meadow:2003pj}.
@@ -263,8 +303,8 @@ The children invent gesture forms for words which they use with the same meaning
 in different contexts, they adopt standard orderings for combining words into 
 sentences, and they use sentences in constructing narratives about past, present, 
 future and hypothetical events (*ref: Goldin-Meadow 2003: 170).
-              </div>
-              <div class="notes">But it is not just children in extreme circumstances that create words.
+                </div>
+                <div class="notes">But it is not just children in extreme circumstances that create words.
 Children in ordinary environments will create their own words before they learn to 
 use those of the adults; when children start speaking, it is often the adults who 
 are learning new words.
@@ -273,14 +313,15 @@ instance, at the age of about 12 months, Max would point to different objects an
 say “doh?,” sometimes with the intent that we do something with the objects, such as 
 bring them to him, and sometimes just wanting us to appreciate their existence’
 (\citealp[p.\ 122]{Bloom:2000qz}; see further \citealp{Clark:1981bi,Clark:1982hj}).)
-              </div>
-              <div class="notes">And even where children have mastered a lexical convention, they will readily violate 
+                </div>
+                <div class="notes">And even where children have mastered a lexical convention, they will readily violate 
 it in their own utterances in order to get a point across.
 (‘From the time they first use words until they are about two or two-and-a-half, 
 children noticeably and systematically overextend words.  For example, one child used 
 the word “apple” to refer to balls of soap, a rubber-ball, a ball-lamp, a tomato, 
 cherries, peaches, strawberries, an orange, a pear, an onion, and round biscuits’
 \citep[p.\ 35]{Clark:1993bv}.)
+                </div>
               </div>
             </div>
           </div>

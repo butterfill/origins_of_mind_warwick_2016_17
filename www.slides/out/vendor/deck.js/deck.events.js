@@ -1,8 +1,5 @@
 (function($, deck, undefined) {
    $(document).bind('deck.change', function(e, from, to) {
-     
-     // console.log('event deck.change detected, from='+from+', to='+to);
-     
       var $prev = $[deck]('getSlide', to-1),
       $next = $[deck]('getSlide', to+1),
       $oldprev = $[deck]('getSlide', from-1),

@@ -1,3 +1,42 @@
+mixin davidson_inbetween(p)
+  if typeof(p) === 'undefined' 
+    - p = {}
+  if !('step' in p)
+    - p.step = false
+
+  .photobox-bottom-right
+    img.photo-right(src='/img/davidson.gif')
+  .words: .container_12: .grid_12
+    p
+      span ‘if you want to describe what is going on in the head of the child when it has a few words which it utters in appropriate situations,  
+      span.you-will-fail you will fail
+      span.step2(class="#{p.step ? 'hide' : ''}")   for lack of the right sort of words of your own.
+    p.step3(class="#{p.step ? 'hide' : ''}")
+      span ‘We have many vocabularies for describing nature when we regard it as 
+      span.highlight1 mindless
+      span , and we have a mentalistic vocabulary for describing 
+      span.highlight1 thought and intentional action
+      span ; what we lack is a way of describing 
+      span.highlight1 what is in between
+      span ’
+    p.right
+      span (Davidson 1999, p. 11)
+    if p.step
+      .slide
+        +highlight('.you-will-fail','red')
+        .notes: :t
+          I love this: Davidson says we will fail.  So encouraging.
+          But why will we fail?
+      .slide
+        +show('.step2')
+        .notes: :t
+          Is he suggesting the issue is merely terminological?  Not quite ...
+      .slide
+        +show('.step3')
+      .slide
+        +invert('.highlight1')
+    block
+
 
 
 //- -------------
@@ -123,32 +162,32 @@ mixin slide_diagram_core_knowledge_to_concept
 
     +show_('.big-arrow')
     +show('.acquire-concept')
-    .notes: :t()
+    .notes: :t
       Having core knowledge of something does not involve having any knowledge knowledge at all.
       Here I'm going to use the term ‘concept of X’ for that which enables one to have knowledge 
       of Xs.
       How do we get from core knowledge to concepts?
     +show('.discriminate')
-    .notes: :t()
+    .notes: :t
       Core knowledge enables one to distinguish things. For example it enables on to distinguish
       those things which are blue from those which are not;
       it enables one to distinguish those events which are causal interactions from those 
       which are not;
       it enables one to distinguish those sets which have two members from others;
       and it enables one to distinguish different beliefs about the location of an object (say).
-    .notes: :t()
+    .notes: :t
       (Here I'm using core knowledge in the broad, schematic sense to refer to representations
       which are knowledge-like but not knowledge.)
     +show('.use-word')
-    .notes: :t()
+    .notes: :t
       I conjecture that core knowledge faciliates acquisition of the correct use of a word,
       perhaps very slowly.  The idea is that being able to discriminate things allows one to 
       apply a label to them.
-    .notes: :t()
+    .notes: :t
       Importantly we can discriminate without having concepts.
       If one thought that all discrimination involved concepts, this picture would become circular.
     +show('.because-experience')
-    .notes: :t()
+    .notes: :t
       How does core knowledge enable one to correctly use words?
       I think it modifies the overall phenomenal character of your experience,
       typically by generating phenomenal expectations (which I called them perceptual expectations 
@@ -156,25 +195,25 @@ mixin slide_diagram_core_knowledge_to_concept
       Tuning in to the perceptual expectations can take a long time, which is why there may be 
       a long interval between observing core knowledge and observing the correct use of words.
     +show('.acquire-concept')
-    .notes: :t()
+    .notes: :t
       I also conjecture that using the word facilitates concept acquisition.
       Many people would probably agree.
       But how does it do this?
     +show('.because-reflection')
-    .notes: :t()
+    .notes: :t
       My schematic suggestion is that using the word draws attention to all the things which are Xs.
       The concept is acquired when you are struck by the question,
       What do all these have in common?
-    .notes: :t()
+    .notes: :t
       (Clearly this is not an account of how thinking gets started at all; the appeal
       to reflection should make this obvious.)
-    .notes: :t()
+    .notes: :t
       We have quite good evidence for this picture in the cases of colour and number,
       and there is relevant evidence in the case of mindreading too.  (Also speech:
       phonological awareness is linked to literacy and the particulars of the written
       language learnt, so that alphabetic languages give a different profile --- alphabet is
       roughly labelling phonemes.)
-    .notes: :t()
+    .notes: :t
       The question we've been looking at last week is how children come to correctly
       use words.
     block

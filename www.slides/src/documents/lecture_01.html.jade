@@ -8,6 +8,7 @@ lecture_date: '2016/10/06'
 
 include ../../fragments/lecture_mixins
 include ../../fragments/unit_mixins
+include ../../fragments/origins_mixins
 
 - var images = get_images('bees')
 
@@ -39,7 +40,7 @@ include ../../fragments/unit_mixins
     p.slide web 
     .notes there is a web page where you can find slides and handouts from lectures.
     p.slide unassessed essay
-    .notes: :t()
+    .notes: :t
       submit a 1500 word unassessed essay by the standard deadline (which I think is 12 noon on 
       Thursday of week 7 but you should check).
     p.slide seminars
@@ -49,19 +50,23 @@ include ../../fragments/unit_mixins
     p.slide seminar groups
     .notes sign up on tabula, as usual.
     p.slide seminar tasks
-    .notes: :t()
+    .notes: :t
       I've assigned you a series of tasks to do in seminars; these are specified in the 
       document going around, which is also on the web page.
     p.slide first seminar task
 
 +slide
   p first seminar
-  .notes: :t()
+  .notes: :t
     I need to set you up for your first seminar, which starts next week.
     Recall these findings ...
-section.slide
-  .slide-clone(data-which='#032-discrepant-findings')
-  .notes: :t()
+//- section.slide
+//-   .slide-clone(data-which='#032-discrepant-findings')
+
++slide
+  +discrepantFindingsAboutKnowledgeOfObjects({final:true, handout:false, notes:true})
+    
+  .notes: :t
     I want you to look at this discrepancy more carefully in your first seminar.
     This is partly because the discrepancy matters, and partly because part of doing this module
     means becoming familiar with reading scientific papers.

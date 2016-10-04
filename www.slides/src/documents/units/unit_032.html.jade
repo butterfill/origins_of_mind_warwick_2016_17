@@ -204,39 +204,30 @@ section.slide
 
 //- this slide will be recalled in the admin part of the lecture!
 +slide({id:'032-discrepant-findings'})
-  p.notes.show: :t
-    When do humans first come to know facts about the locations of objects they are not perceiving?
+  +discrepantFindingsAboutKnowledgeOfObjects({final:false, handout:true, notes:true})
+  //- When do humans first come to know facts about the locations of objects they are not perceiving?
   .notes: :t
     The evidence appears to be contradictory.
-  p.em-above.indent 
-    span.look look
-    span : by 4 months of age or earlier 
-    span.grey-text (Baillargeon 1987).
-  p.indent 
-    span.look look
-    span : by around 2.5 months of age or earlier
-    span.grey-text (Aguiar & Baillargeon 1999)
-  p.em-above.indent 
-    span.search search
-    span : not until after 7 months of age 
-    span.grey-text (Shinskey & Munakata 2001)
   .slide
     +highlight('.look','yellow')
-    +highlight('.search','blue')
     .notes: :t
       By measuring looking actions, we find infants can distinguish situations in ways that indicate
       they do know facts about the locations of particular unperceived objects.
+  .slide
+    +highlight('.search','blue')
+    .notes: :t
       But when measuring retrieval or searching actions, we find infants cannot distinguish these 
       situations; this indicates that they cannot know this.
-  .slide.shinskey
+  .slide
+    +show('.shinskey')
     .notes: :t
       You might hope there would be a simple solution.  Perhaps, for example, infants have 
       difficulties reaching that mask their real knowledge of the facts about unperceived objects' 
       locations.
       But As Jeanne Shinskey, one of the researchers most dedicated to this issue says, 
-    p.em-above.handout.notes.show ‘action demands are not the only cause of failures on occlusion tasks’
-    .handout.notes.ctd \citep[p.\ 291]{shinskey:2012_disappearing}
-    p.right Shinskey (2012, p. 291)
+    .notes.handout: :t
+      ‘action demands are not the only cause of failures on occlusion tasks’ 
+      \citep[p.\ 291]{shinskey:2012_disappearing}.
     .notes: :t
       Many such explanations have been tried because many researchers have been puzzled by this;
       \citet{Meltzoff:1998wp} go as far as to call it a paradox (the 'paradox of early permanence').
@@ -249,19 +240,18 @@ section.slide
       searching. 
       We find this pattern--discrepant findings pointing to opposite conclusions about what 
       infants and adults know--in many different domains.
-    .slide
-      p.em-above ‘the tip of an iceberg’ 
-        span.grey-text Charles & Rivera (2009, p. 994)
-      .notes: :t
-        As \citet[p.\ 994]{charles:2009_object} put it, these findings are ‘the tip of an iceberg’.
-      .handout.notes: :t
-        ‘violation-of-expectation experiments, using looking-time measures, suggested that infants 
-        have object permanence in occlusion conditions; but simplified-search studies confirm that 
-        infants fail to reach towards occluded objects, suggesting that infants do not have object 
-        permanence in occlusion conditions. This discrepancy, however, is only the tip of the 
-        iceberg. Results of studies attempting to measure infants’ cognitive abilities using reaching 
-        measures often contradict results gained while using looking-time measures.’ 
-        \citep[p.\ 994]{charles:2009_object}
+  .slide
+    +show('.tipOfIceberg')
+    .notes: :t
+      As \citet[p.\ 994]{charles:2009_object} put it, these findings are ‘the tip of an iceberg’.
+    .handout.notes: :t
+      ‘violation-of-expectation experiments, using looking-time measures, suggested that infants 
+      have object permanence in occlusion conditions; but simplified-search studies confirm that 
+      infants fail to reach towards occluded objects, suggesting that infants do not have object 
+      permanence in occlusion conditions. This discrepancy, however, is only the tip of the 
+      iceberg. Results of studies attempting to measure infants’ cognitive abilities using reaching 
+      measures often contradict results gained while using looking-time measures.’ 
+      \citep[p.\ 994]{charles:2009_object}
 
 
 
@@ -288,8 +278,7 @@ section.slide
 
 +slide_middle
   +UncomplicatedAccountOfMindsAndActions
-  +show('.theAccount')
-  +show('.generalise')
+  +show('.generalise, .theAccount')
   .slide
     +invert('.spider')
     .notes: :t

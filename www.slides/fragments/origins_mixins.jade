@@ -53,6 +53,60 @@ mixin UncomplicatedAccountOfMindsAndActions
     p.hem-around.indent.claim3 3. The first alternatives of (1) and (2) are either both true or both false.
 
 
+mixin discrepantFindingsAboutKnowledgeOfObjects(p)
+  if typeof(p) === 'undefined' 
+    - p = {}
+  if !('final' in p)
+    - p.final = false
+  if !('handout' in p)
+    - p.handout = false
+  if !('notes' in p)
+    - p.notes = false
+  p(class="#{p.notes ? 'notes' : ''}").show: :t
+    When do humans first come to know facts about the locations of objects they are not perceiving?
+  p.em-above.indent 
+    span.look look
+    span : by 4 months of age or earlier 
+    span.grey-text (Baillargeon 1987).
+  p.indent 
+    span.look look
+    span : by around 2.5 months of age or earlier
+    span.grey-text (Aguiar & Baillargeon 1999)
+  p.em-above.indent 
+    span.search search
+    span : not until after 7 months of age 
+    span.grey-text (Shinskey & Munakata 2001)
+  if p.final
+    +highlight('.look','yellow', 0)
+    +highlight('.search','blue', 0)
+  .shinskey(class="#{p.final ? '' : 'hide'}")
+    p.em-above ‘action demands are not the only cause of failures on occlusion tasks’
+    p.right.grey-text Shinskey (2012, p. 291)
+  if p.final
+    +blur('.shinskey','2px',0)
+  .tipOfIceberg(class="#{p.final ? '' : 'hide'}")
+    p.em-above ‘the tip of an iceberg’ 
+      span.grey-text Charles & Rivera (2009, p. 994)
+
+
+
+mixin segmentPersistInteract(p)
+  if typeof(p) === 'undefined' 
+    - p = {}
+  if !('final' in p)
+    - p.final = false
+  if !('handout' in p)
+    - p.handout = false
+  if !('notes' in p)
+    - p.notes = false
+  p Three requirements
+  .theRequirements(class="#{p.final ? '' : 'hide'}")
+    ul
+      li segment objects
+      li represent objects as persisting (‘permanence’)
+      li track objects’ interactions
+
+
 
 //- -------------
 //- communication, non-linguistic

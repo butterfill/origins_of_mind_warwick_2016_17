@@ -1,7 +1,7 @@
 ---cson
 layout: 'deck_unit'
 title: """
-  An Illustration of Davidon's Challenge
+  Unperceived Objects: An Illustration of Davidon's Challenge
 """
 tags: ['objects','habituation']
 description: """
@@ -12,12 +12,6 @@ description: """
 
 include ../../../fragments/unit_mixins
 include ../../../fragments/origins_mixins
-
-
-//- needed for some of the material on the handouts later (a quote)
-.handout: :t
-  \textit{Object permanence}:
-  the ability to know facts about objects you aren't currently perceiving. 
 
 
 
@@ -50,7 +44,9 @@ section.slide
 
 
 +slide_middle
-  p.handout.notes.show When do humans first come to know facts about the locations of objects they are not perceiving?
+  p.handout.notes.show: :t
+    When do humans first come to know facts about the locations of objects they are not
+    perceiving?
 
 
 //- Baillargeon's drawbridge is a solidity violation
@@ -77,7 +73,7 @@ section.slide
     time for an infant; but after, say, five demonstrations, they'd only be looking at it for 
     around 10 seconds.  That is, they are habituated to this display.
   //handout only:
-  img.handout(data-src='img/baillargeon_1987_fig1.neg.png')
+  img.handout(data-src='img/baillargeon_1987_fig1.neg.png', data-scale='0.25')
   .handout \begin{center} \citealp{baillargeon:1987_object} figure 1 \end{center}
   .img1(style="overflow:hidden;max-width:350px;max-height:200px;")
     img(src='/img/baillargeon_1987_fig1.png', style="max-width:700px;max-height:527px;")
@@ -127,7 +123,7 @@ section.slide
     even when they can't see it, for their having such knowledge would explain why they appear
     surprised by the impossible event.
   //handout only:
-  img.handout(data-src='img/baillargeon_1987_fig2.neg.png')
+  img.handout(data-src='img/baillargeon_1987_fig2.neg.png', data-scale='0.25')
   .handout \begin{center} \citealp{baillargeon:1987_object} figure 2 \end{center}
   .img2-1(style="overflow:hidden;max-height:220px;")
     img(src='/img/baillargeon_1987_fig2.png',height="500")
@@ -473,3 +469,7 @@ section.slide
     In practice, this means looking carefully, and in detail, at the scientific evidence.
     If you want to know how minds work, you have to start with the evidence.
 
+//- needed for some of the material on the handouts (a quote)
+.handout: :t
+  \textit{Object permanence}:
+  the ability to know facts about objects you aren't currently perceiving. 

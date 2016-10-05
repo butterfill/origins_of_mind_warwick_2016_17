@@ -39,7 +39,15 @@ mixin davidson_inbetween(p)
 
 
 
-mixin UncomplicatedAccountOfMindsAndActions
+mixin UncomplicatedAccountOfMindsAndActions(p)
+  if typeof(p) === 'undefined' 
+    - p = {}
+  if !('final' in p)
+    - p.final = false
+  if !('handout' in p)
+    - p.handout = false
+  if !('notes' in p)
+    - p.notes = false
   p Uncomplicated Account of Minds and Actions 
   .generalise.hide
     p.hem-around For any given proposition [There’s a  
@@ -51,7 +59,17 @@ mixin UncomplicatedAccountOfMindsAndActions
       span   that there’s a spider behind the book, or she does not.
     p.hem-around.indent.claim2 2. Either Wy can act for the reason that there is, or seems to be, a spider behind the book, or else she cannot.
     p.hem-around.indent.claim3 3. The first alternatives of (1) and (2) are either both true or both false.
-
+  .hide(class="#{(p.handout ? 'handout' : '')} #{(p.notes ? 'notes' : '')}"): :t
+    \subsection{Uncomplicated Account of Minds and Actions}
+    For any given proposition [There’s a spider behind the book] and any given human [Wy]
+    ...
+    \begin{enumerate}
+    \item Either Wy believes that there’s a spider behind the book, or she does not.
+    \item Either Wy can act for the reason that there is, or seems to be, a spider behind the book, or else she cannot.
+    \item The first alternatives of (1) and (2) are either both true or both false.
+    \end{enumerate}
+    
+    
 
 mixin discrepantFindingsAboutKnowledgeOfObjects(p)
   if typeof(p) === 'undefined' 
@@ -108,9 +126,49 @@ mixin segmentPersistInteract(p)
 
 
 
+
+//- -------------
+//- communication with words
+
+
+mixin slide_AcquireWordsTrainingBut(p)
+  if typeof(p) === 'undefined' 
+    - p = {}
+  if !('final' in p)
+    - p.final = false
+  section.slide
+    .words: .container_12
+      .grid_6
+        p Assumption:
+        p.assumption If someone can think, she can communicate with words.
+        div(class="#{p.final ? '' : 'slide'}")
+          p.em-above Consequence:
+          p Acquiring language cannot involve thinking at the outset.
+        div(class="#{p.final ? '' : 'slide'}")
+          p.em-above Question:
+          p.how-could How 
+            span.could could
+            span  someone begin to 
+            span.acquire acquire
+            span   
+            span.create.remove-me create
+            span  words without being able to think?
+      .grid_6(style='border-left: 1px dashed white; margin-left:-1px')
+        div(style='padding-left:15px;')
+          div(class="#{p.final ? '' : 'slide'}")
+            p Answer:
+            p: span.answer By being trained to utter a particular word in response to certain simulations!
+          div(class="#{p.final ? '' : 'slide'}")
+            p.em-above But:
+            p How 
+              span.do do
+              span  children actually acquire language?
+          block
+
+
+
 //- -------------
 //- communication, non-linguistic
-//- -------------
 
 
 //- pointing

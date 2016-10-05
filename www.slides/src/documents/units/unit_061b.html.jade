@@ -1,7 +1,7 @@
 ---cson
 layout: 'deck_unit'
-title: "Social Interaction"
-tags: []
+title: "Social Interaction: Acquiring Your First Words"
+tags: ['words', 'social-interaction', 'lexical-innovation']
 description: """
   Infants have surprisingly sophisticated social skills. These are revealled in
   part by their acquisition of language.
@@ -28,24 +28,34 @@ include ../../../fragments/origins_mixins
 +slide_middle
   .notes Here is a bold conjecture about how humans come to know things.
   .handout \subsection{A Conjecture}
-  p.handout.show ‘humans acquire knowledge at a pace far outstripping that found in any other species. Recent evidence indicates that interpersonal understanding—in particular, skill at inferring others’ intentions—plays a pivotal role in this achievement.’
+  p.handout.show: :t
+    ‘humans acquire knowledge at a pace far outstripping that found in any other species.
+    Recent evidence indicates that interpersonal understanding ... 
+    plays a pivotal role in this achievement.’
   .handout.ctd \citep[p.\ 40]{Baldwin:2000qq}
-  p.right (Baldwin 2000, p. 40)
+  p.right.grey-text Baldwin 2000, p. 40
   // not on slides:
-  .handout ‘functions traditionally considered hallmarks of individual cognition originated through the need to interact with others ...\ perception, action, and cognition are grounded in social interaction.’
+  .handout: :t
+    ‘functions traditionally considered hallmarks of individual cognition originated through
+    the need to interact with others ...\ perception, action, and cognition are grounded in
+    social interaction.’
   // p.right (Knoblich & Sebanz 2006, p. 103)
   .handout.ctd \citep[p.\ 103]{Knoblich:2006bn}
-
-+slide_middle
-  .notes The challenge, of course, is to say *how* social interaction enables humans to come to know things.
-  .handout Vygotskian Intelligence Hypothesis:
-  p.handout.ctd.show ‘the unique aspects of human cognition ... were driven by, or even constituted by, social co-operation.’
-  .handout.ctd \citep[p.\ 1]{Moll:2007gu}
-  p.right (Moll & Tomasello 2007, p. 1)
-  // not on slides:
-  .handout ‘human cognitive abilities ... [are] built upon social interaction’
-  .handout.ctd \citep{sinigaglia:2008_roots} %*page
-  // p.right (Sinigaglia &Sparaci 2008)
+  
+  .slide
+    .handout Vygotskian Intelligence Hypothesis:
+    p.em-above.handout.ctd.show: :t
+      ‘the unique aspects of human cognition ... were driven by, or even constituted by,
+      social co-operation.’
+    .handout.ctd \citep[p.\ 1]{Moll:2007gu}
+    p.right.grey-text Moll & Tomasello 2007, p. 1
+    // not on slides:
+    .handout ‘human cognitive abilities ... [are] built upon social interaction’
+    .handout.ctd \citep{sinigaglia:2008_roots} %*page
+    // p.right (Sinigaglia &Sparaci 2008)
+    .notes: :t
+      The challenge, of course, is to say *how* social interaction enables humans to come to
+      know things.
 
 
 +slide_middle
@@ -58,8 +68,8 @@ include ../../../fragments/origins_mixins
 
 +slide_middle
   p: ol
-    li If someone can think, she can communicate with language.
-    li.step2.hide Acquiring language involves thinking from the start.
+    li If someone can think, she can communicate with words.
+    li.step2.hide Acquiring words involves thinking from the start.
   .step3.hide
     p.em-above two directions:
     p.indent.first-direction If 1, then not 2
@@ -81,23 +91,32 @@ include ../../../fragments/origins_mixins
   
 
 //- training --- go quickly through this
-+insert_unit({unit:'521', title_slide:false, images:images, handout:true})
-
-//- training --- go quickly through this
-+insert_unit({unit:'541', title_slide:false, images:images, handout:true})
-
-
++insert_unit({unit:'521', title_slide:false, images:images, handout:false})
+  
++slide_AcquireWordsTrainingBut({final:false})
+  .slide
+    +invert('.do, .could', 'blue')
 
 
 section.slide
-  .notes.handout: :t()
+  .notes.handout: :t
     Children acquiring language create their own words before they learn to use those of the adults 
     around them.
-  .handout ‘Some children are so impatient that they coin their own demonstrative pronoun.  For instance, at the age of about 12 months, Max would point to different objects and say “doh?,” some¬times with the intent that we do something with the objects, such as bring them to him, and sometimes just wanting us to appreciate their existence’
-  .handout.ctd (\citealp[p.\ 122]{Bloom:2000qz}; see further \citealp{Clark:1981bi,Clark:1982hj}).
-  .notes.handout Even where children have mastered a lexical convention, they will readily violate it in their own utterances in order to get a point across.
-  .handout ‘From the time they first use words until they are about two or two-and-a-half, children noticeably and systematically overextend words.  For example, one child used the word “apple” to refer to balls of soap, a rubber-ball, a ball-lamp, a tomato, cherries, peaches, strawberries, an orange, a pear, an onion, and round biscuits’
-  .handout.ctd \citep[p.\ 35]{Clark:1993bv}
+  .notes: :t
+    ‘Some children are so impatient that they coin their own demonstrative pronoun. For
+    instance, at the age of about 12 months, Max would point to different objects and say
+    “doh?,” some¬times with the intent that we do something with the objects, such as bring
+    them to him, and sometimes just wanting us to appreciate their existence’
+    (\citealp[p.\ 122]{Bloom:2000qz}; see further \citealp{Clark:1981bi,Clark:1982hj}).
+  .notes: :t
+    Even where children have mastered a lexical convention, they will readily violate it in
+    their own utterances in order to get a point across.
+  .handout.notes: :t
+    ‘From the time they first use words until they are about two or two-and-a-half,
+    children noticeably and systematically overextend words. For example, one child used
+    the word “apple” to refer to balls of soap, a rubber-ball, a ball-lamp, a tomato,
+    cherries, peaches, strawberries, an orange, a pear, an onion, and round biscuits’
+    \citep[p.\ 35]{Clark:1993bv}
   .words: .container_12: .grid_12
     p.nodim children create 
       span.hide.step2 and creatively adapt 
@@ -118,29 +137,103 @@ section.slide
       p.right source: Eve Clark's CHILDES data
       p.right (Clark 1982; MacWhinney 2000)
 
+section.slide
+  .layer0.hide
+    +_slide_inner
+      +img('goldin-meadow_2003_fig1.png')
+      p.source Goldin-Meadow (2003, figure 1)
+  +reset
+    +_slide_middle_inner
+      p.center.notes.handout.show
+        span Children can create their own languages
+        br
+        span with no experience of others' languages 
+      .handout.ctd \citep{Kegl:1999es,Senghas:2001zm,Goldin-Meadow:2003pj}.
+  .slide
+    +show('.layer0')
+    .notes: :t
+      We know this from studies of profoundly deaf children brought up in purely oral
+      environments and therefore without experience of language (Goldin-Meadow 2003; Kegl,
+      Senghas and Coppola 1999; Senghas and Coppola 2001).
+      Individually or in groups these children invent their own signed languages.
+      These languages are not as rich as those of children with experience of other people's
+      languages but they have all of the essential features of language including lexicons and
+      syntax (Goldin-Meadow 2002, 2003).
+      The children invent gesture forms for words which they use with the same meanings in
+      different contexts, they adopt standard orderings for combining words into sentences,
+      and they use sentences in constructing narratives about past, present, future and
+      hypothetical events. Thus one profoundly deaf child, Qing, describes how swordfish can
+      poke a person so that she dies, and how they have long, straight noses and can swim
+      (Goldin-Meadow 2003: 170).
+
++slide_middle
+  p.center social interaction
+  .notes: :t
+    So how is this related to the idea (mentioned a moment ago)
+    that social interaction plays a key role in the developmental emergence of knowledge?
+    My suggestion, to be developed more fully later in the couse,
+    is that children come to know their first words not through
+    being trained or taught, nor through observing others and mapping words to concepts.
+    Instead, some children come to know their first words through
+    creating words and making themselves understood to others.
+    That is, through social interaction.
+  .notes: :t
+    One consequence of this is that it seems we must reject the 
+    claim, made by Davidson and others, that 
+    If someone can think, she can communicate with words ...
+
++slide_AcquireWordsTrainingBut({final:true})
+  .notes: :t
+    We’ve just been considering how children do acquire their first words.
+  +invert('.do, .could', 'blue')
+  .slide
+    +highlight('.how-could', 'yellow')
+    +uninvert('.do, .could', 'blue')
+  .slide
+    +line-through('.acquire')
+    +unremove('.create')
+    .notes So here's my challenge to Davidson and others who hold that anyone can communicate with language can think:
+    .notes explain how someone could begin to create words without already being able to think.
+    .notes As I've been explaining, the challenge arises because children who have no language and no significant experience of language can create languages of their own.
+  .slide
+    +highlight('.answer', 'yellow')
+  .slide
+    +line-through('.answer')
+    .notes So we have to reject this answer.
+  .slide
+    +highlight('.assumption','red')
+    +fade('.how-could, .answer')
+    .notes: :t
+      For my part, I think it's probably time to drop the assumption.
+      Not because we've shown it's wrong, but because there's no good argument for it an a
+      significant obstactle to accepting it.
+      So let's return to our overall question without that assumption.
+      (Recall that the question was, How do humans first come to communicate with words?)
+
+
+
+
+
+
 
 section.slide
-  .notes.handout Children with no experience of others' languages can create their own languages.
-  .handout.ctd \citep{Kegl:1999es,Senghas:2001zm,Goldin-Meadow:2003pj}
-  .notes We know this from studies of profoundly deaf children brought up in purely oral environments and therefore without experience of language (Goldin-Meadow 2003; Kegl, Senghas and Coppola 1999; Senghas and Coppola 2001).
-  .notes Individually or in groups these children invent their own signed languages.
-  .notes These languages are not as rich as those of children with experience of other people's languages but they have all of the essential features of language including lexicons and syntax (Goldin-Meadow 2002, 2003).
-  .notes The children invent gesture forms for words which they use with the same meanings in different contexts, they adopt standard orderings for combining words into sentences, and they use sentences in constructing narratives about past, present, future and hypothetical events.  Thus one profoundly deaf child, Qing, describes how swordfish can poke a person so that she dies, and how they have long, straight noses and can swim (Goldin-Meadow 2003: 170).  
-  .words: .container_12: .grid_12
-    .middle
-      p.center Children with no experience of others' languages can create their own languages.
-
-section.slide
-  .notes I started this section by contrasting two views on lexical acquisition, the shipwreck survivor view and the lab rat view.
-  .notes We've seen that neither is the whole truth because children learn in part through a process of creation.
-  .notes Why is this interesting?
-  .notes The creative activity is a rational, goal-directed activity; so it's not merely training.
-  .notes The creative activity does not obviously involve mapping words onto concepts, or even having the concepts.
-  .notes (After all, the child might try out a pattern of use that others see as appropriate for a concept before the child actually has that concept.)
-  .notes And this creativity with words involves social interaction: the aim is coordination between two or more individuals.
-  .notes So: language acquisition is neither merely a matter of training, nor merely a matter of reasoning about the meanings of words.
-  .notes Rather, it involves social interaction from the first utterances of words.
-  .words: .container_12: .grid_12
-    .middle
-      p.center conclusions
+  +_slide_middle_inner
+    p.center.huge-glow conclusion
+    +blur('.huge-glow', '5px', 10000)
+  +reset
+    +_slide_middle_inner
+      p.center.txt mind in action + social interaction
+    +blur('.txt', '5px', 0)
+    +unblur('.txt', 7500)
   
+  .notes: :t
+    In this first lecture, I’ve tried to give you a sense of what the module 
+    will be about.
+    The question is, How do humans first come to know simple facts about objects,
+    words, colours, minds and the rest?
+    I’ve suggested that
+    reflecting on discoveries about how infants acquire knowledge of phyiscal objects
+    challenges us to rethink the nature of minds and actions.
+    And I’ve also suggested that reflecting on how humans learn---or create---their 
+    first words motivates the idea that the emergence of knowledge in development
+    may hinge on  quite sophisticated forms of social interaction.

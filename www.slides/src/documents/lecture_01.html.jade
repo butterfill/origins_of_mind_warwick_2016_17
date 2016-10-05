@@ -1,7 +1,6 @@
----
+---cson
 layout: 'default2'
 title: 'Lecture 01'
-weburl: ''
 units: []
 lecture_date: '2016/10/06'
 ---
@@ -39,21 +38,24 @@ include ../../fragments/origins_mixins
     .notes lectures are at this time every week
     p.slide web 
     .notes there is a web page where you can find slides and handouts from lectures.
-    p.slide unassessed essay
+    p.slide.essay-not 15% assessed essay
+    .slide
+      +line-through('.essay-not')
     .notes: :t
-      submit a 1500 word unassessed essay by the standard deadline (which I think is 12 noon on 
-      Thursday of week 7 but you should check).
+      There’s a new, alternative method of assessment.
     p.slide seminars
     .notes seminars start next week and run every week
     p.slide reading week
     .notes there are no lectures or seminars in reading week (week 6)
     p.slide seminar groups
     .notes sign up on tabula, as usual.
-    p.slide seminar tasks
-    .notes: :t
-      I've assigned you a series of tasks to do in seminars; these are specified in the 
-      document going around, which is also on the web page.
-    p.slide first seminar task
+    .slide 
+      p seminar tasks
+        span.slide : ‘write -- get feedback -- rewrite’ spiral
+      .notes: :t
+        I've assigned you a series of tasks to do in seminars; these are specified in the 
+        document going around, which is also on the web page.
+    p.slide first seminar task 
 
 +slide
   p first seminar

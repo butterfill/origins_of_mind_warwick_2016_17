@@ -52,6 +52,7 @@ mixin render_unit(unit)
       .exercises_fast #{ex}
 
 
+
 //- create title slide for a lecture
 //- param p contains document and images (an array of images to use)
 mixin title_slide(p)
@@ -68,11 +69,9 @@ mixin title_slide(p)
         - low = true
     .fade-in
       .title-block(style="#{low ? 'position:relative; top:325px' : ''}"): .title-container
-        h1.title1.fade-in #{p.document.title}
-          if p.document.subtitle
-            span :
-        if p.document.subtitle
-          h1.title2.fade-in #{p.document.subtitle}
+        h1.title1.fade-in Origins of Mind
+        if p.document.title
+          h1.title2.fade-in #{p.document.title}
         if p.document.email
           h3.email.fade-in #{p.document.email}
         else

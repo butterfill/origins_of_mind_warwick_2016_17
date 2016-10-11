@@ -18,21 +18,26 @@ include ../../../fragments/unit_mixins
 +slide
   p Three requirements
   ul
-    li segment objects
-    li.bkg-grey-row represent objects as persisting (‘permanence’)
+    li.segment segment objects
+    li.persist represent objects as persisting (‘permanence’)
     li track objects’ interactions
-  .notes: :t
-    [*TODO*] Integrate converging findings on anticipatory (predictive) looking 
-    \citep{rosander:2004_infants}: `The obtained results are in general agreement with the numerous 
-    habituation studies that have investigated infants' emerging ability to represent temporarily 
-    occluded moving objects. The individual data show that 9–12-week-old infants begin to predict 
-    the reappearance of the object towards the end of the centrally occluded trials.'
-  .notes: :t
-    [*TODO*] integrate this on reaching: \citep{vanwermeskerken:2011_anticipatory}
-    (Interpretation is a bit out there, but it nicely illustrates how occlusion duration
-    can affect reaching at around 7 months of age.)
-  .notes: :t
-    [*TODO*] integrate this ERP measure of permanence: \citep{kaufman:2005_oscillatory}
+  +highlight-row('.segment')
+  .slide
+    +unhighlight-row('.segment')
+    +highlight-row('.persist')
+  
+    .notes: :t
+      [*TODO*] Integrate converging findings on anticipatory (predictive) looking 
+      \citep{rosander:2004_infants}: `The obtained results are in general agreement with the numerous 
+      habituation studies that have investigated infants' emerging ability to represent temporarily 
+      occluded moving objects. The individual data show that 9–12-week-old infants begin to predict 
+      the reappearance of the object towards the end of the centrally occluded trials.'
+    .notes: :t
+      [*TODO*] integrate this on reaching: \citep{vanwermeskerken:2011_anticipatory}
+      (Interpretation is a bit out there, but it nicely illustrates how occlusion duration
+      can affect reaching at around 7 months of age.)
+    .notes: :t
+      [*TODO*] integrate this ERP measure of permanence: \citep{kaufman:2005_oscillatory}
     
 
 +slide
@@ -357,7 +362,7 @@ include ../../../fragments/unit_mixins
     li crows 
       span.grey-text (Hoffmann et al 2011)
       .handout.notes \item crows \citep{hoffmann:2011_ontogeny}
-    li dogs and wolves
+    li dogs and wolves 
       span.grey-text (Fiset et al 2013)
       .handout.notes \item dogs and wolves \citep{fiset:2013_object}
     li cats 

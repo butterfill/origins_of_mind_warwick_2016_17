@@ -9,6 +9,7 @@ description: """
 ---
 
 include ../../../fragments/unit_mixins
+include ../../../fragments/origins_mixins
 
 +slide_middle
   .notes How do humans segment objects?
@@ -178,7 +179,7 @@ section.slide
   .notes: :t
     Recall this diplay with on object moving behind a stationary block.
     What kind of principle could be used to identify that the occluded thing is a single object?
-  img(src='/img/kellman_1983_fig13a.png', style="max-width:750px;")
+  img(src='/img/kellman_1983_fig13a.png', style="max-width:250px;")
   p.source Kellman & Spelke (1983, figure 13)
   p.em-above rigidity—‘objects are interpreted as moving rigidly if such an interpretation exists’
   .notes: :t
@@ -188,7 +189,16 @@ section.slide
       The hypothesis that this principle describes in part how infants segment objects correctly
       predicts that they will treat the moving occluded stick as a single object.
   .notes But rigidity is not the only principle we need to explain how infants segment objects ...
-
+    .notes: :t
+      What justifies us in supposing that a rigidly moving object needs to be joined up?
+  .slide
+    .notes: :t
+      ... to answer this question, consider the Principle of Cohension
+    p.em-above: :t
+      cohesion—‘two surface points lie on the same object only if the points are linked by a path of connected 
+      surface points’
+    p.right.grey-text (Spelke 1990)
+    
 
 
 
@@ -364,26 +374,72 @@ section.slide
       reasoning about objects: unless this hypothesis is true, it’s hard to understand how the 
       principles could have explanatory relevance.   
 
+
++slide_middle
+  +threeQuestionsAboutModels
+  .notes: :t
+    The conjecture that someone can segment and represent physical objects
+    does not by itself generate readily testable predictions.
+    Everything depends on which model of physical objects characterises her
+    phyiscal cognition.
+  .notes: :t
+    So we should ask ...
+  .slide
+    +show('.q1 span.hide, .three-q.hide')
+    .notes: :t
+      1. How do four-month-old infants  model  physical objects? 
+    .notes: :t
+      In asking how infants
+      model physical objects, we are seeking to understand not how physical objects
+      in fact are but how they appear from the point of view of
+      an individual or system.
+    .notes: :t
+      The model need not be thought of as something used by the system: it is
+      a tool the theorist uses in describing what the system is for and
+      broadly how it works.
+      This therefore leads us to a second question ...
+  .slide
+    +show('.q2 span')
+    .notes: :t
+      2. What is the relation between the model and the infants? 
+  .slide
+    +show('.q3 span')
+    .notes: :t
+      3. What is the relation between the model and the things modelled (physical objects)?
+  .slide
+    +highlight-row('.q2')
+
 +slide_middle
   p.center Marr & Chomsky
   .notes: :t
-    Inspiration for Spelke’s view comes from Marr and Chomsky.
-    Marr showed that many visual processes can be modelled as inferences.
-    And Chomsky pioneered the idea that our knowledge of language depends on knowledge of 
-    principles of syntax.
+    The Simple View is inspired by two famous cognitive scientists, Marr and Chomsky.
+    Marr showed that many visual processes can be described as inferences.
+    And Chomsky pioneered the idea that humans’ knowledge of language depends on their knowing of a small number of 
+    principles.
+    Similarly, Spelke’s suggestion is that human infants (and adults) come to
+    know facts about particular physical objects by virtue of making inferences
+    from a small number of principles which they know or believe.
+  .notes: :t
     What unites these three cases, Spelke on object segmentation, Marr on vision and Chomsky on 
     syntax?
     It’s that they are straightforwardly cognitivist in appeal to knowledge and inference.
     Principles are known, and they are used via a process of inference.
-    (There’s a nice quote from Fodor on your handout underlining this point.)
-  .handout.notes: :t
-    ‘Chomsky’s nativism is primarily a thesis about knowledge and belief; it aligns problems 
-    in the theory of language with those in the theory of knowledge.  Indeed, as often as not, 
-    the vocabulary in which Chomsky frames linguistic issues is explicitly epistemological.  
-    Thus, the grammar of a language specifies what its speaker/hearers have to know qua speakers 
-    and hearers; and the goal of the child’s language acquisition process is to construct a 
-    theory of the language that correctly expresses this grammatical knowledge.’
-  .handout.notes.ctd \citep[p.\ 11]{Fodor:2000cj}
+    (There’s a nice quote from Fodor underlining this point.)
+  .slide
+    p.em-above: :t
+      ‘... the vocabulary in which Chomsky frames linguistic issues is explicitly epistemological.  
+      Thus, the grammar of a language specifies what its speaker/hearers have to know ... 
+      and the goal of the child’s language acquisition process is to construct a 
+      theory of the language that correctly expresses this grammatical knowledge.’
+    p.right.grey-text Fodor 2000, p. 11
+    .handout.notes: :t
+      ‘Chomsky’s nativism is primarily a thesis about knowledge and belief; it aligns problems 
+      in the theory of language with those in the theory of knowledge.  Indeed, as often as not, 
+      the vocabulary in which Chomsky frames linguistic issues is explicitly epistemological.  
+      Thus, the grammar of a language specifies what its speaker/hearers have to know qua speakers 
+      and hearers; and the goal of the child’s language acquisition process is to construct a 
+      theory of the language that correctly expresses this grammatical knowledge.’
+    .handout.notes.ctd \citep[p.\ 11]{Fodor:2000cj}
 
 +slide_middle
   .blur1

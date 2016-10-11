@@ -124,7 +124,35 @@ mixin segmentPersistInteract(p)
       li represent objects as persisting (‘permanence’)
       li track objects’ interactions
 
+mixin threeQuestionsAboutModels
+  p.three-q.em-around.hide Three Questions
+  p.em-around.q1
+    span.hide 1. How do four-month-old infants  
+    span.model model 
+    span.hide physical objects? 
+  p.em-around.q2
+    span.hide 2. What is the relation between the model and the infants?  
+  p.em-around.q3
+    span.hide 3. What is the relation between the model and the things modelled (physical objects)?
 
+
+mixin charlesRiveraOcclusionEndarkeningTable
+  table.data
+    thead
+      tr
+        td 
+        td.center occlusion
+        td.center.endarkening endarkening
+    tbody
+      tr.violation-of-expectations
+        td.center violation-of-expectations
+        td.center.occlusion ✔
+        td.center.endarkening ✘
+      tr.manual-search
+        td.center manual search
+        td.center.occlusion ✘
+        td.center.endarkening ✔
+  p.source(style='margin-top:-300px;') Charles & Rivera (2009)
 
 
 //- -------------

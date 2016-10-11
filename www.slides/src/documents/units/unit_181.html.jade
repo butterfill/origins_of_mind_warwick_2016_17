@@ -8,7 +8,7 @@ description: """
 ---
 
 include ../../../fragments/unit_mixins
-
+include ../../../fragments/origins_mixins
 
 
 // **todo** idea of this unit is ot use Spelke et al 1995 on continuity as a bridge from segmentation to permanence
@@ -145,7 +145,7 @@ include ../../../fragments/unit_mixins
     img(src='/img/baillargeon_1987_fig2.png',height="500")
   .img2-2.hide(style="overflow:hidden;max-height:250px;")
     img(src='/img/baillargeon_1987_fig2.png',height="500",style="position:relative;top:-220px;")
-  p.right source: Baillargeon et al (1987, figure 2)
+  p.source source: Baillargeon et al (1987, figure 2)
   .slide
     +show('.img2-2')
     .notes: :t
@@ -153,14 +153,63 @@ include ../../../fragments/unit_mixins
       in accordance with the Principle of Continuity.  However, the experiment is also about 
       causal interactions between objects.  After all, infants are demonstrating sensitivity to
       the fact that a solid object must stop the drawbridge from rotating all the way back.
+  .slide
+    +reset-escape-inner
+      +_slide_middle_inner
+        +blur('img, .source')
+        p.center.huge-glow fail?
     .notes: :t
       Some have been critical of the methods used in this experiment.
-      But not everything hangs on this experiment.
-      Fortunately there are at least a hundred further experiments which provide evidence pointing in the same direction.
-      Here we'll look at just one more experiment.
 
++slide
+  +img('sirois_2012_fig3.png')
+  p.source Sirois & Jackson 2012, figure 3
+  .notes: :t
+    ‘The lack of interaction between rotation angle and presence of a box in
+    the looking time data is inconsistent with the suggestion of object
+    permanence in our sample.’ 
+    \citep[p.~73]{sirois:2012_pupil}
+  .notes: :t
+    ‘our use of a factorial design as opposed to collapsing rotation angle and
+    box in a single pair of test events clarifies the picture.’
+    \citep[p.~74]{sirois:2012_pupil}
 
-
++slide_middle
+  p.center.notes.show So Baillargeon’s drawbridge study doesn’t demonstrate object permanence?
+  
++slide({bkg:'sirois_2012_fig1.png'})
+  p.source Sirois & Jackson 2012, figure 1
+  .notes: :t
+    Things are rarely so straightforward.
+    \citeauthor{sirois:2012_pupil} used computer generated stimuli whereas Baillargeon had a physical set-up,  they studied 10-month-olds rather than 4-month-olds, and they used a different method (‘ children were ... not habituated by the time testing began’).
+    So what can we conclude from the fact that \citeauthor{sirois:2012_pupil}
+    did not find evidence for an ability to represent objects as persisting?
+    This certainly justifies caution in relying on any single experiment.
+    Taken alone, \citeauthor{baillargeon:1987_object}’s
+    (\citeyear{baillargeon:1987_object}) studies are inspiring but not fully
+    convincing.
+    However many further experiments involving different groups of researchers,
+    different scenarios and different methods provide converging evidence for
+    the same conclusion: even four-month-olds can represent objects as
+    persisting (for reviews see \citealp{Spelke:2001pg} or
+    \citealp{Baillargeon:2002hb}).
+    The initial, groundbreaking studies are probably methodologically
+    imperfect, but the balance of evidence from subsequent experiments suggests
+    that the discovery they illuminate is probably real.%
+    \footnote{
+    For an opposing view see \citet{schoner:2006_using}; for critical
+    discussion of measures involving looking times generally, see
+    \citet{aslin:2007_whats}.
+    }
+    
+  .notes: :t
+    Whatever your views on this experiment,
+    not everything hangs on it.
+    Fortunately there are at least a hundred further experiments which
+    provide evidence pointing in the same direction.
+    Here we'll look at just one more experiment.
+  
+  
 //- -----------------------
 //- big objects can't be fully occluded by narrow occluders    
 +slide
@@ -177,6 +226,8 @@ include ../../../fragments/unit_mixins
   p.source Wang et al (2004, figure 1)
   .slide
     +show('.step2')
+
+
 
 +slide  
   .notes The experiment was very simple.
@@ -250,7 +301,13 @@ include ../../../fragments/unit_mixins
         p ... (?)
 
 
-
++slide_middle
+  +threeQuestionsAboutModels
+  +show('.hide')
+  +highlight-row('.q1')
+  .slide
+    +unhighlight-row('.q1')
+    +highlight-row('.q2')
 
 +slide
   .notes: :t
@@ -348,8 +405,34 @@ include ../../../fragments/unit_mixins
 //- aisde: non-humans
 +slide
   .notes: :t
-    As an aside I wanted to mention that object permanence is found in nonhuman animals 
-    including ...
+    We are far from fully understanding how humans are first able to represent
+    objects as persisting.
+    However, the fact that the ability appears so early in development entails
+    that it does not demand language, nor much conceptual sophistication.
+    This view is supported by the fact that the ability to represent objects as
+    persisting is found in a wide variety of nonhuman animal including
+    monkeys \citep{santos:2006_cotton-top},
+    lemurs \citep{deppe:2009_object},
+    dogs \citep{kundey:2010_domesticated}, % replication of Baillargeon’s drawbridge with dogs
+    wolves \citep{fiset:2013_object}, %this is actually dogs and wolves
+    cats \citep{triana:1981_object},
+    crows \citep{hoffmann:2011_ontogeny},
+    chicks \citep{chiandetti:2011_chicks_op},
+    and 
+    dolphins \citep{jaakkola:2010_what}.%
+    \footnote{
+    If you read these studies you will find that some of the authors talk about
+    Piaget's stages of object permanence, and about visible and invisible
+    displacements.
+    For our purposes few of these details matter;
+    % $glossary:object permanence
+    the main thing you need to know is just that having \emph{\index{$object permanence$}object permanence} is being able to represent objects as persisting even when they are briefly hidden from your view.
+    }
+    It is possible that humans’ abilities to represent objects as persisting
+    are unrelated to some or all of these animals’, of course.
+    Nevertheless, the fact that chicks can represent objects as persisting does
+    show that doing this is not necessary something that requires much
+    cognitive effort or conceptual sophistication.
   p.handout.show Object permanence is found in nonhuman animals including
   .handout.notes \begin{enumerate}
   ul

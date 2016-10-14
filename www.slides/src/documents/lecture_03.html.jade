@@ -1,0 +1,144 @@
+---
+layout: 'default2'
+title: 'Lecture 03'
+weburl: ''
+units: []
+lecture_date: '2016/10/20'
+hidden: false
+---
+
+include ../../fragments/lecture_mixins
+include ../../fragments/unit_mixins
+include ../../fragments/origins_mixins
+
+
+- var images = get_images('twins_2008')
+
++title_slide({document:document, images:images})
+
++slide_middle
+  p.center question
+  .notes: :t
+    The question for this course is ...
+    We are going to approach this question by examining the evidence from developmental science, 
+    and identifying philosophical problems created by the evidence.
+
++slide
+  +discrepantFindingsAboutKnowledgeOfObjects({final:true, handout:false, notes:true})
+  .notes: :t
+    Suppose we ask,
+    When do humans first come to know facts about the locations of objects they
+    are not perceiving?
+    Some evidence points to an early age, perhaps 2.5 months or earlier.
+    But other evidence points to a much later age, 7 months at the earliest.
+  .notes: :t
+    I’m in the process of arguing this apparently conflicting evidence points to a deep problem about
+    how to characterise the mental states and actions of typically developing infants in their first
+    months of life, when they can perform some actions for the reason that there is an object behind
+    a screen but when this ability is strictly limited.
+  .notes: :t
+    One simple response would be to 
+
++slide
+  +UncomplicatedAccountOfMindsAndActions
+  +show('.generalise, .theAccount', 0)
+  .notes: :t
+    If I’m right, we need to rethink fundamental claims about mental states.
+    These are coded in the Uncomplicated Account of Minds and Actions.
+  .notes: :t
+    But faced with this, we should try to hold on to the Uncomplicated Account
+    for as long as possible.
+    There are two ways to do this.
+  .slide
+    +highlight-row('.claim1')
+    .notes: :t
+      One possibility is to insist that infants, despite failures to search,
+      really can have beliefs about, and knowlegde of, the locations of unseen objects.
+      For all we have seen so far, it might be that this is right.
+      Perhaps, for example, there is something especially tricky about searching.
+      Or perhaps there are other studies which show, contra Shinskey and Munakata,
+      that four months olds really can search for unperceived objects.
+      This deserves careful investigation.
+  .slide
+    +unhighlight-row('.claim1')
+    +highlight-row('.claim2')
+    .notes: :t
+      Another possibility is to insist that infants, despite apparently demonstrating
+      intelligent responses to unperceived objects in their looking behaviours,
+      just can’t act for the reason that there is an object behind a screen.
+      Their responses are not really intelligent but driven by some more basic process.
+    .notes: :t
+      I want to consider this possibility first.
+      
+
+//- The problem
++insert_unit({unit:'207', title_slide:true, images:images})
+
+//- Explanation of the problem
++insert_unit({unit:'211', title_slide:true, images:images})
+
++section({title:'Summary of Lecture 02', images:images})
+//- conclude lecture 02
++slide
+  +discrepantFindingsAboutKnowledgeOfObjects({final:true, handout:false, notes:true})
+  .notes: :t
+    I suggested that the discrepant findings create a problem for 
+    understanding the nature of mental states because they seem to require
+    us to reject at least parts of the Uncomplicated Account of Minds and Actions ...
++slide
+  +UncomplicatedAccountOfMindsAndActions
+
++slide
+  .notes: :t
+    To conclude, the question for this lecture concerned knowledge of physical objects.
+    We examined how three requirements on having knowledge of physical objects are met.
+    Knowledge of objects depends on abilities to (i) segment objects, (ii) represent them as
+    persisting and (iii) track their interactions.
+  p Three requirements
+  ul
+    li segment objects
+    li represent objects as persisting (‘permanence’)
+    li track objects’ interactions
+  .notes: :t
+    We looked at each of these in turn and found evidence for two discoveries.
+    First infants meet these requirements in the first months of their lives.
++slide
+  p Principles of Object Perception
+  ul
+    li cohesion
+      span.step2.grey-text —‘two surface points lie on the same object only if the points are linked by a path of connected surface points’
+    li boundedness
+      span.step3.grey-text —‘two surface points lie on distinct objects only if no path of connected surface points links them’
+      // … the boundedness principle implies that … two distinct objects cannot interpenetrate.’
+    li rigidity
+      span.step4.grey-text —‘objects are interpreted as moving rigidly if such an interpretation exists’
+    li no action at a distance
+      span.step5.grey-text —‘separated objects are interpreted as moving independently of one another if such an interpretation exists’
+  p.right (Spelke 1990)
+  .notes: :t
+    Second, a single set of principles is formally adequate to explain how someone could 
+    meet these requirements, and to describe infants' abilities with segmentation, 
+    representing objects as persisting and tracking objects' interactions.
+  .notes: :t
+    This left us with the a question about mechanism: What is the relation between these principles
+    and infants' competence?
++slide_middle
+  p.center.false the simple view
+  .notes: :t
+    A natuaral answer is the Simple View: #{origins.simple_view}
+  +line-through('.false')
+  .notes: :t
+    However, as we saw, the Simple View must be wrong because it generates incorrect predictions.
+    This was the lesson of the discrepancy bewteen looking and search measures for both 
+    infants' abilities to represent objects as persisting and their abilities to track causal 
+    interactions.
+  .notes: :t
+    As I've just been arguing, the failure of the Simple View presents us with a problem.
+    The problem is to understand the nature of infants' apprehension of the principles given
+    that it doesn't involve knowledge.
+    This is a problem that will permeate our discussion of the origins of mind because it 
+    problems of this form come up again and again in different domains. 
+    It isn't the only problem we'll encounter, but none of the problems are more important or more
+    general than this one.
+    
+    

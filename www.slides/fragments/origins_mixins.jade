@@ -183,6 +183,43 @@ mixin charlesRiveraOcclusionEndarkeningTable
   p.source(style='margin-top:-300px;') Charles & Rivera (2009)
 
 
+
+
+
+
+
+mixin discrepancyTable(p)
+  if !p
+    - p = {step:true}
+  table.data
+    thead
+      tr
+        td domain
+        td evidence for knowledge in infancy
+        td evidence against knowledge
+    tbody
+      tr.odd.case-colour(class="#{p.step ? 'slide' : ''}")
+        td colour
+        td categories used in learning labels & functions
+        td failure to use colour as a dimension in ‘same as’ judgements
+      tr.even.case-objects(class="#{p.step ? 'slide' : ''}")
+        td physical objects
+        td patterns of dishabituation and anticipatory looking
+        td unreflected in planned action (may influence online control)
+      tr.odd.case-number(class="#{p.step ? 'slide' : ''}")
+        td number
+        td.center --""--
+        td.center --""--
+      tr.even.case-syntax(class="#{p.step ? 'slide' : ''}")
+        td syntax
+        td anticipatory looking
+        td [as adults]
+      tr.odd.case-minds(class="#{p.step ? 'slide' : ''}")
+        td minds
+        td reflected in anticipatory looking, communication, &c
+        td not reflected in judgements about action, desire, ...
+
+
 //- -------------
 //- communication with words
 

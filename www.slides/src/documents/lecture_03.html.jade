@@ -40,6 +40,8 @@ include ../../fragments/origins_mixins
      McCurry et al 2009 doesn’t necessarily break affordances (because can reach through,
      and note that if object indexes, wouldn’t predict a difference between the conditions)
      (Explan motor representation.)
+     NOTE : \citep{moore:2008_factors} show that having the toy make a noise doesn’t help,
+     which makes sense since it doesn’t change the affordances!
  (j) another missing part of the explanation --- how do object indexes
      explain not only anticipatory looking but also looking duration?
      Phenomenal expectations / metacognitive feelings ...
@@ -56,59 +58,235 @@ include ../../fragments/origins_mixins
 
 
 +slide_middle
-  p.center question
+  p.center How do humans first come to know simple facts about particular physical objects?
   .notes: :t
     The question for this course is ...
-    We are going to approach this question by examining the evidence from developmental science, 
-    and identifying philosophical problems created by the evidence.
+    Our current question is about physical objects.
+    How do humans first come to know simple facts about particular physical objects?
+  .notes: :t
+    In attempting to answer this question, we are focussing on the abilities of 
+    infants in the first six months of life.
+  .notes: :t
+    What have we found so far? ...
 
+section.slide
+  +_slide_inner
+    .layer1
+      .notes: :t
+        Here’s what we’ve found so far.
+      .notes: :t
+        We examined how three requirements on having knowledge of physical objects are met.
+        Knowledge of objects depends on abilities to (i) segment objects, (ii) represent them as
+        persisting and (iii) track their interactions.
+        To know simple facts about particular physical objects you need, minimally,
+        to meet these three requirements.
+      p Three requirements
+      ul.notes.show
+        li segment objects
+        li represent objects as persisting (‘permanence’)
+        li track objects’ interactions
+      .notes: :t
+        First discovery: infants meet all three requirements in the first months of their lives:
+        from around four months of age, and maybe from much earlier.
+    .slide
+      +highlight-row('ul li:eq(1)')
+      .notes: :t
+        Lots of experiments on each case, e.g. ...
+
+
+//- 4- and 5-month-olds can track briefly occluded objects
 +slide
-  +discrepantFindingsAboutKnowledgeOfObjects({final:true, handout:false, notes:true})
+  p 4- and 5-month-olds can 
+    span.track track
+    span  briefly occluded objects
+  p.em-above
+    table.data
+      thead
+        tr
+          td 
+            span scenario
+          td
+            span method
+          td.grey-text source
+      tbody
+        tr.odd
+          td 
+            span 1 vs 2 objects 
+          td
+            span habituation
+          td.grey-text Spelke et al 1995
+        tr.even
+          td 
+            span one unperceived object constrains another’s movement
+          td
+            span habituation
+          td.grey-text Baillargeon 1987
+        tr.odd
+          td 
+            span where did I hide it?
+          td
+            span violation-of-expectations
+          td.grey-text Wilcox et al 1996
+        tr.even
+          td 
+            span wide objects can’t disappear behind a narrow occluder
+          td
+            span violation-of-expectations
+          td.grey-text Wang et al 2004
+        tr.odd
+          td 
+            span when and where will it reappear?
+          td
+            span anticipatory looking
+          td.grey-text Rosander et al 2004
+  
+
+section.slide
+  +_slide_middle_inner
+    .layer1
+      .notes: :t
+        Here’s what we’ve found so far.
+      .notes: :t
+        We examined how three requirements on having knowledge of physical objects are met.
+        Knowledge of objects depends on abilities to (i) segment objects, (ii) represent them as
+        persisting and (iii) track their interactions.
+        To know simple facts about particular physical objects you need, minimally,
+        to meet these three requirements.
+      p Three requirements
+      ul.notes.show
+        li segment objects
+        li represent objects as persisting (‘permanence’)
+        li track objects’ interactions
+      .notes: :t
+        The second discovery concerned how infants meet these three requirements this.
+    
+      .slide.em-above
+        p Principles of Object Perception
+        ul
+          li cohesion
+            span.step2.grey-text —‘two surface points lie on the same object only if the points are linked by a path of connected surface points’
+          li boundedness
+            span.step3.grey-text —‘two surface points lie on distinct objects only if no path of connected surface points links them’
+            // … the boundedness principle implies that … two distinct objects cannot interpenetrate.’
+          li rigidity
+            span.step4.grey-text —‘objects are interpreted as moving rigidly if such an interpretation exists’
+          li no action at a distance
+            span.step5.grey-text —‘separated objects are interpreted as moving independently of one another if such an interpretation exists’
+        p.source Spelke, 1990
+        .notes: :t
+          The second was that a single set of principles is formally adequate to
+          explain how someone could meet these requirements, and to describe
+          infants' abilities with segmentation, representing objects as persisting
+          and tracking objects' interactions.
+        .notes: :t
+          This is exciting in several ways.
+          \begin{enumerate}
+          \item That infants have all of these abilities.
+          \item That their abilities are relatively sophisticated: it doesn’t seem
+          that we can characterise them as involving simple heuristics or relying
+          merely on featural information.
+          \item That a single set of principles underlies all three capacities.
+          \end{enumerate}
+  .slide
+    +reset
+      +_slide_middle_inner
+        +blur('.layer1','2px',900)
+        p.center.huge-glow three requirements, one set of principles
+        .notes: :t
+          three requirements, one set of principles: this suggests us that infants’
+          capacities are characterised by a model of the physical.
+
++slide_middle
+  +threeQuestionsAboutModels
   .notes: :t
-    Suppose we ask,
-    When do humans first come to know facts about the locations of objects they
-    are not perceiving?
-    Some evidence points to an early age, perhaps 2.5 months or earlier.
-    But other evidence points to a much later age, 7 months at the earliest.
+    [slide: model]
+    three requirements, one set of principles: this suggests us that infants’
+    capacities are characterised by a model of the physical (as opposed to
+    being a collection of unrelated capacities that only appear, but don’t
+    really, have anything to do with physical objects).
+  .slide
+    +show('.q1 span.hide, .three-q.hide')
+    .notes: :t
+      1. How do four-month-old infants  model  physical objects? 
+    .notes: :t
+      In asking how infants
+      model physical objects, we are seeking to understand not how physical objects
+      in fact are but how they appear from the point of view of
+      an individual or system.
+    .notes: :t
+      The model need not be thought of as something used by the system: it is
+      a tool the theorist uses in describing what the system is for and
+      broadly how it works.
+      This therefore leads us to a second question ...
+  .slide
+    +show('.q2 span')
+    .notes: :t
+      2. What is the relation between the model and the infants? 
+  .slide
+    +show('.q3 span')
+    .notes: :t
+      3. What is the relation between the model and the things modelled (physical objects)?
+  .slide
+    +highlight-row('.q2')      
+      
+      
++slide_middle
+  p.center the Simple View
   .notes: :t
-    I’m in the process of arguing this apparently conflicting evidence points to a deep problem about
-    how to characterise the mental states and actions of typically developing infants in their first
-    months of life, when they can perform some actions for the reason that there is an object behind
-    a screen but when this ability is strictly limited.
+    A natuaral answer is the Simple View: #{origins.simple_view}
   .notes: :t
-    One simple response would be to 
+    The Simple View is worth taking seriously for several reasons.
+    First, it requires no theoretical or conceptual innovation.
+  .notes: :t
+    Second, as we saw, the Simple View appears to be quite widely supported by
+    developmental psychologists including Baillargeon and, in writings from the
+    last millenium, Spelke too.
+  .notes: :t
+    Third, it can be deduced from the Uncomplicated Account of Minds and Actions.
+    That is, the developmental evidence together with
+    a background theory about minds and actions which seems implicit in
+    much philosophy and perhaps ordinary thinking too
+    commits us to the Simple View.
+
 
 +slide
   +UncomplicatedAccountOfMindsAndActions
   +show('.generalise, .theAccount', 0)
-  .notes: :t
-    If I’m right, we need to rethink fundamental claims about mental states.
-    These are coded in the Uncomplicated Account of Minds and Actions.
-  .notes: :t
-    But faced with this, we should try to hold on to the Uncomplicated Account
-    for as long as possible.
-    There are two ways to do this.
   .slide
-    +highlight-row('.claim1')
-    .notes: :t
-      One possibility is to insist that infants, despite failures to search,
-      really can have beliefs about, and knowlegde of, the locations of unseen objects.
-      For all we have seen so far, it might be that this is right.
-      Perhaps, for example, there is something especially tricky about searching.
-      Or perhaps there are other studies which show, contra Shinskey and Munakata,
-      that four months olds really can search for unperceived objects.
-      This deserves careful investigation.
-  .slide
-    +unhighlight-row('.claim1')
     +highlight-row('.claim2')
     .notes: :t
-      Another possibility is to insist that infants, despite apparently demonstrating
-      intelligent responses to unperceived objects in their looking behaviours,
-      just can’t act for the reason that there is an object behind a screen.
-      Their responses are not really intelligent but driven by some more basic process.
+      The evidence suggests that infants can act for the reasons which are 
+      simple facts about particular physical objects.
+  .slide
+    +unhighlight-row('.claim2')
+    +highlight-row('.claim1')
     .notes: :t
-      I want to consider this possibility first.
-      
+      And according to the Uncomplicated Account, this entails that those
+      simple facts about particular physical objects
+      are things they believe.
+
+
+
+    
+//-
+//-
+//-
+//- +slide
+//-   +discrepantFindingsAboutKnowledgeOfObjects({final:true, handout:false, notes:true})
+//-   .notes: :t
+//-     Suppose we ask,
+//-     When do humans first come to know facts about the locations of objects they
+//-     are not perceiving?
+//-     Some evidence points to an early age, perhaps 2.5 months or earlier.
+//-     But other evidence points to a much later age, 7 months at the earliest.
+//-   .notes: :t
+//-     I’m in the process of arguing this apparently conflicting evidence points to a deep problem about
+//-     how to characterise the mental states and actions of typically developing infants in their first
+//-     months of life, when they can perform some actions for the reason that there is an object behind
+//-     a screen but when this ability is strictly limited.
+//-   .notes: :t
+//-     One simple response would be to
+
 
 //- The problem
 +insert_unit({unit:'207', title_slide:true, images:images})

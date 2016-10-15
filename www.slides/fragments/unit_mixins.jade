@@ -42,12 +42,15 @@ mixin _slide_inner(p)
 mixin slide(p)
   if typeof(p) === 'undefined'
     - p = {}
+  if !('style' in p)
+    - p.style = ''
+    
   if ('id' in p)
-    section.slide(id="#{p.id}")
+    section.slide(id="#{p.id}", style="#{p.style}")
       +_slide_inner(p)
         block
   else
-    section.slide
+    section.slide(style="#{p.style}")
       +_slide_inner(p)
         block
     
@@ -74,12 +77,14 @@ mixin _slide_middle_inner(p)
 mixin slide_middle(p)
   if typeof(p) === 'undefined'
     - p = {}
+  if !('style' in p)
+    - p.style = ''
   if ('id' in p)
-    section.slide(id="#{p.id}")
+    section.slide(id="#{p.id}", style="#{p.style}")
       +_slide_middle_inner(p)
         block
   else
-    section.slide
+    section.slide(style="#{p.style}")
       +_slide_middle_inner(p)
         block
 

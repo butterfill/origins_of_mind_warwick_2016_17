@@ -7,7 +7,7 @@ mixin davidson_inbetween(p)
   .photobox-bottom-right
     img.photo-right(src='/img/davidson.gif')
   .words: .container_12: .grid_12
-    p
+    p.first-part
       span ‘if you want to describe what is going on in the head of the child when it has a few words which it utters in appropriate situations,  
       span.you-will-fail you will fail
       span.step2(class="#{p.step ? 'hide' : ''}")   for lack of the right sort of words of your own.
@@ -68,6 +68,8 @@ mixin UncomplicatedAccountOfMindsAndActions(p)
     \item Either Wy can act for the reason that there is, or seems to be, a spider behind the book, or else she cannot.
     \item The first alternatives of (1) and (2) are either both true or both false.
     \end{enumerate}
+  if p.final
+    +show('.generalise, .theAccount', 0)
     
     
 
@@ -124,7 +126,11 @@ mixin segmentPersistInteract(p)
       li represent objects as persisting (‘permanence’)
       li track objects’ interactions
 
-mixin threeQuestionsAboutModels
+mixin threeQuestionsAboutModels(p)
+  if typeof(p) === 'undefined' 
+    - p = {}
+  if !('final' in p)
+    - p.final = false
   p.three-q.em-around.hide Three Questions
   p.em-around.q1
     span.hide 1. How do four-month-old infants  
@@ -134,24 +140,46 @@ mixin threeQuestionsAboutModels
     span.hide 2. What is the relation between the model and the infants?  
   p.em-around.q3
     span.hide 3. What is the relation between the model and the things modelled (physical objects)?
+  if p.final
+    +show('.hide',0)
+
+mixin simpleViewGeneratesIncorrectPredictions(p)
+  if typeof(p) === 'undefined' 
+    - p = {}
+  if !('final' in p)
+    - p.final = false
+  +slide_middle({id:"simple-view-fail", style:"background-color:red"})
+    p.indent 
+      span The 
+      span.simple-view Simple View
+      br
+      span  generates 
+      br
+      span multiple 
+      br
+      span incorrect predictions.
+    if p.final
+      +fade('span:not(.simple-view)', 0)
+      +line-through('.simple-view')
+    block
 
 
 mixin charlesRiveraOcclusionEndarkeningTable
-  table.data
+  table.data.charles-rivera 
     thead
       tr
         td 
-        td.center occlusion
-        td.center.endarkening endarkening
+        td.center: span.occlusion occlusion
+        td.center: span.endarkening endarkening
     tbody
       tr.violation-of-expectations
-        td.center violation-of-expectations
-        td.center.occlusion ✔
-        td.center.endarkening ✘
+        td.center: span violation-of-expectations
+        td.center: span.occlusion ✔
+        td.center: span.endarkening ✘
       tr.manual-search
-        td.center manual search
-        td.center.occlusion ✘
-        td.center.endarkening ✔
+        td.center: span manual search
+        td.center: span.occlusion ✘
+        td.center: span.endarkening ✔
   p.source(style='margin-top:-300px;') Charles & Rivera (2009)
 
 

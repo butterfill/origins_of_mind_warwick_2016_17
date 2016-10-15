@@ -185,10 +185,32 @@ section.slide
 +slide({bkg:'slide_cp_london_181.jpg'})
 
 
++slide_middle({style:"background-color:red"})
+  p.indent 
+    span The 
+    span.simple-view Simple View
+    br
+    span  generates 
+    br
+    span multiple 
+    br
+    span incorrect predictions.
+  .slide
+    +fade('span:not(.simple-view)')
+    +line-through('.simple-view')
+    .notes: :t
+      This is the end of the road for the Simple View.
+      If, like Baillargeon, you want to cling to the Simple View, then you
+      need something very convincing to say about the fact that it appears
+      to generate multiple incorrect predictions.
+
+
 +slide
-  .notes Similar discrepancies between looking and reaching are also found in some nonhuman primates,
-  .notes both apes and monkeys (chimpanzees, cotton-top tamarins and marmosets).
-  .notes (Some of this is based on the gravity tube task and concerns gravity bias.)
+  .notes: :t
+    Similar discrepancies between looking and reaching are also found in some
+    nonhuman primates, both apes and monkeys (chimpanzees, cotton-top tamarins
+    and marmosets). (Some of this is based on the gravity tube task and
+    concerns gravity bias.)
   .step1-and-2
     p.handout.notes.show ‘A similar permanent dissociation in understanding object support relations  
       | might exist in chimpanzees. They identify impossible support relations in looking tasks, 
@@ -199,8 +221,12 @@ section.slide
       p.em-above Likewise for cotton-top tamarins (Santos et al 2006) and marmosets (Cacchione et al 2012).
   .slide
     +blur('.step1-and-2')
-    .notes Note that this research is evidence of dissociations between looking and search in adult primates, not infants.
-    .notes This is important because it indicates that the failures to search are a feature of the core knowledge system rather than a deficit in human infants.
+    .notes: :t
+      Note that this research is evidence of dissociations between looking and
+      search in adult primates, not infants.
+      This is important because it indicates that the failures to search are a
+      feature of the core knowledge system rather than a deficit in human
+      infants.
     .notes.handout ‘to date, adult primates’ failures on search tasks appear to 
       | exactly mirror the cases in which human toddlers perform poorly.’
     p.em-above ‘to date, adult primates’ failures on search tasks appear to 
@@ -226,75 +252,155 @@ section.slide
       This is evidence that the dissociation is a consequence of something fundamental about 
       cognition rather than just a side-effect of some capacity limit.
 
++simpleViewGeneratesIncorrectPredictions({final:true})
+  .notes: :t
+    This really is the end of the road for the Simple View.
+    But it is actually worse ...
+
 
 //- this might be in the wrong place!
 //- TODO: include description of their experiments
-//- TODO: include notes from talk from MILAN and BERLIN talks ...
 +slide_middle
   +charlesRiveraOcclusionEndarkeningTable
+  +hide('.endarkening', 0)
+  .notes: :t
+    Because this point is controversial, I want to mention one further
+    piece of the puzzle.
+    Five-month-olds not only sometimes fail to search for hidden objects but 
+    ...
+  .slide
+    +show('.endarkening')
+    .notes: :t
+      ... they also sometimes fail to look longer when a momentarily hidden object fails 
+      to reappear as if by magic.
+      Infants will reach for an object hidden in darkness \citep[e.g.][]{jonsson:2003_infants}.
+      But what happens if instead of measuring reaching we measure looking times?
+      \citet{charles:2009_object} compared what happens when an object is
+      momentarily hidden behind a screen with what happens when an object is
+      momentarily hidden by darkness.
+      They used a trick with light and mirrors so that for some of the infants,
+      the object did not reappear when the screen came up or the light returned.
+      Surprisingly, five-month-old infants’ looking times indicated that an
+      expectation had been violated only when the object was hidden behind a
+      screen but not when hidden by darkness.
+    .notes: :t
+      I think this pattern of findings is good evidence against the hypothesis
+      that four- or five-month-olds have beliefs about, or knowledege of,
+      the locations of 
+      unperceived objects.
+      After all, 
+      a belief is essentially the kind of state that can inform actions of any
+      kind, whether they involve looking, searching with the hands or anything
+      else.
+    .notes: :t
+      NB: Charles & Rivera did the v-of-e part; the manual search part has been
+      done by others.
 
 +slide({bkg:'charles_2009_fig1.png'})
   p.source Charles & Rivera, figure 1 (part)
 
++slide
+  +img('charles_2009_fig3a.png',"max-width:700px;")
+  p.source Charles & Rivera, 2009 fig 3a-c
+  .slide
+    +img('charles_2009_fig3b.png',"max-width:700px;")
+  .slide
+    +img('charles_2009_fig3c.png',"max-width:700px;")
+    .notes: :t
+      (There was also a fade condition which I’m not discussing.)
+
+      
++slide
+  .results
+    +img_clip('charles_2009_fig5-6.png',"rect(0px,350px,999px,0px)")
+  p.source Charles & Rivera, 2009 figs 5-6
+  .notes: :t
+    The results are complicated.  They compare occlusion to empty
+    and endarkening to empty.
+  .notes: :t
+    They comment that, for occlusion vs empty:
+    ‘the condition-by- outcome interaction usually interpreted as ‘having
+    object permanence’, though definitely not present in the first trial pair,
+    became visible by the fourth trial pair (see Figure 5).’
+    This is why you see that figure there.
+  .notes: :t
+    Occulsion: But actually their analysis depends on
+    ‘The significant three-way interaction existed because the disparity
+    between infants’ looking at the two outcomes increased across trial pairs
+    in the Empty Condition, but decreased across pairs in the Occlusion
+    Condition, F(3, 108) = 2.83, p < .05, partial g2 = .07.’
+  .notes: :t
+    Occulsion:  (Note: ‘The predicted two-way condition-by-outcome interaction was not
+    significant, F(1, 36) = 0.43, p > .51, partial g2 = .01, but one main
+    effect and the alternatively predicted three- way interaction were
+    significant.’)
+  .notes: :t
+    Occlusion: ‘Infants did not show the two-way interaction between condition
+    and outcome; however, they did show the specific three-way interaction
+    interpretable in terms of infants’ exhibiting an understanding of object
+    permanence, but needing time to acclimate to the procedures. That is, the
+    pattern suggests that infants came to expect the occluded object to
+    reappear over the course of trials in the Occlusion Condition, but came to
+    expect it to be gone over the course of trials in the Empty Condition.’
+  .notes: :t
+    [The complication here is the main effect: infants look longer when there’s 
+    something than when there’s nothing, not surprisingly.
+    A better approach might be to do Wynn’s 1992 (‘two mouse’) experiment with
+    occlusion and endarkening---in her design there is always something to look at, 
+    and she found that infants don’t prefer to look at one vs two mice.]
+  .slide
+    +clip('.results img','auto')
+    .notes: :t
+      When you compare the Empty and Endarkening conditions, you don’t get an interaction.
+      ‘The three-way interaction found in the Occlusion vs. Empty experiment
+      was not present here, F(3, 108) = .176, p > .90. The lack of interaction
+      is clearly visible in ... Figure 6.’
+    .notes: :t
+      ‘Infants’ looking patterns in the Darkness Condition were almost
+      identical to those of the Empty Condition. ... 
+      If the results of the Occlusion Condition are taken to indicate that
+      infants expect occluded objects to continue existing, then infants’
+      behavior in the Darkness Condition must be taken to indicate that infants
+      do not expect endarkened objects to continue existing.’
+    .notes: :t
+      [NOTE: Imperfect to compare Endarkening and Empty since Empty involves the 
+      screen coming down but no change in luminance (as far as I can tell --- it’s 
+      not clear exactly how they did that from the procedure.)]
+    .notes: :t
+      [NOTE: I’m not discussing the Fade condition but the results are interesting:
+      ‘Infants in the Fade Condition behaved similarly to infants in the
+      Occlusion Condition, demonstrating expectations for the reappearance of
+      faded objects. This is the opposite of the expectation adults have under
+      similar conditions, and the opposite of what would be expected under the
+      ecological hypothesis. The pattern of results across all conditions –
+      expectation for the reappearance of occluded and faded objects, but not
+      for endarkened objects – cannot be reconciled with the traditional
+      ecological hypothesis.’]
+
+
 +slide_middle
   +charlesRiveraOcclusionEndarkeningTable
-
-
-+slide_middle
   .notes: :t
-    So far we can draw two conclusions about infants' and adults abilities to track 
-    interactions.  My \textbf{first conclusion} from this section is that infants from around 
-    4 months of 
-    age or younger and nonhuman animals are able to track simple causal interactions.
-  p.center conclusion so far: three things
+    Why is this a major challenge for the Simple View?
+    Because it shows that to defend the Simple View, it’s not enough to 
+    explain failures of manual search.
+  .slide
+    +highlight('.manual-search .occlusion', 'red')
+  .slide
+    +unhighlight('.manual-search .occlusion', 'red')
+    +highlight('.violation-of-expectations .endarkening', 'red')
+    .notes: :t
+      To defend the Simple View, you also have to explain failure in
+      a violation-of-expectations task when manual search succeeds.
 
-+slide_middle
+
++simpleViewGeneratesIncorrectPredictions({final:true})
   .notes: :t
-    I started by identifying three requirements for knowledge of physical objects: 
-    abilities to segment objects, to represent them as persisting, and to track their causal 
-    interactions.
-    My \textbf{second conclusion} is that a single set of principles likely underlies these 
-    abilities.  The ability to segment objects is bound up with the ability 
-    to represent them as persisting and with the ability to track their interactions.
-  .container_12
-    .grid_6
-      p principles of object perception
-    .grid_2
-      p.stretch-5  {
-    .grid_4
-      .kludge(style='margin-top:-30px;margin-left:-50px;')
-        p segmentation
-        p permanence
-        p causal interaction
-+slide_middle
+    This really is the end of the road for the Simple View.
+    We must reject this view because it makes systematically incorrect
+    predictions about actions like searching for occluded objects and about 
+    looking behaviours involving endarkened objects.
   .notes: :t
-    My \textbf{third conclusion} is that we have a problem.
-    The problem is that we have to reject the simple view.
-    Recall that the simple says that the principles of object perception are things that we know 
-    or believe.
-    We must reject this view because it makes systematically incorrect predictions about actions 
-    like searching for objects.
-  p.center the simple view
-  +line-through('p')
-  .notes: :t
-    But why is this a problem? Because, as we'll see, it is hard to identify an alternative.
-
-
-//- *** HERE ***
-//- ADD A UNIT DESCRIBING THE PROBLEM --- if not KNOWLEDGE then WHAT?  Can't just be representation ....
-//- THEN REUTNR TO DAVIDSON ON, the what is in between stuff!
-      
-//-
-  +slide
-    .notes How do these principles enable us to discern when one object ends and another begins?
-    p Perception of objects rests on knowledge of ‘four principles—cohesion, boundedness, rigidity, and no action at a distance—that reflect basic constraints on the motions of physical bodies’  (Spelke 1990: 30-1)
-    p We acquire representations of unperceived objects by applying the principles to what we see and drawing inferences about which objects there are. 
-    .slide
-      p So infants who pass violation-of-expectation tasks can:
-      ul
-        li formulate hypotheses;
-        li revise and elaborate these hypotheses; and
-        li regard events as anomalous or surprising.
-
-  
+    This a problem? Why? Because, as we'll see, it is hard to identify an
+    alternative.
 

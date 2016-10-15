@@ -10,6 +10,7 @@ description: """
 ---
 
 include ../../../fragments/unit_mixins
+include ../../../fragments/origins_mixins
 
 
 
@@ -17,10 +18,35 @@ include ../../../fragments/unit_mixins
 // the problem is that we have to reject the simple view
 
 +slide_middle
-  .notes I'm sorry to keep repeating this but I want everyone to understand where we are.
-  .notes There are principles of object perception that explain abilities to segment objects, to represent them while temporarily unperceived and to track their interactions. 
-  .notes These principles are not known.  What is their status?
-  p.center the problem
+  .notes: :t
+    I'm sorry to keep repeating this but I want everyone to understand where we
+    are. There are principles of object perception that explain abilities to
+    segment objects, to represent them while temporarily unperceived and to
+    track their interactions. These principles are not known. What is their
+    status?
+  p.center a problem
+
++slide_middle
+  +threeQuestionsAboutModels({final:true})
+  .slide
+    +highlight-row('.q2')
+    .notes: :t
+      The Simple View answers this question.
+      But the Simple View is incorrect.
+      So we need an alternative answer.
+      And it is difficult to find one because ...
+
++slide_rh_white
+  +left_half
+    .middle
+      p.em-around Four-month-olds can act (e.g. look, and reach) for the reason that this object is there.
+  +right_half
+    .middle
+      p.em-around Four-month-olds cannot believe, nor know, that this object is there.
+
++slide
+  +UncomplicatedAccountOfMindsAndActions({final:true})
+
 
 
 +slide_middle
@@ -124,35 +150,45 @@ section.slide
 
 
 +slide_middle
-  .notes \citet{Munakata:2001ch} suggests that there are 'graded representations', that is knowlegde can be stronger or weaker.
-  .notes Presupposes we have an account of subject, attitude and content.  Let's grant that.
-  .notes What is strength?  Some additional component, over and above subject, attitude and content.
-  .notes The idea is quite intuitive but difficult to make systematic sense of.
+  p.center strength (Munakata 2001)
+  .notes: :t
+    A different way to duck Davidson’s Challenge
+    has been proposed by \citeauthor{Munakata:2001ch} (\citeyear{Munakata:2001ch}; see also \citealp{munakata:1997_rethinking}).
+    She suggests that knowledge can be ‘graded’: some knowledge states are ‘stronger’ while others are ‘weaker’.
+    She also holds that weaker knowledge states can drive looking time behaviours but not control purposive action.
+    This allows her to hold that four-month-olds know principles about objects generally and facts about particular objects,
+    just as adults do.
+    So on this view infants’ representations of objects are not different in kind from adults’ knowledge of facts about particular physical objects.
+    % \citep{shinskey:2010_something} specify that the graded representations idea is supposed to be an alternative to postulating core knowledge.
+  .notes: :t
+     The idea that knowledge can be graded is initially attractive.
+     It appears to avoid the incorrect predictions of the Simple View, yet it does not require meeting Davidson’s Challenge and identify things in between mindless behaviour and knowledge or belief.
+     But this idea also faces a challenge.
+     Talk about ‘strength’ in this context needs to be anchored in a theory of representation.
+     When talking about a radio signal, a notion of strength can be defined in
+     terms of physical properties of waves.
+     In this case it is possible to specify what signal strength amounts to, and it is clear that signals of varying strength can all carry the same message.
+     But what does strength amount to in the case of a mental representation or knowledge state?
+  .notes: :t
+    Without an answer to this question, invoking graded representations will not explain anything.
+    It amounts merely to retrospectively postulating a novel aspect of representation to characterise findings about what four-month-olds can and can’t do.
+  .notes: :t
+    To see the force of this challenge, consider that proponents of graded knowledge hold that weaker representations can guide many looking behaviours whereas manual search behaviours generally require stronger representations.
+    Why is it this way around?
+    Why is a stronger representation is needed for manually searching than for looking?
+    Until we can answer this question, postulating graded knowledge will not explain the developmental puzzles about knowledge of objects.
+    
   .notes The idea might well make sense if we were talking about neural representations.
   .notes But here we aren't.  Let's not introduce radically new ideas about representation unless we really have to.
   .notes (By the way, \citet{Munakata:2001ch} is a nice review of dissociations, not only developmental dissociations.)
-  p.center strength (Munakata 2001)
 
 
-+slide
+section.slide
+  +davidson_inbetween
+  +blur('.first-part','2px',0)
   .notes: :t
     Recall what Davidson said: we need a way of describing what is in between thought and 
     mindless nature.  This is the challenge presented to us by the failure of the Simple View.
-  .notes 
-  p.blur-text
-    span ‘if you want to describe what is going on in the head of the child when it has a few words which it utters in appropriate situations,  
-    span.you-will-fail you will fail
-    span.step2   for lack of the right sort of words of your own.
-  p
-    span ‘We have many vocabularies for describing nature when we regard it as 
-    span.highlight1 mindless
-    span , and we have a mentalistic vocabulary for describing 
-    span.highlight1 thought and intentional action
-    span ; what we lack is a way of describing 
-    span.highlight1 what is in between
-    span ’
-  p.right
-    span (Davidson 1999, p. 11)
 
 
 

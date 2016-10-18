@@ -13,11 +13,11 @@ mixin davidson_inbetween(p)
       span.step2(class="#{p.step ? 'hide' : ''}")   for lack of the right sort of words of your own.
     p.step3(class="#{p.step ? 'hide' : ''}")
       span ‘We have many vocabularies for describing nature when we regard it as 
-      span.highlight1 mindless
+      span.highlight1.mindless mindless
       span , and we have a mentalistic vocabulary for describing 
-      span.highlight1 thought and intentional action
+      span.highlight1.thought thought and intentional action
       span ; what we lack is a way of describing 
-      span.highlight1 what is in between
+      span.highlight1.between what is in between
       span ’
     p.right
       span (Davidson 1999, p. 11)
@@ -122,9 +122,9 @@ mixin segmentPersistInteract(p)
   p Three requirements
   .theRequirements(class="#{p.final ? '' : 'hide'}")
     ul
-      li segment objects
-      li represent objects as persisting (‘permanence’)
-      li track objects’ interactions
+      li.segment segment objects
+      li.persist represent objects as persisting (‘permanence’)
+      li.track track objects’ interactions
 
 mixin threeQuestionsAboutModels(p)
   if typeof(p) === 'undefined' 
@@ -148,7 +148,7 @@ mixin simpleViewGeneratesIncorrectPredictions(p)
     - p = {}
   if !('final' in p)
     - p.final = false
-  +slide_middle({id:"simple-view-fail", style:"background-color:red"})
+  +slide_middle({style:"background-color:red"})
     p.indent 
       span The 
       span.simple-view Simple View

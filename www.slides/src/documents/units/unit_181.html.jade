@@ -16,11 +16,7 @@ include ../../../fragments/origins_mixins
 // eventual conclusion will be that the same principles explain both
 
 +slide
-  p Three requirements
-  ul
-    li.segment segment objects
-    li.persist represent objects as persisting (‘permanence’)
-    li track objects’ interactions
+  +segmentPersistInteract({final:true})
   +highlight-row('.segment')
   .slide
     +unhighlight-row('.segment')

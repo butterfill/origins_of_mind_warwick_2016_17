@@ -1,0 +1,121 @@
+---cson
+layout: 'deck_unit'
+title: "The Problem with the Simple View: Summary"
+tags: []
+description: """
+  The Simple View implies that infants’ abilities to segment physical objects, 
+  represent them as persisting and track their causal intereactions
+  is a consequence of their having beliefs concerning physical objects.
+  The Simple View must be rejected because it generates incorrect
+  multiple predictions.  
+  """
+---
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/origins_mixins
+
+
+
+// ------------------
+// the problem is that we have to reject the simple view
+
+.notes: :t
+  I'm sorry to keep repeating this but I want everyone to understand where we
+  are. There are principles of object perception that explain abilities to
+  segment objects, to represent them while temporarily unperceived and to
+  track their interactions. These principles are not known. What is their
+  status?
+
+
+
+
+
++slide_middle
+  p.center How do humans first come to know simple facts about particular physical objects?
+  .notes: :t
+    The question is ...
+    How do humans first come to know simple facts about particular physical objects?
+
+
+section.slide
+  +_slide_middle_inner
+    .layer1
+      .notes: :t
+        Here’s what we’ve found so far.
+      .notes: :t
+        We examined how three requirements on having knowledge of physical objects are met.
+        Knowledge of objects depends on abilities to (i) segment objects, (ii) represent them as
+        persisting and (iii) track their interactions.
+        To know simple facts about particular physical objects you need, minimally,
+        to meet these three requirements.
+      +segmentPersistInteract({final:true})
+      .notes: :t
+        The second discovery concerned how infants meet these three requirements this.
+    
+      .slide.em-above
+        p Principles of Object Perception
+        ul
+          li cohesion
+            span.step2.grey-text —‘two surface points lie on the same object only if the points are linked by a path of connected surface points’
+          li boundedness
+            span.step3.grey-text —‘two surface points lie on distinct objects only if no path of connected surface points links them’
+            // … the boundedness principle implies that … two distinct objects cannot interpenetrate.’
+          li rigidity
+            span.step4.grey-text —‘objects are interpreted as moving rigidly if such an interpretation exists’
+          li no action at a distance
+            span.step5.grey-text —‘separated objects are interpreted as moving independently of one another if such an interpretation exists’
+        p.source Spelke, 1990
+        .notes: :t
+          The second was that a single set of principles is formally adequate to
+          explain how someone could meet these requirements, and to describe
+          infants' abilities with segmentation, representing objects as persisting
+          and tracking objects' interactions.
+        .notes: :t
+          This is exciting in several ways.
+          \begin{enumerate}
+          \item That infants have all of these abilities.
+          \item That their abilities are relatively sophisticated: it doesn’t seem
+          that we can characterise them as involving simple heuristics or relying
+          merely on featural information.
+          \item That a single set of principles underlies all three capacities.
+          \end{enumerate}
+
+
++slide_middle
+  +threeQuestionsAboutModels({final:true})
+  +highlight-row('.q2')      
+  .notes: :t
+    2. What is the relation between the model and the infants? 
+      
+      
++slide_middle
+  p.center.false the Simple View
+  .notes: :t
+    A natuaral answer is the Simple View: #{origins.simple_view}
+
++slide_middle
+  +charlesRiveraOcclusionEndarkeningTable({final:true})
+  +highlight('.manual-search .occlusion', 'red')
+  +highlight('.violation-of-expectations .endarkening', 'red')
+  .notes: :t
+    The Simple View generates incorrect predictions.
+
++simpleViewGeneratesIncorrectPredictions({final:false})
+  .notes: :t
+    However, as we saw, the Simple View must be wrong because it generates incorrect predictions.
+    This was the lesson of the discrepancy bewteen looking and search measures for both 
+    infants' abilities to represent objects as persisting and their abilities to track causal 
+    interactions.
+  .slide
+    +fade('span:not(.simple-view)', 0)
+    +line-through('.simple-view')
+    .notes: :t
+      As I've just been arguing, the failure of the Simple View presents us with a problem.
+      The problem is to understand the nature of infants' apprehension of the principles given
+      that it doesn't involve knowledge.
+      This is a problem that will permeate our discussion of the origins of mind because it 
+      problems of this form come up again and again in different domains. 
+      It isn't the only problem we'll encounter, but none of the problems are more important or more
+      general than this one.
+  
+  

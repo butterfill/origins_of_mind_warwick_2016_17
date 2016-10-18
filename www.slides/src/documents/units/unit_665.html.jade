@@ -1,0 +1,662 @@
+---cson
+layout: 'deck_unit'
+title: "A Hypothesis: Object Indexes Underpin Infants’ Abilities"
+tags: []
+description: """
+  How do four- and five-month-olds track briefly occluded objects?  
+  One hypothesis is that their abilities to do so depend on a system 
+  of object indexes like that which underpins multiple object tracking 
+  or object-specific preview benefits.
+  """
+---
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/origins_mixins
+
+
+
++slide
+  +segmentPersistInteract({final:true, step:false})
+  .slide
+    +highlight-row('li:eq(1)')
+    .notes: :t
+      How do four- and five-month-olds track briefly occluded objects?
+  .slide
+    p.center.em-above 
+      span How?  
+      span.hide.step2 
+        span.object-index Object Index
+        span es!
+    .slide
+      +show('.step2')
+      .notes: :t
+        The leading, best defended hypothesis is that their abilities to do so 
+        depend on a system of 
+        object indexes like that which underpins multiple object tracking or 
+        object-specific preview benefits
+        \citep{Leslie:1998zk,Scholl:1999mi,Carey:2001ue,scholl:2007_objecta}.
+    .slide
+      +invert('.object-index')
+      .notes: :t
+        But what is an object index?
+        Formally, an object index is ‘a mental token that functions as a 
+        pointer to an object’ \citep[p.\ 11]{Leslie:1998zk}.
+        If you imagine using your fingers to track moving objects,
+        an object index is the mental counterpart of a finger \citep[p.~68]{pylyshyn:1989_role}.
+      .notes: :t
+        The interesting thing about object indexes is that a system of object
+        indexes (at least one, maybe more)
+        appears to underpin cognitive processes which are not
+        strictly perceptual but also do not involve beliefs or knowledge states.
+        While I can’t fully explain the evidence for this claim here,
+        I do want to mention the two basic experimental tools that are used to
+        investigate the existence of, and the principles underpinning, 
+        a system of object indexes which operates 
+        between perception and thought ...
+
+
+  
++slide
+  +img_clip('pylyshyn_2001_fig6.png','rect(0, 200px, 300px, 0)')
+  .notes: :t
+    Suppose you are shown a display involving eight stationary circles, like 
+    this one.
+  .kludge(style='margin-top:300px;') &nbsp;
+  .slide
+    +clip('img:eq(0)','rect(0, 370px, 300px, 0)')
+    .notes: :t
+      Four of these circles flash, indicating that you should track these circles.
+  .slide
+    +clip('img:eq(0)','rect(0, 530px, 300px, 0)')
+    .notes: :t
+      All eight circles now begin to move around rapidly, and keep moving unpredictably for some time.
+  .slide
+    +clip('img:eq(0)','auto')
+    .notes: :t
+      Then they stop and one of the circles flashes.
+      Your task is to say whether the flashing circle is one you were supposed to track.
+      Adults are good at this task \citep{pylyshyn:1988_tracking}, indicating that they can use at least four object indexes simultaneously.
+    .notes: :t
+      (\emph{Aside.} That this experiment provides evidence for the existence of 
+      a system of object indexes has been challenged.  
+      See \citet[p.\ 59]{scholl:2009_what}:
+      \begin{quote}
+      `I suggest that what Pylyshyn’s (2004) experiments show is exactly what they intuitively 
+      seem to show: We can keep track of the targets in MOT, but not which one is which. 
+      [...]
+      all of this seems easily explained [...] by the view 
+      that MOT is simply realized by split object-based attention to the MOT targets as a set.'
+      \end{quote}
+      It is surely right that the existence of MOT does not, all by itself,
+      provide support for the existence of a system of object indexes.
+      However, contra what Scholl seems to be suggesting here, the MOT paradigm 
+      can be adapated to provide such evidence.
+      Thus, for instance, \citet{horowitz:2010_direction} show that, in a MOT paradigm, observers 
+      can report the direction of one or two targets without advance knowledge of which 
+      targets' directions they will be asked to report.)
+  p.source Pylyshyn 2001, figure 6
+      
+    
+
++slide
+  .notes: :t
+    There is a behavioural marker of object-indexes called the object-specific preview benefit.
+    Suppose that you are shown an array of two objects, as depicted here.
+    At the start a letter appears briefly on each object.
+    (It is not important that letters are used; in theory, any readily 
+    distinguishable features should work.)
+  +img_clip('kahneman_1992_fig3.png','rect(5px,175px, 600px, 0)')
+  .slide
+    +clip('img:eq(0)','rect(5px,315px, 600px, 0)')
+    .notes: :t
+      The objects now start moving.
+  .slide
+    +clip('img:eq(0)','auto')
+    .notes: :t
+      At the end of the task, a letter appears on one of the objects.
+      Your task is to say whether this letter is one of the letters that appeared at the start or whether it is a new letter.
+      Consider just those cases in which the answer is yes: the letter at the end is one of those which you saw at the start.
+      Of interest is how long this takes you to respond in two cases: when the letter appears on the same object at the start and end, and, in contrast, when the letter appears on one object at the start and a different object at the end.
+      It turns out that most people can answer the question more quickly in the first case.
+      That is, they are faster when a letter appears on the same object twice than when it appears on two different objects 
+      \citep{Kahneman:1992xt}.
+      This difference in response times is the 
+      % $glossary: object-specific preview benefit
+      \emph{object-specific preview benefit}.
+      Its existence shows that, in this task, you are keeping track of which object is which as they move.
+      This is why the existence of an object-specific preview benefit is taken to be evidence that object indexes exist.
+  p.source Kahneman et al 1992, figure 3
+  .notes.handout: :t
+    The \emph{object-specific preview benefit}: ‘observers can identify target 
+    letters that matched the preview letter from the same object faster than 
+    they can identify target letters that matched the preview letter from the 
+    other object’ \citep[p.\ 2]{Krushke:1996ge}.
+  
+
++slide
+  .notes: :t
+    In what follows I will take it for granted that, in adult humans,
+    there is a system of object indexes which enables them to track 
+    potentially moving objects in ongoing actions such as visually tracking or 
+    reaching for objects, and which influences how their attention is allocated 
+    \citep{flombaum:2008_attentional}.
+  p object indexes 
+    span.object-files.hide / files
+    span  in  
+    span.adults adults
+    span.and-infants.hide  and 
+      span.infants infants
+    span  ...
+  ul
+    li guide ongoing action (e.g. visual tracking, reaching)
+    li influence how attention is allocated
+    .slide
+      +blur('li:lt(2)')
+      li.judgement-independent can conflict with beliefs and knowledge states
+      .notes: :t
+        This system of object indexes
+        does not involve belief or knowledge
+        and may assign indexes to objects in ways that are inconsistent with
+        a subject’s beliefs about the identities of objects 
+        \citep[e.g.][]{Mitroff:2004pc, mitroff:2007_space}
+    .slide
+      +blur('li:eq(2)')
+      li.markers 
+        span have 
+        span.behavioural-markers behavioural
+        span   
+        span.neural-markers.hide and neural 
+        span  markers
+      .notes: :t
+        We have observed one behavioural marker of object 
+        indexes, namely the object-specific preview benefit.
+    .slide
+      +show('.neural-markers')
+      .notes: :t
+        There are also neural markers of object indexes.
+        That is, in adults there is a pattern of brain activity which appears to be 
+        characteristic of processes involved in maintaining an object index 
+        for an object that is briefly hidden from view.
+    .slide
+      +blur('li:eq(3)')
+      li.signature-limits 
+        span.signature-limits are subject to signature limits
+      .notes: :t
+        The system of object indexes is also subject to signature limits.
+        In general, a \emph{signature limit of a system} is a pattern of behaviour the system exhibits which is both defective given what the system is for and peculiar to that system.
+      .notes: :t
+        One signature limit of a system of object indexes is that featural information sometimes fails to influence how objects are assigned in ways that seem quite dramatic.
+        Let me illustrate ...
+    .slide
+      +show('.layer.change-features')
+      .notes: :t
+        In this scenario, 
+        a patterned square disappears behind the barrier; later a plain black ring emerges.  
+        If you consider speed and direction only, these movements are consistent with there being just one object.
+        But given the distinct shapes and textures of these things, it seems all but certain that there must be two objects.
+        Yet in many cases these two objects will be assigned the same object index \citep{flombaum:2006_temporal,mitroff:2007_space}.
+        So one signature limit of systems of object indexes is that information about speed and distance can override information about shape and texture.
+    .slide
+      +hide('.layer.change-features')
+  
+    .slide
+      +blur('li:eq(4)')
+      li.occlusion sometimes 
+        span.occlusion survive occlusion 
+      .notes: :t
+        As the findings I just describes imply,
+        object indexes can survive brief occlusion.
+        That is, an object index 
+        can remain attached to an object even if that
+        object is briefly occluded by a screen.
+        (Sameness of object index may be detected by the presence of an 
+        object-specific preview benefit).
+  
+  //- end of ul
+  .slide
+    +blur('li:eq(5)')
+    +show('.object-files')
+    +invert('.object-files')
+    .notes: :t
+      To clarify terminology,
+      I should say that whereas I’m talking about object indexes,
+      researchers more typically interpret this research in terms of object
+      files. 
+      I’m sticking to object indexes rather than object files for 
+      reasons of simplicity and caution.
+      If you believe in object files then you can interpret what I’m saying
+      as referring to object files.
+      And if you have doubts about object files, you might still have reason
+      to accept that a system of object indexes exists.
+
+  .slide
+    +uninvert('.object-files')
+    +highlight('.adults','blue')
+    .notes: :t
+      So far I have been talking about object indexes in adult humans.
+  .slide
+    +unhighlight('.adults','blue')
+    +show('.and-infants')
+    +highlight('.infants','blue')
+    .notes: :t
+      But our interest in object indexes stems from a Hypothesis about 
+      four-month-old infants’
+      abilities to track briefly occluded objects.
+
+  .slide
+    .notes: :t
+      According to this hypothesis, these abilities depend on a system of 
+      object indexes like that which underpins multiple object tracking or 
+      object-specific preview benefits
+      \citep{Leslie:1998zk,Scholl:1999mi,Carey:2001ue,scholl:2007_objecta}.
+      What makes this hypothesis attractive?
+      
+    .notes.handout.show
+      p(style="margin-top:3em;") Hypothesis:
+      //- p ‘core knowledge’ = object indexes + motor representations of objects
+      p Tracking occluded objects depends on object indexes.
+      p (And reaching for endarkened objects depends on motor representations of objects.)
+    .notes: :t
+      Several considerations favour the hypothesis about object indexes ...
+  .slide
+    +unblur('li.occlusion')
+    .notes: :t
+      One reason the hypothesis seems like a good bet is that object 
+      indexes are the kind of thing which could in principle explain
+      infants’ abilities to track unperceived objects because object indexes 
+      can, within limits, survive occlusion.
+  .slide
+    +unblur('li.markers')
+    +invert('.behavioural-markers')
+    .notes: :t
+      If we consider six-month-olds, we can also find behavioural markers 
+      of object indexes in infants \citep{richardson:2004_multimodal} ...
+  .slide
+    +invert('.neural-markers')
+    .notes: :t
+      ... and there are is also a report of neural markers too \citep{kaufman:2005_oscillatory}.
+    .notes: :t
+      (\citet{kaufman:2005_oscillatory} measured brain activity in 
+      six-month-olds infants as they observed a display typical of an object 
+      disappearing behind a barrier.
+      They found the pattern of brain activity characteristic of maintaining 
+      an object index.
+      This suggests that in infants, as in adults, object indexes can attach 
+      to objects that are briefly unperceived.)
+  .slide
+    +uninvert('.behavioural-markers')
+    +uninvert('.neural-markers')
+    .notes: :t
+      The evidence we have so far gets us as far as saying, in effect, that someone capable of committing a murder was in the right place at the right time.
+      Can we go beyond such circumstantial evidence?
+  .slide
+    +unblur('li.signature-limits')
+    +highlight-row('li.signature-limits')
+    .notes: :t
+      The key to doing this is to exploit signature limits.
+      \citet{carey:2009_origin} argues that what I am calling the signature
+      limits of object indexes in adults are related to signature limits on
+      infants’ abilities to track briefly occluded objects.
+  .slide
+    +show('.layer.change-features')
+    .notes: :t
+      To illustrate, a moment ago I mentioned that one signature limit of 
+      object indexes is that featural information sometimes fails to influence how objects are assigned in ways that seem quite dramatic.
+  .slide
+    +hide('.layer.change-features')
+    +show('.layer.carey-xu')
+    .notes: :t
+      There is evidence that, similarly, even 10-month-olds will sometimes
+      ignore featural information in tracking occluded objects
+      \citep{xu:1996_infants}.%
+      \footnote{
+      This argument is complicated by evidence that infants around 10 months of age do not always fail to use featural information appropriately in representing objects as persisting \citep{wilcox:2002_infants}.
+      In fact \citet{mccurry:2009_beyond} report evidence that even five-month-olds can make use of featural information in representing objects as persisting \citep[see also][]{wilcox:1999_object}.
+      %they use a fringe and a reaching paradigm.  NB the reaching is a problem for the simple interpretation of looking vs reaching!
+      Likewise, object indexes are not always updated in ways that amount to ignoring featural information \citep{hollingworth:2009_object,moore:2010_features}.
+      It remains to be seen whether there is really an exact match between the signature limit on object indexes and the signature limit on four-month-olds’ abilities to represent objects as persisting.
+      The hypothesis under consideration---that infants’ abilities 
+      to track briefly occluded objects depend on a system of 
+      object indexes like that which underpins multiple object tracking or 
+      object-specific preview benefits---is a bet on the match being exact.
+      }
+  .slide
+    +hide('.layer.carey-xu')
+    +show('.layer.carey-xu-results')
+    .notes: :t
+      Here are the results.
+      The central column shows that infants looked longer when they saw
+      two objects at test rather than when they saw a single object.
+      This is not different from how they performed in a base line condition
+      when the information about number was not present.
+      And it is different from how they performed in the ‘spatiotemporal
+      condition’ in which the two objects were at simultaneously 
+      visible at one point before the test phase.
+  .slide
+    +hide('.layer.carey-xu-results')
+    .notes: :t
+      While I wouldn’t want to suggest that the evidence on 
+      siganture limits is 
+      decisive, I think it does motivate considering the hypothesis and its
+      consequences.
+      In what follows I will assume the hypothesis is true:
+      infants’ abilities 
+      to track briefly occluded objects depend on a system of 
+      object indexes.
+
+  .slide
+    +unhighlight-row('li.signature-limits')
+    +blur('li.occlusion')
+    +blur('li.markers')
+    +blur('li.signature-limits')
+    +unblur('li.judgement-independent')
+    +highlight-row('li.judgement-independent')
+    .notes: :t
+      The hypothesis has an advantage which I don’t think is widely
+      recognised.
+      This is that object indexes are independent of beliefs and knowledge
+      states.
+      Having an object index pointing to a location is not the same thing
+      as believing that an object is there.
+      And nor is having an object index pointing to a series of locations over time
+      is the same thing as believing or knowing that these locations
+      are points on the path of a single object.
+      Further, the assignments of object indexes do not invariably give rise
+      to beliefs and need not match your beliefs.
+  .slide
+    +show('.layer.change-features')
+    .notes: :t
+      To emphasise this point, consider once more this scenario 
+      in which a patterned square disappears behind the barrier; later a 
+      plain black ring emerges.  You probably don't believe that they are 
+      the same object, but they probably do get assigned the same object index.
+      Your beliefs and assignments of object indexes are inconsistent in this
+      sense: the world cannot be such that both are correct.
+  .slide
+    +hide('.layer.change-features')
+    .notes: :t
+      So assignments of object indexes can conflict with beliefs.
+      Why is this an advantage?
+    .notes: :t
+      At the start of this talk I emphasised the variety of evidence 
+      which shows that infants, from four months of age or earlier,
+      can track briefly occluded objects.
+      However there is also a substantial body of evidence which suggests that 
+      infants of this age, and even infants who are several months older,
+      systematically fail to search for briefly occluded objects.
+  .slide
+    +show('.layer.shinskey-2001')
+    .notes: :t
+      To illustrate, consider an ingenious experiment by \citet{Shinskey:2001fk}.
+      There was an opaque screen that could rotate between lying flat on the ground and being raised to conceal a toy behind it.
+      \citeauthor{Shinskey:2001fk} also used a second piece of apparatus just like the first except that the screen was transparent rather than opaque.
+      They reasoned that infants would quite often pull the screen forwards just for fun, regardless of what is behind it.
+      However, they also guessed that when infants know there is an interesting toy behind the screen, then they will pull it forwards more often than when they know that there is nothing behind the screen.
+      This is just what happened when infants were presented with the apparatus involving a transparent screen:
+      they sometimes pulled the screen forwards when there was no toy behind it, but they pulled it forwards significantly more often when the toy was behind it.
+      What happened  when infants were presented with the opaque screen?
+      Here infants pulled the screen forwards no more often when they had observed a toy being placed behind it then when they had observed that there was nothing behind it.
+      This is evidence that  seven-month-old infants do not know that a toy they have very recently seen hidden behind a screen is behind the screen.
+      After all, since knowledge guides action we would expect infants who know that a toy is behind an opaque screen to pull the screen forward more often than infants who know there is nothing behind the screen, just as they do when the screen is transparent.
+    .notes: :t
+      More than two decades of research strongly supports the view that 
+      infants fail to search for objects hidden behind barriers or screens 
+      until around eight months of age \citep[p.\ 202]{Meltzoff:1998wp} or 
+      maybe even later \citep{moore:2008_factors}.
+      Researchers have carefully controlled for the possibility that infants’
+      failures to search are due to extraneous demands on memory or the 
+      control of action.
+      We must therefore conclude, I think, that four- and five-month-old 
+      infants do not have beliefs about the locations of briefly occluded 
+      objects.  
+      It is the absence of belief that explains their failures to search.
+  .slide
+    +hide('.layer.shinskey-2001')
+  //-   +show('.layer.charles-rivera')
+  //-   .notes: :t
+  //-     Because this point is controversial, I want to mention one further
+  //-     piece of the puzzle.
+  //-     Five-month-olds not only sometimes fail to search for hidden objects but
+  //-     also sometimes fail to look longer when a momentarily hidden object fails
+  //-     to reappear as if by magic.
+  //-     Infants will reach for an object hidden in darkness \citep[e.g.][]{jonsson:2003_infants}.
+  //-     But what happens if instead of measuring reaching we measure looking times?
+  //-     \citet{charles:2009_object} compared what happens when an object is momentarily hidden behind a screen with what happens when an object is momentarily  hidden by darkness.
+  //-     They used a trick with light and mirrors so that for some of the infants, the object did not reappear when the screen came up or the light returned.
+  //-     Surprisingly, five-month-old infants’ looking times indicated that an expectation had been violated only when the object was hidden behind a screen but not when hidden by darkness.
+  //-   .notes: :t
+  //-     I think this pattern of findings is good evidence against the hypothesis
+  //-     that four- or five-month-olds have beliefs about, or knowledege of,
+  //-     the locations of
+  //-     unperceived objects.
+  //-     After all,
+  //-     a belief is essentially the kind of state that can inform actions of any
+  //-     kind, whether they involve looking, searching with the hands or anything
+  //-     else.
+  //- .slide
+  //-   +hide('.layer.charles-rivera')
+    .notes: :t
+      So this is a virtue of the hypothesis that four- and five-month-old 
+      infants’ abilities 
+      to track briefly occluded objects depend on a system of 
+      object indexes.
+      Since assignments of object indexes do not entail the existence of 
+      corresponding beliefs,
+      the fact that infants of this age systematically 
+      fail to search for briefly occluded objects is not an objection to the
+      hypothesis.
+  .slide
+    +unhighlight-row('li.judgement-independent')
+    +blur('li.judgement-independent')
+    .notes: :t
+      Let me summarise ...
+  .slide
+    +show('.layer.charles-rivera')
+  .slide
+    +invert('.search .occlusion span')
+    .notes: :t
+      Why do 5 month olds fail to manifest their ability to track briefly
+      occluded objects by initiating searches for them after they have been
+      fully occluded?  Because object indexes are independent of beliefs 
+      and do not by themselves support the initiation of action.
+      Further, I guess that occlusion interferes 
+      with motor representations  of objects in infants because occlusion
+      involves two objects, one in front of the other.  
+    
+  .slide
+    +uninvert('.search .occlusion span')
+    +invert('.v-of-e .endarkening span')
+    .notes: :t
+      Why do 5 month olds fail to manifest their ability to track endarkened
+      objects on v-of-e experiments?  Because endarkening interferes with object 
+      indexes; and although endarkening does not eliminate motor representations, 
+      I guess that these representations do not generally influence looking times.
+  .slide
+    +uninvert('.v-of-e .endarkening span')
+    +invert('.search .endarkening span')
+    .notes: :t
+      Why do infants succeed in searching for momentarily endarkend objects?
+      Because they can represent objects motorically, and endarkening does 
+      not immediately interfere with such representations.
+  .slide
+    +uninvert('.search .endarkening span')
+    +highlight('.v-of-e .occlusion span', 'red')
+    .notes: :t
+      Why do infants manifest an ability to track briefly occluded objects on 
+      violoation-of-expectations tasks?
+      Ah ... just here we face a significant challenge ...    
+    .notes: :t
+      As I said at the start of this talk, infants’ abilities to track briefly 
+      occluded objects are manifested in several different ways.
+      They are manifested in (iii) anticipatory looking, (ii) reactions 
+      indicating the violation of an expectation, and (i) dishabituation 
+      indicating interest in certain stimuli.
+    .notes: :t
+      Can all of these behaviours be explained merely by invoking object 
+      indexes?
+    
+  .slide  
+    +hide('.layer.charles-rivera')
+    +show('.layer.what-can-oi-explain')
+    .notes: :t
+      This is an important question for me so I want to pause to emphasise it.
+      This question is, What can the operations of a system of 
+      object indexes explain?
+  .slide  
+    +unblur('li:lt(2)')
+    .notes: :t
+      The primary functions of object indexes include influencing the allocation
+      of attention and perhaps guiding ongoing action.
+      If this is right, it may be possible to explain anticipatory looking 
+      directly by appeal to the operations of  object indexes.
+      But the operations of object indexes cannot directly explain differences 
+      in how novel things are to an infant.
+      And nor can the operations of object indexes directly explain why infants
+      look longer at stimuli involving discrepancies in the physical behaviour
+      of objects.
+  .slide  
+    +show('.layer.wynn-1992')
+    .notes: :t
+      To illustrate this point, recall this famous violation-of-expectations
+      experiment by \citet{wynn:1992_addition}.
+      Her subjects were five-month-olds.
+  //- .slide
+  //-   +clip('.layer.wynn-1992 .img1 img','rect(0px,360px,160px,0px)')
+  //- .slide
+  //-   +clip('.layer.wynn-1992 .img1 img','rect(0px,540px,160px,0px)')
+  .slide
+    +clip('.layer.wynn-1992 .img1 img','rect(0px,720px,160px,0px)')
+  .slide
+    +show('.layer.wynn-1992 .img2')
+  .slide
+    +clip('.layer.wynn-1992 .img2 img','rect(160px, 720px, 340px, 0px)')
+    .notes: :t
+      We know that infants are likely to maintain object indexes for the two
+      mice while they are occluded.
+      Accordingly, when the screen drops in the condition labelled 
+      ‘impossible outcome’, there is an interruption to the normal 
+      operation of object indexes: infants have assigned two object indexes 
+      but there is only one object.
+      But why does this cause infants to look longer at in the
+      ‘impossible outcome’ condition than in the ‘possible outcome’ condition?
+      How does a difference in operations involving object indexes result
+      in a difference in looking times?
+  //- .slide
+  //-   +hide('.layer.wynn-1992')
+  //-   +show('.layer.wynn-1992-results')
+  //-   .notes: :t
+  //-     Here you see the results.
+  //-     The looking times are always over 10 seconds, and infants look
+  //-     more than a second longer (mean looking time) at the impossible event.
+  //-     How could the operations of object indexes cause this difference?
+  //-   .notes: :t
+  //-     An initially appealing move would be to add would be beliefs.
+  //-     That is, it would be natural to say that assignments of object indexes
+  //-     give rise to corresponding beliefs, and these beliefs in turn explain
+  //-     facts about what appears novel or strange.%
+  //-     \footnote{
+  //-     I guess many researchers do think that this, or something like it, is
+  //-     true.
+  //-     For instance, \citet{Leslie:1998zk} present their hypothesis as a
+  //-     view about infants’ object \emph{concept}.
+  //-     }
+  //-     But we’ve just seen that this view is almost certain to be wrong
+  //-     because it generates incorrect predictions about infants’ manual
+  //-     searching.
+  //-
+    .slide  
+      +hide('.layer.wynn-1992')
+      .notes: :t
+        Let me clarify.
+        I do accept the hypothesis that four- and five-month-old 
+        infants’ abilities 
+        to track briefly occluded objects depend on a system of 
+        object indexes.
+        This means that I take facts about what appears novel or strange to
+        these infants to depend in some way on the operations of a system of 
+        object indexes.
+        So I am not claiming that the hypothesis is wrong.
+        I am only claiming that the hypothesis cannot explain  
+        facts about what appears novel or strange to these infants by itself.
+        Something further is needed.
+      
+
+
+  .layer.hide.change-features
+    +clear-slide-escape-inner
+      +_slide_inner
+        +img('scholl_2007_fig4.png')
+        p.source Scholl 2007, figure 4
+      
+
+  .layer.hide.carey-xu
+    +clear-slide-escape-inner
+      +_slide_inner
+        +img('carey_2001_fig3.png','height:500px')
+        p.source Carey and Xu 2001, figure 3
+      
+  .layer.hide.carey-xu-results
+    +clear-slide-escape-inner
+      +_slide_inner
+        +img('xu_carey_1996_fig4.png','height:500px')
+        p.source Xu and Carey 1996, figure 4
+      
+      
+      
+  .layer.hide.shinskey-2001
+    +clear-slide-escape-inner
+      +_slide_inner
+        +img('shinskey_munakata_2001_fig1.png')
+        p.source Shinskey & Munakata 2001, figure 1
+
+  .layer.hide.charles-rivera
+    +clear-slide-escape-inner
+      +_slide_middle_inner
+        table.data
+          thead
+            tr
+              td 
+              td.center occlusion
+              td.center.endarkening endarkening
+          tbody
+            tr.v-of-e
+              td.center violation-of-expectations
+              td.center.occlusion 
+                span ✔
+              td.center.endarkening 
+                span ✘
+            tr.search
+              td.center manual search
+              td.center.occlusion 
+                span ✘
+              td.center.endarkening 
+                span ✔
+        p.source(style='margin-top:-300px;') Charles & Rivera (2009)
+
+  .layer.hide.what-can-oi-explain
+    +reset-escape-inner
+      +_slide_middle_inner
+        p.center.huge-glow-50(style='line-height:40px;') What can object indexes explain?
+        
+  .layer.hide.wynn-1992
+    +clear-slide-escape-inner
+      //-
+        +_slide_middle_inner
+          +img('wynn_1992_fig1a.png', 'width:720px')
+          p.source(style='margin-top:-100px;') Wynn 1992, fig 1 (part)
+      +_slide_inner
+        .img1
+          +img_clip('wynn_1992_fig1a.png', 'rect(0px, 180px, 160px, 0px)')
+        .img2.hide
+          +img_clip('wynn_1992_fig1a.png', 'rect(160px, 360px, 340px, 0px)')
+        p.source Wynn 1992, fig 1 (part)
+
+  .layer.hide.wynn-1992-results
+    +clear-slide-escape-inner
+      +_slide_middle_inner
+        +img('wynn_1992_table1fig.jpg', 'width:720px')
+        //- figure includes source information
+
+
+
+

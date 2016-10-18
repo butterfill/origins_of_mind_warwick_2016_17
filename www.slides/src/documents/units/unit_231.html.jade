@@ -38,16 +38,9 @@ include ../../../fragments/origins_mixins
 
 
 section.slide
-  +fodorOnModules({step:false, final:false})
+  +fodorOnModules({step:false, final:false, handout:true})
   .notes Modules are widely held to play a central role in explaining mental development and in accounts of the mind generally.
   .notes Jerry Fodor makes three claims about modules:
-  .handout \subsection{Modularity}
-  .handout.notes Fodor’s three claims about modules:
-  .handout.notes \begin{enumerate}
-  .handout.notes \item they are ‘the psychological systems whose operations present the world to thought’;
-  .handout.notes \item they ‘constitute a natural kind’; and
-  .handout.notes \item there is ‘a cluster of properties that they have in common’ \citep[p.\ 101]{Fodor:1983dg}.
-  .handout.notes \end{enumerate}
 
 //-
   +slide({bkg:'modularity_photo_seq/Slide1.jpg'})
@@ -59,15 +52,93 @@ section.slide
 
 +slide
   .notes What are these properties?
-  .handout.notes These properties include: 
-  .handout.notes \begin{itemize}
-  .handout.notes \item domain specificity (modules deal with ‘eccentric’ bodies of knowledge)
-  .handout.notes \item limited accessibility (representations in modules are not usually inferentially integrated with knowledge)
-  .handout.notes \item information encapsulation (modules are unaffected by general knowledge or representations in other modules)
-  .handout.notes \item innateness (roughly, the information and operations of a module not straightforwardly consequences of learning; but see \citet{Samuels:2004ho}).
-  .handout.notes \end{itemize}
-  +propertiesOfModules({step:true})
+  +propertiesOfModules({step:false, handout:true})
+  +blur('li','2px',0)
+  +unblur('li:eq(0)','2px',0)
+  .notes: :t
+    Domain specificity
+  .slide
+    +blur('li:eq(0)')
+    +unblur('li:eq(1)')
+    .notes: :t
+      limited accessibility
+    
 
+section.slide
+  .notes: :t
+    Let me illustrate limited accessibility ...
+  .notes: :t
+    Limited accessbility is a familar feature of many cognitive systems.
+    When you grasp an object with a precision grip, it turns out that there is a very 
+    reliable pattern.
+    At a certain point in moving towards it your fingers will reach a maximum grip aperture 
+    which is normally a certain amount wider than the object to be grasped, and then start to close.
+    Now there's no physiological reason why grasping should work like this, rather than grip hand 
+    closing only once you contact the object.
+    Maximum grip aperture shows anticipation of the object: the mechanism responsible for 
+    guiding your action does so by representing various things including some features of 
+    the object.
+    But we ordinarily have no idea about this.
+    The discovery of how grasping is controlled depended on high speed photography.
+    This is an illustration of limited accessibility.
+    (This can also illustrate information encapsulation and domain specificity.)
+  .container_12
+    .grid_4
+      .words
+        p maximum grip aperture
+        p.right (source: Jeannerod 2009, figure 10.1)
+    .grid_8
+      img(src='/img/jeannerod_2009_fig10-1.png', style='max-height:600px;')
+
++slide
+  +img('glover_2002_fig1a.png')
+  p.source Glover (2002, figure 1a)
+  .notes: :t
+    Illusion sometimes affects perceptual judgements but not actions:
+    information is in the system;
+    information is not available to knowledge \citep{glover:2002_visual}.
+  .notes: :t
+    See further \citet{bruno:2009_when}:
+    They argue that Glover & Dixon's model \citep{glover:2002_dynamic} is
+    incorrect, at least for grasping (pointing is a different story), because
+    it predicts that the presence or absence of visual information during
+    grasping shouldn't matter. But it does.
+
++slide
+  +img('vanWermeskerken_2013_fig1.png')
+  p.source van Wermeskerken et al 2013, figure 1
+  .notes: :t
+    You also get evidence for information encapsulation in four month olds.
+    To illustrate, consider \citet{vanwermeskerken:2013_getting} ...
+  .notes: :t
+    A Ponzo-like background can make one frog further away than the other.
+
++slide
+  +img('vanWermeskerken_2013_fig2.png')
+  p.source van Wermeskerken et al 2013, figure 2
+  .notes: :t
+    This affects which object four-month olds reach for,
+    but does not affect the kinematics of their reaching actions.
+    
++slide
+  .notes What are these properties?
+  +propertiesOfModules({step:false, handout:true})
+  +blur('li','2px',0)
+  +unblur('li:eq(1)',0)
+  .slide
+    +blur('li:eq(1)')
+    +unblur('li:eq(2)')
+    .notes: :t
+      Information encapsulation
+  .slide
+    +blur('li:eq(2)')
+    +unblur('li:eq(3)')
+    .notes: :t
+      Innateness
+    
+  .slide
+    +unblur('li')
+    .notes So these are the key properties associated with modularity.
 
 
   
@@ -126,24 +197,36 @@ section.slide
       +highlight('ol:eq(0) li:eq(4) span, .present-the-world', 'forestgreen')
 
 
-mixin challengesToModulariyt
+
+
+
++slide_middle
+  p.center core system = module ?
+  .notes: :t
+    I think it is reasonable to identify core systems with modules and to
+    largely ignore what different people say in introducing these ideas.
+    The theory is not strong enough to support lots of distinctions.
+
+
   
-+slide
++slide_middle
   p.notes.show Will the notion of modularity help us in meeting the 
-    span.challenges challenges
-    span  to the very idea of a core system? 
+    span.obj objections
+    span  to the Core Knowledge View? 
   .slide
-    +invert('.challenges')
+    +invert('.obj')
   .slide
     .notes Recall that the challenges were these:
-    ul.notes.show.em-above
-      li multiple definitions
-      li mismatch of definition to application 
-      li justification for definition by list-of-features
-      li definition by list-of-features rules out explanation
+    .notes.show.em-above
+      +objectionsToCoreKnowledgeView
     .notes: :t
       Let’s go back and see what Fodor says about modules again ...
-
+  .slide
+    +highlight-row('.objections .multiple-definitions')
+    .notes: :t
+      Consider the first objection, that there are multiple defintions ...
+    
+    
 section.slide
   .notes: :t
     Not all researchers agree about the properties of modules.  That they are 
@@ -181,6 +264,30 @@ section.slide
     So much the same objections which applied to the very notion of core knowledge 
     appear to recur for module.  But note one interesting detail ...
   +fodorOnModules({step:true, final:false})
+
+
+
++slide_middle
+  p.notes.show 
+    span.fade-me Will the notion of modularity help us in meeting the 
+    span.obj objections
+    span  to the Core Knowledge View? 
+  +fade('.fade-me',0)
+  .em-above
+    +objectionsToCoreKnowledgeView
+  +highlight-row('.objections .multiple-definitions')
+  .notes: :t
+    We’ve been considering the first objection, that there are multiple defintions ...
+  .slide
+    +unhighlight-row('.objections .multiple-definitions')
+    +highlight-row('.objections .list-unjustified')
+    .notes: :t
+      What about the objection that picking out a set of features is unjustified ...
+    
+    
+
++slide
+  +fodorOnModules({step:false, final:true})
   .slide
     +highlight-row('li:eq(1)')
     +attr('li:eq(1)','style', 'z-index:1;')
@@ -191,24 +298,28 @@ section.slide
       (see Fodor 1983: 101 quoted above). 
 
 
-  
-+slide
-  .notes So let me return to my question:
-  p.notes.show Will the notion of modularity help us in meeting the 
-    span.bkg-words-highlight-invert.challenges challenges
-    span  to the very idea of a core system? 
-    .notes Recall that the challenges were these:
-    ul.notes.show.em-above
-      li multiple definitions
-      li mismatch of definition to application 
-      li justification for definition by list-of-features
-      li definition by list-of-features rules out explanation
++slide_middle
+  p.notes.show 
+    span.fade-me Will the notion of modularity help us in meeting the 
+    span.obj objections
+    span  to the Core Knowledge View? 
+  +fade('.fade-me',0)
+  .em-above
+    +objectionsToCoreKnowledgeView
+  +highlight-row('.objections .list-unjustified')
+  .notes: :t
+    We’ve been considering the first objection, that there are multiple defintions ...
   .slide
-    +highlight-row('li:eq(0), li:eq(2), li:eq(3)')
+    +unhighlight-row('.objections .list-unjustified')
+    +highlight-row('.objections .list-unexplanatory')
     .notes: :t
-      As far as the first, third and fourth (multiple definitions and 
-      justification for definition by list-of-features and
-      definition by list-of-features rules out explanation) problems go,
+      Same point applies to the claim that defining module by listing features is
+      unexplanatory: if we are not listing features but identifying a natural kind,
+      then the objection doesn’t quite get strarted.
+    .notes: :t
+      As far as the 
+      ‘justification for definition by list-of-features’ and
+      ‘definition by list-of-features rules out explanation’ problems go,
       everything rests on the idea that modules are a natural kind.
       I think this idea deserves careful scruitiny but as far as I know there's 
       only one paper on this topic, which is by me.
@@ -218,20 +329,20 @@ section.slide
       the only way I know---is to develop the idea that modules are a natural 
       kind.  If you want to know more ask me for my paper and I'll send it to you.
   .slide
-    +unhighlight-row('li:eq(0), li:eq(2), li:eq(3)')
-    +highlight-row('li:eq(1)')
-    .notes: :t
-      Think about this in terms of the looking/search discrepancy ...
+    +unhighlight-row('.objections .list-unexplanatory')
+    +highlight-row('.objections .mismatch')
+    
 
-+slide
-  +img('hood_2003_fig1.jpg')
-  p.source Hood et al (2003, figure 1)
+
++slide({bkg:'hood_2003_fig1.jpg'})
+  p.source Hood et al 2003, figure 1
   .notes: :t
     Recall the discrepancy in looking vs search measures.  
     What property of modules could help us to 
     explain it?
 
-
++slide_middle
+  +charlesRiveraOcclusionEndarkeningTable({final:true,highlight:true})
 
 
 
@@ -241,137 +352,47 @@ section.slide
 +slide
   +propertiesOfModules
   .slide
+    +blur('.innateness, .information-encapsulation')
+    .notes: :t
+      We already considered innateness and inforamtion encapsulation
+  .slide
+    +highlight-row('.domain-specificity','grey')
+  .slide
+    +unhighlight-row('.domain-specificity','grey')
     +highlight-row('.limited-accessibility','grey')
-    .notes To say that a system or module exhibits limited accessibility is to say that the representations in the system are not usually inferentially integrated with knowledge.
-    .notes I think this is the key feature we need to assign to modular representations (=core knowledge) in order to explain the apparent discrepancies in the findings about when knowledge emerges in development.
     .notes: :t
-      Limited accessibility explains why the representations might drive looking but not reaching.
-      But doesn't the bare appeal to limited accessibility leave open why the looking and not the searching (rather than conversely)?
-      I think not, given the assumption that searching is purposive in a way that looking is not.  (Searching depends on practical reasoning.)
-      We'll come back to this later (if core knowledge of objects involves object files, it's easier to see why it affects looking but not actions like reaching.)
+      To say that a system or module exhibits limited accessibility is to say
+      that the representations in the system are not usually inferentially
+      integrated with knowledge.
     .notes: :t
-      Except, of course, calling this an explanation is too much.
+      This is a key feature we need to assign to modular
+      representations (=core knowledge) in order to explain the apparent
+      discrepancies in the findings about when knowledge emerges in development.
+    .notes: :t
+      Limited accessibility explains why the representations might drive
+      some actions (e.g. certain looking behaviours) but not others (e.g. 
+      certain searching actions).
+    .notes: :t
+      But't the bare appeal to limited accessibility leaves open why the
+      looking and not the searching (rather than conversely).
+      Further, we have to explain why not searching with occlusion
+      whereas not looking with endarkening.
+      Clearly we can’t explain this pattern just by invoking information
+      encapsulation.
+    .notes: :t
+      And, of course, to say that we can explain something by invoking
+      information encapsulation is too much.
       After all, limited accessibility is more or less what we're trying to explain.
-      But this is the first problem --- the problem with the standard way of characterising modularity and core systems merely by listing features.
+      But this is the first problem --- the problem with the standard way of
+      characterising modularity and core systems merely by listing features.
 
-
-section.slide
-  .notes: :t
-    Let me illustrate limited accessibility ...
-  .notes: :t
-    Limited accessbility is a familar feature of many cognitive systems.
-    When you grasp an object with a precision grip, it turns out that there is a very 
-    reliable pattern.
-    At a certain point in moving towards it your fingers will reach a maximum grip aperture 
-    which is normally a certain amount wider than the object to be grasped, and then start to close.
-    Now there's no physiological reason why grasping should work like this, rather than grip hand 
-    closing only once you contact the object.
-    Maximum grip aperture shows anticipation of the object: the mechanism responsible for 
-    guiding your action does so by representing various things including some features of 
-    the object.
-    But we ordinarily have no idea about this.
-    The discovery of how grasping is controlled depended on high speed photography.
-    This is an illustration of limited accessibility.
-    (This can also illustrate information encapsulation and domain specificity.)
-  .container_12
-    .grid_4
-      .words
-        p maximum grip aperture
-        p.right (source: Jeannerod 2009, figure 10.1)
-    .grid_8
-      img(src='/img/jeannerod_2009_fig10-1.png', style='max-height:600px;')
-
-+slide
-  +img('glover_2002_fig1a.png')
-  p.source Glover (2002, figure 1a)
-  .notes: :t
-    Illusion affects planning but not control:
-    information is in the system;
-    information is not available to knowledge \citep{glover:2002_visual}.
-
-
-+slide
-  +img('hood_2003_fig1.jpg')
-  p.source Hood et al (2003, figure 1)
-  .notes: :t
-    Explain limited accessibility by analogy with maximum grip aperture.
-
-
-+slide
-  .notes Let me sum up
-  p core system = module ?
-  .notes: :t
-    I think it is reasonable to identify core systems with modules and to
-    largely ignore what different people say in introducing these ideas.
-    The theory is not strong enough to support lots of distinctions.
-  .slide
-    p.em-above modules are a ‘natural (functional?) kind’
-    .notes: :t
-      If we are to overcome certain compelling challenges to the notion
-      of modularity, we can't regard it as *defined* by a list of features;
-      although we can suppose that it is characterised by them.
-      This is because of the challenges we have seen:
-  .slide
-    p.em-above.notes.show Will the notion of modularity help us in meeting the 
-      span.bkg-words-highlight-invert.challenges challenges
-      span  to the very idea of a core system or module? 
-    .notes Recall that the challenges were these:
-    ul.notes.show.em-above
-      li.bkg-grey-row multiple definitions
-      li mismatch of definition to application 
-      li.bkg-grey-row justification for definition by list-of-features
-      li.bkg-grey-row definition by list-of-features rules out explanation
-    .notes: :t
-      To deal with multiple definitions etc, we need modules as natural kinds.
-    .slide
-      +unhighlight-row('li:eq(0), li:eq(2), li:eq(3)')
-      +highlight-row('li:eq(1)')
-      .notes: :t
-        Our reason for wanting core knowledge or modular representation was to explain
-        some discrepancies.
-        The property that actually explains these is limited accessiblity (domain 
-        specificity might be important too).  The other properties are simply
-        irrelevant.  Particularly innateness.
 
 +slide_middle
-  p.center.notes.show Alternative: Messiness 
+  p.center core system = module 
+  p.em-above Some, not all, objections to the Core Knowledge View overcome:
+  +objectionsToCoreKnowledgeView
+
+
++slide_coreKnowledgeViewGeneratesNoPredictions
   .notes: :t
-    Discusss possibility of piecemeal view (attraction of core knowledge is that it 
-    unifies different domains, but maybe we can't)
-  .notes: :t
-    I'm inclined by a view that is both more piecemeal and more unifying:
-    (a) modules cover a wider range of domains than Carey or Spelke think core systems 
-    do (not just objects, number, geometry and the rest but also speech, colour
-    and mental states)
-    (b) there is less to say about what unifies any of these cases (maybe core knowledge
-    of objects has more in common with, say, categorical perception of colour than
-    with core knowledge of action.)
-  .notes: :t
-    Certainly the notion of core knowledge or module doesn't save us from needing to look
-    at particular mechanisms.
-    I think that thinking about categorical perception, or the perceptual 
-    systems that underpin objects indexes is a way of getting at what core knowledge really 
-    involves.  Core systems are not always something over and above perceptual and motor systems
-    (although it seems probably that they sometimes are if our competence with syntax rests on 
-    core knowledge).
-
-+slide_middle
-  p.center The Core Knowledge View
-  .notes: :t
-    I've been evaluating The Core Knowledge View, trying to explain
-    the sorts of challenges that face it and the ways in which they might be 
-    responded to.
-  .slide
-    .notes: :t
-      Anyone who accepts The Core Knowledge View has a problem:
-    p.em-above.center.notes.show How do you get from  core knowledge (=modular representation) to knowledge knowledge?
-    .notes: :t
-      The Core Knowledge View is the view that infants' competence with objects, causes, colours
-      and the rest depends not on knowledge (as the Simple View has it) but on core knowledge.
-    .notes: :t
-      Thos question is just a variant of what I called Our Next Problem (see lecture 2; it arises 
-      from the failure of the Simple View).
-
-
-
-
+    The main objection is unresolved

@@ -107,7 +107,7 @@ mixin discrepantFindingsAboutKnowledgeOfObjects(p)
   .tipOfIceberg(class="#{p.final ? '' : 'hide'}")
     p.em-above ‘the tip of an iceberg’ 
       span.grey-text Charles & Rivera (2009, p. 994)
-
+    
 
 
 mixin segmentPersistInteract(p)
@@ -163,8 +163,32 @@ mixin simpleViewGeneratesIncorrectPredictions(p)
       +line-through('.simple-view')
     block
 
+mixin slide_coreKnowledgeViewGeneratesNoPredictions(p)
+  if typeof(p) === 'undefined' 
+    - p = {}
+  if !('final' in p)
+    - p.final = false
+  +slide_middle({style:"background-color:red"})
+    p.indent 
+      span The 
+      span.ck-view Core Knowledge View
+      br
+      span  generates 
+      br
+      span no 
+      br
+      span  relevant predictions.
+    if p.final
+      +fade('span:not(.simple-view)', 0)
+      +line-through('.simple-view')
+    block
 
-mixin charlesRiveraOcclusionEndarkeningTable
+
+mixin charlesRiveraOcclusionEndarkeningTable(p)
+  if typeof(p) === 'undefined' 
+    - p = {}
+  if !('highlight' in p)
+    - p.highlight = false
   table.data.charles-rivera 
     thead
       tr
@@ -181,6 +205,10 @@ mixin charlesRiveraOcclusionEndarkeningTable
         td.center: span.occlusion ✘
         td.center: span.endarkening ✔
   p.source(style='margin-top:-300px;') Charles & Rivera (2009)
+  if p.highlight
+    +highlight('.manual-search .occlusion', 'red')
+    +highlight('.violation-of-expectations .endarkening', 'red')
+    
 
 
 
@@ -267,18 +295,30 @@ mixin propertiesOfModules(p)
     - p = {}
   if !('step' in p)
     - p.step = false
+  if !('handout' in p)
+    - p.handout = false
+    
+  if p.handout
+    .handout.notes Properties of modules: 
+    .handout.notes \begin{itemize}
+    .handout.notes \item domain specificity (modules deal with ‘eccentric’ bodies of knowledge)
+    .handout.notes \item limited accessibility (representations in modules are not usually inferentially integrated with knowledge)
+    .handout.notes \item information encapsulation (modules are unaffected by general knowledge or representations in other modules)
+    .handout.notes \item innateness (roughly, the information and operations of a module not straightforwardly consequences of learning; but see \citet{Samuels:2004ho}).
+    .handout.notes \end{itemize}
+    
   ul.no-bullet
-    li
+    li.domain-specificity
       strong domain specificity
       p modules deal with ‘eccentric’ bodies of knowledge
     li.limited-accessibility(class="p.step ? 'blur-text' : ''")
       strong(style='z-index:3') limited accessibility
       p(style='z-index:3')  representations in modules are not usually inferentially integrated with knowledge
-    li(class="p.step ? 'blur-text' : ''")
+    li.information-encapsulation(class="p.step ? 'blur-text' : ''")
       strong information encapsulation
       p modules are unaffected by general knowledge or representations in other modules
       .notes For something to be informationally encapsulated is for its operation to be unaffected by the mere existence of general knowledge or representations stored in other modules (Fodor 1998b: 127)
-    li(class="p.step ? 'blur-text' : ''")
+    li.innateness(class="p.step ? 'blur-text' : ''")
       strong innateness 
       p roughly, the information and operations of a module not straightforwardly consequences of learning
     if p.step
@@ -308,6 +348,18 @@ mixin fodorOnModules(p)
   - var bkg = 'modularity_photo_seq/Slide1.jpg'
   if p.final
     -  bkg = 'modularity_photo_seq/Slide5.jpg'
+  if !('handout' in p)
+    - p.handout = false
+    
+  if p.handout
+    .handout \subsection{Modularity}
+    .handout.notes Fodor’s three claims about modules:
+    .handout.notes \begin{enumerate}
+    .handout.notes \item they are ‘the psychological systems whose operations present the world to thought’;
+    .handout.notes \item they ‘constitute a natural kind’; and
+    .handout.notes \item there is ‘a cluster of properties that they have in common’ \citep[p.\ 101]{Fodor:1983dg}.
+    .handout.notes \end{enumerate}
+  
   img.bkg(src='/img/#{bkg}')
   +_slide_inner
     p Modules
@@ -327,6 +379,12 @@ mixin fodorOnModules(p)
     block
 
 
+mixin objectionsToCoreKnowledgeView
+  ul.objections
+    li.multiple-definitions multiple definitions
+    li.list-unjustified justification for definition by list-of-features
+    li.list-unexplanatory definition by list-of-features rules out explanation
+    li.mismatch mismatch of definition to application 
 
 
 //- -------------

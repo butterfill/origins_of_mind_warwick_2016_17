@@ -220,6 +220,115 @@ mixin discrepancyTable(p)
         td not reflected in judgements about action, desire, ...
 
 
+//- ------
+//- modularity / core knowledge
+
+  
+mixin coreKnowledgeDefined(p)
+  if typeof(p) === 'undefined' 
+    - p = {}
+  if !('final' in p)
+    - p.final = false
+  .step1
+    p
+      span ‘Just as humans are endowed with multiple, 
+      span.noblur1 specialized perceptual systems
+      span: :t
+        , so we are endowed with multiple systems for representing and
+        reasoning about entities of different kinds.’
+    p.right.grey-text Carey and Spelke, 1996 p. 517
+  img.bkg(src='/img/edge_detection.jpg')
+  if p.final
+    +fade('img.bkg', 0)
+    +blur('.step1', '2px', 0)
+  else
+    +hide('img.bkg',0)
+  .step2
+    p
+      //- ‘core systems are conceptual and provide a foundation for the growth of knowledge.  …
+      span ‘core systems are 
+      ol.listOfFeatures
+        li largely innate 
+        li encapsulated 
+        li unchanging 
+        li arising from phylogenetically old systems 
+        li built upon the output of innate perceptual analyzers’ 
+    p.right.grey-text (Carey and Spelke 1996: 520)
+  .step3
+    p.em-above
+      span.format-iconic representational format: iconic (Carey 2009)
+  unless p.final
+    +hide('.step2, .step3', 0)
+  block  
+
+
+mixin propertiesOfModules(p)
+  if typeof(p) === 'undefined'
+    - p = {}
+  if !('step' in p)
+    - p.step = false
+  ul.no-bullet
+    li
+      strong domain specificity
+      p modules deal with ‘eccentric’ bodies of knowledge
+    li.limited-accessibility(class="p.step ? 'blur-text' : ''")
+      strong(style='z-index:3') limited accessibility
+      p(style='z-index:3')  representations in modules are not usually inferentially integrated with knowledge
+    li(class="p.step ? 'blur-text' : ''")
+      strong information encapsulation
+      p modules are unaffected by general knowledge or representations in other modules
+      .notes For something to be informationally encapsulated is for its operation to be unaffected by the mere existence of general knowledge or representations stored in other modules (Fodor 1998b: 127)
+    li(class="p.step ? 'blur-text' : ''")
+      strong innateness 
+      p roughly, the information and operations of a module not straightforwardly consequences of learning
+    if p.step
+      +blur('li','2px',0)
+      +unblur('li:eq(0)','2px',0)
+      .slide
+        +blur('li:eq(0)')
+        +unblur('li:eq(1)')
+      .slide
+        +blur('li:eq(1)')
+        +unblur('li:eq(2)')
+      .slide
+        +blur('li:eq(2)')
+        +unblur('li:eq(3)')
+      .slide
+        +unblur('li')
+  block
+
+
+mixin fodorOnModules(p)
+  if typeof(p) === 'undefined'
+    - p = {}
+  if !('step' in p)
+    - p.step = false
+  if !('final' in p)
+    -p.final = false
+  - var bkg = 'modularity_photo_seq/Slide1.jpg'
+  if p.final
+    -  bkg = 'modularity_photo_seq/Slide5.jpg'
+  img.bkg(src='/img/#{bkg}')
+  +_slide_inner
+    p Modules
+    ol
+      li they are ‘the psychological systems whose operations present the world to thought’;
+      li they ‘constitute a natural kind’; and
+      li there is ‘a cluster of properties that they have in common … [they are] domain-specific computational systems characterized by informational encapsulation, high-speed, restricted access, neural specificity, and the rest’ (Fodor 1983: 101)
+    if p.step
+      .slide
+        +attr('img.bkg','src','/img/modularity_photo_seq/Slide2.jpg')
+      .slide
+        +attr('img.bkg','src','/img/modularity_photo_seq/Slide3.jpg')
+      .slide
+        +attr('img.bkg','src','/img/modularity_photo_seq/Slide4.jpg')
+      .slide
+        +attr('img.bkg','src','/img/modularity_photo_seq/Slide5.jpg')
+    block
+
+
+
+
 //- -------------
 //- communication with words
 

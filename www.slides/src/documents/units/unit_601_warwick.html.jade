@@ -1,0 +1,171 @@
+---cson
+layout: 'deck_unit'
+title: "What Is Core Knowledge?"
+tags: []
+description: """
+  What is core knowledge? Why do we need a notion of core knowledge? What is
+  its relation to knowledge?"""
+---
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/origins_mixins
+
+
+
++slide_middle
+  .notes: :t
+    I talked about the notion of core knowledge in the very first lecture, but since then I 
+    have not appealed to the notion.
+    This is deliberate because the notion is tricky; so I thought it would be good to postpone
+    our discussion of it for as long as possible.
+    Now I can put it off no longer.
+  p.what-is.center
+    span.core-knowledge
+      span.hide What is 
+      span core 
+      span.knowledge-word.core-knowledge  knowledge
+      span.hide ?  
+    span.systems.hide What are core 
+      span.systems-word systems
+      span ? 
+  .slide
+    +show('.core-knowledge span.hide')
+  .slide
+    +show('.systems')
+    .notes: :t
+      The first, very minor thing is to realise that there are two closely related notions, core 
+      knowledge and core system.
+  .slide
+    +invert('.knowledge-word, .systems-word')
+    .notes: :t
+      These are related this: roughly, core knowledge states are the states of core systems.  More 
+      carefully:
+    .handout.notes For someone to have \textit{core knowledge of a particular principle or fact} is for her to have a core system where 
+      | either the core system includes a representation of that principle or else the principle plays a special role in describing the core system.
+    .notes So we can define core knowlegde in terms of core system.
+    //- 
+      .slide
+        +line-through('.what-is')
+        .notes: :t
+          The next thing to realise is that asking what core knowledge is will not be very helpful.
+          Instead we need to ask a different question ... 
+        .slide
+          p.center.notes.show Why do we need these notions, core knowledge and core system?
+  
+
++slide
+  +coreKnowledgeDefined({final:false})
+  .notes What do people say core knowledge is?
+  .handout \subsection{Two-part definition}
+  .notes: :t
+    There are two parts to a good definition. The first is an analogy that
+    helps us get a fix on what we is meant by 'system' generally. (The second
+    part tells us which systems are core systems by listing their
+    characteristic features.)
+  .handout: :t
+    ‘Just as humans are endowed with multiple, specialized perceptual systems,
+    so we are endowed with multiple systems for representing and reasoning
+    about entities of different kinds.’
+    \citep[p.\ 517]{Carey:1996hl}
+  .slide
+    +blur('.step1 p :not(.noblur1)')
+    .notes So talk of core knowledge is somehow supposed to latch onto the idea of a system.
+    .notes What do these authors mean by talking about 'specialized perceptual systems'?
+    .notes They talk about things like perceiving colour, depth or melodies.
+    .notes Now, as we saw when talking about categorical perception of colour, we can think of the 'system' underlying categorical perception as largely separate from other cognitive systems--- we saw that they could be knocked out by verbal interference, for example.
+    .notes So the idea is that core knowledge somehow involves a system that is separable from other cognitive mechanisms.
+    .notes As Carey rather grandly puts it, understanding core knowledge will involve understanding something about 'the architecture of the mind'.
+  .slide
+    +show('img.bkg')
+    .notes Illustration: edge detection.
+  .slide
+    +fade('img.bkg')
+    +blur('.step1')
+    +show('.step2')
+    .handout
+      // ‘core systems are conceptual and provide a foundation for the growth of knowledge.  …
+      p ‘core systems are:
+      ol
+        li largely innate 
+        li encapsulated 
+        li unchanging 
+        li arising from phylogenetically old systems 
+        li built upon the output of innate perceptual analyzers’ 
+       p \citep[p.\ 520]{Carey:1996hl}.
+    .handout: :t
+      \textit{Note} There are other, slightly different statements
+      \citep[e.g.][]{carey:2009_origin}.
+    .notes This, them is the two part definition.  An analogy and a list of features.
+  .slide
+    +show('.step3')
+    .notes: :t
+      There is one more feature that I want to mention; this is important
+      although I won't disucss it here.
+      To say that a represenation is iconic means, roughly, that parts of the
+      representation represent parts of the thing represented.
+      Pictures are paradigm examples of representations with iconic formats.
+      For example, you might have a picture of a flower where some parts of the
+      picture represent the petals and others the stem.
+    //-     
+      But we quickly run into the problem that different researchers say
+      different things, and it isn't obvious which differences matter.
+      We also run into the problem that the definitions on offer aren't
+      obviously correct: they list features that maybe aren't all necessary.
+
+
+  
++slide_middle
+  p.center.notes.ctd.show Why postulate core knowledge?
+  .slide.em-above
+    p.center.line-through The Simple View
+    p.center The Core Knowledge View
+    .notes: :t
+      The first problem we encountered was that the Simple View is false.
+      But maybe we can appeal to the Core Knowledge View.
+    .notes: :t
+      According to the Core Knowledge View, the principles of object perception, and maybe also the 
+      expectations they give rise to, are not knowledge.
+      But they are core knowledge.
+    .notes: :t
+      This raises some issues.  Is the Core Knowledge View consistent with the claims that 
+      we have ended up with, e.g. about categorical perception and the Principles of Object 
+      Perception characterising the way that object indexes work?
+      I think the answer is, basically, yes.  Categorical perception involves a system that has
+      many of the features associated with core knowledge.
+    .notes: :t
+      [*looking ahead (don’t say):]
+      Consider this hypothesis.
+      The principles of object perception, and maybe also the expectations they give rise to, are not knowledge.
+      But they are core knowledge.
+      The \emph{core knowledge view}: the principles of object perception are not knowledge, but they are core knowledge.
+      But look at those features again --- innate, encapsulated, unchanging and the rest.
+      None of these straightforwardly enable us to predict that core knowledge
+      of objects will guide looking but not reaching.
+      So the \emph{first problem} is that (at this stage) it's unclear what we
+      gain by shifting from knowledge to core knowledge.
+
++slide
+  +discrepancyTable({step:false, final:true})
+  .notes: :t
+    The Core Knowledge view may also help us to resolve  
+    Discrepant Findings in other domains too ...
+
++slide_middle
+  p.center.notes.ctd.show Why postulate core knowledge?
+  .em-above
+    p.center.line-through The Simple View
+    p.center The Core Knowledge View
+
+
+
+.handout: :t
+  ‘We hypothesize that uniquely human cognitive achievements build on systems
+  that humans share with other animals: core systems that evolved before the
+  emergence of our species.
+  The internal functioning of these systems depends on principles and processes
+  that are distinctly non-intuitive.
+  Nevertheless, human intuitions about space, number, morality and other
+  abstract concepts emerge from the use of symbols, especially language, to
+  combine productively the representations that core systems deliver’
+  \citep[pp.\ 2784-5]{spelke:2012_core}.
+

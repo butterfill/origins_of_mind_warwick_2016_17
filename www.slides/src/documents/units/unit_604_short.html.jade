@@ -1,0 +1,204 @@
+---cson
+layout: 'deck_unit'
+title: "Objections to Core Knowledge"
+tags: []
+description: """
+  What is core knowledge? Why do we need a notion of core knowledge? What is
+  its relation to knowledge?
+  """
+---
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/origins_mixins
+
++slide
+  +coreKnowledgeDefined({final:true})
+  .notes: :t
+    Recall that we defined core systems by listing properties.
+    [(Actually it was a two-part definition so there’s hope.)]
+      
+
++slide_middle
+  p.center multiple definitions
+  .notes: :t
+    One objection is that there are multiple definitions, each slightly different
+    from the others, and no obvious way to choose between them.
+  .notes: :t
+    But although this indicates that we need to impose some theoretical discipline,
+    it doesn’t seem like an objection that could show there is a deep problem
+    with the notion of Core Knowledge.
+    
++slide
+  .notes: :t
+    Here is a second objection ...
+  .notes: :t
+    One reason for doubting that the notion of a core system is explanatory arises from the 
+    way we have introduced it.
+    We have introduced it by providing a list of features.
+    But why suppose that this particular list of features constitutes a natural kind?
+    This worry has been brought into sharp focus by criticisms of 'two systems' approaches.
+    (These criticisms are not directed specifically at claims about core
+    knowledge, but the criticisms apply.)
+  .step1
+    .handout \subsection{Objection}
+    p.handout.notes.show ‘there is a 
+      span.highlight1 paucity of … data
+      span  to suggest that they are the only or the best way of carving up the processing,
+    p.handout.notes.show ‘and it 
+      span.highlight1 seems doubtful
+      span  that the often long lists of correlated attributes should come as a package’
+    .handout.notes.ctd \citep[p.\ 759]{adolphs_conceptual_2010}
+    p.right Adolphs (2010 p. 759)
+  .slide.step2
+    p.handout.notes.show.em-above ‘
+      span.highlight1 we wonder
+      span &nbsp;
+      span: :t
+       whether the dichotomous characteristics used to define the two-system
+       models are … perfectly correlated …
+    p.handout.ctd.notes: :t
+      [and] whether a hybrid system that combines characteristics from both
+      systems could not be … viable’
+    .handout.notes.ctd \citep[p.\ 537]{keren_two_2009}
+    p.right Keren and Schul (2009, p. 537)
+  .slide
+    +highlight('.highlight1','pink')
+    .notes This is weak.
+    .notes Remember that criticism is easy, especially if you don't have to prove someone is wrong.
+    .notes Construction is hard, and worth more.
+  .slide
+    +blur('.step1, .step2')
+  .slide
+    .notes Even so, there is a problem here.
+    p.handout.notes.show.em-above
+      | ‘the process architecture of social cognition is still very much in need of a detailed theory’
+    .handout.notes.ctd \citep[p.\ 759]{adolphs_conceptual_2010}
+    p.right Adolphs (2010 p. 759)
+
++slide_middle
+  .notes.show
+    p Is definition by listing features 
+      span.step2.hide (a) 
+      span justified
+      span.step2.hide , and is it (b) compatible with the claim that core knowledge is explanatory?
+    .slide
+      +show('.step2')
+      .notes: :t
+        So far I've been explaining objection (a).  Now let me say a bit more about (b) ...
+
+
+
+
+
++slide_middle
+  .notes We can get the strongest objection by asking ...
+  p.center.notes.show Why do we need a notion like core knowledge?
+  
++slide_middle
+  +discrepancyTable({step:false, final:true})
+  .notes: :t
+    So why do we need a notion like core knowledge?
+    Think about these domains.
+    In each case, we're pushed towards postulating that infants know things, but 
+    also pushed against this.
+    Resolving the apparent contradiction is what core knowledge is for.
+  .notes: :t
+    Key question: What features do we have to assign to core knowledge if it's to 
+    describe these discrepancies?
+
+
++slide_middle
+  .notes: :t
+    In the case of Physical Objects, we want to  expalin this 
+    puzzling pattern of findings ...
+  +charlesRiveraOcclusionEndarkeningTable
+  +highlight('.manual-search .occlusion', 'red')
+  +highlight('.violation-of-expectations .endarkening', 'red')
+
+
+
+
++slide_middle
+  .notes: :t
+    If this is what core knowledge is for (if it exists to explain these discrepancies), what 
+    features must core knowledge have?
+  p.center If this is what core knowledge is for, what features must core knowledge have?
+
+
+
+
++slide
+  +coreKnowledgeDefined({final:true})
+  .notes: :t
+    Which of these features explain the discrepancy between
+    measures on which infants do, and measures on which they do not,
+    manifest their abilities to track physical objects?
+  .notes: :t
+    Why do they fail on some search tasks and but pass some v-of-e tasks
+    when the mode of disappearance is occlusion?
+  .notes: :t
+    And, equally pressingly, why do they do the converse (pass search, fail v-of-e)
+    when the mode is endarkening?
+  +attr('.listOfFeatures li, .format-iconic','style','z-index:1')
+  .slide
+    +highlight-row('.listOfFeatures li:eq(0)')
+  .slide
+    +unhighlight-row('.listOfFeatures li:eq(0)')
+    +highlight-row('.listOfFeatures li:eq(1)')
+    .notes: :t
+      Encapsulated : there are limits on what information can get into the system.
+      But if we are to explain any successes, it must be possible for information 
+      about the locations of physical objects to get into the system.
+      So there’s no way we can use encapsulation to explain the puzzling developmental
+      findings.
+  .slide
+    +unhighlight-row('.listOfFeatures li:eq(1)')
+    +highlight-row('.listOfFeatures li:eq(2)')
+  .slide
+    +unhighlight-row('.listOfFeatures li:eq(2)')
+    +highlight-row('.listOfFeatures li:eq(3)')
+  .slide
+    +unhighlight-row('.listOfFeatures li:eq(3)')
+    +highlight-row('.listOfFeatures li:eq(4)')
+  .slide
+    +unhighlight-row('.listOfFeatures li:eq(4)')
+    +highlight-row('.format-iconic')
+    
+
+            
++slide_middle
+  .notes So, to return to my question,
+  p.center.notes.show If this is what core knowledge is for, what features must core knowledge have?
+  p.em-above.center
+    span.not-k not being knowledge
+  +invert('.not-k')
+  .notes: :t
+    The answer seems to be: none of the features that are stipluated in introducing it.
+    This gives us a \textbf{first objection}: there seems to be a mismatch between
+    the definition and application.
+  .notes: :t
+    [The feature we most need is actually missing from their list: limited accessibility.
+    But this thought comes later.]
+
+
+
+
+
+
+
++slide_middle
+  .notes summary
+  p challenges to the very idea of core knowledge:
+  ul
+    li multiple definitions
+    li justification for definition by list-of-features
+    li definition by list-of-features rules out explanation
+    li mismatch of definition to application 
+
+
+
+
+
+
+
+

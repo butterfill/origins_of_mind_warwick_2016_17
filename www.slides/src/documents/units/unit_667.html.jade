@@ -34,16 +34,99 @@ include ../../../fragments/origins_mixins
     patterns in looking duration?
   .notes: :t
     I’ve just argued that it can’t be beliefs or knowledge states.
+    So far we’ve been assuming it is object indexes.  But this 
+    assumption is not quite right ...
   
+section.slide
+  +_slide_middle_inner
+    p.center.huge-glow-90 What can object indexes explain?
+    .notes: :t
+      This is an important question for me so I want to pause to emphasise it.
+      This question is, What can the operations of a system of 
+      object indexes explain?
   .slide
-    +remove('.qqq')
-    +unremove('.phenomenal-expectations')
-    +highlight('.phenomenal-expectations')
-    .notes: :t
-      Now I want to suggest that it is something called a phenomenal expectation.
-    .notes: :t
-      Before I explain what phenomenal expectations are, let me illustrate the 
-      idea informally.
+    +reset
+      +_slide_middle_inner
+        .notes.show
+          p.hem-around Functions of object indexes:
+          p.indent.hem-around ✔ influence how attention is allocated
+          p.indent.hem-around ✔ guide ongoing actions (e.g. visual tracking, reaching)
+          p.indent.hem-around ✘ initiate purposive actions
+        .notes: :t
+          If these are the functions of object indexes, how can we explain
+          looking times in habituation or violation-of-expectation experiments?
+        .notes: :t
+          The primary functions of object indexes include influencing the allocation
+          of attention and perhaps guiding ongoing action.
+          If this is right, it may be possible to explain anticipatory looking 
+          directly by appeal to the operations of  object indexes.
+          But the operations of object indexes cannot directly explain differences 
+          in how novel things are to an infant.
+          And nor can the operations of object indexes directly explain why infants
+          look longer at stimuli involving discrepancies in the physical behaviour
+          of objects.
+
++slide
+  .notes: :t
+    Consider this case where a ball falls and lands on a bench.
+    Suppose that there was a barrier in front of the bench, like the dotted line.
+    Because the bench protrudes from the barrier, you could easily see where the ball will land.
+    But of course you can only see this if you know that barriers stop solid balls.
+    Spelke used this observation to provide evidence that 4-month-old infants can track objects' causal interactions.
+  +img_clip('spelke_1992_fig2a.png', 'rect(0px,480px,434px,240px)')
+  p.source Spelke et al 1992, figure 2
+  +clip('img:eq(0)', 'rect(0px,240px,434px,0px)')
+  .notes: :t
+    Infants were habituated to a display in which a ball fell behind a screen,
+    the screen came forwards and the ball was revealed to be on the ground,
+    just where you'd expect it to be.
+    After habituation infants were shown one of two displays.
+    Infants in the 'consistent group' were shown this.
+  +clip('img:eq(0)', 'rect(0px,480px,434px,0px)')
+  .notes Whereas infants in the 'inconsistent group' were shown this.
+  +clip('img:eq(0)', 'rect(0px,720px,434px,0px)')
+  .notes: :t
+    What should we predict?
+    If infants were only paying attention to the shapes and ignoring properties
+    like solid, they should have dishabituated more to the consistent than to
+    the inconsistent stimlus.
+    After all, that stimlus is more different from the habituation stimulus in
+    terms of the surfaces.
+    But if infants were are to track some simple causal interactions, then they
+    might dishabituate to the 'inconsistent' stimulus more than to the
+    'consistent' stimulus because that one involves an apparent violation of a
+    physical laws.
+  
++slide
+  .notes Here are the results.
+  .notes (Recall that the subjects are 4-month-old infants.)
+  img(src='/img/spelke_1992_fig3a.png', style="max-width:750px;")
+  p.source Spelke et al 1992, figure 3
+  .notes: :t
+    Why do infants manifest an ability to track briefly occluded objects on 
+    habituation and violoation-of-expectations tasks?
+    Ah ... just here we face a significant challenge ...    
+  .notes: :t
+    As I said earlier, infants’ abilities to track briefly 
+    occluded objects are manifested in several different ways.
+    They are manifested in (iii) anticipatory looking, (ii) reactions 
+    indicating the violation of an expectation, and (i) dishabituation 
+    indicating interest in certain stimuli.
+  .notes: :t
+    Can all of these behaviours be explained merely by invoking object 
+    indexes?
+  .notes: :t
+    We know that infants are likely to maintain object indexes for the object
+    while it is they are occluded.
+    Accordingly, when the screen drops in the condition labelled 
+    ‘impossible outcome’, there is an interruption to the normal 
+    operation of object indexes: infants have assigned two object indexes 
+    but there is only one object.
+    But why does this cause infants to look longer at in the
+    ‘impossible outcome’ condition than in the ‘possible outcome’ condition?
+    \textbf{How does a difference in operations involving object indexes result
+    in a difference in looking times?}
+  
 
 
 +slide_middle
@@ -59,7 +142,29 @@ include ../../../fragments/origins_mixins
     This feeling of magic is a phenomenal expectation.
   .notes: :t
     Let me give you two more illustrations [the wire and the face]. ...
+
     
+
++slide_middle
+  p.center object index operations
+  p.center ↓
+  p.center 
+    span.invert.qqq  ? ? ?  
+    span.remove-me.phenomenal-expectations phenomenal expectations
+  p.center ↓
+  p.center patterns in looking durations
+  .slide
+    +remove('.qqq')
+    +unremove('.phenomenal-expectations')
+    +highlight('.phenomenal-expectations')
+    .notes: :t
+      Now I want to suggest that it is something called a phenomenal expectation.
+    .notes: :t
+      Before I explain what phenomenal expectations are, let me illustrate the 
+      idea informally.
+
+        
+                
 +slide_middle({bkg:'wire.jpg'})
   .notes: :t
     What is a phenomenal expectation?  Consider a second illustration.

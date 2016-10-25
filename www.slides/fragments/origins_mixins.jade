@@ -196,11 +196,11 @@ mixin charlesRiveraOcclusionEndarkeningTable(p)
         td.center: span.occlusion occlusion
         td.center: span.endarkening endarkening
     tbody
-      tr.violation-of-expectations
+      tr.violation-of-expectations.v-of-e
         td.center: span violation-of-expectations
         td.center: span.occlusion ✔
         td.center: span.endarkening ✘
-      tr.manual-search
+      tr.manual-search.search
         td.center: span manual search
         td.center: span.occlusion ✘
         td.center: span.endarkening ✔
@@ -385,6 +385,92 @@ mixin objectionsToCoreKnowledgeView
     li.list-unjustified justification for definition by list-of-features
     li.list-unexplanatory definition by list-of-features rules out explanation
     li.mismatch mismatch of definition to application 
+
+
+
+//- ------
+//- object indexes
+
+mixin CLSTXconjecture(p)
+  if typeof(p) === 'undefined'
+    - p = {}
+  if !('handout' in p)
+    - p.handout = false
+  .notes.show(class="#{p.handout ? 'handout' : ''}")
+    p The CLSTX conjecture:
+    p.em-above The principles of object perception
+    p are not things believed or known:
+    p instead 
+    p they characterise the operation of 
+    p object indexes.
+  .notes.ctd(class="#{p.handout ? 'handout' : ''}") \citep{Leslie:1998zk,Scholl:1999mi,Carey:2001ue,scholl:2007_objecta}
+  .notes (‘CLSTX’ stands for Carey-Leslie-Scholl-Tremoulet-Xu \citep[see][]{Leslie:1998zk,Scholl:1999mi,Carey:2001ue,scholl:2007_objecta})
+  p.em-above.small-text.right Leslie et al (1989); Scholl and Leslie (1999); Carey and Xu (2001)
+
+
+
+
+
+mixin relationOfInfantToAdultCognitionDots(p)
+  if typeof(p) === 'undefined'
+    - p = {}
+  if !('step' in p)
+    - p.step = false
+  - slideCls = p.step ? 'slide' : ''
+  
+  .notes: :t
+    What is the relation between infants' competencies with objects and adults'?
+    Is it that infants' competencies grow into more sophisticated adult competencies?
+    Or is it that they remain constant throught development, and are supplemented by quite 
+    separate abilities?
+  p.em-above &nbsp;
+  .container_12
+    .grid_3
+      p.center infant
+    .grid_3
+      p &nbsp;
+    .grid_3
+      p &nbsp;
+    .grid_3
+      p.center adult
+  .clear
+  p &nbsp;
+  .container_12
+    .grid_3
+      +colour-ball('yellow', '25')
+    .grid_3(class="#{slideCls}")
+      +colour-ball('yellow', '50')
+    .grid_3(class="#{slideCls}")
+      +colour-ball('yellow', '75')
+    .grid_3(class="#{slideCls}")
+      +colour-ball('yellow', '100')
+  .clear
+  .container_12
+    .grid_3
+      p &nbsp;
+    .grid_3
+      p.center social interaction
+    .grid_3
+      p.center language
+    .grid_3
+      p &nbsp;
+  .clear
+  p &nbsp;
+  .container_12(class="#{slideCls}")
+    .grid_3
+      +colour-ball('yellow', '25')
+    .grid_3
+      +colour-ball('yellow', '25')
+      +colour-ball('cyan', '25')
+    .grid_3
+      +colour-ball('yellow', '25')
+      +colour-ball('cyan', '50')
+    .grid_3
+      +colour-ball('yellow', '25')
+      +colour-ball('cyan', '100')
+  .words: .container_12: .grid_12
+    p(style='margin-top:-50px;') time --->    
+
 
 
 //- -------------

@@ -416,13 +416,13 @@ mixin CLSTXconjecture(p)
     - p = {}
   if !('handout' in p)
     - p.handout = false
-  .notes.show(class="#{p.handout ? 'handout' : ''}")
-    p The CLSTX conjecture:
   .notes.ctd(class="#{p.handout ? 'handout' : ''}"): :t
+    \emph{The CLSTX conjecture} 
     Infants’ abilities concerning physical objects are
     characterised by the Principles of Object Perception because infants’ abilities 
     are a consequence of the operations of a system of object indexes
     \citep{Leslie:1998zk,Scholl:1999mi,Carey:2001ue,scholl:2007_objecta}.
+  p The CLSTX conjecture:
   p.em-above The principles of object perception
   p are not things believed or known:
   p instead 

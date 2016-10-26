@@ -289,6 +289,26 @@ mixin coreKnowledgeDefined(p)
     +hide('.step2, .step3', 0)
   block  
 
+mixin coreKnowledgeDefined_stepThroughFeatures
+  block
+  +attr('.listOfFeatures li, .format-iconic','style','z-index:1')
+  .slide
+    +highlight-row('.listOfFeatures li:eq(0)')
+  .slide
+    +unhighlight-row('.listOfFeatures li:eq(0)')
+    +highlight-row('.listOfFeatures li:eq(1)')
+  .slide
+    +unhighlight-row('.listOfFeatures li:eq(1)')
+    +highlight-row('.listOfFeatures li:eq(2)')
+  .slide
+    +unhighlight-row('.listOfFeatures li:eq(2)')
+    +highlight-row('.listOfFeatures li:eq(3)')
+  .slide
+    +unhighlight-row('.listOfFeatures li:eq(3)')
+    +highlight-row('.listOfFeatures li:eq(4)')
+  .slide
+    +unhighlight-row('.listOfFeatures li:eq(4)')
+    +highlight-row('.format-iconic')
 
 mixin propertiesOfModules(p)
   if typeof(p) === 'undefined'
@@ -398,17 +418,41 @@ mixin CLSTXconjecture(p)
     - p.handout = false
   .notes.show(class="#{p.handout ? 'handout' : ''}")
     p The CLSTX conjecture:
-    p.em-above The principles of object perception
-    p are not things believed or known:
-    p instead 
-    p they characterise the operation of 
-    p object indexes.
-  .notes.ctd(class="#{p.handout ? 'handout' : ''}") \citep{Leslie:1998zk,Scholl:1999mi,Carey:2001ue,scholl:2007_objecta}
-  .notes (‘CLSTX’ stands for Carey-Leslie-Scholl-Tremoulet-Xu \citep[see][]{Leslie:1998zk,Scholl:1999mi,Carey:2001ue,scholl:2007_objecta})
+  .notes.ctd(class="#{p.handout ? 'handout' : ''}"): :t
+    Infants’ abilities concerning physical objects are
+    characterised by the Principles of Object Perception because infants’ abilities 
+    are a consequence of the operations of a system of object indexes
+    \citep{Leslie:1998zk,Scholl:1999mi,Carey:2001ue,scholl:2007_objecta}.
+  p.em-above The principles of object perception
+  p are not things believed or known:
+  p instead 
+  p they characterise the operation of 
+  p object indexes.
   p.em-above.small-text.right Leslie et al (1989); Scholl and Leslie (1999); Carey and Xu (2001)
+  .notes (‘CLSTX’ stands for Carey-Leslie-Scholl-Tremoulet-Xu \citep[see][]{Leslie:1998zk,Scholl:1999mi,Carey:2001ue,scholl:2007_objecta})
 
 
 
+
+mixin objectIndexVsMotorRepresentationTable
+  .notes: :t
+    Object indexes survive occlusion but not endarkening;
+    motor representations survive endarkening but not occlusion.
+  table.data
+    thead
+      tr
+        td 
+        td.center: span.occlusion survive occlusion
+        td.center: span.endarkening survive endarkening
+    tbody
+      tr
+        td.center: span object index
+        td.center: span.occlusion ✔
+        td.center: span.endarkening ✘
+      tr
+        td.center(style="vertical-align:middle;"): span motor representation
+        td.center(style="vertical-align:middle;"): span.occlusion ✘
+        td.center(style="vertical-align:middle;"): span.endarkening ✔
 
 
 mixin relationOfInfantToAdultCognitionDots(p)

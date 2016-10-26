@@ -293,7 +293,7 @@ include ../../../fragments/origins_mixins
     If we consider six-month-olds, we can also find behavioural markers 
     of object indexes in infants \citep{richardson:2004_multimodal} ...
   .slide
-    +invert('.neural-markers')
+    +invert('.neural')
     .notes: :t
       ... and there are is also a report of neural markers too \citep{kaufman:2005_oscillatory}.
   
@@ -480,23 +480,8 @@ include ../../../fragments/origins_mixins
   p.source Cardellicchio, Sinigaglia & Costantini, 2011 figure 2
 
 
-
 +slide_middle
-  table.data
-    thead
-      tr
-        td 
-        td.center: span.occlusion survive occlusion
-        td.center: span.endarkening survive endarkening
-    tbody
-      tr
-        td.center: span object indexes
-        td.center: span.occlusion ✔
-        td.center: span.endarkening ✘
-      tr
-        td.center: span motor representations
-        td.center: span.occlusion ✘
-        td.center: span.endarkening ✔
+  +objectIndexVsMotorRepresentationTable
 
 
 +slide
@@ -532,22 +517,8 @@ include ../../../fragments/origins_mixins
 
 
 +slide_middle
-  table.data
-    thead
-      tr
-        td 
-        td.center: span.occlusion survive occlusion
-        td.center: span.endarkening survive endarkening
-    tbody
-      tr
-        td.center: span object indexes
-        td.center: span.occlusion ✔
-        td.center: span.endarkening ✘
-      tr
-        td.center: span motor representations
-        td.center: span.occlusion ✘
-        td.center: span.endarkening ✔
-
+  +objectIndexVsMotorRepresentationTable
+  
 +slide_middle
   +charlesRiveraOcclusionEndarkeningTable
 
@@ -556,118 +527,20 @@ include ../../../fragments/origins_mixins
   p.em-above ... and infants have a further capacity to track physical objects which involves motor representations and processes.
 
 
-
-+slide
-  .notes: :t
-    We saw this quote in the first lecture ...
-  +davidson_inbetween
-  .slide
-    +invert('.between')
-    .notes: :t
-      Actually we don’t lack a way of describing what is in between.
-      We already have it.
-      We were simply not aware of it because we hadn’t thought carefully enough
-      about the representations and processes involved in perception and action.
-    .notes: :t
-      The discovery that the principles of object perception characterise the operation of 
-      object-indexes doesn't mean we have met the challenge exactly.
-      We haven't found a way of describing the processes and representations that underpin infants'
-      abilities to deal with objects and causes.
-      However, we have reduced the problem of doing this to the problem of characterising how 
-      some perceptual mechanisms work.  
-      And this shows, importantly, that understanding infants' minds is not something different from
-      understanding adults' minds, contrary to what Davidson assumes.
-      The problem is not that their cognition is half-formed or in an intermediate state.
-      The problem is just that understanding perception requires science and not just intuition.
-
-
-section.slide
-  +relationOfInfantToAdultCognitionDots({step:true})   
-  .notes: :t
-    The identification of the Principles of Object Perception with object-indexes suggests that 
-    infants' abilities are constant throughout development.
-    They do not become adult conceptual abilities; rather they remain as perceptual systems
-    that somehow underlie later-developing abilities to acquire knowledge.
-  .notes: :t
-    Confirmation for this view comes from considering that there are discrepancies in adults' 
-    performances which resemble the discrepancies in infants between looking and action-based 
-    measures of competence ...
-    [This links to unit 271 on perceptual expectations ...]
-
-
-
-
-
 +slide_middle
-  p.center The Core Knowledge View?
-
-+slide_rh_white
-  +left_half
-    .notes Left half:
-    .notes.ctd.show
-      p.center The Core Knowledge View
-      p Infants, like most adults, do not know the principles of object perception; but they have core knowledege of them.
-    //- 
-      //- following reveals misunderstanding : core knowledge is not supposed to explain the discrepancy
-      p Infants, unlike adults, do not know the location of an unoccluded object.  But they do have core knowledge of its location.
-  +right_half
-    .notes right_half:
-    .notes.ctd.show
-      p.center The CLSTX conjecture
-      p The principles of object perception characterise how a system of object indexes should work.
-      p Infants’ (and adults’) object indexes track objects through occlusion.
-      p Five-month-olds do not know the location of an occluded object.
-      p Five-month-olds do have perceptual expectations concerning its location.
   .notes: :t
-    ‘CLSTX’ stands for Carey-Leslie-Scholl-Tremoulet-Xu \citep[see][]{Leslie:1998zk,Scholl:1999mi,Carey:2001ue,scholl:2007_objecta}
+    Return to this amazing discovery.
+  +threeQuestionsAboutModels({final:true})
+  +highlight-row('.q2')      
   .notes: :t
-    Are these two views compatible?
-    I think we had better characterise core knowledge in such a way that they
-    turn out to be true!
-  
-
-+slide_middle
-  p.center Next Big Problem
-  .notes: :t
-    Our Next Big Problem is this.
-    We've said that infants' competence with causes and objects is not knowledge but something 
-    more primitive than knowledge, something which exists in adults too and can carry information
-    discrepant with what they know.
-    So, if at all, how does appealing to these early capacities enable us to explain the origins 
-    of knowledge?
-  p.em-above.center Core Knowledge Isn’t Knowledge
-  p.center ... so how can we explain the developmental origins of knowledge?
-  
-+slide({bkg:'slide_lecture04_012.jpg'})
-  .notes Berthier et al, Where’s the ball reaching study
-  .notes: :t
-    Further issue ... we now have a more complicated story about the emergence of knowledge
-
-
-
-    
-+slide({bkg:'slide_causation_development.jpg'})
-  .notes: :t()
-    Broadly, my suggestion will be that the competence which appears in the first months of 
-    development leads to knowledge of objects and causes only in conjunction with various
-    additional things, like social interaction, perhaps language and abilities to use tools.
-  .notes: :t()
-    The picture I want to offer differs from those of researchers like Vygotsky and Tomasello in 
-    that there is an essential role for early-developing forms of representation that are more
-    primitive that concepts or thoughts and do not appear to have any kind of social origin.
-  .notes: :t()
-    But the picture also differs from those of researchers like Spelke and Carey in that these
-    early developing forms of representation are only one of several components that are needed
-    to understand the origins of knowledge.
-  .notes: :t()
-    To explore this idea I want to switch to a completely different domain, colour.
-  .notes: :t()
-    [*Aside on tool use:]
-    Basic forms of tool use may not require understanding how objects interact 
-    (Barrett, Davis, & Needham; Lockman, 2000), and may depend on core cognition of 
-    contact-mechanics (Goldenberg & Hagmann, 1998; Johnson-Frey, 2004). 
-    Experience of tool use may in turn assist children in understanding notions of manipulation, 
-    a key causal notion (Menzies & Price, 1993; Woodward, 2003). Perhaps non-core capacities for 
-    causal representation are not innate but originate with experiences of tool use.	
-
-
+    2. What is the relation between the model and the infants? 
+  p.em-above Candidate Answers to Q2
+  p.hem-around.indent 
+    span.sv the Simple View
+    span  ... generates incorrect predictions
+  +line-through('.sv')
+  p.hem-around.indent
+    span.ckv the Core Knowledge View
+    span  ... generates no relevant predictions
+  p.hem-around.indent
+    span the CLSTX Conjecture

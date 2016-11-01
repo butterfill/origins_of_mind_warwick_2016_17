@@ -160,9 +160,6 @@ mixin categoricalPerceptionDf(p)
         span.bkg-pink Change (odd-ball) detection
     .factInNeedOfExplanation(class="#{p.final ? '' : 'hide'}")
       p.hem-around.highlight1 A single set of categories enables us to predict all the patterns.
-    .slide
-      +highlight-row('.highlight1', 'grey')
-      .notes This is a fact in need of explanation.
     .hypothesis.1(class="#{p.final ? '' : 'hide'}")
       p.hem-around Hypothesis 1: There is a uniform explanation for all the patterns.
     .hypothesis.2(class="#{p.final ? '' : 'hide'}")
@@ -246,6 +243,11 @@ mixin categoricalPerceptionDf(p)
     I just said it's like knowledge in some ways but not knowledge.
     We'll get a handle on it by looking at what it is commonly supposed to explain.
     More on this later; now back to categorical perception.
+
++slide
+  +categoricalPerceptionDf({final:false})
+  +show('.factInNeedOfExplanation, .hypothesis, .step4', 0)
+
 
 +slide_middle
   .notes Among the things categorical perception is commonly taken to explain there are also automatic processes.
@@ -344,7 +346,7 @@ section.slide#EEG
   .words
     .container_12
       .grid_6
-        .slide.nodim.scale-2.scale-out-after
+        .nodim.scale-2.scale-out-after
           img(src='/img/EEG_cap.jpg',height='150px')
         .slide.nodim.scale-2.scale-out-after
           img(src='/img/eeg_gamma_graph.jpg',height='150px')
@@ -355,7 +357,7 @@ section.slide#EEG
         .notes While we're on methods, let's quickly talk about fMRI.
         .grid_6
           .words
-            .slide.nodim.scale-2.scale-out-after
+            .nodim.scale-2.scale-out-after
               img(src='/img/mri_scanner.jpg',height='150px')
             .slide.nodim.scale-2.scale-out-after
               img(src='/img/fmri_scan.jpg',height='150px')

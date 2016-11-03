@@ -11,6 +11,7 @@ depends: ['']
 ---
 
 include ../../../fragments/unit_mixins
+include ../../../fragments/origins_mixins
 
 section.slide
   .notes: :t
@@ -39,3 +40,9 @@ section.slide
       .grid_4
         mixin colour-box('rgb(42,162,42)', 100)
         p.center 2.5BG
+
+section.slide
+  +davidson_inbetween({step:false, final:true})
+  .notes: :t
+    In the case of objects, we had some success by identifying psychological mechanisms
+    that are responsible for adult cognition and then working back to the infants.

@@ -13,8 +13,10 @@ include ../../fragments/unit_mixins
 
 +title_slide({document:document, images:images})
 
-+slide_middle
-  p.center Our Next Big Problem
+
++slide({bkg:'slide_causation_development.jpg'})
+  .notes: :t
+    [Diagram: years bewteen early capacities (core knowlegde) and knowledge proper]
   .notes: :t
     Recall from the previous lecture that our Next Big Problem is this. 
     We've said that infants' competence with causes and objects is not knowledge but something 
@@ -22,15 +24,12 @@ include ../../fragments/unit_mixins
     discrepant with what they know. So, if at all, how does appealing to these early capacities 
     enable us to explain the origins of knowledge?
   .notes: :t
-    Versions of this problem will arise in every domain of knowledge we shall consider.
-    In this lecture I want to consider our Next Big Problem by thinking about the domain of colour.
+    As we're about to see, a version of this problem arises for the case of colour.
+    Perhaps we can partially resolve the Next Big Problem in the case of colour, and then use 
+    this as a model for other cases.
     We are also, of course, simultaneously occupied with a question about the origins of knowledge
     of colour.
     Let me start by introducing the question ... 
-
-+slide({bkg:'slide_causation_development.jpg'})
-  .notes: :t
-    Diagram: years bewteen early capacities (core knowlegde) and knowledge proper
 
 //- knowledge of colour: the question
 +insert_unit({unit:'110', title_slide:false, images:images, handout:false})
@@ -41,7 +40,15 @@ include ../../fragments/unit_mixins
 
 //- categorical perception of colour in infancy  
 +insert_unit({unit:'121', title_slide:true, images:images})
-  
+
+//- 
+  TODO
+  Would be great to have a really short unit on CP vs CK here
+  (see section in chapter on CP in dev.mind)
+
+//- categorical perception and core knowledge
++insert_unit({unit:'133', title_slide:true, images:images})
+
 //- categorical perception and knowledge
 +insert_unit({unit:'131', title_slide:true, images:images})
   

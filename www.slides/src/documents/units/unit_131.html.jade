@@ -10,22 +10,25 @@ description: """
 include ../../../fragments/unit_mixins
 
 
+  
+
 +slide_middle
-  p.center Our Next Big Problem
+  p.center The Step from Core Knowledge (or Categorical Perception) to Knowledge
   .notes: :t
-    Recall that our Next Big Problem is this. 
+    Recall from the previous lecture that our Next Big Problem is this. 
     We've said that infants' competence with causes and objects is not knowledge but something 
     more primitive than knowledge, something which exists in adults too and can carry information 
     discrepant with what they know. So, if at all, how does appealing to these early capacities 
     enable us to explain the origins of knowledge?
   .notes: :t
-    As we've just seen, a version of this problem arises for the case of colour.
+    As we're about to see, a version of this problem arises for the case of colour.
     Perhaps we can partially resolve the Next Big Problem in the case of colour, and then use 
     this as a model for other cases.
+    Let me start by introducing the question ... 
+
++slide({bkg:'slide_causation_development.jpg'})
   .notes: :t
-    Let's see.
-    First I want to be clear about what the problem is ...
-    
+    Diagram: years bewteen early capacities (core knowlegde) and knowledge proper
 
 
 +slide_middle
@@ -227,12 +230,16 @@ mixin buildingBlocksView2(p)
     p.em-above
       .highlight1 In monolingual adults, the perceptual categories match the extensions of the colour terms in their language.
     p.right.grey-text Roberson and Hanley, 2007; Winawer et al, 2007
+  .slide
     +highlight-row('.highlight1')
-    .notes This is an amazing finding about the power of words.
-    .notes Learning to use words for colours changes how we perceive them.
+    .notes: :t
+      This is an amazing finding about the power of words.
+      Learning to use words for colours influences how we categorise them in categorical perception
+      them.
     .notes.handout Colour words shape adults’ categorical perception \citep{Roberson:2007wg,Winawer:2007im}.
     .notes We'll see more on this later.
   .slide
+    +unhighlight-row('.highlight1')
     .notes But, as you'd expect, infants’ and toddlers’ perceptual categories are not influenced by the extensions of colour terms.
     .notes: :t
       For evidence that toddlers who know some colour words show no influence of language on categorical perception of colours, see \citet{Franklin:2005hp}.
@@ -398,7 +405,15 @@ section.slide
     So this is my picture.
     Acquiring knowledge of colour depends on an interaction between categorical perception, something developmentally quite primitive, and social interaction, in
     particular the negotiation of words for colour categories.
- 
+
+  
++slide({bkg:'slide_causation_development.jpg'})
+  .notes: :t
+    [Diagram: years bewteen early capacities (core knowlegde) and knowledge proper.]
+    Relate this to the gap between Core Knowledge and Knowledge Knowledge.
++slide
+  p.center
+    +img_clip('fig_rediscovery.png')
 
 
   

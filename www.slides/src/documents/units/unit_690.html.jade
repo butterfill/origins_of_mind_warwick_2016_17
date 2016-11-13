@@ -1,0 +1,50 @@
+---cson
+layout: 'deck_unit'
+title: "Crossing the Gap"
+tags: []
+description: """
+  Having core knowledge of something does not involve having any knowledge knowledge at all.
+  How do humans cross the gap from merely having core knowledge concerning some
+  things to having knowledge proper of those things?
+  """
+---
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/origins_mixins
+
+
++slide_middle
+  p.center the question
+  .notes: :t
+    How do humans first come to know simple facts about physical objects,
+    colours, minds and the rest?
+
++crossingTheGapSlide({step:true})
+
++slide_diagram_core_knowledge_to_concept
+
++triangulationColourSlide
+
+
++crossingTheGapSlide({step:false})
+  .slide
+    +highlight-row('li.crossing')
+
+
+
+
++slide
+  +fromActionToWordsFigure
+  +hide('.minds, .joint-action, .referential, .communication-words', 0)
+  .notes: :t
+    Gradually build up from understanding minds and actions to words.
+  .slide
+    +show('.minds')
+  .slide
+    +show('.joint-action')
+  .slide
+    +show('.referential')
+  .slide
+    +show('.communication-words')
+
+

@@ -1,0 +1,156 @@
+---cson
+layout: 'deck_unit'
+title: "Action: The Basics"
+tags: []
+description: """
+  When do human infants first track goal-directed actions and not just
+  movements? A variety of evidence suggests that the answer is, from around
+  three months. Is this competence is related to adults’ abilites to track
+  goal-directed action? Is it a manifestation of core knowledge?
+  """
+---
+
+include ../../../fragments/unit_mixins
+
+
+//- Gergeley et al 1995
+
++slide_middle
+  .notes Our first question is, When do human infants first track goal-directed actions and not just movements?
+  .notes In examining nonlinguistic communication, we've assumed that infants from around 11 months of age can produce and comprehend informative pointing.
+  .notes This commits us to saying that they have understood action.
+  p.center When do human infants first track goal-directed actions
+    br
+    | rather than mere movements only?
+
++slide
+  //- sources
+  .notes \#source 'research/teleological stance -- csibra and gergely.doc'
+  .notes \#source 'lectures/mindreading and joint action - philosophical tools (ceu budapest 2012-autumn fall)/lecture05 actions intentions goals'
+  .notes \#source 'lectures/mindreading and joint action - philosophical tools (ceu budapest 2012-autumn fall)/lecture06 goal ascription teleological motor'
+  //- notes for slide
+  .notes When do human infants first track goal-directed actions and not just movements?
+  .notes Here's a classic experiment from way back in 1995.
+  .notes The subjects were 12 month old infants.
+  .notes They were habituated to this sequence of events.
+  +img_clip('gergely_1995_fig1.png', 'rect(0,1000px,250px,0)')
+  .slide
+    +clip('img:eq(0)','auto')
+    .notes: :t
+      There was also a control group who were habituated to a display like this
+      one but with the central barrier moved to the right, so that the action
+      of the ball is 'non-rational'.
+    
+  p.source Gergely et al 1995, figure 1
+  
++slide
+  +img_clip('gergely_1995_fig3.png', 'rect(0,1000px,250px,0)')
+  .notes For the test condition, infants were divided into two groups.  One saw a new action, ...
+  +clip('img:eq(0)', 'auto')
+  .notes ... the other saw an old action.
+  .notes Now if infants were considering the movements only and ignoring information about the goal, the 'new action' (movement in a straight line) should be more interesting because it is most different.
+  .notes But if infants are taking goal-related information into acction, the 'old action' might be unexpected and so might generate greater dishabituation.
+  p.source Gergely et al 1995, figure 3
+
+
++slide
+  +img_clip('gergely_1995_fig5.png', 'rect(0,350px,1000px,0)')
+  p.source Gergely et al 1995, figure 5
+  +clip('img:eq(0)','auto')
+  .handout ‘by the end of the first year infants are indeed capable of taking the intentional stance (Dennett, 1987) in interpreting the goal- directed behavior of rational agents.’
+  .handout.ctd \citep[p.\ 184]{Gergely:1995sq}
+  .handout ‘12-month-old babies could identify the agent’s goal and analyze its actions causally in relation to it’
+  .handout.ctd \citep[p.\ 190]{Gergely:1995sq}
+
+
+
++slide
+  .notes You might say, it's bizarre to have used balls in this study, that can't show us anything about infants' understanding of action.
+  .notes But adult humans naturally interpret the movements of even very simple shapes in terms of goals.
+  .notes So using even very simple stimuli doesn't undermine the interpretation of these results.
+  img(src='/img/heider_1946_fig1.png')
+  p.source Heider and Simmel, figure 1
+
+
+
++slide
+  .notes Consider a related study by Woodward and colleagues.
+  .notes (It's good that there is converging evidence from different labs, using quite different stimuli.)
+  +img_clip('wodward_2001_fig1.png', 'rect(0,1000px,250px,0)')
+  p.source Woodward et al 2001, figure 1
+  +clip('img:eq(0)','auto')
+  .notes.handout 'Six-month-olds and 9-month-olds showed a stronger novelty response (i.e., looked longer) on new-goal trials than on new-path trials (Woodward 1998). That is, like toddlers, young infants selectively attended to and remembered the features of the event that were relevant to the actor’s goal.'
+  .notes.handout.ctd \citep[p.\ 153]{woodward:2001_making}
+
+
+
+section.slide
+  .container_12
+    .grid_6: .words
+      .notes Consider a further experiment by \citet{Csibra:2003jv}.
+      .notes This is just like the first ball-jumping experiment except that here infants see the action but not the circumstances in which it occurs.
+      .notes Do they expect there to be an object in the way behind that barrier?
+      div(style='margin-top:100px')
+        +img_clip('csibra_2003_fig6.png', 'rect(0,1000px,175px,0)')
+    .slide.grid_6: .words
+      div(style='margin-top:-175px')
+        +img_clip('csibra_2003_fig6.png', 'rect(175px,1000px,1000px,0)')
+  .clear
+  .words
+    p.source Csibra et al 2003, figure 6
+
+
+//- anticipatory looking
++slide
+  +img_clip('daum_2012_fig1.png')
+  p.source Daum et al, 2012 figure 1
+  .notes: :t
+     \citet{daum:2012_actions} adapted Woodward et al’s paradigm so that they
+     could simultaneously measure looking time and anticipatory looking.
+  .notes: :t
+    You can see that there’s a round occluder in the middle of the display.  The 
+    agent, a red fish, moves behind this on it’s way to visit one of two objects.
+  .notes: :t
+    In Experiment 1,
+    First a small fish moves towards one object six times (familiarization).
+    Then the locations of objects were swaped and infants’ responses were measured
+    during six test trials. In these trials, the agent (red fish) moved on the
+    same path towards a new goal three times; and it did the converse three
+    times.
+  .notes: :t
+    Just as you'd expect given Woodward et al 2001, 9-month old infants looked 
+    longer when the fish (agent) moved towards a new goal (same path) than when
+    it moved towards the same goal on a new path.
+  .notes: :t
+    BUT where were the infants looking in anticpation of the agent’s 
+    reappearance? It turns out that, on the whole, they were looking as if the 
+    agent were moving on the same path to a new goal.
+    So there’s a dissocaition between anticipatory looking and violation-of-expectations
+    measures for 9 month olds.
+
++slide
+  +img_clip('daum_2012_fig2.png')
+  p.source Daum et al, 2012 figure 2 (part)
+  .notes: :t
+    In a follow up experiment, \citet{daum:2012_actions} considered anticipatory looking
+    with these stimuli for a range of agents including adulthoot.
+  .notes: :t
+    As you can see, adults’ anticipatory looking is generally to the same-goal but
+    different-path location, which is also what 3-year-olds do.
+  .notes: :t
+    Why is there a dissocaition between anticipatory looking and violation-of-expectations
+    measures for 9 month olds?
+  .notes: :t
+    One possibility noted by \citet{daum:2012_actions} is that anticipatory looking requires
+    rapid computation of the goal and its consequences for movement.  It may be that infants
+    simply cannot compute the goal in the few hundren milliseconds available for anticipatory
+    looking.
+  .notes: :t
+    This doesn’t sound very interesting, but note that 9-month-old infants seem to be 
+    making anticipatory looks.  This suggests that they may be guided by contingency
+    information in making their anticipatory looks.
+    This is potentially important as a clue that action anticipation is driven by a mixture
+    of goal ascription and statistical information.
+    
+    
+    

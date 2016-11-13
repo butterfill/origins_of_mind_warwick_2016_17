@@ -602,6 +602,74 @@ mixin to_produce()
 - qq.q3 = 'What is the relation between adults’ and infants’ abilities concerning physical objects and their causal interactions?'
 
 
+
+
+
+
+
+mixin crossingTheGapSlide(p)
+  if typeof(p) === 'undefined'
+    - p = {}
+  if !('step' in p)
+    - p.step = false
+  - slideCls = p.step ? 'slide' : ''
+
+  +slide_middle
+    ol.hem-around-children
+      li.ck-is-real Core knowledge is real.
+      .notes: :t
+        Core knowledge is real. Infants’ have unexpectedly sophisticated abilities concerning physical objects
+        and categorical colour properties (and much more) even from the first year of life.
+      li.gap(class="#{slideCls}") There is a gap between core knowledge and knowledge knowledge.
+      .notes: :t
+        There is a gap between core knowledge and knowledge knowledge.  It takes months 
+        if not years between clear manifestations of core knowledge and knowledge knowledge.
+        Importantly,
+      li.crossing(class="#{slideCls}") Crossing the gap involves social interactions, perhaps involving words.
+      .notes: :t
+        Crossing the gap involves social interactions, perhaps involving words.
+      block
+
+
+mixin teleologicalStanceSlide(p)
+  if typeof(p) === 'undefined'
+    - p = {}
+  if !('step' in p)
+    - p.step = false
+  - slideCls = p.step ? 'slide' : ''
+  if !('handout' in p)
+    - p.handout = false
+
+  section.slide
+    .words: .container_12
+      .grid_3
+        p.quote.notes.show(class="#{(p.handout ? 'handout' : '')}", style='border-right:1px grey dashed;padding-right:9px;margin-right:-9px')
+          span ‘an action can be explained by a goal state if, and only if, it is 
+          span.seen-as seen as 
+          span  the 
+          span.most-justifiable 
+            span.most most
+            span  justifiable action 
+          span towards that 
+          span goal state that is available within the constraints of reality’
+        .notes.ctd(class="#{(p.handout ? 'handout' : '')}") \citep[p.~255]{Csibra:1998cx}
+        p.quote.right.grey-text Csibra & Gergely, 1998 p. 255
+      div(class="#{slideCls}")
+        .grid_9
+          p 1. Consider goals to which the action might be directed.
+          p.em-above 2. For each goal, determine 
+            span.most-justifiable how justifiable
+            span  the observed actions are as a means to achieving that goal.
+          p.em-above 3. Ascribe the goal with the highest rationality score.
+      if p.step
+        .slide
+          +highlight('.most-justifiable', 'red')
+      block
+      
+
+
+
+
 //- @depends unit_mixins
 mixin slide_diagram_core_knowledge_to_concept
   +slide
@@ -676,63 +744,371 @@ mixin slide_diagram_core_knowledge_to_concept
                     font(color='#ffffff', face='Lato', style='font-size: 24px;') because reflection
               text(x='68', y='37', fill='#000000', text-anchor='middle', font-size='12px', font-family='Helvetica') [Not supported by viewer]
           path(d='M 43 311 L 143 311', fill='none', stroke='#ffffff', stroke-width='4', stroke-miterlimit='10', transform='rotate(90,93,311)', pointer-events='none')
-
-    +show_('.big-arrow')
-    +show('.acquire-concept')
-    .notes: :t
-      Having core knowledge of something does not involve having any knowledge knowledge at all.
-      Here I'm going to use the term ‘concept of X’ for that which enables one to have knowledge 
-      of Xs.
-      How do we get from core knowledge to concepts?
-    +show('.discriminate')
-    .notes: :t
-      Core knowledge enables one to distinguish things. For example it enables on to distinguish
-      those things which are blue from those which are not;
-      it enables one to distinguish those events which are causal interactions from those 
-      which are not;
-      it enables one to distinguish those sets which have two members from others;
-      and it enables one to distinguish different beliefs about the location of an object (say).
-    .notes: :t
-      (Here I'm using core knowledge in the broad, schematic sense to refer to representations
-      which are knowledge-like but not knowledge.)
-    +show('.use-word')
-    .notes: :t
-      I conjecture that core knowledge faciliates acquisition of the correct use of a word,
-      perhaps very slowly.  The idea is that being able to discriminate things allows one to 
-      apply a label to them.
-    .notes: :t
-      Importantly we can discriminate without having concepts.
-      If one thought that all discrimination involved concepts, this picture would become circular.
-    +show('.because-experience')
-    .notes: :t
-      How does core knowledge enable one to correctly use words?
-      I think it modifies the overall phenomenal character of your experience,
-      typically by generating phenomenal expectations (which I called them perceptual expectations 
-      earlier in this version of the course).
-      Tuning in to the perceptual expectations can take a long time, which is why there may be 
-      a long interval between observing core knowledge and observing the correct use of words.
-    +show('.acquire-concept')
-    .notes: :t
-      I also conjecture that using the word facilitates concept acquisition.
-      Many people would probably agree.
-      But how does it do this?
-    +show('.because-reflection')
-    .notes: :t
-      My schematic suggestion is that using the word draws attention to all the things which are Xs.
-      The concept is acquired when you are struck by the question,
-      What do all these have in common?
-    .notes: :t
-      (Clearly this is not an account of how thinking gets started at all; the appeal
-      to reflection should make this obvious.)
-    .notes: :t
-      We have quite good evidence for this picture in the cases of colour and number,
-      and there is relevant evidence in the case of mindreading too.  (Also speech:
-      phonological awareness is linked to literacy and the particulars of the written
-      language learnt, so that alphabetic languages give a different profile --- alphabet is
-      roughly labelling phonemes.)
-    .notes: :t
-      The question we've been looking at last week is how children come to correctly
-      use words.
+    
+    .slide
+      +show('.big-arrow')
+      +show('.acquire-concept')
+      .notes: :t
+        Having core knowledge of something does not involve having any knowledge knowledge at all.
+        Here I'm going to use the term ‘concept of X’ for that which enables one to have knowledge 
+        of Xs.
+        How do we get from core knowledge to concepts?
+    .slide
+      +show('.discriminate')
+      .notes: :t
+        Core knowledge enables one to distinguish things. For example it enables on to distinguish
+        those things which are blue from those which are not;
+        it enables one to distinguish those events which are causal interactions from those 
+        which are not;
+        it enables one to distinguish those sets which have two members from others;
+        and it enables one to distinguish different beliefs about the location of an object (say).
+      .notes: :t
+        (Here I'm using core knowledge in the broad, schematic sense to refer to representations
+        which are knowledge-like but not knowledge.)
+    .slide
+      +show('.use-word')
+      .notes: :t
+        I conjecture that core knowledge faciliates acquisition of the correct use of a word,
+        perhaps very slowly.  The idea is that being able to discriminate things allows one to 
+        apply a label to them.
+      .notes: :t
+        Importantly we can discriminate without having concepts.
+        If one thought that all discrimination involved concepts, this picture would become circular.
+    .slide
+      +show('.because-experience')
+      .notes: :t
+        How does core knowledge enable one to correctly use words?
+        I think it modifies the overall phenomenal character of your experience,
+        typically by generating phenomenal expectations (which I called them perceptual expectations 
+        earlier in this version of the course).
+        Tuning in to the perceptual expectations can take a long time, which is why there may be 
+        a long interval between observing core knowledge and observing the correct use of words.
+    .slide
+      +show('.because-reflection')
+      .notes: :t
+        I also conjecture that using the word facilitates concept acquisition.
+        Many people would probably agree.
+        But how does it do this?
+      .notes: :t
+        My schematic suggestion is that using the word draws attention to all the things which are Xs.
+        The concept is acquired when you are struck by the question,
+        What do all these have in common?
+      .notes: :t
+        (Clearly this is not an account of how thinking gets started at all; the appeal
+        to reflection should make this obvious.)
+      .notes: :t
+        We have quite good evidence for this picture in the cases of colour and number,
+        and there is relevant evidence in the case of mindreading too.  (Also speech:
+        phonological awareness is linked to literacy and the particulars of the written
+        language learnt, so that alphabetic languages give a different profile --- alphabet is
+        roughly labelling phonemes.)
+      .notes: :t
+        The question we've been looking at last week is how children come to correctly
+        use words.
     block
 
 
+mixin triangulationColourSlide()
+  +slide
+    svg(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', width='527px', height='524px', version='1.1', style='background-color: rgb(0, 0, 0);')
+      defs
+        linearGradient(x1="0",x2="0",y1="0",y2="1")#fade_up
+          stop(offset='0', stop-color='black', stop-opacity='1')
+          stop(offset='0.75', stop-color='black', stop-opacity='.75')
+          stop(offset='1', stop-color='black', stop-opacity='0')
+        linearGradient(x1="0",x2="0",y1="0",y2="1")#fade_down
+          stop(offset='0', stop-color='black', stop-opacity='0')
+          stop(offset='0.25', stop-color='black', stop-opacity='.75')
+          stop(offset='1', stop-color='black', stop-opacity='1')
+      g(transform='translate(0.5,0.5)')
+        g(transform='translate(5,17)')
+          switch
+            foreignobject(pointer-events='all', width='132', height='32', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+              div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; overflow: hidden; max-height: 56px; max-width: 136px; width: 132px; white-space: normal; text-align: center;')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                  font(color='#ffffff', face='Lato', style='font-size: 24px') discriminate
+            text(x='66', y='22', fill='#000000', text-anchor='middle', font-size='12px', font-family='Helvetica') [Not supported by viewer]
+        g.person-labelling.hide
+          ellipse(cx='408', cy='107', rx='15', ry='15', fill='none', stroke='#ffffff', stroke-width='3', pointer-events='none')
+          path(d='M 408 122 L 408 172 M 408 132 L 378 132 M 408 132 L 438 132 M 408 172 L 378 212 M 408 172 L 438 212', fill='none', stroke='#ffffff', stroke-width='3', stroke-miterlimit='10', pointer-events='none')
+        g.label-label.hide
+          g(transform='translate(382,27)')
+            switch
+              foreignobject(pointer-events='all', width='52', height='32', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; overflow: hidden; max-height: 56px; max-width: 136px; width: 52px; white-space: normal; text-align: center;')
+                  div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                    font(color='#ffffff', face='Lato', style='font-size: 24px') label
+              text(x='26', y='22', fill='#000000', text-anchor='middle', font-size='12px', font-family='Helvetica') [Not supported by viewer]
+        g.speech-bubble.hide
+          path(d='M 442.76 85.85 C 425.67 77.27 424 63.14 438.95 53.5 C 453.89 43.86 480.36 42 499.52 49.25 C 518.68 56.49 524 70.37 511.7 81.01 C 499.4 91.65 473.67 95.42 452.81 89.65 C 448.12 96.8 440.55 101.34 432.25 102 C 437.47 98.07 441.19 92.35 442.76 85.85 Z', fill='none', stroke='#ffffff', stroke-width='2', stroke-miterlimit='15', pointer-events='none')
+          g(transform='translate(445,57)')
+            switch
+              foreignobject(pointer-events='all', width='58', height='32', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 58px; white-space: normal; text-align: center;')
+                  div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                    font(color='#ffffff') blue
+              text(x='29', y='28', fill='#000000', text-anchor='middle', font-size='24px', font-family='Lato') [Not supported by viewer]
+        ellipse(cx='71', cy='127', rx='15', ry='15', fill='none', stroke='#ffffff', stroke-width='3', pointer-events='none')
+        path(d='M 71 142 L 71 192 M 71 152 L 41 152 M 71 152 L 101 152 M 71 192 L 41 232 M 71 192 L 101 232', fill='none', stroke='#ffffff', stroke-width='3', stroke-miterlimit='10', pointer-events='none')
+        //- the star (target object)
+        path(d='M 215.17 261.17 L 215.17 232 L 236 252.83 L 256.83 232 L 256.83 261.17 L 286 261.17 L 265.17 282 L 286 302.83 L 256.83 302.83 L 256.83 332 L 236 311.17 L 215.17 332 L 215.17 302.83 L 186 302.83 L 206.83 282 L 186 261.17 Z', fill='#3399ff', stroke='#ffffff', stroke-width='3', stroke-miterlimit='10', pointer-events='none')
+        rect(x='166', y='462', width='140', height='60', fill='none', stroke='none', pointer-events='none')
+        g(transform='translate(168,465)')
+          switch
+            foreignobject(pointer-events='all', width='136', height='56', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+              div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; overflow: hidden; max-height: 56px; max-width: 136px; width: 136px; white-space: normal; text-align: center;')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                  font(color='#ffffff', face='Lato', style='font-size: 24px') stimulus sequence
+            text(x='68', y='34', fill='#000000', text-anchor='middle', font-size='12px', font-family='Helvetica') [Not supported by viewer]
+        //- the circle
+        ellipse(cx='236', cy='162', rx='40', ry='40', fill='#9933ff', stroke='#ffffff', stroke-width='3', pointer-events='none')
+        path(d='M 206 352 L 266 392 L 206 432 Z', fill='#ff3333', stroke='#ffffff', stroke-width='3', stroke-miterlimit='10', transform='rotate(-30,236,392)', pointer-events='none')
+        path(d='M 236 22 L 276 62 L 236 102 L 196 62 Z', fill='#0066cc', stroke='#ffffff', stroke-width='3', stroke-miterlimit='10', pointer-events='none')
+        rect(x='176', y='2', width='120', height='220', stroke='none', pointer-events='none', fill='url(#fade_up)')
+        rect(x='176', y='342', width='120', height='110', stroke='none', pointer-events='none', fill='url(#fade_down)')
+
+        g(transform="translate(-40,0)")
+          g.stimulus-to-discriminate
+            path(d='M 218 288 L 168.72 216.33', fill='none', stroke='#cccccc', stroke-width='3', stroke-miterlimit='10', pointer-events='none')
+            path(d='M 164.9 210.76 L 173.71 215.63 L 168.72 216.33 L 166.29 220.73 Z', fill='#cccccc', stroke='#cccccc', stroke-width='3', stroke-miterlimit='10', pointer-events='none')
+          g.stimulus-to-label.hide
+            path(d='M 353 288 L 397.64 216.57', fill='none', stroke='#cccccc', stroke-width='3', stroke-miterlimit='10', pointer-events='none')
+            path(d='M 401.22 210.84 L 400.27 220.86 L 397.64 216.57 L 392.64 216.09 Z', fill='#cccccc', stroke='#cccccc', stroke-width='3', stroke-miterlimit='10', pointer-events='none')
+          g.discriminate-to-label.hide
+            path(d='M 178 165 L 402.9 165', fill='none', stroke='#cccccc', stroke-width='3', stroke-miterlimit='10', pointer-events='none')
+            path(d='M 409.65 165 L 400.65 169.5 L 402.9 165 L 400.65 160.5 Z', fill='#cccccc', stroke='#cccccc', stroke-width='3', stroke-miterlimit='10', pointer-events='none')
+            path(d='M 188 165 L 168.1 165', fill='none', stroke='#cccccc', stroke-width='3', stroke-miterlimit='10', pointer-events='none')
+            path(d='M 161.35 165 L 170.35 160.5 L 168.1 165 L 170.35 169.5 Z', fill='#cccccc', stroke='#cccccc', stroke-width='3', stroke-miterlimit='10', pointer-events='none')
+
+    .notes: :t()
+      This is about the step from discrimination to learning the correct use of a verbal label.
+    .notes: :t()
+      So there's you and you're observing sequence of stimuli and thanks to core knowledge
+      you're able to discriminate them.
+    .slide
+      +show('.person-labelling')
+      .notes: :t()
+        And now along comes another person.  What are they doing?  Nothing yet.  But ...
+    .slide
+      +show('.label-label, .speech-bubble, .stimulus-to-label')
+      .notes: :t()
+        Oh look they're labelling stimuli.
+        So now the blue ones (say) are special.  You respond to them in one way and the 
+        other responds to them in her way, which is by labelling.
+    .slide
+      +show('.discriminate-to-label')
+      .notes: :t()
+        Now you can observe that your responses are correlated with her responses.
+        So when you discriminate in a certain way, she applies the label.
+        Observing this correspondence enables you to learn the label (say).
+        This is triangulation roughly as Davidson describes it.
+      .notes: :t()
+        And having got this far you can ask yourself what all the things labelled 
+        have in common.
+
+
+
+mixin fromActionToWordsFigure()
+  svg(width='580', height='400', xmlns='http://www.w3.org/2000/svg')
+    // Created with Method Draw - http://github.com/duopixel/Method-Draw/
+    g
+      title background
+      rect#canvas_background(fill='#000000', height='402', width='582', y='-1', x='-1')
+    g
+      title Layer 1
+      g.action
+        rect#svg_1(transform='rotate(1 103.99999237060923,327.00000000000006) ', stroke='#fff', height='73.999997', width='170.999991', y='290.000003', x='18.5', stroke-width='1.5', fill='none')
+        text#svg_2(transform='rotate(1 107.28124999999767,312.0000000000003) ', stroke='#000000', xml:space='preserve', text-anchor='start',  font-size='24', y='321', x='27.5', stroke-width='0', fill='#ffffff') understanding
+        text#svg_4(transform='rotate(1 60.92187499999651,334.9999999999998) ', stroke='#000000', xml:space='preserve', text-anchor='start',  font-size='24', y='344', x='27.5', stroke-width='0', fill='#ffffff') action
+      g.minds
+        rect#svg_5(transform='rotate(-3 287.9999999999974,327.99999999999983) ', stroke='#fff', height='73.999997', width='170.999991', y='291.000003', x='202.5', stroke-width='1.5', fill='none')
+        text#svg_6(stroke='#000000', xml:space='preserve', text-anchor='start',  font-size='24', y='322', x='211.5', stroke-width='0', fill='#ffffff') understanding
+        text#svg_7(stroke='#000000', xml:space='preserve', text-anchor='start',  font-size='24', y='345', x='214.5', stroke-width='0', fill='#ffffff') minds
+      g.joint-action
+        rect#svg_8(transform='rotate(1 234.99999999999855,254.99999999999946) ', stroke='#fff', height='73.999997', width='170.999991', y='218.000003', x='149.5', stroke-width='1.5', fill='none')
+        text#svg_9(transform='rotate(1 209.6874999999948,247.00000000000102) ', stroke='#000000', xml:space='preserve', text-anchor='start',  font-size='24', y='256', x='180.5', stroke-width='0', fill='#ffffff') joint
+        text#svg_10(transform='rotate(1 269.92187499999795,250.99999999999912) ', stroke='#000000', xml:space='preserve', text-anchor='start',  font-size='24', y='260', x='236.5', stroke-width='0', fill='#ffffff') action
+      g.referential
+        rect#svg_18(transform='rotate(-17 289.9999999999999,170.00000000000014) ', stroke='#fff', height='73.999997', width='170.999991', y='133.000003', x='204.5', stroke-width='1.5', fill='none')
+        text#svg_19(transform='rotate(-17 271.47656250000017,155) ', stroke='#000000', xml:space='preserve', text-anchor='start',  font-size='24', y='164', x='213.5', stroke-width='0', fill='#ffffff') referential
+        text#svg_20(transform='rotate(-6 294.75781250000017,177.99999999999972) ', stroke='#000000', xml:space='preserve', text-anchor='start',  font-size='24', y='187', x='212.5', stroke-width='0', fill='#ffffff') communication
+      g.communication-words
+        rect#svg_21(transform='rotate(1 378,83.99999999999892) ', stroke='#fff', height='73.999997', width='170.999991', y='47.000003', x='292.5', stroke-width='1.5', fill='none')
+        text#svg_22(transform='rotate(1 379.757812499999,68.99999999999928) ', stroke='#000000', xml:space='preserve', text-anchor='start',  font-size='24', y='78', x='297.5', stroke-width='0', fill='#ffffff') communication
+        text#svg_23(transform='rotate(1 367.3515624999989,92.00000000000138) ', stroke='#000000', xml:space='preserve', text-anchor='start',  font-size='24', y='101', x='308.5', stroke-width='0', fill='#ffffff') with words
+  block 
+
+
+
+
+mixin diagramActionGoalIndividual(p)
+  if typeof(p) === 'undefined'
+    - p = {}
+  if !('show' in p)
+    - p.show = []
+
+  svg(width='665px', height='445px', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', version='1.1')
+
+    defs
+      filter(id="glow-large", width='3', height='3', x='-.5', y='-.5')
+        feGaussianBlur(result='blurOut', in='SourceGraphic', stddeviation='15')
+        feGaussianBlur(result='blurOut2', in='SourceGraphic', stddeviation='10')
+        feGaussianBlur(result='blurOut3', in='SourceGraphic', stddeviation='5')
+        femerge
+          femergenode(in='blurOut')
+          femergenode(in='blurOut2')
+          femergenode(in='blurOut3')
+          femergenode(in='SourceGraphic')
+      filter(id="glow-small", width='1.5', height='1.5', x='-.25', y='-.25')
+        feGaussianBlur(result='blurOut', in='SourceGraphic', stddeviation='4')
+        feGaussianBlur(result='blurOut2', in='SourceGraphic', stddeviation='4')
+        femerge
+          femergenode(in='blurOut')
+          femergenode(in='blurOut2')
+          femergenode(in='SourceGraphic')
+      filter#dropGlowBlack(width='1.5', height='1.5', x='-.25', y='-.25')
+        fegaussianblur(in='SourceAlpha', stdDeviation='10', result='blur')
+        femerge
+          femergenode(in='blur')
+          femergenode(in='SourceGraphic')
+      g(id='action-ellipse')
+        ellipse(cx='0', cy='0', rx='40', ry='40', fill='#000', stroke='#ffffff', stroke-width='3', pointer-events='none', filter="url(#dropGlowBlack)")
+      g(id='action-ellipse-neon')
+        ellipse(cx='0', cy='0', rx='40', ry='40', fill='none', stroke='#A0A', stroke-width='3', pointer-events='none', filter='url(#glow-large)')
+        ellipse(cx='0', cy='0', rx='40', ry='40', fill='none', stroke='#2C75FF', stroke-width='3', pointer-events='none', filter='url(#glow-small)')
+        //- white line, no fill
+        ellipse(cx='0', cy='0', rx='40', ry='40', fill='none', stroke='#ffffff', stroke-width='3', pointer-events='none')
+    
+    g(transform='translate(0.5,0.5)')
+      g.action-light
+        ellipse(cx='42', cy='42', rx='40', ry='40', fill='#000000', stroke='#ffffff', stroke-width='3', pointer-events='none')
+        g(transform='translate(12,27)')
+          switch
+            foreignobject(pointer-events='all', width='59', height='32', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+              div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 59px; white-space: normal; text-align: center;')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                  font(color='#ffffff') light
+            text(x='30', y='28', fill='#000000', text-anchor='middle', font-size='24px', font-family='Lato') [Not supported by viewer]
+      g.action-smoke
+        ellipse(cx='132', cy='402', rx='40', ry='40', fill='#000000', stroke='#ffffff', stroke-width='3', pointer-events='none')
+        g(transform='translate(91,387)')
+          switch
+            foreignobject(pointer-events='all', width='81', height='32', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+              div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 81px; white-space: normal; text-align: center;')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                  font(color='#ffffff') smoke
+            text(x='41', y='28', fill='#000000', text-anchor='middle', font-size='24px', font-family='Lato') [Not supported by viewer]
+      g.joint-action
+        //- black fill, black glow (to cover actions behind)
+        rect(x='32', y='72', width='140', height='310', rx='21', ry='21', fill='#000000', stroke='#ffffff', stroke-width='3', pointer-events='none', filter='url(#dropGlowBlack)')
+        g.neon-rect.hide
+          rect(x='32', y='72', width='140', height='310', rx='21', ry='21', fill='none', stroke='#A0A', stroke-width='3', pointer-events='none', filter='url(#glow-large)')
+          rect(x='32', y='72', width='140', height='310', rx='21', ry='21', fill='none', stroke='#2C75FF', stroke-width='3', pointer-events='none', filter='url(#glow-small)')
+        //- white line, no fill
+        rect(x='32', y='72', width='140', height='310', rx='21', ry='21', fill='none', stroke='#ffffff', stroke-width='3', pointer-events='none')
+        g.action.drop
+          use( xlink:href='#action-ellipse', x='87', y='132')
+          g.neon-ellipse.hide
+            use( xlink:href='#action-ellipse-neon', x='87', y='132')
+          g(transform='translate(51,117)')
+            switch
+              foreignobject(pointer-events='all', width='61', height='32', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 61px; white-space: normal; text-align: center;')
+                  div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                    font(color='#ffffff') open
+              text(x='31', y='28', fill='#000000', text-anchor='middle', font-size='24px', font-family='Lato') [Not supported by viewer]
+        g.action.throw
+          use( xlink:href='#action-ellipse', x='82', y='242')
+          g.neon-ellipse.hide
+            use( xlink:href='#action-ellipse-neon', x='82', y='242')
+          g(transform='translate(44,227)')
+            switch
+              foreignobject(pointer-events='all', width='75', height='32', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 75px; white-space: normal; text-align: center;')
+                  div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                    font(color='#ffffff') pour
+              text(x='38', y='28', fill='#000000', text-anchor='middle', font-size='24px', font-family='Lato') [Not supported by viewer]
+        g.action.discard
+          use( xlink:href='#action-ellipse', x='112', y='312')
+          g.neon-ellipse.hide
+            use( xlink:href='#action-ellipse-neon', x='112', y='312')
+          g(transform='translate(68,297)')
+            switch
+              foreignobject(pointer-events='all', width='88', height='32', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 88px; white-space: normal; text-align: center;')
+                  div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                    font(color='#ffffff') tilt
+              text(x='44', y='28', fill='#000000', text-anchor='middle', font-size='24px', font-family='Lato') [Not supported by viewer]
+      g.outcome.amuse(class='#{p.show.indexOf("outcome")>-1 ? "" : "hide"}')
+        ellipse(cx='562', cy='92', rx='40', ry='40', fill='#000000', stroke='#ffffff', stroke-width='3', pointer-events='none')
+        g(transform='translate(521,77)')
+          switch
+            foreignobject(pointer-events='all', width='81', height='32', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+              div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 81px; white-space: normal; text-align: center;')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                  font(color='#ffffff') soak
+            text(x='41', y='28', fill='#000000', text-anchor='middle', font-size='24px', font-family='Lato') [Not supported by viewer]
+      g.outcome.scare(class='#{p.show.indexOf("outcome")>-1 ? "" : "hide"}')
+        ellipse(cx='562', cy='272', rx='40', ry='40', fill='#000000', stroke='#ffffff', stroke-width='3', pointer-events='none')
+        g(transform='translate(527,257)')
+          switch
+            foreignobject(pointer-events='all', width='69', height='32', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+              div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 69px; white-space: normal; text-align: center;')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                  font(color='#ffffff') scare
+            text(x='35', y='28', fill='#000000', text-anchor='middle', font-size='24px', font-family='Lato') [Not supported by viewer]
+      g.outcome.freakout(class='#{p.show.indexOf("outcome")>-1 ? "" : "hide"}')
+        ellipse(cx='522', cy='362', rx='40', ry='40', fill='#000000', stroke='#ffffff', stroke-width='3', pointer-events='none')
+        g(transform='translate(483,332)')
+          switch
+            foreignobject(pointer-events='all', width='77', height='62', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+              div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 75px; white-space: normal; text-align: center;')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                  font(color='#ffffff') freak out
+            text(x='39', y='43', fill='#000000', text-anchor='middle', font-size='24px', font-family='Lato') [Not supported by viewer]
+      g.outcome.block(class='#{p.show.indexOf("outcome")>-1 ? "" : "hide"}')
+        //- two glow for stronger effect
+        g.block-glow(class='#{p.show.indexOf("block-glow")>-1 ? "" : "hide"}')
+          ellipse.glow(cx='582', cy='182', rx='40', ry='40', fill='#000000', stroke='#ffffff', stroke-width='3', pointer-events='none', filter='url(#glow-large)')
+          ellipse.glow(cx='582', cy='182', rx='40', ry='40', fill='#000000', stroke='#ffffff', stroke-width='3', pointer-events='none', filter='url(#glow-large)')
+        ellipse.no-glow(cx='582', cy='182', rx='40', ry='40', fill='#000000', stroke='#ffffff', stroke-width='3', pointer-events='none')
+        g(transform='translate(547,167)')
+          switch
+            foreignobject(pointer-events='all', width='69', height='32', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+              div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 69px; white-space: normal; text-align: center;')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                  font(color='#ffffff') fill
+            text(x='35', y='28', fill='#000000', text-anchor='middle', font-size='24px', font-family='Lato') [Not supported by viewer]
+      g.explain-collective-directedness(class='#{p.show.indexOf("explain-collective-directedness") >-1 ? "" : "hide"}')
+        g.the-box
+          rect(x='242', y='262', width='210', height='60', rx='9', ry='9', fill='#ffffff', stroke='#ffffff', stroke-width='3', transform='rotate(-15,347,292)', pointer-events='none')
+          g(transform='translate(252,262)rotate(-15,94.5,30)')
+            switch
+              foreignobject(pointer-events='all', width='189', height='62', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 195px; white-space: normal; text-align: center;')
+                  div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;', class='invert')
+                    | intention
+                    span.mr.remove-me(class='#{p.show.indexOf("mr")>-1 ? "" : "hide"}').noinvert  or motor representation
+                    br
+                    span.iasmr(class='#{p.show.indexOf("iasmr")>-1 ? "" : "hide"}') or ???
+        g.coordinates(class='#{p.show.indexOf("coordinates") >-1 ? "" : "hide"}')
+          path(d='M 352 262 Q 332 212 307 192 Q 282 172 191.91 190.02', fill='none', stroke='#ffffff', stroke-width='3', stroke-miterlimit='10', pointer-events='none')
+          path(d='M 185.29 191.34 L 193.23 185.16 L 191.91 190.02 L 195 193.99 Z', fill='#ffffff', stroke='#ffffff', stroke-width='3', stroke-miterlimit='10', pointer-events='none')
+          g(transform='translate(199,155)')
+            switch
+              foreignobject(pointer-events='all', width='126', height='26', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; overflow: hidden; max-height: 26px; max-width: 156px; width: 126px; white-space: normal; text-align: center;')
+                  div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                    font(color='#ffffff') coordinates
+              text(x='63', y='25', fill='#000000', text-anchor='middle', font-size='24px') [Not supported by viewer]
+        g.represents(class='#{p.show.indexOf("represents")>-1 ? "" : "hide"}')
+          path(d='M 352 262 Q 342 222 392 207 Q 442 192 531.95 183.01', fill='none', stroke='#ffffff', stroke-width='3', stroke-miterlimit='10', pointer-events='none', filter="url(#dropGlowBlack)")
+          path(d='M 538.66 182.33 L 530.16 187.71 L 531.95 183.01 L 529.26 178.75 Z', fill='#ffffff', stroke='#ffffff', stroke-width='3', stroke-miterlimit='10', pointer-events='none', filter="url(#dropGlowBlack)")
+          g(transform='translate(374,167)rotate(-12,58,12)')
+            switch
+              foreignobject(pointer-events='all', width='116', height='26', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; overflow: hidden; max-height: 26px; max-width: 156px; width: 116px; white-space: normal; text-align: center;')
+                  div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                    font(color='#ffffff') specifies
+              text(x='58', y='25', fill='#000000', text-anchor='middle', font-size='24px') [Not supported by viewer]
+  

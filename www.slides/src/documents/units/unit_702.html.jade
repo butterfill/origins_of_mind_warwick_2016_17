@@ -1,0 +1,424 @@
+---cson
+layout: 'deck_unit'
+title: "The Teleological Stance"
+tags: []
+description: """
+  How do infants (and perhaps adults) identify the goals of observed actions?
+  The leading, best developed proposal is Gergely and Csibra’s Teleological Stance.
+  """
+---
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/origins_mixins
+
+section.slide
+  +_slide_middle_inner
+    p.center.huge-glow-180 How?
+  +reset
+    +_slide_middle_inner
+      p.center Infants can identify goals from around six months of age.
+
++slide_middle
+  p.center first specify the problem to be solved
+    span.step2.hide : goal ascription
+  .notes Let me first specify the problem to be solved.
+  .slide
+    +show('.step2')
+    
+
++slide
+  +diagramActionGoalIndividual
+  .notes: :t
+    As this illustrates, 
+    some actions involving are purposive in the sense that 
+  .slide
+    +show('.outcome')
+    .notes: :t
+      among all their actual and possible consequences, 
+  .slide
+    +show('.outcome.block .block-glow')
+    .notes: :t
+      there are outcomes to which they are directed
+  .slide
+    +show('.joint-action .neon-rect')
+    .notes: :t
+      In such cases we can say that the actions are clearly purposive.
+  //- .slide
+  //-   +show('.explain-collective-directedness')
+  //-   .notes: :t
+  //-     The standard answer to this question involves intention.
+  //- .slide
+  //-   +show('.represents')
+  //-   .notes: :t
+  //-     An intention (1) specifies an outcome,
+  //- .slide
+  //-   +show('.coordinates')
+  //-   .notes: :t
+  //-     (2) coordinates the one or several activities which comprise the action;
+  //-   .notes: :t
+  //-     and (3) coordinate these activities in a way that would normally facilitate the outcome’s occurrence.
+  //-   .notes: :t
+  //-     What binds particular component actions together into larger purposive actions?
+  //-     It is the fact that these actions are all parts of plans involving a single intention.
+  //-     What singles out an actual or possible outcome as one to which the component
+  //-     actions are collectively directed?  It is the fact that this outcome is
+  //-     represented by the intention.
+  //-   .notes: :t
+  //-     So the intention is what binds component actions together into purposive actions and
+  //-     links the action taken as a whole to the outcomes to which they are directed.
+
+
++slide({bkg:'goal_ascription_requirements/Slide1.jpg'})
+  .notes: :t
+    It is important to see that the third item---representing the directedness---is necessary.
+  .notes: :t
+    This is quite simple but very important, so let me slowly explain why goal ascription requires representing the directedness of an action to an outcome.
++slide({bkg:'goal_ascription_requirements/Slide2.jpg'})
+  .notes: :t
+    Imagine two people, Ayesha and Beatrice, who each intend to break an egg.
+    Acting on her intention, Ayesha breaks her egg.
+    But Beatrice accidentally drops her egg while carrying it to the kitchen.
+    So Ayesha and Beatrice perform visually similar actions which result in the same type of outcome,
+    the breaking of an egg; but Beatrice's action is not directed to the outcome of her action whereas
+    Ayesha's is.
++slide({bkg:'goal_ascription_requirements/Slide3.jpg'})
+  .notes: :t
+    Goal ascription requires the ability to distinguish between Ayesha's action and Beatrice's action. 
+    This requires representing not only actions and outcomes but also the directedness of actions to outcomes.
+  .notes: :t
+    This is why I say that goal ascription requires representing the directedness of an action to an outcome, and not just representing the action and the outcome.
+  
+
++slide_middle
+  p.center requirements on a solution to the problem ...
+  .notes Next consider requirements on a solution to the problem.
+
+
+
+mixin slide_about-teleological-function()
+  p aside: what is a teleological function?
+  .notes: :t()
+    What do we mean by teleological function?
+  .slide
+    .notes: :t()
+      Here is an example:
+      %
+      \begin{quote}
+    p.em-above.notes.show       Atta ants cut leaves in order to fertilize their fungus crops (not to thatch the entrances to their homes) \citep{Schultz:1999ps}
+    .notes      \end{quote}
+  .slide
+    .notes: :t()
+      What does it mean to say that the ants’ grass cutting has this goal rather than some other? According to Wright:
+      \begin{quote}
+    p.em-above.notes.show ‘S does B for the sake of G iff: (i) B tends to bring about G; (ii) B occurs because (i.e. is brought about by the fact that) it tends to bring about G.’ (Wright 1976: 39)
+    .notes \end{quote}
+  .slide
+    .notes: :t()
+      For instance:
+      %
+      \begin{quote}
+    p.em-above.notes.show The Atta ant cuts leaves in order to fertilize iff: (i) cutting leaves tends to bring about fertilizing; (ii) cutting leaves occurs because it tends to bring about fertilizing.
+    .notes \end{quote}
+
+
+
++slide_middle
+  p Requirements:
+  p.hem-around (1) reliably: R(a,G)  
+    span.when when
+    span  and 
+    span.only-when only when
+    span  a is directed to G
+  p.hem-around.readily-detectable (2) R(a,G) is  readily detectable
+  p.hem-around.detectable-without (3) R(a,G) is readily detectable without any knowledge of mental states
+  p.hem-around &nbsp;
+  p.hem-around.candidate-causes.hide R(a,G) =df a causes G?
+  p.hem-around.candidate-teleological.hide R(a,G) =df a has the teleological function G?
+  p.hem-around.candidate-ts.hide R(a,G) =df a ‘is seen as the most justifiable action towards [G] that is available within the constraints of reality’?
+  .slide
+    +show('.candidate-causes')
+    .notes: :t
+      How about taking $R$ to be causation?
+      That is, how about defining $R(a,G)$ as $a$ causes $G$?
+      This proposal does not meet the first criterion, (1), above.
+      We can see this by mentioning two problems.
+
+      [*Might skip over-generate and discuss that as a problem for Rationality/Efficiency]
+      First problem: actions typically have side-effects which are not goals.
+      For example,
+      %---not a good example because can't be avoided by any account
+      %--- (would require attribution of desire)
+      %For example, walking to the corner results in me warming up, in me expending energy, and in me being at the corner.
+      %Sometimes I walk to the corner for exercise,
+      %so that being at the corner is an unwanted side-effect (I then have to walk back).
+      %And sometimes I walk to the corner to be at the corner (so that expending energy is an unwanted side-effect, I'd rather have been chauffeured there).  
+      suppose that I walk over here with the goal of being next to you.
+      This action has lots of side-effects: 
+      \begin{itemize}
+      \item 	I will be at this location.
+      \item	I will expend some energy.
+      \item	I will be further away from the front
+      \end{itemize}
+      These are all causal consequence of my action.
+      But they are not goals to which my action is directed.
+      So this version of $R$ will massively over-generate goals.
+
+      Second problem: actions can fail.  [...]
+      So this version of $R$ will under-generate goals.
+    .slide
+      +highlight('.only-when', 'red')
+    .slide
+      +unhighlight('.only-when', 'red')
+      +highlight('.when', 'red')
+    .slide
+      +unhighlight('.when', 'red')
+      +blur('.candidate-causes')
+  .slide
+    +show('.candidate-teleological')
+    .notes: :t
+      Why not define $R$ in terms of teleological function?
+      This would enable us to meet the first condition but not the second.
+      How could we tell whether an action happens because it brought about a particular outcome in the past? 
+      This might be done with insects.
+      But it can's so easily be done with primates, who have a much broader repertoire of actions.
+    .slide.about-teleological-function
+      +clear-slide
+        +slide_about-teleological-function
+    .slide
+      +hide('.about-teleological-function *')
+    .slide
+      +highlight-row('.detectable-without')
+    .slide
+      +unhighlight-row('.detectable-without')
+      +highlight-row('.readily-detectable','red')
+    .slide
+      +unhighlight-row('.readily-detectable','red')
+      +blur('.candidate-teleological')
+  .slide
+    +show('.candidate-ts')
+    
+  
+    
+
+//- Teleological Stance
++teleologicalStanceSlide({step:true, handout:true})
+
+//- more complex version of teleological stance
+//-
+//- section.slide
+//-   .words: .container_12
+//-     .grid_3
+//-       p.quote.notes.handout.show(style='border-right:1px grey dashed;padding-right:9px;margin-right:-9px')
+//-         span ‘an action can be explained by a
+//-         span.goal-state goal state
+//-         span  if, and only if, it is
+//-         span.seen-as seen as
+//-         span  the
+//-         span.most-justifiable
+//-           span.most most
+//-           span  justifiable action
+//-         span towards that
+//-         span.goal-state goal state
+//-         span  that is available within the constraints of reality’
+//-       .notes.handout.ctd \citep[p.~255]{Csibra:1998cx}
+//-       p.quote.right.grey-text Csibra & Gergely (1998, 255)
+//-     .slide
+//-       +invert('.goal-state')
+//-       .notes: :t
+//-         A goal is an outcome to which an action is directed.
+//-         A goal-state is a representation of the outcome in virtue of which
+//-         the action is directed to that outcome.
+//-         So an intention is a goal state.
+//-         By contrast, a goal is not a mental state at all.
+//-         In order for this to be about *pure* goal ascription, we need to ignore
+//-         the Csibra and Gergely’s odd choice of terminology.
+//-     .slide
+//-       +uninvert('.goal-state')
+//-     .slide
+//-       +highlight('.most-justifiable')
+//-     .slide
+//-       .grid_9
+//-         p.step1.hide 1. action a is directed to some goal;
+//-         p.step2.hide  2. actions of a’s type are
+//-           span.normally normally
+//-           span  means of realising outcomes of G’s type;
+//-         p.step3.hide 3. no available alternative action is a significantly
+//-           span.better better*
+//-           span  means of realising outcome G;
+//-         p.step4.hide 4. the occurrence of outcome G is
+//-           span.desirable desirable
+//-           span ;
+//-         p.step5.hide 5. there is no other outcome, G′, the occurrence of which would be at least comparably desirable and where (2) and (3) both hold of G′ and a
+//-         p.step6.hide Therefore:
+//-         p.step7 6.
+//-           span.g G
+//-           span   is a goal to which action
+//-           span.a a
+//-           span   is directed.
+//-       .slide
+//-         +invert('.step7 .g')
+//-       .slide
+//-         +uninvert('.step7 .g')
+//-         +invert('.step7 .a')
+//-       .slide
+//-         +uninvert('.step7 .a')
+//-       .slide
+//-         +show('.step1')
+//-         .notes: :t
+//-           We start with the assumption that we know the event is an action.
+//-       .slide
+//-         +show('.step2')
+//-       .slide
+//-         +unhighlight('.most-justifiable')
+//-         +invert('.normally')
+//-       .slide
+//-         +invert('.seen-as')
+//-         .notes: :t
+//-           Why normally? Because of the ‘seen as’.
+//-       .slide
+//-         +uninvert('.normally')
+//-         +uninvert('.seen-as')
+//-       .slide
+//-         +invert('.most')
+//-       .slide
+//-         +show('.step3')
+//-       .slide
+//-         +uninvert('.most')
+//-       .slide
+//-         +invert('.better')
+//-         .notes: :t
+//-           What does it mean to say that one means is better than another?
+//-           There are different respects in which one action can be better than another as a means
+//-           to some realising some outcome; for example, one action can require less effort than
+//-           another, or one action be a more reliable way to bring the outcome about than another.
+//-         .notes.handout: :t
+//-           An action of type $a'$ is a \emph{better} means of realising outcome $G$ in a given situation than an action of type $a$ if, for instance, actions of type $a'$ normally involve less effort than actions of type $a$
+//-           in situations with the salient features of this situation
+//-           and everything else is equal;
+//-           or if, for example, actions of type $a'$ are normally more likely to realise outcome $G$ than actions of type $a$
+//-           in situations with the salient features of this situation
+//-           and everything else is equal.
+//-
+//-       .slide
+//-         +uninvert('.better')
+//-       .slide
+//-         +blur('.quote')
+//-         +show('.step6')
+//-         .notes: :t
+//-           Any objections?
+//-         .notes: :t
+//-           I have an objection.
+//-           Consider a case in which I perform an action directed to
+//-           the outcome of pouring some hot tea into a mug.
+//-           Could this pattern of inference imply that the outcome be the goal of my action?
+//-           Only if it also implies that moving my elbow is a goal of my action
+//-           as well.
+//-           And pouring some liquid.
+//-           And moving air in a certain way.
+//-           And ...
+//-         .notes: :t
+//-           How can we avoid this objection?
+//-       .slide
+//-         +show('.step4')
+//-       .slide
+//-         +highlight('.desirable')
+//-         .notes: :t
+//-           Doesn’t this conflict with the aim of explaining *pure* behaviour reading?
+//-           Not if desirable is understood as something objective.
+//-           [explain]
+//-       .slide
+//-         +unhighlight('.desirable')
+//-         .notes: :t
+//-           Now we are almost done, I think.
+//-       .slide
+//-         +show('.step5')
+//-         .notes: :t
+//-           We just need to add a clause ensuring that the goal in question is maximally
+//-           desirable; this is an attempt to reduce overgeneration of goals.
+//-       .slide
+//-         +unblur('.quote')
+//-         .notes: :t
+//-           OK, I think this is reasonably true to the quote.
+//-           So we’ve understood the claim.
+//-           But is it true?
+//-       .slide
+//-         +blur('.quote')
+//-         +invert('.better')
+//-         .notes: :t
+//-           How good is the agent at optimising the selection of means to her goals?
+//-           And how good is the observer at identifying the optimality of means in relation to outcomes?
+//-           \textbf{
+//-           For optimally correct goal ascription, we want there to be a match between
+//-           (i) how well the agent can optimise her choice of means
+//-           and
+//-           (i) how well the observer can detect such optimality.}
+//-           Failing such a match, the inference will not result in correct goal ascription.
+//-         .notes: :t
+//-           But I don’t think this is an objection to the Teleological Stance as a
+//-           computational theory of pure goal ascription.  It is rather a detail
+//-           which concerns the next level, the level of representations and algorithms.
+//-           The computational theory imposes demands at the next level.
+//-         .handout: :t
+//-           ‘Such calculations require detailed knowledge of biomechanical factors that
+//-           determine the motion capabilities and energy expenditure of agents. However,
+//-           in the absence of such knowledge, one can appeal to heuristics that approximate
+//-           the results of these calculations on the basis of knowledge in other domains
+//-           that is certainly available to young infants. For example, the length of
+//-           pathways can be assessed by geometrical calculations, taking also into
+//-           account some physical factors (like the impenetrability of solid objects).
+//-           Similarly, the fewer steps an action sequence takes, the less effort it might
+//-           require, and so infants’ numerical competence can also contribute to efficiency
+//-           evaluation.’ \citep{csibra:2013_teleological}
+//-
+
+
++slide_middle
+  p Requirements:
+  p.hem-around (1) reliably: R(a,G)  
+    span.when when
+    span  and 
+    span.only-when only when
+    span  a is directed to G
+  p.hem-around.readily-detectable (2) R(a,G) is  readily detectable
+  p.hem-around.detectable-without (3) R(a,G) is readily detectable without any knowledge of mental states
+  p.hem-around &nbsp;
+  p.hem-around.candidate-teleological.hide R(a,G) =df a causes G?
+  p.hem-around.candidate-causes.hide R(a,G) =df a causes G?
+  p.hem-around.candidate-ts.hide R(a,G) =df a ‘is seen as the 
+    span.most-justifiable most justifiable
+    span  action towards [G] that is available within the constraints of reality’?
+  +show('.candidate-teleological', 0)
+  +blur('.candidate-teleological', '2px', 0)
+  +show('.candidate-causes', 0)
+  +blur('.candidate-causes', '2px', 0)
+  +show('.candidate-ts', 0)
+  .slide
+    +invert('.most-justifiable')
+    .notes: :t
+      It will work if we can match observer and agent: both must be ‘equally optimal’.
+      But how can we ensure this?
+  .slide
+    +highlight('.only-when', 'orange')
+    +highlight('.when', 'orange')
+    .notes: :t
+      How good is the agent at optimising the rationality, or the efficiency, of her actions?
+      And how good is the observer at identifying the optimality of actions in relation to outcomes?
+      \textbf{
+      If there are too many discrepancies between
+      		how well the agent can optimise her actions
+      	and
+      		how well the observer can detect optimality,
+      then these principles will fail to be sufficiently reliable}.
+    
+
+
+
+section.slide
+  +_slide_middle_inner
+    p.center.huge-glow-180 How?
+  +reset
+    +_slide_middle_inner
+      p.center Infants can identify goals from around six months of age.
+    .notes: :t
+      The Teleological Stance is a proposed solution.
+

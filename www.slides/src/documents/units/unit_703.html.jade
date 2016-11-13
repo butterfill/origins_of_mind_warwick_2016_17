@@ -1,0 +1,320 @@
+---cson
+layout: 'deck_unit'
+title: "Action Observation by Adults"
+tags: []
+description: """
+  When adults observe actions, their anticipatory looking indicates 
+  an ability to identify goals.  What underpins these abilities?
+  """
+---
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/origins_mixins
+
+
++slide
+  +img_clip('flanagan_2003_fig1.png')
+  p.source Flanagan and Johansson, 2003 figure 1 (part)
+  .notes.handout: :t
+    \citep{Flanagan:2003lm} showed that 
+    ‘patterns of eye–hand coordination are similar when performing and observing a block stacking task’.
+
+
++slide({bkg:'costantini_2012.png'})
+  p.source Costantini et al, 2012
+  .notes: :t
+    ‘We recorded proactive eye movements while participants observed an actor
+    grasping small or large objects. The participants' right hand either freely
+    rested on the table or held with a suitable grip a large or a small object,
+    respectively. Proactivity of gaze behaviour significantly decreased when
+    participants observed the actor reaching her target with a grip that was
+    incompatible with respect to that used by them to hold the object in their
+    own hand.’
+  .notes: :t
+    Follow ups: tie hands; TMS (impair)
+  .notes: :t
+    Planning-like processes in action observation have also been demonstrated
+    by measuring observers' predictive gaze. If you were to observe just the
+    early phases of a grasping movement, your eyes might jump to its likely
+    target, ignoring nearby objects \citep{ambrosini:2011_grasping}. These
+    proactive eye movements resemble those you would typically make if you were
+    acting yourself \citep{Flanagan:2003lm}. Importantly, the occurrence of
+    such proactive eye movements in action observation depends on your
+    representing the outcome of an action motorically; even temporary
+    interference in the observer's motor abilities will interfere with the eye
+    movements \citep{Costantini:2012fk}.
+  .notes.handout: :t
+    In human adults, motor representations and processes enable anticipatory looking
+    that is driven by goal ascription \citep[e.g.][]{Costantini:2012fk,ambrosini:2012_tie}.
+
+  
+section.slide
+  +_slide_middle_inner
+    p.center.huge-glow-180 How?
+  +reset
+    +_slide_middle_inner
+      p.center.notes.show Motor representations ocurring in action observation sometimes facilitate the identification of goals.
+      .notes  What are those motor representations doing here?
+
+
+
+
++slide
+  p.notes.show The Motor Theory :
+    p goal ascription is acting in reverse
+  .notes: :t()
+    The idea is that we could solve the problem--the problem of matching optimisation in planning 
+    actions 
+    with optimisation in predicting them--by supposing that a single set of mechanisms is used 
+    twice, once in planning action and once again in observing them.
+  .notes: :t()
+    What does this require?
+  .slide
+    p.em-above.notes.show -- in action observation, possible outcomes of observed actions are represented
+  .slide
+    p.em-above.notes.show -- these representations trigger planning as if performing actions directed to the outcomes
+  .slide
+    p.em-above.notes.show -- such planning generates predictions
+    .notes predictions about joint displacements and their sensory conseuqences
+  .slide
+    p.em-above.notes.show -- a triggering representation is weakened if its predictions fail
+  .notes: :t()
+    The proposal is not specific to the idea of motor representations and processes,
+    although there is good evidence for it (which I won't cover here because we're in Milan!)
+
+
+  
+
++slide
+  +img_clip('sinigaglia_butterfill_2005_fig1.png')
+  p.source Sinigalia & Butterfill 2015, figure 1
+  .notes: :t
+    There is evidence that a motor representation of an outcome can cause a determination of which movements are likely to be performed to achieve that outcome \citep[see, for instance,][]{kilner:2004_motor, urgesi:2010_simulating}. Further, the processes involved in determining how observed actions are likely to unfold given their outcomes are closely related, or identical, to processes involved in performing actions. 
+    This is known in part thanks to studies of how observing actions can facilitate performing actions congruent with those observed, and can interfere with performing incongruent actions \citep{
+    	brass:2000_compatibility, 
+    	craighero:2002_hand, 
+    	kilner:2003_interference, 
+    	costantini:2012_does}. 
+    Planning-like processes in action observation have also been demonstrated by measuring observers' predictive gaze.  If you were to observe just the early phases of a grasping movement, your eyes might jump to its likely target, ignoring nearby objects \citep{ambrosini:2011_grasping}. These proactive eye movements resemble those you would typically make if you were acting yourself \citep{Flanagan:2003lm}. 
+    Importantly, the occurrence of such proactive eye movements in action observation depends on your
+    representing the outcome of an action motorically; even temporary interference in the observer's
+    motor abilities will interfere with the eye movements \citep{Costantini:2012fk}.
+    These proactive eye movements also depend on planning-like processes; requiring the observer to
+    perform actions incongruent with those she is observing can eliminate proactive eye movements
+    \citep{Costantini:2012uq}. This, then, is further evidence for planning-like motor processes in
+    action observation.
+  .notes: :t
+    So observers represent outcomes motorically and these representations trigger planning-like processes
+    which generate expectations about how the observed actions will unfold and their sensory consequences.
+    Now the mere occurrence of these processes is not sufficient to explain why, in action observation,
+    an outcome represented motorically is likely to be an outcome to which the observed action is
+    directed.
+  .notes: :t
+    To take a tiny step further, we conjecture that, in action observation, \textbf{motor representations of
+    outcomes are weakened to the extent that the expectations they generate are unmet}
+    \citep[compare][]{Fogassi:2005nf}.
+    A motor representation of an outcome to which an observed action is not directed is likely to
+    generate incorrect expectations about how this action will unfold, and failures of these
+    expectations to be met will weaken the representation.
+    This is what ensures that there is a correspondence between outcomes represented motorically in
+    observing actions and the goals of those actions.
+    
+
+
+section.slide
+  +_slide_middle_inner
+    p.center.huge-glow-180 How?
+  +reset
+    +_slide_middle_inner
+      p.center Motor representations ocurring in action observation sometimes facilitate the identification of goals.
+    .notes: :t
+      Now we’ve solved this: the Motor Theory of Goal Ascription is the solution.
+
+
+
++slide_middle
+  .notes: :t
+    Recall David Marr’s famous three-fold distinction
+    between levels of description of a system: the computational theory, the 
+    representations and algorithm, and the hardware implementation.  
+  .computational.hem-around
+    p 1. computational description
+    p.indent -- What is the thing for and how does it achieve this?
+  .rep-and-alg.hem-around
+    p 2. representations and algorithms
+    p.notes.show.indent -- How are the inputs and outputs represented, and how is the transformation accomplished?
+  .hardware.hem-around
+    p 3. hardware implementation
+    p.indent -- How are the  representations and algorithms physically realised?
+  p.right.grey-text Marr (1992, 22ff)
+  .slide
+    +highlight-row('.computational')
+    .notes: :t
+      The teleological stance  provides a computational description of goal ascription.
+  .slide
+    +unhighlight-row('.computational')
+    +highlight-row('.rep-and-alg')
+    .notes: :t
+      The motor theory of goal ascription provides an account of the 
+      representations and algorithms, one that competes with Csibra and Gergely’s 
+      account based on general reasoning.
+
+
+
++slide_rh_white({step:true})
+  +left_half
+    p Adults
+    ol.hem-around-children.notes.show
+      li: :t
+        Proactive gaze indicates fast goal ascription.
+      li.slide: :t
+        The Teleological Stance provides a computational description of the goal ascription
+        underpinning adults’ proactive gaze
+      li.slide: :t
+        Proactive gaze depends on motor processes and representations: the
+        Motor Theory provides an account of the representations
+        and algorithms.
+  +right_half({step:true})
+    p Infants
+    ol.hem-around-children
+      li: :t
+        Proactive gaze (from ~12 months) and violation-of-expectations (from ~3
+        months) indicate goal ascription.
+      li.slide: :t
+        The Teleological Stance ...
+      li.slide
+        span.two-c Two conjectures
+        span  about algorithms and representations ...
+    .slide
+      +highlight('.two-c')
+      .notes Is there any evidence? ...
+
+
++slide_middle
+  p.center evidence?
+
+//- HERE: the plan is to discuss evidence on performance vs observation in infants
+//- include sticky mittens, but also Daum on contralateral reaching
+
+//-
+//- section.slide
+//-   .words
+//-     .container_12: .grid_12
+//-       .notes I already mentioned this classic study by Heider and Simmel.
+//-       .notes This kind of study has been done with human adults quite a bit since then.
+//-       .notes It is quite tempting to suppose that what we see here is automatic ascription of goals in adults.
+//-       .step1
+//-         img(src='/img/heider_1946_fig1.png')
+//-         p.source Heider and Simmel, figure 1
+//-   .slide
+//-     +fade('.step1')
+//-     +blur('.step1')
+//-     div(style='position: absolute; top:0; left:0; width:100%; height:100%;')
+//-       .container_12: .grid_12
+//-         .words: .middle
+//-           p.center automatic? perceptual?
+//-           .notes But is it automatic?  Is it perceptual?  Is there any evidence?
+//-
+//- +slide
+//-   .notes \citet{Premack:1990jl} and \citet{Scholl:2000eq} all draw a parallel between causation and action.
+//-   .notes (Premack's hypothesis that infants' understanding of intention is comparable to the understanding of causal interactions as shown by Michotte's launching stimuli (\citep{Premack:1990jl}; see also \citep{Premack:1997ek}).)
+//-   .notes We saw (back in lecture 4) that there is quite convincing evidence that causal interactions are represented in perceptual proceses.
+//-   .notes So if there is really a parallel, we could infer that relations between actions and goals are represented in perceptual processes too.
+//-   p.handout.show ‘just as the visual system works to recover the physical structure of the world by inferring properties such as 3-D shape, so too does it work to recover the
+//-     span.causal-and-social causal and social
+//-     span   structure of the world by inferring properties such as causality’
+//-   p.right Scholl & Tremoulet 2000, p. 299
+//-   .handout.ctd \citep[p.\ 299]{Scholl:2000eq}
+//-   +invert('.causal-and-social')
+//-
+//- +slide({bkg:'slide_emergence_warwick_099.jpg'})
+//-   .notes [Here I'm not trying to provide evidence, only to explain what the claim commits us to.]
+//-   .notes Recall this habituation experiment.
+//-   .notes they suggets that both
+//- +slide({bkg:'slide_emergence_warwick_102.jpg'})
+//-   .notes The new Gergely et al experiment about action is based on the same habituation technique.
+//- +slide({bkg:'slide_emergence_warwick_103.jpg'})
+//- +slide({bkg:'slide_emergence_warwick_104.jpg'})
+//- +slide({bkg:'slide_emergence_warwick_105.jpg'})
+//- +slide({bkg:'slide_emergence_warwick_106.jpg'})
+//-   .notes If I had more time, I'd tell you a long story about speech and action.
+//-   .notes Maybe some of us will get together another time and I can tell you that story then.
+//-   .notes (*nb: \citep{zwickel:2010_interference} also argue for perceptual categories in perceiving actions, and do so by comparison with pop-out effects for orientations.)
+//-
+//- +slide_middle
+//-   p.center evidence?
+//-
+//-
+//-
+//- +slide
+//-   .notes Subjects have to judge whether the dot is to the left or the right of the triangle (from their perspective).
+//-   .notes If you think this is just a triangle, then it doesn't have a left or right so there's no congruent or incongruent.
+//-   .notes But if you think the triangle performs goal directed actions, then in the figure on the top right, the dot is left of the triangle from your point of view but right of the triangle from its point of view.
+//-   .notes Could there be altercentric interference?
+//-   +img_clip('zwickel_2011_fig1.png', 'rect(0,1000px,225px,0)')
+//-   p.source Zwickel et al 2011, figure 1
+//-   +clip('img:eq(0)','auto')
+//-
+//- +slide
+//-   .notes Here are the results.
+//-   .notes When the triangle makes random movements: there's no difference in RT between congruent and incongruent conditions.  (As you'd expect---this just shows that there's nothing wrong with the setup.)
+//-   .notes (The experiment involved comparing neurotypical (ordinary) subjects with AS subjects; that's interesting but too complex for us so we'll just focus on the neurotypical subjects' perforamnce.)
+//-   .notes Could there be altercentric interference?
+//-   +img_clip('zwickel_2011_fig2.png', 'rect(0,375px,1000px,0)')
+//-   p.source Zwickel et al 2011, figure 2
+//-   +clip('img:eq(0)','auto')
+//-
+//- section.slide
+//-   .container_12: .grid_12
+//-     .words
+//-       .notes What can we conclude?
+//-       .notes For adults, tracking information about goals makes one susceptible to interference from other other's perspective---it makes one susceptible to evaluting left and right from another's point of view.
+//-       .notes This altercentric interference effect is a long way short of showing that the goal ascription is automatic or perceptual.
+//-       .notes After all, such interference might be a consequence of thinking reflectively about the goals of the objects.
+//-       .notes But it is at least a step in the direction in that it shows that, in adults, goal ascription can at least have effects on automatic processes.
+//-       .notes (If automatic processes are informationally encapsulated, then this is evidence that goal ascription is automatic.)
+//-       .notes (*Other evidence: \citep{Gao:2010,Teufel:2010})
+//-       +img_clip('zwickel_2011_fig1.png', 'rect(0,1000px,225px,0)')
+//-       p.source Zwickel et al 2011, figure 1
+//-   //- *reset
+//-   div(style='position: absolute; top:0; left:0; width:100%; height:100%;')
+//-     .container_12: .grid_12
+//-       .words: .middle
+//-         p.center altercentric interference
+//-
+//-
+//-
+//- +slide_middle
+//-   .notes Would be nice to talk about this but we don't have time (could use some Brian Hare experiments; also Gomez?.)
+//-   p.center nonhuman primates
+
+
+
+
++slide_rh_white({step:true})
+  +left_half
+    p So far ...
+    ol.hem-around-children
+      li: :t
+        Infants track the goals to which actions are directed from around three
+        months of age.
+      li.slide: :t
+        Adults’ abilities to track goal-directed action may resemble infants’
+        abilities to track causal interactions in being based on motor processes
+        and representations.
+    .notes (The three months of age figure comes from \citet{Sommerville:2005te}.)m
+  +right_half({step:true})
+    .notes So it's maybe plausible there is core knowledge of action.
+    .notes What we haven't done here (and can't do, as far as I know) is to show that infants lack knowledge knowledge of action.
+    .notes So it's open to someone to deny that infants have core knowledge of action on the grounds that they have knowledge knowledge of it.
+    p core knowledge of
+    ol
+      li (colour)
+      li physical objects
+      li mental states 
+      li (syntax)
+      li: span.action action
+      li number
+      +highlight('.action')
+
+

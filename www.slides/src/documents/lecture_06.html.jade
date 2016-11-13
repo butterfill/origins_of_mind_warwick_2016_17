@@ -1,0 +1,31 @@
+---
+layout: 'default2'
+title: 'Lecture 06'
+weburl: ''
+units: []
+lecture_date: '2016/11/17'
+hidden: false
+---
+
+include ../../fragments/lecture_mixins
+include ../../fragments/unit_mixins
+include ../../fragments/origins_mixins
+
+
+- var images = get_images('bees')
+
++title_slide({document:document, images:images})
+
+//- crossing the gap
++insert_unit({unit:'690', title_slide:false, images:images})
+
+//- action: the basics
++insert_unit({unit:'701', title_slide:true, images:images})
+
+//- teleological stance
++insert_unit({unit:'702', title_slide:true, images:images})
++insert_unit({unit:'704', title_slide:true, images:images})
+
+//- action understanding in adults
++insert_unit({unit:'703', title_slide:true, images:images})
+

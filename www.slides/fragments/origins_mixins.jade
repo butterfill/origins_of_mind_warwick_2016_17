@@ -613,10 +613,19 @@ mixin crossingTheGapSlide(p)
   if !('step' in p)
     - p.step = false
   - slideCls = p.step ? 'slide' : ''
+  if !('handout' in p)
+    - p.handout = false
 
+  if p.handout
+    .handout: :t
+      Core knowledge exists.
+    .handout: :t
+      There is a gap between core knowledge and knowledge knowledge.
+    .handout: :t
+      Crossing the gap involves social interactions, perhaps involving words.
   +slide_middle
     ol.hem-around-children
-      li.ck-is-real Core knowledge is real.
+      li.ck-is-real Core knowledge exists.
       .notes: :t
         Core knowledge is real. Infants’ have unexpectedly sophisticated abilities concerning physical objects
         and categorical colour properties (and much more) even from the first year of life.
@@ -643,7 +652,8 @@ mixin teleologicalStanceSlide(p)
   section.slide
     .words: .container_12
       .grid_3
-        p.quote.notes.show(class="#{(p.handout ? 'handout' : '')}", style='border-right:1px grey dashed;padding-right:9px;margin-right:-9px')
+        .notes(class="#{(p.handout ? 'handout' : '')}") The Teleological Stance:
+        p.quote.notes.ctd.show(class="#{(p.handout ? 'handout' : '')}", style='border-right:1px grey dashed;padding-right:9px;margin-right:-9px')
           span ‘an action can be explained by a goal state if, and only if, it is 
           span.seen-as seen as 
           span  the 

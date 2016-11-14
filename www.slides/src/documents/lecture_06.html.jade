@@ -29,3 +29,35 @@ include ../../fragments/origins_mixins
 //- action understanding in adults
 +insert_unit({unit:'703', title_slide:true, images:images})
 
++insert_unit({unit:'709', title_slide:true, images:images})
+
++slide_middle
+  p.center.huge-glow conclusions
+  
++slide_middle
+  p What do infants understanding of goal-directed actions?
+  .em-around-children
+    p.first.indent They can identify goals from around 3 months of age,
+    p.second.indent but this does not imply knowledge of action
+    p.indent because infants’ abilities, like adults’, involve motor processes (and perhaps associative learning too).
+  .slide
+    +highlight-row('.first')
+    .notes: :t
+      Emphasize: (1) that they understand action is important because we can use it
+      to build an account of how you get from core knowledge to knowledge knowledge
+  .slide
+    +unhighlight-row('.first')
+    +highlight-row('.second')
+    .notes: :t
+      Emphasize: (2) that their understanding of action does not involve 
+      knowledge is important because it allows us to invoke it without
+      assuming capacities for any knowledge at all on the part of the infant.
+      (And because it leaves us with a question about how infants get from
+      core knowledge of action to knowledge of action.)
+
++slide_middle
+  p.center core knowledge of action?
+
+
++slide
+  +fromActionToWordsFigure

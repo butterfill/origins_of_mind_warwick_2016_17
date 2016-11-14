@@ -94,7 +94,7 @@ section.slide
   .notes Next consider requirements on a solution to the problem.
 
 
-
+//- This is used as an aside in the next slide
 mixin slide_about-teleological-function()
   p aside: what is a teleological function?
   .notes: :t()
@@ -120,6 +120,45 @@ mixin slide_about-teleological-function()
     p.em-above.notes.show The Atta ant cuts leaves in order to fertilize iff: (i) cutting leaves tends to bring about fertilizing; (ii) cutting leaves occurs because it tends to bring about fertilizing.
     .notes \end{quote}
 
+mixin slide_about_intentions_and_goal_ascription()
+  .notes: :t
+    \citet{Premack:1990jl} writes:
+  p.em-above 
+    span.handout.notes.show 
+      span ‘in perceiving one object as having the intention of affecting another, the infant 
+      span.intentions.show attributes to the object [...] intentions
+      span ’
+  .handout.notes.ctd \citep[p.\ 14]{Premack:1990jl}
+  p.right.grey-text Premack, 1990 p. 14
+  .slide
+    p.em-above: :t
+      ‘infants understand intentions as existing independently of
+      particular concrete actions and as residing within the individual.
+      [This] is essential to recovering intentions from observed
+      actions’
+    p.right.grey-text Woodward, 2009 p. 53
+    .handout.notes.ctd \citep[p.~53]{woodward:2009_infants}
+    .notes Woodward et al qualify this view elsewhere
+    .notes.handout: :t
+      ‘to the extent that young infants are limited [...], their
+      understanding of intentions would be quite different from the mature
+      concept of intentions’
+      \citep[p.\ 168]{woodward:2001_making}.
+  .slide
+    .notes By contrast, Geregely et al reject this possibility ...
+    p.em-above 
+      span.handout.notes.show 
+        span ‘by taking the intentional stance the infant can come to represent the agent’s action as 
+        span intentional 
+        span.no-intention1 without actually attributing a mental representation 
+        span of the future goal state’
+    p.right Gergely et al 1995, p. 188
+    .handout.notes.ctd \citep[p.\ 188]{Gergely:1995sq}
+    +highlight('.no-intention1')
+    .notes: :t()
+      Btw, it isn't clear that this proposal can work (as introduced by Dennett, the intentional stance 
+      involves ascribing mental states), as these authors probably realised later, but the point 
+      about not representing mental states is good.
 
 
 +slide_middle
@@ -130,11 +169,13 @@ mixin slide_about-teleological-function()
     span.only-when only when
     span  a is directed to G
   p.hem-around.readily-detectable (2) R(a,G) is  readily detectable
-  p.hem-around.detectable-without (3) R(a,G) is readily detectable without any knowledge of mental states
+  p.hem-around.detectable-without (3) R(a,G) is readily detectable  
+    span.without-k-of-mental-states without any knowledge of mental states
   p.hem-around &nbsp;
-  p.hem-around.candidate-causes.hide R(a,G) =df a causes G?
-  p.hem-around.candidate-teleological.hide R(a,G) =df a has the teleological function G?
-  p.hem-around.candidate-ts.hide R(a,G) =df a ‘is seen as the most justifiable action towards [G] that is available within the constraints of reality’?
+  p.candidate-causes.hide R(a,G) =df a causes G?
+  p.candidate-intention.hide R(a,G) =df a is caused by an intention to G?
+  p.candidate-teleological.hide R(a,G) =df a has the teleological function G?
+  p.candidate-ts.hide R(a,G) =df a ‘is seen as the most justifiable action towards [G] that is available within the constraints of reality’?
   .slide
     +show('.candidate-causes')
     .notes: :t
@@ -173,6 +214,38 @@ mixin slide_about-teleological-function()
     .slide
       +unhighlight('.when', 'red')
       +blur('.candidate-causes')
+  .slide
+    +show('.candidate-intention')
+    .notes: :t
+      R(a,G) =df a is caused by an intention to G?
+    .slide.about-intention
+      +clear-slide
+        +slide_about_intentions_and_goal_ascription
+  .slide
+    +hide('.about-intention')
+  .slide
+    +highlight-row('.detectable-without')
+  .slide
+    +highlight('.without-k-of-mental-states', 'red')
+    .notes: :t
+      The requirement that R(a,G) be detectable without any knowledge of mental
+      states is not met.  Why impose this requirement?
+      Imagine you are a three-month-old infant. Let’s assume that you know what
+      intentions are and can represent them. Still, on what basis can you
+      determine the intentions behind another’s actions? You can’t communicate
+      linguistically with them. In fact it seems that the only access you have
+      to another’s intentions is via the actions they perform. Now let’s
+      suppose that to identify the goals of the actions you have to identify
+      their intentions. Then you have to identify intentions on the basis of
+      mere joint displacements and bodily configurations. This is quite
+      challenging. How much easier it would be if you had a way of identifying
+      the goals of the actions independently of ascribing intentions. Then you
+      would be able to first identify the goals of actions and then use
+      information about goals to ascribe intentions to the agent.
+  .slide
+    +unhighlight-row('.detectable-without')
+    +unhighlight('.without-k-of-mental-states', 'red')
+    +blur('.candidate-intention')
   .slide
     +show('.candidate-teleological')
     .notes: :t

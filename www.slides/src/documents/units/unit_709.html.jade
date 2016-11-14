@@ -1,0 +1,293 @@
+---cson
+layout: 'deck_unit'
+title: "Performing vs Understanding Actions in Infancy"
+tags: []
+description: """
+  From at least three months of age, some of infants’ abilities to identify
+  the goals of actions they observe are linked to their abilities to perform
+  actions.   This indicates that goal ascription in infancy may involve 
+  motor representations and processes, as the Motor Theory of Goal Ascription 
+  suggests.
+  """
+---
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/origins_mixins
+
++slide_middle
+  p Infants use the teleological stance to identify goals.
+  p But does this involve reasoning or motor processes?
+
++slide({bkg:'costantini_2012.png'})
+  p.source Costantini et al, 2012
+  .notes: :t
+    In adults, we got at a parallel question by tieing their hands.
+    There’s a similar manipulation in infants involving sticky mittens ...
+
+
++slide({bkg:'needham_sticky_mittens.png'})
+  p.source Needham et al, 2002 / https://news.vanderbilt.edu/files/sticky-mittens.jpg
+  .notes: :t
+    Needham et al, 2002 showed that putting ‘sticky mittens’ on 3-month-old infants 
+    (for 10-14 play sessions of 10 minutes each) resulted in their spending 
+    more time visually and manually exporing novel objects.
+
++slide_middle
+  p Sommerville, Woodward and Needham, 2005
+  p.indent.em-above Play wearing mittens then observe action.
+  p.indent.em-above vs
+  p.indent.em-above Observe action then play wearing mittens then.
+  .notes: :t
+    In this study, I think infants wore the mittens for just 200 seconds
+    (so the play sessions were much shorter than in Needhman et al, 2002).
++slide
+  .notes The observation was based on this study, which we saw earlier
+  +img_clip('wodward_2001_fig1.png', 'rect(0,1000px,250px,0)')
+  p.source Woodward et al 2001, figure 1
+  .slide
+    +clip('img:eq(0)','auto')
+
+    
++slide
+  +img_clip('sommerville_2005_fig3.png')
+  p.source Sommerville, Woodward and Needham, 2005 figure 3
+  .notes: :t
+    The results show that infants who played wearing the mittens first
+    were more attentive to the goal.
+  .notes.handout: :t
+    From at least three months of age, some of infants’ abilities to identify
+    the goals of actions they observe are linked to their abilities to perform
+    actions \citep{woodward:2009_infants}.
+  .notes: :t
+    But one potential objection to this study concerns observation vs performance.
+    The infants who played wearing sticky mittens first had spent longer observing
+    actions by the time it came to the violation of expectations trial.
+    Could it be observation of action (including one’s own) rather than performance
+    that matters?
+  .handout: :t
+    In adults, tying the hands impairs proactive gaze \citep{ambrosini:2012_tie}; in 
+    infants, boosting grasping with ‘sticky mittens’ facilitates proactive gaze
+    (\citealp{sommerville:2005_action}; see also \citealp{sommerville:2008_experience},
+    \citealp{ambrosini:2013_looking}).
+
++slide
+  +img_clip('sommerville_2008_fig1.png')
+  p.source Sommerville et al 2008, figure 1
+  .notes: :t
+    To address this issue, \citet{sommerville:2008_experience} did a study in 
+    which one group had observation while the other group had performance.
+    The participants were 10-month-old infants this time.
+  .notes: :t
+    The materials were a bit different: so that training vs observation could 
+    be as similar as possible with respect to the causal structure exposed,
+    there was a hook to get an object.
+
++slide
+  +img_clip('sommerville_2008_fig2.png')
+  p.source Sommerville et al 2008, figure 2
+  .notes: :t
+    The results show that infants with the training paid attention to the
+    distal goal (choice of toy) whereas those without paid attention to the
+    choice of cane.
+
++slide
+  +img_clip('ambrosini_2013_fig1i.png')
+  p.source Ambrosini et al, 2013 figure 1 (part)
+  .notes: :t
+    Further support for a link between action performance and goal ascription
+    comes from a developmental study by Ambrosini et al which studied whether proactive
+    gaze in infants is influenced by pre-shaping of the hand, and, in particular, 
+    whether it is influenced by precision grips.
++slide
+  +img_clip('ambrosini_2013_fig1ii.png')
+  p.source Ambrosini et al, 2013 figure 1 (part)
++slide
+  +img_clip('ambrosini_2013_fig1iii.png')
+  p.source Ambrosini et al, 2013 figure 1 (part)
+  .notes: :t
+    By using no shaping (a fist), Ambrosini et al could treat sensitivity
+    to whole-hand grasp and precision grip separately.
+
++slide
+  +img_clip('ambrosini_2013_fig3.png')
+  p.source Ambrosini et al, 2013 figure 3
+  .notes: :t
+    ‘infants’ ability to perform specific grasping actions with fewer fingers directly predicted the degree with which they took advantage of the availability of corresponding pre-shape motor information in shifting their gaze towards the goal of others’ actions’ \citep[p.~6]{ambrosini:2013_looking}.
+  
+  
+section.slide
+  +_slide_middle_inner
+    p.center.huge-glow-180 Why?
+  +reset
+    +_slide_middle_inner
+      p.center.notes.show In infants and adults, 
+        br
+        span abilities to perform actions enable identifying goals when observing them.
+      .notes  Why is this true?
+  
+
++slide
+  p.notes.show The Motor Theory of Goal Ascription:
+    p goal ascription is acting in reverse
+  .notes: :t()
+    The idea is that we could solve the problem--the problem of matching optimisation in planning 
+    actions 
+    with optimisation in predicting them--by supposing that a single set of mechanisms is used 
+    twice, once in planning action and once again in observing them.
+  .notes: :t()
+    What does this require?
+  .slide
+    p.em-above.notes.show -- in action observation, possible outcomes of observed actions are represented
+  .slide
+    p.em-above.notes.show -- these representations trigger planning as if performing actions directed to the outcomes
+  .slide
+    p.em-above.notes.show -- such planning generates predictions
+    .notes predictions about joint displacements and their sensory conseuqences
+  .slide
+    p.em-above.notes.show -- a triggering representation is weakened if its predictions fail
+  .notes: :t()
+    The proposal is not specific to the idea of motor representations and processes,
+    although there is good evidence for it (which I won't cover here because we're in Milan!)
+
+
+  
+
++slide
+  +img_clip('sinigaglia_butterfill_2005_fig1.png')
+  p.source Sinigalia & Butterfill 2015, figure 1
+  .notes: :t  
+
+section.slide
+  +_slide_middle_inner
+    p.center.huge-glow-180 Why?
+  +reset
+    +_slide_middle_inner
+      p.center.notes.show In infants and adults, 
+        br
+        span abilities to perform actions enable identifying goals when observing them.
+      .notes  Why is this true?
+      .notes: :t
+        In suggesting that it’s because of the Motor Theory,
+        I’m going beyond anything Sommerville et al would endorse
+        although moving in a direction they cautiously indicate.
+      .notes: :t
+        I’m also contradicting how most people think of the relation
+        between the Teleological Stance and the Motor Theory.
+        Most theorists think of these as alternatives.
+        E.g. \citep{Csibra:2007hm} contrast what can be explained with 
+        Teleological Stance and Motor Theory (they claim Teleological
+        Stance is required for novel situations in which Motor Theory
+        should fail; this is probably in part right, although success in the face of
+        novelty could be driven by associations.)
+        See also \citet[p.~204]{gredeback:2010_infantsa}:
+        ‘We suggest that anticipation of action goals is mediated by a direct
+        matching process (Flanagan & Johansson, 2003) whereas retrospective
+        evaluations of rationality are dependent on more abstract
+        well-formedness criteria as described by the teleological stance
+        (Gergely & Csibra, 2003).’
+        (NB: their argument is not good: they claim that because infants who have 
+        little or no experience of feeding themselves can show suprise (pupil dilation)
+        in response to nonrational self-feeding actions, they are using the Teleological
+        Stance here.  But it might be motoric; or it might be association (cf the ‘telephone
+        to ear’ study).)
+
+
++slide_middle
+  p The Teleological Stance
+  p.indent ... provides a correct computational description of (some or all) infant (and adult) goal ascription.
+  p.em-above But which processes and representations underpin it?
+  p.indent Csibra & Gergeley’s hypothesis: ordinary inference and beliefs
+  p.indent The Motor Theory: motor representations and processes
+  p.em-above Evidence
+  p.indent Manipulating abilities to perform actions changes abilities to identify goals.
+
+
+
++slide_rh_white({step:true})
+  +left_half
+    p Adults
+    ol.hem-around-children.notes.show
+      li: :t
+        Proactive gaze indicates fast goal ascription.
+      li: :t
+        The Teleological Stance provides a computational description of the goal ascription
+        underpinning adults’ proactive gaze
+      li: :t
+        Proactive gaze depends on motor processes and representations: the
+        Motor Theory provides an account of the representations
+        and algorithms.
+  +right_half({step:true})
+    p Infants
+    ol.hem-around-children
+      li: :t
+        Proactive gaze (from ~12 months) and violation-of-expectations (from ~3
+        months) indicate goal ascription.
+      li: :t
+        The Teleological Stance ...
+      li
+        span.two-c Two conjectures
+        span  about algorithms and representations ...
+    +highlight('.two-c')
+    .notes The question was, Is there any evidence? ... Yes, we found evidence.
+
+
+
+
+
+
+
++slide_middle
+  p.center caveat: there’s probably more 
+  .notes: :t
+    There’s probably more than the Motor Theory to goal ascription
+    (in infants, and adults).
+
++slide
+  +img_clip('melzer_2012_fig1.png')
+  p.source Melzer et al, 2012 figure 1
+  .notes: :t
+    \citep{melzer:2012_production}: ‘The infant was given a cube (occupation
+    object) in either his/her left or right hand. Subsequently,a second toy
+    (target object) was held either (a) in front of the empty hand to elicit an
+    ipsilateral reaction (ipsilateral presentation) or (b) in front of the
+    occupied hand to elicit a contralateral reaction (contralateral
+    presentation).’
++slide
+  +img_clip('melzer_2012_fig3.png')
+  p.source Melzer et al, 2012 figure 3
+  .notes: :t
+    Infants become good at contralateral grasping between six and twelve months.
+
++slide
+  +img_clip('melzer_2012_fig2.png')
+  p.source Melzer et al, 2012 figure 2
+  .notes: :t
+    And here is an anticipatory looking task ...
+
++slide
+  +img_clip('melzer_2012_fig4a.png')
+  p.source Melzer et al, 2012 figure 4 (part)
+  .notes: :t
+    How did the infants do?  The data in figure indicate that 12-month-olds
+    showed quite good, adult like anticipation of contralateral actions,
+    whereas 6-month-olds were arriving at the target object behind the hand.
+  .notes: :t
+    This suggests a link between performance and goal ascription, once more.
+    (p. 577: ‘At 12 months, most infants were able to anticipate the goal of contralateral movements, whereas at 6 months, infants showed mainly reactive eye movements.’)
+  .notes: :t
+    Further, p. 577: ‘Production and perception of contralateral reaching
+    movements were correlated at 12 months of age. The more sophisticated
+    12-month-olds’ reaching production was, the better they anticipated other
+    people’s contralateral movements.’
+  .notes: :t
+    But the result that that \citet{melzer:2012_production} focus on is this:
+    p. 577: ‘perception and production were not yet correlated at 6 months. The
+    lack of a significant correlation was neither due to a larger variance in
+    the younger infant group nor to the influence of a bias in our sample.
+    Accordingly, our findings suggest that a link between production and
+    perception of contralateral arm movements, and possibly therefore a common
+    representation, develops in the second half of the first year of life.’
+    
+
+
+

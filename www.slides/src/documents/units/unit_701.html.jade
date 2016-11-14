@@ -16,13 +16,24 @@ include ../../../fragments/unit_mixins
 //- Gergeley et al 1995
 
 +slide_middle
-  .notes Our first question is, When do human infants first track goal-directed actions and not just movements?
-  .notes In examining nonlinguistic communication, we've assumed that infants from around 11 months of age can produce and comprehend informative pointing.
-  .notes This commits us to saying that they have understood action.
-  p.center When do human infants first track goal-directed actions
+  .notes: :t
+    Our first question is, When do human infants first track goal-directed
+    actions and not just movements? In examining nonlinguistic communication,
+    we've assumed that infants from around 11 months of age can produce and
+    comprehend informative pointing. This commits us to saying that they have
+    understood action.
+  p.center.handout.notes.show When do human infants first track goal-directed actions
     br
     | rather than mere movements only?
-
+  .slide
+    p.em-above Background assumption
+    p ‘intention attribution and action understanding are two separable processes’ 
+    p.grey-text.right Uithol and Paulus, 2014 p. 617
+    .notes.handout: :t
+      Background assumption:
+      ‘intention attribution and action understanding are two separable processes’ 
+      \citep[p.~617]{uithol:2014_what}.
+  
 +slide
   //- sources
   .notes \#source 'research/teleological stance -- csibra and gergely.doc'
@@ -43,6 +54,7 @@ include ../../../fragments/unit_mixins
     
   p.source Gergely et al 1995, figure 1
   
+
 +slide
   +img_clip('gergely_1995_fig3.png', 'rect(0,1000px,250px,0)')
   .notes For the test condition, infants were divided into two groups.  One saw a new action, ...
@@ -72,24 +84,15 @@ include ../../../fragments/unit_mixins
   p.source Heider and Simmel, figure 1
 
 
-
-+slide
-  .notes Consider a related study by Woodward and colleagues.
-  .notes (It's good that there is converging evidence from different labs, using quite different stimuli.)
-  +img_clip('wodward_2001_fig1.png', 'rect(0,1000px,250px,0)')
-  p.source Woodward et al 2001, figure 1
-  +clip('img:eq(0)','auto')
-  .notes.handout 'Six-month-olds and 9-month-olds showed a stronger novelty response (i.e., looked longer) on new-goal trials than on new-path trials (Woodward 1998). That is, like toddlers, young infants selectively attended to and remembered the features of the event that were relevant to the actor’s goal.'
-  .notes.handout.ctd \citep[p.\ 153]{woodward:2001_making}
-
-
-
 section.slide
   .container_12
     .grid_6: .words
-      .notes Consider a further experiment by \citet{Csibra:2003jv}.
-      .notes This is just like the first ball-jumping experiment except that here infants see the action but not the circumstances in which it occurs.
-      .notes Do they expect there to be an object in the way behind that barrier?
+      .notes: :t
+        Consider a further experiment by \citet{Csibra:2003jv}, also with
+        12-month-olds. This is just like the first ball-jumping experiment
+        except that here infants see the action but not the circumstances in
+        which it occurs. Do they expect there to be an object in the way behind
+        that barrier?
       div(style='margin-top:100px')
         +img_clip('csibra_2003_fig6.png', 'rect(0,1000px,175px,0)')
     .slide.grid_6: .words
@@ -98,6 +101,31 @@ section.slide
   .clear
   .words
     p.source Csibra et al 2003, figure 6
+
+
+
++slide
+  .notes Consider a related study by Woodward and colleagues.
+  .notes (It's good that there is converging evidence from different labs, using quite different stimuli.)
+  .layer1
+    +img_clip('wodward_2001_fig1.png', 'rect(0,1000px,250px,0)')
+    p.source Woodward et al 2001, figure 1
+  .slide
+    +clip('img:eq(0)','auto')
+    .notes.handout 'Six-month-olds and 9-month-olds showed a stronger novelty response (i.e., looked longer) on new-goal trials than on new-path trials (Woodward 1998). That is, like toddlers, young infants selectively attended to and remembered the features of the event that were relevant to the actor’s goal.'
+    .notes.handout.ctd \citep[p.\ 153]{woodward:2001_making}
+  .slide
+    +fade('.layer1')
+    +blur('.layer1')
+    +reset-escape-inner
+      +_slide_middle_inner
+        p.center from three months of age
+        .notes: :t
+          Using a manipulation we’ll discuss later (‘sticky mittens’),
+          \citet{sommerville:2005_action} used this paradigm to show that even
+          three-month-olds can form expectations based on the goal of an action
+          (for another study with three-month-olds, see also \citealp{luo:2011_threemonthold}).
+
 
 
 //- anticipatory looking
@@ -127,6 +155,20 @@ section.slide
     agent were moving on the same path to a new goal.
     So there’s a dissocaition between anticipatory looking and violation-of-expectations
     measures for 9 month olds.
+  .notes: :t
+    ‘The results of the analysis of the infants’ eye movements contrast the
+    looking time results and showed at the age of 12 months (and less reliably
+    at the age of 9 months) infants predicted the reappearance of the agent
+    based on the location of the goal during an observed action and that it
+    was not until the age of 3, that this dissociation disappeared and that
+    children predicted the reappearance of the agent after occlusion based on
+    goal identity’ \citep[p.~9]{daum:2012_actions}/
+  .notes.handout: :t
+    ‘Early in life, action expectations measured online seem to be organized
+    around goal locations whereas action expectations measured post-hoc around
+    goal identities. With increasing age, children then generally organize
+    their action expectations primarily around goal identities’
+    \citep[p.~10]{daum:2012_actions}
 
 +slide
   +img_clip('daum_2012_fig2.png')
@@ -151,6 +193,13 @@ section.slide
     information in making their anticipatory looks.
     This is potentially important as a clue that action anticipation is driven by a mixture
     of goal ascription and statistical information.
-    
+  .notes: :t
+    Also these findings need cautious interpretation.
+    Cf \citep[p.~7]{ambrosini:2013_looking}: ‘some visual anticipation studies
+    show that 12-month-olds and even 10-month-olds, but not 6-month-olds, can
+    predictively gaze to the goal position when observing displacement actions
+    [9,12], while some others demonstrate that even 6-month-olds show
+    anticipatory fixations to the goal of observed actions [34,35].’
+    See also` \citet{cannon:2012_infants}.
     
     

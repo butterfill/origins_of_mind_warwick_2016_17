@@ -1,0 +1,56 @@
+---
+layout: 'default2'
+title: 'Lecture 08'
+weburl: ''
+units: []
+lecture_date: '2014/11/27'
+hidden: true
+---
+
+include ../../fragments/lecture_mixins
+include ../../fragments/unit_mixins
+include ../../fragments/origins_mixins
+
+- var images = get_images('bees')
+
++title_slide({document:document, images:images})
+
+
+//- may be too long -- now contains a bit more material!
+
+//- pointing
+//- covered in previous lecture
+//- +insert_unit({unit:'661', title_slide:true, images:images})
+
+
++slide
+  img(src='/img/fig_action_communicative_linguistic.png')
+  .notes: :t()
+    As I mentioned before, my overall plan is to work backwards from communication by language 
+    through non-linguistic communication and so to understanding action.
+  .notes: :t()
+    Let me explain why I'm doing this ...
+  
+
+//- from origins mixins
++slide_diagram_core_knowledge_to_concept
+
+//- type of view that we are aiming for
++insert_unit({unit:'571', title_slide:true, images:images})
+
+
+//- pointing: reference and context
++insert_unit({unit:'662', title_slide:true, images:images})
+
+//- a puzzle about pointing
++insert_unit({unit:'663', title_slide:true, images:images})
+
+//- What is a communicative action?
++insert_unit({unit:'671', title_slide:true, images:images})
+
+//- Words and Communicative Actions (short)
++insert_unit({unit:'681', title_slide:true, images:images})
+
+//- syntax: knowledge or core knowledge (short)
+//- moved to lecture 06
+  +insert_unit({unit:'646', title_slide:true, images:images})

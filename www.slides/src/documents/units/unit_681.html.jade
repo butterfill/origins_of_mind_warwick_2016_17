@@ -40,15 +40,24 @@ mixin slide_pointing-vs-linguistic(p)
           span.recepient for her
           span ?)
         if p.step
-          +highlight('.referent', 'forestgreen')
-          +show('li.hide:has(.referent)')
-          +unhighlight('.referent', 'forestgreen')
-          +highlight('.utterer', 'yellow')
-          +show('li.hide:has(.utterer)')
-          +unhighlight('.utterer', 'yellow')
-          +highlight('.recepient', 'pink')
-          +show('li.hide:has(.recepient)')
-          +unhighlight('.recepient', 'pink')
+          .slide
+            +highlight('.referent', 'forestgreen')
+          .slide
+            +show('li.hide:has(.referent)')
+          .slide
+            +unhighlight('.referent', 'forestgreen')
+          .slide
+            +highlight('.utterer', 'yellow')
+          .slide
+            +show('li.hide:has(.utterer)')
+          .slide
+            +unhighlight('.utterer', 'yellow')
+          .slide
+            +highlight('.recepient', 'pink')
+          .slide
+            +show('li.hide:has(.recepient)')
+          .slide
+            +unhighlight('.recepient', 'pink')
     +right_half({step:p.step})
       p a one-word utterance
       ol
@@ -58,11 +67,16 @@ mixin slide_pointing-vs-linguistic(p)
         li identify the intended audience
         li infer message (Why is this utterer talking to her about that thing?)
       if p.step
-        +invert('.associate-word')
-        .notes Last time we focussed on how children get to associate words with their referents (or meanings, whatever exactly those turn out to be).
-        .notes Here we discussed the idea that this comes about by training, and contrasted it with the idea that children identify the referents of words through the use of reason.
-        .notes What I want to stress now is that getting the word-referent relation is only a part of what's needed to communicate by language.
-        .notes This was brought out drammatically by the Hare and Tomasello task I mentioned earlier ...
+        .slide
+          +invert('.associate-word')
+          .notes: :t
+            Last time we focussed on how children get to associate words with their
+            referents (or meanings, whatever exactly those turn out to be). Here we
+            discussed the idea that this comes about by training, and contrasted it with the
+            idea that children identify the referents of words through the use of reason.
+            What I want to stress now is that getting the word-referent relation is only a
+            part of what's needed to communicate by language. This was brought out
+            drammatically by the Hare and Tomasello task I mentioned earlier ...
     block
 
 
@@ -84,6 +98,7 @@ mixin slide_pointing-vs-linguistic(p)
         span.associate associate word with property F
         span ; and
       li know that she is attempting to communicate that X is F.
+  .slide
     +highlight('.associate')
 
 
@@ -124,7 +139,7 @@ mixin slide_pointing-vs-linguistic(p)
       li know that she is attempting to communicate that X is F.
   .notes Recall our simple description of what is involved in communication.
   //- +invert('.referent:eq(0)')
-  .notes: :t()
+  .notes: :t
     What I'm suggesting is two very simple ideas.  First, to be able to associate pointing 
     gestures with their referents is not sufficient for understanding them;  second, basic 
     the pointing-referent associations may be grasped by non-communicators.

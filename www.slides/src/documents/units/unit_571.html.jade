@@ -19,10 +19,10 @@ include ../../../fragments/origins_mixins
 
 +slide_middle
   p.center lab rat vs shipwreck survivor
-  .notes: :t()
+  .notes: :t
     Lab rat view is ideal for us because word use doesn't presuppose concept possession.
     Unfortunately it faces objections which appear all but decisive.
-  .notes: :t()
+  .notes: :t
     Shipwreck survivor faces less pressing objections but doesn't suit us because requires
     that concepts come before words.  It's no coincidence that proponents of this view are
     nativists about concepts (and therefore have no need to explain how humans come to
@@ -37,7 +37,7 @@ include ../../../fragments/origins_mixins
   .notes In thinking about the alternative picture, I'm guided by two thoughts.
   .notes The first concerns social interaction.
   p.center social interaction
-  .notes: :t()
+  .notes: :t
     So far we've considered two pictures of how children learn to communicate with words: training and 
     reasoning to word-concept mappings.
     Both pictures miss social interaction.
@@ -57,7 +57,7 @@ include ../../../fragments/origins_mixins
     p.right Tomasello 2003, p. 90
     .handout.ctd \citep[p.\ 90]{Tomasello:2003fk}
     .em-above 
-    .handout: :t()
+    .handout: :t
       Infants ‘begin to comprehend and use … linguistic symbols on the basis of their skills of 
       social cognition and cultural learning’ \citep[p.\ 582]{Tomasello:1999en}
     //- 
@@ -68,8 +68,8 @@ include ../../../fragments/origins_mixins
         p.handout ‘language is itself one type-albeit a very special type-of joint attentional skill’ 
         //- p.right Tomasello 2001, p. 1120
         .handout.ctd \citep[p.\ 1120]{Tomasello:2001ic}
-  +blur_('.step1')
   .slide
+    +blur('.step1')
     p.handout.show ‘the kind of rational activity which the use of language involves is a form of rational cooperation’ 
     p.right Grice 1989, p. 341
     .handout.ctd \citep[p.\ 341]{Grice:1989ha}
@@ -79,7 +79,7 @@ include ../../../fragments/origins_mixins
 +slide_middle
   .notes The second guiding thought in creating the alternative picture concens creativity.
   p.center language creation
-  .notes: :t()
+  .notes: :t
     It's standard to suppose that creativity is a side-issue and that learning from those around 
     us is the norm.
     This view is encouraged by the idea that language is fundamentally a system of conventions, 
@@ -111,17 +111,18 @@ include ../../../fragments/origins_mixins
       .handout.ctd  Moral, social or legal considerations may sometimes invite us to deny this, but I do not think the reasons for such exceptions reveal anything of importance about what is basic to communication’
     p.right Davidson 1990: 310
   .handout.ctd \citep[p.\ 310]{Davidson:1990du}
-  +blur('.quote1, .quote3')
-  .notes: :t()
-    This claim, which is hard to reject given lexical creativity,
-    also challenges both lab rat view, and some versions of the shipwreck survivor view.
-    In both cases, the assumption is that infants acquiring words are learning to conform
-    to conventions or regularities of some kind.  But they are not.
-    (This point is not challenge for Bloom's view, as his emphasis on mindreading allows that
-    infants might be detecting what words mean on particular occasions.)
-  .notes: :t()
-    Could link this to Grice on occasion meaning etc.  The point is that, for infants,
-    it is all about occasion meaning.
+  .slide
+    +blur('.quote1, .quote3')
+    .notes: :t
+      This claim, which is hard to reject given lexical creativity,
+      also challenges both lab rat view, and some versions of the shipwreck survivor view.
+      In both cases, the assumption is that infants acquiring words are learning to conform
+      to conventions or regularities of some kind.  But they are not.
+      (This point is not challenge for Bloom's view, as his emphasis on mindreading allows that
+      infants might be detecting what words mean on particular occasions.)
+    .notes: :t
+      Could link this to Grice on occasion meaning etc.  The point is that, for infants,
+      it is all about occasion meaning.
 
 +slide_middle
   .notes So these are my two themes.
@@ -147,7 +148,7 @@ include ../../../fragments/origins_mixins
 
 
 +slide
-  .notes: :t()
+  .notes: :t
     Our overall project is to understand something about the emergence of knowledge of minds, 
     objects, colours and the rest in human development.
     My proposal is that we have to take two factors into account.  One is core knowledge, the 
@@ -155,7 +156,7 @@ include ../../../fragments/origins_mixins
     Our current project is to understand where abilities to communicate fit into this 
     picture---to understand, that is, what role they might play in explaining how humans 
     come to know things.
-  .notes: :t()
+  .notes: :t
     Increasingly sophisticated forms of social interaction continue to combine with
     core knowledge to yield increasingly sophisticated forms of cognition, 
     resulting in konwledge itself.
@@ -221,10 +222,14 @@ include ../../../fragments/origins_mixins
           path(d='M 401 438 L 397 428 L 402 431 L 406 429 Z', fill='#ffffff', stroke='#ffffff', stroke-width='3', stroke-miterlimit='10', pointer-events='none')
           path(d='M 321 381 L 388 435', fill='none', stroke='#ffffff', stroke-width='3', stroke-miterlimit='10', pointer-events='none')
           path(d='M 393 439 L 384 437 L 388 435 L 389 430 Z', fill='#ffffff', stroke='#ffffff', stroke-width='3', stroke-miterlimit='10', pointer-events='none')
-
-  +show('.referential-communication')
-  +show('.communication-by-language')
-  +show('.knowledge-knowledge')
-  +blur_('font:not(.referential-communication)')
-  +invert('span.referential-communication')
+  
+  .slide
+    +show('.referential-communication')
+  .slide
+    +show('.communication-by-language')
+  .slide
+    +show('.knowledge-knowledge')
+  .slide
+    +blur('font:not(.referential-communication)')
+    +invert('span.referential-communication')
       

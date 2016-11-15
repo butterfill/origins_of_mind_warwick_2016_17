@@ -1122,3 +1122,71 @@ mixin diagramActionGoalIndividual(p)
                     font(color='#ffffff') specifies
               text(x='58', y='25', fill='#000000', text-anchor='middle', font-size='24px') [Not supported by viewer]
   
+mixin pointingOutline()
+  p From around 11 or 12 months of age, humans spontaneously use pointing to ...
+    ul
+      li request
+      li inform
+      li initiate joint engagement (‘Wow! That!’)
+  
+
+// *todo* duplicated!
+mixin slide_theChallenge()
+  +slide({bkg:'bkg_twins.jpg'})
+    div(style='margin-left:200px;')
+      .vspace-em
+      .vspace-em
+      .huge-glow.right challenge
+      .under-huge-glow.right Explain the emergence, in evolution or development, of 
+        span.highlight1 mindreading.
+      block
+
+
+mixin maxiStory(p)
+  if typeof(p) === 'undefined'
+    - p = {}
+  if !('step' in p)
+    - p.step = false
+  if !('handout' in p)
+    - p.handout = false
+    
+  .notes: :t
+    How can we test whether someone is able to ascribe beliefs to others? 
+    Here is one quite famous way to test this, perhaps some of you are even aware of it
+    already.
+    Let's suppose I am the experimenter and you are the subjects.
+    First I tell you a story ...
+  p ‘Maxi puts his chocolate in the BLUE box and leaves the room to play.  
+    span.step2.hide While he is away (and cannot see), his mother moves the chocolate from the BLUE box to the GREEN box.  
+    span.step3.hide Later Maxi returns.  He wants his chocolate.’
+  .notes(class="#{p.handout ? 'handout' : ''}"): :t
+    In a standard \textit{false belief task}, `[t]he subject is aware that he/she and
+    another person [Maxi] witness a certain state of affairs x. Then, in the absence of
+    the other person the subject witnesses an unexpected change in the state of affairs
+    from x to y' \citep[p.\ 106]{Wimmer:1983dz}. The task is designed to measure the
+    subject's sensitivity to the probability that Maxi will falsely believe x to obtain.
+  .vspace-em
+  .container_12
+    .grid_6
+      +colour-box('blue', '100')
+        p.center blue
+          br 
+          | box
+    .grid_6.step2.hide 
+      +colour-box('green', '100')
+        p.center green box
+  p &nbsp;
+  // this bit gets shown only later
+  p.em-above
+    span.hide.anticipationPrompt I wonder where Maxi will look for his chocolate
+  p.em-above.step4.testQuestion.hide ‘Where will Maxi look for his chocolate?’
+  p.source Wimmer & Perner 1983
+  if p.step
+    .slide
+      +show('.step2')
+    .slide
+      +show('.step3')
+    .slide
+      +show('.step4')
+  else
+    +show('.step2, .step3, .step4', 0)

@@ -1,14 +1,12 @@
----
+---cson
 layout: 'deck_unit'
 title: "What is a communicative action?"
 tags: []
-description: "To understand what follows from infants' abilities to comprehend and produce pointing gestures, we need to ask what a communicative action is.  One view hinges on shared intentionality, which is related to Grice's attempts to analyse meaning.  Here we consider implications of that view and contrast it with two alternatives."
-depends: ['']
-source: ['']
-duration: 5
-book: []
-exercises: []
-exercises_fast: []
+description: """
+  To understand what follows from infants' abilities to comprehend and produce pointing
+  gestures, we need to ask what a communicative action is. One view hinges on shared
+  intentionality, which is related to Grice's attempts to analyse meaning. Here we consider
+  implications of that view and contrast it with two alternatives."""
 ---
 
 include ../../../fragments/unit_mixins
@@ -29,11 +27,16 @@ include ../../../fragments/origins_mixins
     +to_comprehend
   +right_half({step:false})
     +to_produce
-  +invert('.know, .communicate')
-  .notes Both comprehending and producing require knowing things about communication.
-  .notes To know something about communication you have to understand something about what it is, I suppose.
-  .notes So to know what is involved in being able to produce and comprehend pointing gestures, we have to know something about what it is to communicate.
-  .notes (This will also tell us what apes 6-month-old humans lack that prevents them from communicating with pointing gestures.)
+  .slide
+    +invert('.know, .communicate')
+    .notes: :t
+      Both comprehending and producing require knowing things about communication.
+      To know something about communication you have to understand something about what it
+      is, I suppose.
+      So to know what is involved in being able to produce and comprehend pointing gestures,
+      we have to know something about what it is to communicate.
+      (This will also tell us what apes 6-month-old humans lack that prevents them from
+      communicating with pointing gestures.)
   
 
 +slide_middle
@@ -42,27 +45,30 @@ include ../../../fragments/origins_mixins
   
 +slide
   .notes Let’s start with some simple examples of non-communicative actions.  
-  ol
+  ol.em-around-children
     li Ayesha hits Ben intending to bruise him.
     .notes Purely physical interaction.
     li.hide Ayesha fakes a yawn intending to cause Ben to yawn.  
     li.hide Ayesha lays a trail of false footprints intended to deceive Ben.
     li.hide Ayesha waves at Ben with the intention that he will recognise that she intends him to come over.
-  +blur_('li:eq(0)')
-  +show('li:eq(1)')
-  .notes Why are these actions non-communicative?  Ayesha intends her fake yawn to have an effect on Ben, but the effect is a physiological one.  The response she wants from him is mechanical.
-  .notes But there are also non-communicative actions which require a rational response from the people they’re directed at.  For example:
-  +blur_('li:eq(1)')
-  +show('li:eq(2)')
-  .notes Note here that although Ayesha intends to provide Ben with misinformation, her action isn’t communicative.
-  .notes Intuitively, there’s a difference between deliberately providing information or misinformation to someone and communicating with her (Grice 1989: 218).  
-  .notes So what makes an action communicative?
-  .notes Paul Grice has a neat answer to this question.
-  .notes He notes that we sometimes achieve things merely by letting other people know that we intend to achieve them.
-  .notes Waving is one of the simplest examples:
-  +blur_('li:eq(2)')
-  +show('li:eq(3)')
-  .notes In this example, Ayesha’s goal is to get Ben to come over.  Her means of achieving this is to get Ben to recognise that this is what she intends.  So when she waves, her intention is that waving will let Ben know that she intends him to come over.
+  .slide
+    +blur('li:eq(0)')
+    +show('li:eq(1)')
+    .notes Why are these actions non-communicative?  Ayesha intends her fake yawn to have an effect on Ben, but the effect is a physiological one.  The response she wants from him is mechanical.
+    .notes But there are also non-communicative actions which require a rational response from the people they’re directed at.  For example:
+  .slide
+    +blur('li:eq(1)')
+    +show('li:eq(2)')
+    .notes Note here that although Ayesha intends to provide Ben with misinformation, her action isn’t communicative.
+    .notes Intuitively, there’s a difference between deliberately providing information or misinformation to someone and communicating with her (Grice 1989: 218).  
+    .notes So what makes an action communicative?
+    .notes Paul Grice has a neat answer to this question.
+    .notes He notes that we sometimes achieve things merely by letting other people know that we intend to achieve them.
+    .notes Waving is one of the simplest examples:
+  .slide
+    +blur('li:eq(2)')
+    +show('li:eq(3)')
+    .notes In this example, Ayesha’s goal is to get Ben to come over.  Her means of achieving this is to get Ben to recognise that this is what she intends.  So when she waves, her intention is that waving will let Ben know that she intends him to come over.
   .slide.em-above
     p Goal: get Ben to come over
     p Means: get Ben to recognise that I intend to get Ben to come over
@@ -72,36 +78,52 @@ include ../../../fragments/origins_mixins
       span.intention intend
       span  to get Ben to come over.
     .notes You can achieve some things just by letting people know that you intend to achieve them.  To achieve things in this way is to perform an act of communication.
+  .slide
     +highlight('.intention','pink')
     .notes Note that, on this Gricean view, communicating involves having intentions about intentions.m
 
-+slide({id:'unit_671_gricean_communication'})
-  .handout \subsection{A Gricean view}
+
+mixin griceanCommunication(p)
+  if typeof(p) === 'undefined'
+    - p = {}
+  if !('step' in p)
+    - p.step = false
+  - slideCls = p.step ? 'slide' : ''
+  if !('handout' in p)
+    - p.handout = false
+
+  if p.handout
+    .handout \subsection{A Gricean view}
   p
-    span.notes.handout.show First approximation: To communicate is to provide someone with evidence of an intention with the further intention of thereby fulfilling that intention
+    span.notes(class="#{(p.handout ? 'handout' : '')}").show: :t
+      First approximation: To communicate is to provide someone with evidence of an
+      intention with the further intention of thereby fulfilling that intention
     span .
-  p.right   (compare Grice 1989: chapter 14)
-  .handout.ctd \citep[compare][chapter 14]{Grice:1989ha}.
+  p.right.grey-text   (compare Grice 1989: chapter 14)
+  .notes.ctd(class="#{(p.handout ? 'handout' : '')}") \citep[compare][chapter 14]{Grice:1989ha}.
   .notes To communicate, then, is to attempt to fulfil an intention by making it manifest to someone else that you have this intention.  If you’ve studied Grice you’ll know that his analysis of meaning led to a long and boring series of counterexamples and refinements, most of which shed no light on the nature of linguistic communication (Schiffer 1987).  But what’s really important about Grice isn’t the attempt to analyse meaning: it’s his insight
-  .slide.step2
-    .notes Recall the comprehension of pointing case; what is the confederate doing if she's pointing to inform?
-    p.em-above.handout.show The confederate means something in pointing at the left box if she 
+  .step2(class="#{(p.step ? 'slide' : '')}")
+    .notes: :t
+      Recall the comprehension of pointing case; what is the confederate doing if she's
+      pointing to inform?
+    p.em-above.notes.show(class="#{(p.handout ? 'handout' : '')}")
+      span The confederate means something in pointing at the left box if she 
       span.attitude4.blur-except intends:
-    .handout \begin{enumerate}
+    .notes(class="#{(p.handout ? 'handout' : '')}") \begin{enumerate}
     ol
       li
-        span.handout \item  
-        span.handout.show that you open the left box;
+        span.notes(class="#{(p.handout ? 'handout' : '')}") \item  
+        span.notes.show(class="#{(p.handout ? 'handout' : '')}") that you open the left box;
       li 
-        span.handout \item  
-        span.handout.show that you 
+        span.notes(class="#{(p.handout ? 'handout' : '')}") \item  
+        span.notes.show(class="#{(p.handout ? 'handout' : '')}") that you 
           span.attitude recognize
           span  that she 
           span.attitude intends
           span  (1), that you open the left box; and 
       li 
-        span.handout \item  
-        span.handout.show that your 
+        span.notes(class="#{(p.handout ? 'handout' : '')}") \item  
+        span.notes.show(class="#{(p.handout ? 'handout' : '')}") that your 
           span.attitude3.blur-except recognition
           span  that she 
           span.attitude2.blur-except intends 
@@ -109,10 +131,13 @@ include ../../../fragments/origins_mixins
           span.attitude1.blur-except reasons
           span  for opening the left box.
     p.right (Compare Grice 1967 p. 151; Neale 1992 p. 544)
-    .handout \end{enumerate}
-    .handout (compare \citealp[p.\ 151]{Grice:1969pv}; \citealp[p.\ 544]{Neale:1992uw})
+    .notes(class="#{(p.handout ? 'handout' : '')}") \end{enumerate}
+    .notes(class="#{(p.handout ? 'handout' : '')}") (compare \citealp[p.\ 151]{Grice:1969pv}; \citealp[p.\ 544]{Neale:1992uw})
 
 
+
++slide
+  +griceanCommunication({handout:true, step:true})
 
 
 +slide_rh_white({step:false})
@@ -122,26 +147,32 @@ include ../../../fragments/origins_mixins
     +to_comprehend
   +right_half({step:false})
     +to_produce
-  +invert('.know, .communicate')
-  .notes: :t()
-    Earlier we noted that both comprehending and producing require knowing things 
-    about communication.  Our question was then, What is communication?
-  .notes: :t()
-    The Gricean view we've just seen is an answer to this question.
-    But is it a good answer?
+  .slide
+    +invert('.know, .communicate')
+    .notes: :t
+      Earlier we noted that both comprehending and producing require knowing things 
+      about communication.  Our question was then, What is communication?
+    .notes: :t
+      The Gricean view we've just seen is an answer to this question.
+      But is it a good answer?
   
 
 
 
 
-section.slide
-  .slide-clone(data-which='#unit_671_gricean_communication')
-  +highlight('.attitude1')
-  +highlight('.attitude2', 'blueviolet')
-  +highlight('.attitude3', 'orange')
-  +highlight('.attitude4', 'red')
-  +blur('.step2')
-  .notes So to mean something by pointing, you have to have to have an intention about my recognition of an intention of yours concerning my reasons.
++slide
+  +griceanCommunication({handout:false, step:false})
+  .slide
+    +highlight('.attitude1')
+  .slide
+    +highlight('.attitude2', 'blueviolet')
+  .slide
+    +highlight('.attitude3', 'orange')
+  .slide
+    +highlight('.attitude4', 'red')
+  .slide
+    +blur('.step2')
+    .notes So to mean something by pointing, you have to have to have an intention about my recognition of an intention of yours concerning my reasons.
 
 mixin slide_the_question()
   +question_mark
@@ -187,15 +218,17 @@ mixin slide_the_question()
     p.right Tomasello et al (2007, p. 706)
     .handout.ctd \citep[p.\ 706]{Tomasello:2007fi}
   .notes It's hard to argue with the claim about cooperation; this is important.
-  +invert('.cooperation')
-  .notes But Tomasello doesn't stick with the notion of cooperation.  Instead ...
-  +fade_('.cooperation')
-  +invert('.shared-intentionality')
-  .notes: :t()
-    There is this additional element, shared intentionality.  I don't understand what it is, but 
-    Tomasello and his colleagues are extraordinay scientsits so I think it's worth exploring.
-  .notes: :t()
-    This (shared intentionality) is also the notion that gets us into trouble.
+  .slide
+    +invert('.cooperation')
+    .notes But Tomasello doesn't stick with the notion of cooperation.  Instead ...
+  .slide
+    +fade('.cooperation')
+    +invert('.shared-intentionality')
+    .notes: :t
+      There is this additional element, shared intentionality.  I don't understand what it is, but 
+      Tomasello and his colleagues are extraordinay scientsits so I think it's worth exploring.
+    .notes: :t
+      This (shared intentionality) is also the notion that gets us into trouble.
 
     
 +slide
@@ -210,10 +243,11 @@ mixin slide_the_question()
     .handout.notes \item
     li.handout.notes.show Embodying shared intentionality involves having knowledge about knowledge of your intentions about my intentions.
   .handout.notes \end{enumerate}
-  +invert('.shared-intentionality')
-  .notes No, I don't know what shared intentionality is either.  I've asked you to find out in the last essay for this course.
-  +uninvert_('.shared-intentionality')
   .slide
+    +invert('.shared-intentionality')
+    .notes No, I don't know what shared intentionality is either.  I've asked you to find out in the last essay for this course.
+  .slide
+    +uninvert('.shared-intentionality')
     p.em-above Claims about development:
     ol(style='list-style-type:lower-greek')
       li 11- or 12-month-old infants produce and understand declarative pointing gestures.
@@ -221,10 +255,10 @@ mixin slide_the_question()
       .notes If the theory of communicative action is correct, then the claims about development are incompatible.
   .slide
     p (Also, α rules out a conjecture about minimal theory of mind.)
-  .notes So, apparently, if Tomasello et al are right, I'm wrong about two things:
-  .notes First, I'm wrong that knowlegde of others' minds first emerges around three or four years of age and that one-year-old infants have only core knowledge of mental states.
-  .notes And, seccond, I'm probably also wrong to think that abilities to communicate (whether by language or not) could explain the emergence of knowledge of others' minds.
-  .notes This is one reason for asking, What is a communicative action?
+    .notes So, apparently, if Tomasello et al are right, I'm wrong about two things:
+    .notes First, I'm wrong that knowlegde of others' minds first emerges around three or four years of age and that one-year-old infants have only core knowledge of mental states.
+    .notes And, seccond, I'm probably also wrong to think that abilities to communicate (whether by language or not) could explain the emergence of knowledge of others' minds.
+    .notes This is one reason for asking, What is a communicative action?
 
   
 +slide_middle
@@ -242,10 +276,11 @@ mixin slide_the_question()
     +to_comprehend
   +right_half({step:false})
     +to_produce
-  +invert('.know, .communicate')
-  .notes: :t()
-    We are looking for alternatives to the Gricean characterisation of communication,
-    alternatives that will provide us with a less complicated notion of pointing.
+  .slide
+    +invert('.know, .communicate')
+    .notes: :t
+      We are looking for alternatives to the Gricean characterisation of communication,
+      alternatives that will provide us with a less complicated notion of pointing.
 
 +slide_middle
   p.center first alternative
@@ -322,12 +357,14 @@ mixin slide_the_question()
     p.em-above Ulterior intention: that Ben come over.
     .notes These intentions have a means-end ordering; the ulterior intention is further down the means-end chain.
     .notes Strictly speaking, that Ben should come over might not be the first meaning of the wave (so there are other options here).
-  +highlight('.intention, .recognise', 'blue')
-  .notes As mentioned before, Grice's view involves intentions about recognising intentions.
-  +highlight('.mean')
-  .notes By contrast, Davidson's view requires an intention about meaning.
-  .notes What this involves depends, of course, on how we understand meaning.
-  .notes But maybe there is a way of understanding meaning on which this is not too demanding. (I'm really not sure.)
+  .slide
+    +highlight('.intention, .recognise', 'blue')
+    .notes As mentioned before, Grice's view involves intentions about recognising intentions.
+  .slide
+    +highlight('.mean')
+    .notes By contrast, Davidson's view requires an intention about meaning.
+    .notes What this involves depends, of course, on how we understand meaning.
+    .notes But maybe there is a way of understanding meaning on which this is not too demanding. (I'm really not sure.)
   
 +slide_rh_white
   .notes Now contrast Grice and Davidson on the pointing action from the Hare et al study, where you're supposed to take one of two containers.
@@ -350,9 +387,10 @@ mixin slide_the_question()
       span  to the left container
     p.em-above Ulterior Intention: that Ayesha select the left container
     .notes Strictly speaking, that Ben should come over might not be the first meaning of the wave (so there are other options here).
-  +highlight_('.intention, .recognise', 'blue')
-  +highlight('.refer')
-  .notes As before, there's a contrast in what must be intended and so what we're committing ourselves to in saying that infants can produce and comprehend informative pointing.
+  .slide
+    +highlight('.intention, .recognise', 'blue')
+    +highlight('.refer')
+    .notes As before, there's a contrast in what must be intended and so what we're committing ourselves to in saying that infants can produce and comprehend informative pointing.
   
 +slide_middle
   .notes Can we do anything with this?
@@ -370,7 +408,7 @@ mixin slide_the_question()
 +slide
   p How do infants understand pointing?
   .notes The question was, Should we accept that pointing (and linguistic communication) involves intentions about intentions?
-  ol.slide.em-above 
+  ol.slide.em-above.hem-around-children 
     li If Grice (and Tomasello et al) are right about communication, then infant pointing involves sophisticated insights into others’ minds.
     li.slide But there are alternatives to the Gricean story.
     li.slide If Davidson’s
@@ -379,14 +417,16 @@ mixin slide_the_question()
         span.meaning intentions about meaning
         span  or reference but not necessarily sophisticated insights into others’ minds.
     .notes Is this enough to save the view about development I wanted to offer.  Maybe, maybe not …
+  .slide
     +invert('.asterix')
     .notes (*Davidson himself thinks all communication involves sophisticated insights into others’ minds …)
+  .slide
     +invert('.meaning')
     .notes We have to say what meaning or reference is such that infants understand it.  I want to leave this as an open problem.  When we talk about action next time I'll provide a model for dealing with this sort of problem.
     
 +slide
   p What do we know about pointing?
-  ol
+  ol.hem-around-children
     li 11- and 12-month-old infants can point to (i) request, (ii) inform and (iii) initiate joint engagement.
     li.slide ... and they can understand these kinds of pointing gesture.
     li.slide Understanding pointing requires more than 

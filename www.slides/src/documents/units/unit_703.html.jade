@@ -31,7 +31,7 @@ include ../../../fragments/origins_mixins
     incompatible with respect to that used by them to hold the object in their
     own hand.’
   .notes: :t
-    Follow ups: tie hands; TMS (impair)
+    Follow ups: tie hands = \citet{ambrosini:2012_tie}; TMS (impair) = \citet{costantini:2013_how}.
   .notes: :t
     Planning-like processes in action observation have also been demonstrated
     by measuring observers' predictive gaze. If you were to observe just the
@@ -134,24 +134,21 @@ section.slide
 
 
 +slide_middle
-  .notes: :t
-    Recall David Marr’s famous three-fold distinction
-    between levels of description of a system: the computational theory, the 
-    representations and algorithm, and the hardware implementation.  
-  .computational.hem-around
-    p 1. computational description
-    p.indent -- What is the thing for and how does it achieve this?
-  .rep-and-alg.hem-around
-    p 2. representations and algorithms
-    p.notes.show.indent -- How are the inputs and outputs represented, and how is the transformation accomplished?
-  .hardware.hem-around
-    p 3. hardware implementation
-    p.indent -- How are the  representations and algorithms physically realised?
-  p.right.grey-text Marr (1992, 22ff)
+  +marrDistinction({step:false, handout:false})
   .slide
     +highlight-row('.computational')
     .notes: :t
       The teleological stance  provides a computational description of goal ascription.
+
++teleologicalStanceSlide({step:false, handout:false})
+  .notes: :t
+    The Teleological Stance provides a computational description of the process of goal ascription
+    that underpin proactive gaze in adults; the Motor Theory of Goal Ascription (partially) specifies
+    the representations and algorithms needed for this.
+
++slide_middle
+  +marrDistinction({step:false, handout:false})
+  +highlight-row('.computational')
   .slide
     +unhighlight-row('.computational')
     +highlight-row('.rep-and-alg')
@@ -159,7 +156,6 @@ section.slide
       The motor theory of goal ascription provides an account of the 
       representations and algorithms, one that competes with Csibra and Gergely’s 
       account based on general reasoning.
-
 
 
 +slide_rh_white({step:true})

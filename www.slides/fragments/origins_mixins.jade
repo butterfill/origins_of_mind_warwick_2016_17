@@ -730,9 +730,9 @@ mixin slide_diagram_core_knowledge_to_concept
                   div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; text-align: inherit; text-decoration: inherit;')
                     font(color='#ffffff')
                       span(style='font-size: 24px; line-height: 30.2399997711182px;')
-                        | acquire
+                        | know facts
                         br
-                        | concept of Xs
+                        | about Xs
               text(x='76', y='37', fill='#000000', text-anchor='middle', font-size='12px', font-family='Lato') [Not supported by viewer]
         g.because-experience.hide
           rect(x='356', y='149', width='140', height='105', fill='none', stroke='none', transform='rotate(-90,426,202)', pointer-events='none')
@@ -1190,3 +1190,42 @@ mixin maxiStory(p)
       +show('.step4')
   else
     +show('.step2, .step3, .step4', 0)
+
+
+
+mixin marrDistinction(p)
+  if typeof(p) === 'undefined'
+    - p = {}
+  if !('step' in p)
+    - p.step = false
+  if !('handout' in p)
+    - p.handout = false
+
+    if p.handout
+    .handout: :t
+      \citet[p.~22ff]{Marr:1982kx} distinguishes:
+    .handout: :t
+      \begin{itemize}
+    .handout: :t
+      \item computational description---What is the thing for and how does it achieve this?
+    .handout: :t
+      \item representations and algorithms---How are the inputs and outputs represented, and how is the transformation accomplished?
+    .handout: :t
+      \item hardware implementation---How are the representations and algorithms physically realised?
+    .handout: :t
+      \end{itemize}
+    
+  .notes: :t
+    Recall David Marr’s famous three-fold distinction
+    between levels of description of a system: the computational theory, the 
+    representations and algorithm, and the hardware implementation.  
+  .computational.hem-around
+    p 1. computational description
+    p.indent(class="#{p.step ? 'slide' : ''}") -- What is the thing for and how does it achieve this?
+  .rep-and-alg.hem-around(class="#{p.step ? 'slide' : ''}")
+    p 2. representations and algorithms
+    p.notes.show.indent(class="#{p.step ? 'slide' : ''}") -- How are the inputs and outputs represented, and how is the transformation accomplished?
+  .hardware.hem-around(class="#{p.step ? 'slide' : ''}")
+    p 3. hardware implementation
+    p.indent(class="#{p.step ? 'slide' : ''}") -- How are the  representations and algorithms physically realised?
+  p.right.grey-text Marr (1992, 22ff)

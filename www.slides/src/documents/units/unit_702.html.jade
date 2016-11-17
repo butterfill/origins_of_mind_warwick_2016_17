@@ -163,13 +163,13 @@ mixin slide_about_intentions_and_goal_ascription()
 
 +slide_middle
   p Requirements:
-  p.hem-around (1) reliably: R(a,G)  
+  p.hem-around.reliably-matches (1) reliably: R(a,G)  
     span.when when
     span  and 
     span.only-when only when
     span  a is directed to G
   p.hem-around.readily-detectable (2) R(a,G) is  readily detectable
-  p.hem-around.detectable-without (3) R(a,G) is readily detectable  
+  p.hem-around.detectable-without (3) R(a,G) is detectable  
     span.without-k-of-mental-states without any knowledge of mental states
   p.hem-around &nbsp;
   p.candidate-causes.hide R(a,G) =df a causes G?
@@ -178,6 +178,14 @@ mixin slide_about_intentions_and_goal_ascription()
   p.candidate-ts.hide R(a,G) =df a ‘is seen as the most justifiable action towards [G] that is available within the constraints of reality’?
   .slide
     +show('.candidate-causes')
+  .slide
+    +highlight-row('.detectable-without')
+  .slide
+    +unhighlight-row('.detectable-without')
+    +highlight-row('.readily-detectable')
+  .slide
+    +unhighlight-row('.readily-detectable')
+    +highlight-row('.reliably-matches')
     .notes: :t
       How about taking $R$ to be causation?
       That is, how about defining $R(a,G)$ as $a$ causes $G$?
@@ -212,6 +220,7 @@ mixin slide_about_intentions_and_goal_ascription()
       +unhighlight('.only-when', 'red')
       +highlight('.when', 'red')
     .slide
+      +unhighlight-row('.reliably-matches')
       +unhighlight('.when', 'red')
       +blur('.candidate-causes')
   .slide

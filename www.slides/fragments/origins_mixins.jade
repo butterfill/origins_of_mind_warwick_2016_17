@@ -1261,3 +1261,31 @@ mixin slide_falseBeliefDevelopmentalPuzzle(p)
         at any one point in time.
     block
 
+mixin slide_signatureLimitsGeneratePredictions(p)
+  if typeof(p) === 'undefined'
+    - p = {}
+  if !('step' in p)
+    - p.step = false
+  if !('handout' in p)
+    - p.handout = false
+    
+  +slide_rh_white({step:p.step})
+    +run_across
+      p.center signature limits generate predictions
+    +left_half
+      p Hypothesis:
+      p Some automatic belief-tracking systems rely on minimal models of the mental.
+    +right_half
+      p Hypothesis:
+      p Infants’ belief-tracking abilities rely on minimal models of the mental.
+    .clear
+    +left_half
+      p.em-above Prediction:
+      p Automatic belief-tracking is subject to the signature limits of minimal models.
+    +right_half
+      p.em-above Prediction:
+      p Infants’ belief-tracking is subject to the signature limits of minimal models.
+    if p.step
+      +hide('.right-half', 0)
+      .slide
+        +show('.right-half-white, .right-half')

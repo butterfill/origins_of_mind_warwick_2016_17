@@ -1,0 +1,223 @@
+---cson
+layout: 'deck_unit'
+title: "Mindreading in Adults: Dual Processes"
+tags: []
+description: """
+  In adults, mindreading is sometimes entirely a consequence of relatively automatic
+  processes and sometimes not.
+  Further, automatic and nonautomatic mindreading processes are independent
+  in this sense: different conditions influence whether they occur and
+  which ascriptions they generate.
+  """
+depends: ['']
+source: ['']
+duration: 5
+book: []
+exercises: []
+exercises_fast: []
+---
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/origins_mixins
+
+.handout Are human adults’ abilities to represent beliefs automatic?
+.handout: :t
+  There is evidence that some mindreading in human adults is
+  entirely a consequence of relatively automatic processes
+  \citep{kovacs_social_2010,Schneider:2011fk,Wel:2013uq} and
+  that not all mindreading in human adults is
+  \citep{apperly:2008_back,apperly_why_2010}.
+.handout: :t
+  \citet{qureshi:2010_executive} found that automatic and nonautomatic
+  mindreading processes are differently influenced by cognitive load, and
+  \citet{todd:2016_dissociating} provided evidence that adding time pressure
+  affects nonautomatic but not automatic mindreading processes.
+
+
++slide_middle
+  .notes: :t
+    A process involves \emph{belief-tracking} if how processes of this type unfold
+    typically and nonaccidentally depends on facts about beliefs.
+    So belief tracking can, but need not, involve representing beliefs.
+  p.center.notes.handout.show 
+    //- span.step2.hide Is
+    span.belief-tracking belief-tracking
+    span.step2.hide  is 
+      span.sometimes sometimes
+      span   but not always   
+    span.automatic.hide automatic
+    //- span.step2.hide  in human adults
+  .slide
+    +fade('.belief-tracking')
+    +show('.automatic')
+    .notes.handout: :t
+      A process is \emph{automatic} to the degree that whether it occurs is independent of its 
+      relevance to the particulars of the subject's task, motives and aims.
+  .slide
+    +unfade('.belief-tracking')
+    +show('.step2')
+    .notes.handout: :t
+      Or, more carefully, does belief tracking in human adults depend only
+      on processes which are automatic?
+    .handout Yes: \citet{Schneider:2011fk,schneider:2014_task,kovacs_social_2010} 
+    .handout No: \citet{back:2010_apperly}
+    .handout Yes and No: \citep[p.\ 132]{Wel:2013uq}
+    .notes: :t
+      There is now a variety of evidence that belief-tracking is sometimes and
+      not always automatic in adults.  Let me give you just one experiment here
+      to illustrate.
+  .slide
+    +invert('.sometimes')
+
++slide({bkg:'kovacs_et_al/01.jpg'})
+  p.source Kovacs et al, 2010
++slide({bkg:'kovacs_et_al/02.jpg'})
+  p.source Kovacs et al, 2010
++slide({bkg:'kovacs_et_al/03.jpg'})
+  p.source Kovacs et al, 2010
++slide({bkg:'kovacs_et_al/04.jpg'})
+  p.source Kovacs et al, 2010
++slide({bkg:'kovacs_et_al/01.jpg'}) 
+  p.source Kovacs et al, 2010
++slide({bkg:'kovacs_et_al/04.jpg'})
+  p.source Kovacs et al, 2010
++slide({bkg:'kovacs_et_al/07.jpg'})
+  p.source Kovacs et al, 2010
++slide({bkg:'kovacs_et_al/01.jpg'})
+  p.source Kovacs et al, 2010
++slide({bkg:'kovacs_et_al/09.jpg'})
+  p.source Kovacs et al, 2010
++slide({bkg:'kovacs_et_al/10.jpg'})
+  p.source Kovacs et al, 2010
+
+
+
+
++slide({bkg:'schneider_2014_fig1.png'})
+  p.source Schneider et al (2014, figure 1)
+  .notes: :t
+    [skip this slide]
+  .notes: :t
+    One way to show that mindreading is automatic is to give subjects a task which does not require tracking beliefs and then to compare their performance in two scenarios:
+    a scenario where someone else has a false belief, and a scenario in which someone else has a true belief.
+    If mindreading occurs automatically, performance should not vary between the two scenarios because others’ beliefs are always irrelevant to the subjects’ task and motivations.
++slide({bkg:'schneider_2014_fig3.png'})
+  p.source Schneider et al (2014, figure 3)
+  .notes: :t
+    [skip this slide]
+  .notes: :t
+    \citet{Schneider:2011fk} did just this.
+    They showed their participants a series of videos and instructed them to detect when a figure waved or, in a second experiment, to discriminate between high and low tones as quickly as possible.
+    Performing these tasks did not require tracking anyone’s beliefs, and the participants did not report mindreading when asked afterwards.
+  .notes: :t
+    on experiment 1: ‘Participants never reported belief tracking when questioned in an open format after the experiment (“What do you think this experiment was about?”). Furthermore, this verbal debriefing about the experiment’s purpose never triggered participants to indicate that they followed the actor’s belief state’ \citep[p.~2]{Schneider:2011fk}
+  .notes: :t
+    Nevertheless, participants’ eye movements indicated that they were tracking the beliefs of a person who happened to be in the videos.
+  .notes: :t
+    In a further study, \citet{schneider:2014_task} raised the stakes by giving participants a task that would be harder to perform if they were tracking another’s beliefs.
+    So now tracking another’s beliefs is not only irrelevant to performing the tasks: it may actually hinder performance.
+    Despite this, they found evidence in adults’ looking times that they were tracking another’s false beliefs.
+    This indicates that ‘subjects … track the mental states of others even when they have instructions to complete a task that is incongruent with this operation’ \citep[p.~46]{schneider:2014_task} and so provides evidence for automaticity.%
+    \footnote{%
+    % quote is necessary to qualify in the light of their interpretation; difference between looking at end (task-dependent) and at an earlier phase (task-independent)?
+    %\citet[p.~46]{schneider:2014_task}: ‘we have demonstrated here that subjects implicitly track the mental states of others even when they have instructions to complete a task that is incongruent with this operation. These results provide support for the hypothesis that there exists a ToM mechanism that can operate implicitly to extract belief like states of others (Apperly & Butterfill, 2009) that is immune to top-down task settings.’
+    It is hard to completely rule out the possibility that belief tracking is merely spontaneous rather than automatic. 
+    I take the fact that belief tracking occurs despite plausibly making subjects’ tasks harder to perform to indicate automaticity over spontaneity. 
+    If non-automatic belief tracking typically involves awareness of belief tracking, then the fact that subjects did not mention belief tracking when asked after the experiment about its purpose and what they were doing in it further supports the claim that belief tracking was automatic.
+    }
+  .notes: :t
+    Further evidence that mindreading can occur in adults even when counterproductive has been provided by \citet{kovacs_social_2010}, who showed that another’s irrelevant beliefs about the location of an object can affect how quickly people can detect the object’s presence, 
+    and by \citet{Wel:2013uq}, who showed that the same can influence the paths people take to reach an object.
+    Taken together, this is compelling evidence that mindreading in adult humans sometimes involves automatic processes only.
+  .handout: :t
+     ‘Participants never reported belief tracking when questioned in an open format after the experiment (“What do you think this experiment was about?”). Furthermore, this verbal debriefing about the experiment’s purpose never triggered participants to indicate that they followed the actor’s belief state’ \citep[p.~2]{Schneider:2011fk}
+
+
+
+
+
++slide_middle
+  p.center.notes.show 
+    //- span.step2.hide Is
+    span.belief-tracking belief-tracking
+    span.step2  is 
+      span.sometimes sometimes
+      span   but 
+      span.not-always not always
+    span &nbsp;
+    span.automatic automatic
+  +invert('.sometimes', 0)
+  .slide
+    +uninvert('.sometimes')
+    +invert('.not-always')
+  .slide.demanding
+    +reset
+      .spacer &nbsp;
+      .em-above.hem-around-children
+        p.indent -- can consume attention and working memory
+        p.indent -- can require inhibition
+  .slide
+    +uninvert('.not-always')
+    +hide('.demanding')
+  .slide.dual-process
+    +reset
+      .spacer &nbsp;
+      .spacer &nbsp;
+      .em-above
+        p.center Dual Process Theory of Mindreading
+        p.hem-around: :t
+          Automatic and nonautomatic mindreading processes are distinct : different conditions
+          influence whether they occur and which ascriptions they generate.
+        .handout: :t
+          \emph{Dual Process Theory of Mindreading}.  
+          Automatic and nonautomatic mindreading processes are independent in
+          this sense: different conditions influence whether they occur and
+          which ascriptions they generate \citep[e.g.][]{todd:2016_dissociating,qureshi:2010_executive}. 
+    
++slide_falseBeliefDevelopmentalPuzzle
+  .notes: :t
+    How might this help us with the puzzle about development?
+
+
+
++slide_middle
+  .notes: :t
+    Recall this conjecture from earlier ...
+  .conjecture.notes.show
+    p.center Conjecture
+    .em-around-children
+      p.one 
+        span Infants have 
+        span.ckm core knowledge of minds
+        span  and actions.
+      p.two: span Core knowledge is sufficient for success on non-A-tasks.
+      p.three: span  Infants lack knowledge of minds and actions.
+      p.four: span  Knowledge is necessary for success on A-tasks.
+    .slide
+      +invert('.ckm')
+      .notes: :t
+        The first challenge was to say what core knowledge of minds might be ...
+    .slide
+      +blur('.conjecture span:not(.ckm)')
+      p.em-above core knowledge of minds = the representations underpining automatic belief-tracking?
+  .slide
+    +unblur('.conjecture span:not(.ckm)')
+    +uninvert('.ckm')
+  .slide
+    +reset
+      +blur('.conjecture')
+      p.center.huge-glow-120 evidence?
+      .notes: :t
+        So far we have no evidence for the conjecture!
+
+//- 
+//-   p ‘Two Systems’ Conjecture
+//-   .notes.handout: :t
+//-     A conjecture about the development of mindreading:
+//-   .hem-around-children.notes.handout.ctd.show
+//-     p 1. A-tasks require nonautomatic mindreading processes.
+//-     p 2. Non-A-tasks don’t require nonautomatic mindreading.
+//-     p 3. Automatic mindreading processes enable belief-tracking from the first year of life ...
+//-     p 4. ... whereas nonautomatic mindreading processes do not enable belief-tracking until later.
+//-   .notes.handout.ctd: :t
+//-     See \citep{Apperly:2009ju,low:2016_cognitive}.

@@ -30,7 +30,40 @@ include ../../../fragments/origins_mixins
     This wasn't clear enough in the lecture (sorry!).
 
 
-  
+
++slide_rh_white
+  +run_across
+    p.center Two models of minds and actions
+  +left_half
+    p.center Belief explanation
+  +right_half
+    p.center Fact explanation
+  .clear
+  +left_half
+    p Maxi wants his chocolate.
+  +right_half
+    p Maxi wants his chocolate.
+  .clear
+  +left_half
+    p.belief Maxi believes his chocolate is in the blue box.
+  +right_half
+    p Maxi’s chocolate is in the green box.
+  .clear
+  +left_half
+    p Therefore:
+  +right_half
+    p Therefore:
+  .clear
+  +left_half
+    p Maxi will look in the blue box.
+  +right_half
+    p Maxi will look in the red box.
+  +hide('.right-half, .right-half-white', 0)
+  .slide
+    +show('.right-half, .right-half-white')
+  .slide
+    +highlight-row('.belief')
+
   
 +slide
   .notes: :t
@@ -150,7 +183,7 @@ include ../../../fragments/origins_mixins
       p.em-above Communicating
         span.float-right.grey-text (Southgate et al 2010)
     
-    //- Infants is looking time paradigm
+    //- No! Infants is looking time paradigm
     //- .slide
     //-   p.em-above Altercentric interference
     //-     span.float-right.grey-text (Kovacs et al 2010)
@@ -159,59 +192,50 @@ include ../../../fragments/origins_mixins
     +blur('.non-a-tasks')
     +reset-escape-inner
       +_slide_middle_inner
-        p.center.huge-glow non-A-tasks
-        .notes: :t
-          A non-A-Task is a task that is not an A-task.  I was tempted to call these
-          B-Tasks, but that would imply that they have a unity.  And whereas we know 
-          from a meta-analysis that A-tasks do seem to measure a single underlying
-          competence, we don’t yet know whether all non-A-tasks measure a single thing
-          or whether there might be several different things.
-        .slide
-          +blur('.non-a-tasks', '10px')
-          .notes Why do infants systematically pass non-A-tasks in the first year or two of life? There is a simple explanation ...
-          p(style='margin-top:-7em;margin-left:4em;') Children pass
-          p(style='margin-top:3em;margin-left:10em;') by relying on a model of minds and actions that does incorporate beliefs
+        .bkg-white-row
+          p.center.huge-glow-invert non-A-tasks
           .notes: :t
-            And this is *almost* everything we need to generate the puzzle about development.
+            A non-A-Task is a task that is not an A-task.  I was tempted to call these
+            B-Tasks, but that would imply that they have a unity.  And whereas we know 
+            from a meta-analysis that A-tasks do seem to measure a single underlying
+            competence, we don’t yet know whether all non-A-tasks measure a single thing
+            or whether there might be several different things.
+          .slide
+            +blur('.non-a-tasks', '10px')
+            .notes: :t
+              Why do infants systematically pass non-A-tasks in the first year
+              or two of life? There is a simple explanation ...
+            p.invert(style='margin-top:-7em;margin-left:4em;') Children pass
+            p.invert(style='margin-top:3em;margin-left:10em;') by relying on a model of minds and actions that does incorporate beliefs
+            .notes: :t
+              And this is *almost* everything we need to generate the puzzle about development.
+
+
+
   
 
-+slide_middle
-  .one.hide
-    p.center.huge-glow A-tasks
-    p(style='margin-top:-7em;margin-left:4em;') Children fail
-    p(style='margin-top:3em;margin-left:10em;') because they rely on a model of minds and actions that does not incorporate beliefs
-  
-  .two.hide
-    .bkg-white-row
-      p.center.huge-glow-invert non-A-tasks
-      p.invert(style='margin-top:-7em;margin-left:4em;') Children pass
-      p.invert(style='margin-top:3em;margin-left:10em;') by relying on a model of minds and actions that does incorporate beliefs
-    
++slide_falseBeliefDevelopmentalPuzzle
+  +hide('.dogma-of-mindreading', 0)
   .notes: :t
+    We’ve seen that ...
     To get a contradiction we need one further ingredient.
-  
-  
-  p.center.huge-glow.dogma dogma
-  p(style="margin-top:-6em;padding-left:180px") the
-  p(style="margin-top:2em;padding-left:400px") of mindreading
-  .notes: :t
-    The dogma is that any individual has at most one model of minds and actions
-    at any one point in time.
-  .notes: :t
-    These three claims are jointly inconsistent so one of them must be false.  
-    Researchers disagree about which claim to reject.
-    But I suppose you can tell from how I’ve labelled them which one I 
-    propose to reject.
   .slide
-    +show('.one, .two')
-  .slide
-    +blur('.one, .two', '5px')
-    //- +attr('.dogma','style','color:#881616')
-    //- +highlight-row('.dogma', 'red')
+    +show('.dogma-of-mindreading')
+    .notes: :t
+      These three claims are jointly inconsistent so one of them must be false.  
+      Researchers disagree about which claim to reject.
+      But I suppose you can tell from how I’ve labelled them which one I 
+      propose to reject.
+    .slide
+      +blur('.one, .two', '5px')
+      +attr('.dogma','style','color:#881616')
+      //- +highlight-row('.dogma', 'red')
   
 
 
-
+//- 
+  TODO: do this later (it refers to representations and algorithms, not the
+  computational description)
   
 
 +slide({bkg:'slide_lecture04_013.jpg'})
@@ -229,35 +253,35 @@ include ../../../fragments/origins_mixins
 
 +slide
   +discrepancyTable
-
-+slide_middle
-  p 1. There are subjects who can pass A-tasks but cannot pass B-tasks.
-  p.em-above 2. These subjects’ success on A-tasks is explained by the fact that they 
-    span.bold can
-    span  
-    span.represent represent
-    span  (false) beliefs.
-  p.em-above  3. These subjects’  failure on B-tasks is explained by the fact that they 
-    span.bold cannot
-    span  
-    span.represent represent
-    span  (false) beliefs.
-  .slide
-    +highlight('.represent')
-    .notes: :t()
-      So we're invited to think that there may be representation in one sense but not another.
-      Only the second sense is knowledge.
-    
-  
-
-
-+slide_middle
-  p.center Is core knowledge (modularity) the solution?
-  .notes Can we solve the puzzle by appeal to core knowledge (or 'modularity')?
-  .notes The difference in measures is a hopeful sign that we can.
-  .notes But the fact that representations of others' minds influence 1-year-olds' actions (e.g. in communicating and helping) complicates things because we imagine modules as inferentially isolated from practical reasoning.
-  .notes Looking at a further puzzle will help us.
-
-// +slide({bkg:'unit_411/slide_budapest_lecture01_73.jpg'})
-//   .notes Here's the first puzzle one more time.
-//   // *todo* cut?
+//-
+//- +slide_middle
+//-   p 1. There are subjects who can pass A-tasks but cannot pass B-tasks.
+//-   p.em-above 2. These subjects’ success on A-tasks is explained by the fact that they
+//-     span.bold can
+//-     span
+//-     span.represent represent
+//-     span  (false) beliefs.
+//-   p.em-above  3. These subjects’  failure on B-tasks is explained by the fact that they
+//-     span.bold cannot
+//-     span
+//-     span.represent represent
+//-     span  (false) beliefs.
+//-   .slide
+//-     +highlight('.represent')
+//-     .notes: :t()
+//-       So we're invited to think that there may be representation in one sense but not another.
+//-       Only the second sense is knowledge.
+//-
+//-
+//-
+//-
+//- +slide_middle
+//-   p.center Is core knowledge (modularity) the solution?
+//-   .notes Can we solve the puzzle by appeal to core knowledge (or 'modularity')?
+//-   .notes The difference in measures is a hopeful sign that we can.
+//-   .notes But the fact that representations of others' minds influence 1-year-olds' actions (e.g. in communicating and helping) complicates things because we imagine modules as inferentially isolated from practical reasoning.
+//-   .notes Looking at a further puzzle will help us.
+//-
+//- // +slide({bkg:'unit_411/slide_budapest_lecture01_73.jpg'})
+//- //   .notes Here's the first puzzle one more time.
+//- //   // *todo* cut?

@@ -20,13 +20,19 @@ exercises_fast: []
 include ../../../fragments/unit_mixins
 include ../../../fragments/origins_mixins
 
-.handout Are human adults’ abilities to represent beliefs automatic?
+.handout: :t
+  Is mindreading automatic?
+  (More carefully: Does belief tracking in human adults depend only
+  on processes which are automatic?)
+.handout: :t
+  A process is \emph{automatic} to the degree that whether it occurs is independent of its 
+  relevance to the particulars of the subject's task, motives and aims.
 .handout: :t
   There is evidence that some mindreading in human adults is
   entirely a consequence of relatively automatic processes
-  \citep{kovacs_social_2010,Schneider:2011fk,Wel:2013uq} and
+  \citep{kovacs_social_2010,Schneider:2011fk,Wel:2013uq}, and
   that not all mindreading in human adults is
-  \citep{apperly:2008_back,apperly_why_2010}.
+  \citep{apperly:2008_back,apperly_why_2010,Wel:2013uq}.
 .handout: :t
   \citet{qureshi:2010_executive} found that automatic and nonautomatic
   mindreading processes are differently influenced by cognitive load, and
@@ -39,7 +45,7 @@ include ../../../fragments/origins_mixins
     A process involves \emph{belief-tracking} if how processes of this type unfold
     typically and nonaccidentally depends on facts about beliefs.
     So belief tracking can, but need not, involve representing beliefs.
-  p.center.notes.handout.show 
+  p.center.notes.show 
     //- span.step2.hide Is
     span.belief-tracking belief-tracking
     span.step2.hide  is 
@@ -50,18 +56,15 @@ include ../../../fragments/origins_mixins
   .slide
     +fade('.belief-tracking')
     +show('.automatic')
-    .notes.handout: :t
+    .notes: :t
       A process is \emph{automatic} to the degree that whether it occurs is independent of its 
       relevance to the particulars of the subject's task, motives and aims.
   .slide
     +unfade('.belief-tracking')
     +show('.step2')
-    .notes.handout: :t
+    .notes: :t
       Or, more carefully, does belief tracking in human adults depend only
       on processes which are automatic?
-    .handout Yes: \citet{Schneider:2011fk,schneider:2014_task,kovacs_social_2010} 
-    .handout No: \citet{back:2010_apperly}
-    .handout Yes and No: \citep[p.\ 132]{Wel:2013uq}
     .notes: :t
       There is now a variety of evidence that belief-tracking is sometimes and
       not always automatic in adults.  Let me give you just one experiment here

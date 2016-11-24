@@ -17,6 +17,9 @@ mixin title_slide({document:document, images:images})
 
 // *todo* too long and not clear enough
 
++slide
+  +fromActionToWordsFigure
+
 
 //- Knowledge of Mind
 +insert_unit({unit:'401', title_slide:false, images:images})
@@ -140,8 +143,20 @@ mixin title_slide({document:document, images:images})
 
 +slide_falseBeliefDevelopmentalPuzzle
   .notes: :t
-    The puzzle.
-
+    Now we have all the ingredients for a solution.
+  .notes: :t
+    Finding: infant belief-tracking processes rely on minimal models of the mental.
+    Therefore: infant belief-tracking processes rely on the same processes that 
+    underpin automatic belief-tracking in adults.
+  .notes: :t
+    Non-A-tasks measure responses driven (or dominated) by automatic processes. 
+    Therefore: Success on non-A-tasks could be a entirely consequence of automatic belief-tracking
+    processes.
+    Therefore: infants should pass non-A-tasks.
+  .notes: :t
+    A-tasks measure responses driven (or dominated) by nonautomatic processes. Therefore: Success on
+    A-tasks requires non-automatic belief-tracking processes; it could not be entirely consequence of
+    automatic belief-tracking processes. Therefore: infants should fail A-tasks.
 
 +slide_middle
   .notes: :t
@@ -153,35 +168,60 @@ mixin title_slide({document:document, images:images})
         span Infants have 
         span.ckm core knowledge of minds
         span  and actions.
-      p.two: span Core knowledge is sufficient for success on non-A-tasks.
+      p.two.sufficient-for: span Core knowledge is sufficient for success on non-A-tasks.
       p.three: span  Infants lack knowledge of minds and actions.
-      p.four: span  Knowledge is necessary for success on A-tasks.
+      p.four.necessary-for: span  Knowledge is necessary for success on A-tasks.
     .slide
       +invert('.ckm')
       .notes: :t
         The first challenge was to say what core knowledge of minds might be ...
-    .slide
+  .slide
+    .what-ck-is
       +blur('.conjecture span:not(.ckm)')
-      p.em-above core knowledge of minds = the representations underpining automatic belief-tracking?
+      p.em-above core knowledge of minds = the representations underpining automatic belief-tracking
+        span.mtm.hide , which rely on a minimal model of the mental.
+      
   .slide
     +unblur('.conjecture span:not(.ckm)')
     +uninvert('.ckm')
   .slide
+    +highlight-row('.sufficient-for')
+    .notes: :t
+      Why think that core konwledge is sufficient for success on non-A-tasks?
+      Because these measure responses driven (or dominated) by automatic processes.
+      (And we equated core knowledge with the representations underpinning
+      automatic belief-tracking in adults.)
+  .slide
+    +unhighlight-row('.sufficient-for')
+    +highlight-row('.necessary-for')
+    .notes: :t
+      Why think that knowledge knowledge is necessary for success on A-tasks?
+      Because these measure responses driven (or dominated) by nonautomatic processes.
+  .slide
+    +unhighlight-row('.necessary-for')
+  .slide
     +reset
-      +blur('.conjecture')
-      p.center.huge-glow-120 evidence?
-      .notes: :t
-        So far we have no evidence for the conjecture!
+      +blur('.conjecture, .what-ck-is')
+      p.center.huge-glow-120 evidence
+      .slide
+        +unblur('.what-ck-is')
+        +show('.mtm')
+        +highlight('.mtm')
+      .slide
+        +fade('.conjecture, .what-ck-is')
+        p.center.huge-glow-70 signature limits
+        
++slide_falseBeliefDevelopmentalPuzzle
 
 
 
- +slide({bkg:'slide_rediscovery_mindreading.jpg'})  
-  .notes: :t
-    theme A: explain the origins of knowledge of others minds : development as
-    rediscovery. There is a modular capacity ( = core knowledge). But this
-    doesn't lead to adult-like understanding for years, and the acquisition of
-    adult-like understanding hinges on language; may involve completely
-    different model of mental states.
++slide({bkg:'slide_rediscovery_mindreading.jpg'})  
+.notes: :t
+  theme A: explain the origins of knowledge of others minds : development as
+  rediscovery. There is a modular capacity ( = core knowledge). But this
+  doesn't lead to adult-like understanding for years, and the acquisition of
+  adult-like understanding hinges on language; may involve completely
+  different model of mental states.
 
 +slide
   +fromActionToWordsFigure

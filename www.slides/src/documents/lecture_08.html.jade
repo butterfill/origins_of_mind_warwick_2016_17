@@ -1,0 +1,19 @@
+---cson
+layout: 'default2'
+title: 'Lecture 08'
+weburl: ''
+units: []
+lecture_date: '2016/12/01'
+hidden: false
+---
+
+include ../../fragments/lecture_mixins
+include ../../fragments/unit_mixins
+include ../../fragments/origins_mixins
+
+- var images = get_images('bees')
+
+mixin title_slide({document:document, images:images})
+
+
++insert_unit({unit:'801', title_slide:false, images:images})

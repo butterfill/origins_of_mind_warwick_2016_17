@@ -41,12 +41,12 @@ include ../../../fragments/origins_mixins
     These findings tell us that not all abilities to represent others' mental states can depend on things like language.
     And, as I've been stressing, these findings also create a puzzle.
     The puzzle is, roughly, how to reconcile infants' competence with three-year-olds' failure.
-  .notes: :t
-    *todo*: There are at least two possible puzzles you might focus on:
-    1. How can we avoid the apparent contradiction in the evidence?
-    2. How can we explain the apparent discrepancy between infants and 3-year-olds' performances?
-    Minimal theory of mind might resolve puzzle 1 but it won't by itself resolve puzzle 2.
-    This wasn't clear enough in the lecture (sorry!).
+  //- .notes: :t
+  //-   *todo*: There are at least two possible puzzles you might focus on:
+  //-   1. How can we avoid the apparent contradiction in the evidence?
+  //-   2. How can we explain the apparent discrepancy between infants and 3-year-olds' performances?
+  //-   Minimal theory of mind might resolve puzzle 1 but it won't by itself resolve puzzle 2.
+  //-   This wasn't clear enough in the lecture (sorry!).
 
 
 
@@ -74,7 +74,7 @@ include ../../../fragments/origins_mixins
     p Therefore:
   .clear
   +left_half
-    p Maxi will look in the blue box.
+    p.prediction Maxi will look in the blue box.
   +right_half
     p Maxi will look in the red box.
   +hide('.right-half, .right-half-white', 0)
@@ -82,7 +82,10 @@ include ../../../fragments/origins_mixins
     +show('.right-half, .right-half-white')
   .slide
     +highlight-row('.belief')
-
+  .slide
+    +unhighlight-row('.belief')
+    +highlight-row('.prediction')
+    
   
 +slide
   .notes: :t
@@ -273,9 +276,16 @@ include ../../../fragments/origins_mixins
 +slide
   +discrepancyTable
 
+
+
++slide
+  +timer-element('timer1','60s',{hide:true})
+    p.center What is the developmental puzzle about false belief?
+  +show-timer('timer1')
+  +start-timer('timer1')
+
+
 +slide_falseBeliefDevelopmentalPuzzle
-  .notes: :t
-    How does this bear on the case of mindreading?
 
 +slide_middle
   .notes.show

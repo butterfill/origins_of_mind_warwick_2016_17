@@ -3,12 +3,9 @@ layout: 'deck_unit'
 title: "Joint Action: The Challenge"
 tags: []
 description: """
-  The challenge is to explain the emergence, in evolution or development, of sophisticated 
-  forms of human activity including, referential communication and mindreading.
-  This arguably involves invoking joint action.
-  But on the leading, best developed account (Bratman’s), joint action presupposes
-  mindreading at the limits of human abilities.
-  What to do?
+  Joint action is arguably required to explain the emergence, in evolution or
+  development, of sophisticated forms of human activity including, referential
+  communication and mindreading.
   """
 ---
 
@@ -81,8 +78,9 @@ include ../../../fragments/joint_action_mixins
     span &nbsp; 
     span.step2.joint-action Joint action!
   .notes There seems to be some consensus on the idea that joint action is particularly important.
-  +invert('.joint-action')
-  .notes But what is joint action?
+  .slide
+    +invert('.joint-action')
+    .notes But what is joint action?
 
 +slide({bkg:'contrast_cases/slide03.jpg'})
   .notes A paradigm case of joint action would be two sisters cycling to school together.
@@ -112,201 +110,4 @@ include ../../../fragments/joint_action_mixins
       It will take me a while to explain what the objection is.
       The objection arises when we ask ask what joint action is.
 
-
-
-+slide_middle
-  p.center What distingiushes joint action from parallel but merely individual action?
-
-+slide({bkg:'contrast_cases/slide05.jpg'})
-+slide({bkg:'contrast_cases/slide06.jpg'})
-+slide({bkg:'contrast_cases/slide07.jpg'})
-+slide_middle({bkg:'contrast_cases/slide07.jpg'})
-  +blur('img.bkg')
-  p.center shared intention
-
-//- TODO: here: give gentle introduction to Bratman!
-
-
-+slide_rh_white
-  +left_half
-    p (a) All joint action involves shared intention.
-    p.em-above (b) Bratman is right about shared intention.
-    .slide
-      .notes.handout.show: :t
-        ‘I will … adopt Bratman’s … influential formulation of joint action … 
-        each partner needs to 
-        intend to perform the joint action together ‘‘in accordance with and because of 
-        meshing subplans’’ (p. 338) and this needs to be common knowledge between the participants.’ 
-      .notes.handout.ctd \citep[][p.\ 281]{carpenter:2009_howjoint}
-      p.right.grey-text Carpenter(2009, p. 281)
-    
-  .slide
-    +blur('.left-half')
-    +right_half
-      .notes: :t
-        In making this idea more precise, Bratman proposes sufficient conditions for us to have
-        a shared intention that we J ...
-      .notes: :t
-        ... the idea is then that an intentional joint action is an action that is appropriately 
-        related to a shared intention.
-      .shared-intention-conditions
-        +shared-intention-conditions
-      .notes: :t
-        Note that the conditions require not just that we intend the joint action, but that we 
-        intend it because of each other's intentions, where this is common knowledge.
-      .slide
-        +highlight('.condition-2', 'pink')
-      .notes: :t
-        So we need not just intentions about intentions ...
-      .slide
-        +unhighlight('.condition-2', 'pink')
-        +highlight('.condition-3', 'pink')
-      .notes: :t
-        ... also you need to know things about my knowledge of your intentions concerning my intentions.
-
-
-
-+slide({bkg:'bratman_escalation.svg'})
-  .notes: :t
-     This indicates that, in general, having shared intentions requires mindreading at close to (or perhaps just beyond) the limits of most adult humans' abilities.
-     Bratman's account of shared intention is an example where 
-     reciprocity is modeled as higher-order escalation.
-  .notes.handout: :t
-    Objection: Meeting the sufficient conditions for joint action given by Bratman’s account could not significantly 
-    \textit{explain} the development of an understanding of minds because it already \textit{presupposes} 
-    too much sophistication in the use of psychological concepts.
-  .notes And this is a problem for us ...
-
-
-+slide_challenge_etc
-  .blur(style='-webkit-filter:blur(2px)')
-    +el_challenge
-  +el_conjecture
-  .notes This is a problem because our conjecture was that joint action plays a role in explaining how sophisticated human activities emerge.
-  .slide
-    +blur('.conjecture')
-    +el_objection
-    .notes: :t
-      But if joint action presupposes mindreading at close to the limits of human abilities, 
-      and if mindreading abilities are a paradigm case of humans' cognitive sophistication,  
-      then we must reject the conjecture.
-      For in appealing to joint action we would be presupposing what was supposed to be explained.
-      In what follows I want to defend the conjecture by identifying a way around the objection.
-    .notes: :t
-      But before I do this, I want to mention a problem with the objection ...
-  
-  
-//-  WARNING: TODO: this partially duplicates an earlier slide from unit_006!
-+slide_rh_white
-  +left_half
-    .step2.hide
-      p Functional characterisation:
-      .functional-characterisation
-        p shared intention serves to (a) coordinate activities, (b) 
-          span.coordinate-planning coordinate planning
-          span  and (c) structure bargaining
-  +right_half
-    p Substantial account:
-    .shared-intention-conditions
-      +shared-intention-conditions
-  .slide
-    +invert('.sufficient-not-necessary')
-    .notes: :t
-      Note that these conditions are offered as sufficient but not necessary.
-      (Bratman originally claimed that they were necessary and sufficient, but
-      nothing in the construction rules out alternative realisations of the functional
-      characterisation of shared intention.)
-    .notes: :t
-      As it stands, then, this objection does not establish much.  It concerns conditions 
-      imposed by the substantial account of shared intention which are sufficient but not 
-      necessary conditions.
-      The substantial account is supposed to characterise one—perhaps one among many—ways 
-      in which the functional role of shared intentions can be realised.  So the objection 
-      serves only to raise a question.  
-    .notes: :t
-      \textbf{Are there in fact alternative sufficient conditions 
-      for shared intention, conditions that can be met without already having abilities to use 
-      psychological concepts whose development was supposed to be explained by joint action?}
-  .slide
-    +show('.step2')
-  .slide
-    +blur('.right-half')
-    +highlight('.coordinate-planning')
-    .notes: :t
-      The answer to this question is not entirely straightforward.  We must begin with the 
-      functional roles of shared intention,  for these provide necessary conditions.  One of 
-      the roles of shared intentions is to coordinate planning.  What does coordinating planning 
-      involve?  Intuitively the idea is that just as individual intentions serve to coordinate an 
-      individual’s planning over time, so shared intentions coordinate planning between agents.  
-      (I use the terms ‘individual intention’ and ‘individual goal’ to refer to intentions and 
-      goals explanatory of individual actions; an ‘individual action’ is an action performed by 
-      just one agent such as that described by the sentence ‘Ayesha repaired the puncture all 
-      by herself’.)  A second role for shared intentions is to structure bargaining concerning 
-      plans.  To understand these roles it is essential to understand what ‘planning’ means in 
-      this context.  The term ‘planning’ is sometimes used quite broadly to encompass processes 
-      involved in low-level control over the execution of sequences of movements, as is often 
-      required for manipulating objects manually \citep[e.g.][]{en_1535}, as well as processes
-      controlling the movements of a limb on a single trajectory \citep[e.g.][]{en_1681}.  In Bratman’s account and this paper, the term ‘planning’ is used in a narrower sense.  Planning in this narrow sense exists to coordinate an agent’s various activities over relatively long intervals of time; it involves practical reasoning and forming intentions which may themselves require further planning, generating a hierachy of plans and subplans.  Paradigm cases include planning a birthday party or planning to move house.  
-    .notes: :t
-      Given the functional roles of shared intention, when (if ever) must the states which realise shared intentions include intentions about others’ intentions?  Coordinating plans with others does not seem always or in principle to require specific intentions about others’ intentions.  It is plausible that in everyday life some of our plans are coordinated largely thanks to a background of shared preferences, habits and conventions.  Consider, for example, people who often meet in a set place at a fixed time of day to discuss research over lunch.  These people can coordinate their lunch plans merely by setting a date and following established routine; providing nothing unexpected happens, they seem not to need intentions about each other’s intentions.  Within limits, then, coordinating plans may not always require intentions about intentions.  The same may hold for structuring bargaining.  But when the background of shared preferences, habits and conventions is not sufficient to ensure that our plans will be coordinated, it is necessary to monitor or manipulate others’ plans.  And since intentions are the basic elements of plans (in the special sense of ‘plan’ in terms of which  Bratman defined shared intention), this means monitoring or manipulating others’ intentions.  The background which makes for effortlessly coordinated planning is absent when our aims are sufficiently novel, when the circumstances sufficiently unusual (as in many emergencies), and when our co-actors are sufficiently unfamiliar.  In all of these cases, coordinating plans and structuring bargaining will involve monitoring or manipulating others’ intentions.  Now this does not necessarily involve forming intentions about their intentions because, in principle, monitoring and manipulating others’ intentions could (within limits) be achieved by representing states which serve as proxies for intentions rather than by representing intentions as such, much as one can (within limits) monitor and manipulate others’ visual perceptions by representing their lines of sight.  But possession of general abilities to monitor and manipulate others’ intentions does require being able to form intentions about others’ intentions.
-    .notes: :t
-      The question was whether there are sufficient conditions for shared intention which do not presuppose abilities to use psychological concepts whose development is supposed to be explained by joint action.  As promised, the answer is not straightforward.  In a limited range of cases, coordinating plans and perhaps structuring bargaining does not appear to require insights into other minds.  But in other cases, particularly cases involving novel aims or agents unfamiliar with each other, intentions about others’ intentions are generally required.  
-    .notes: :t
-      The main question for this section was whether Bratman’s account captures a notion of joint action suitable for explaining the early development of children’s abilities to think about minds.  Some of the joint actions which young children engage in involve novel aims, and some involve unfamiliar partners.  So if these joint actions did involve coordinating planning and structuring bargaining, they could not rest on a shared background but would require abilities to form intentions about others’ intentions.  It follows that joint action would presuppose much of the sophistication in the use of psychological concepts whose development it was supposed to explain.  So given the premise that joint action plays a role in explaining early developments in understanding minds, it cannot be the case that the joint actions children engage in as soon as they engage in any joint actions involve shared intentions as characterised by Bratman.
-
-
-
-+slide_challenge_etc
-  +el_challenge
-  .slide
-    +el_conjecture
-  .slide
-    +el_objection
-  .notes: :t
-    How to get around the objection?
-
-+slide_middle
-  p.claim1 1. joint action fosters an understanding of minds;
-  p.claim2 2. all joint action involves shared intention; and
-  p.claim3 3. a function of shared intention is to coordinate two or more agents’ plans.
-  .notes.handout: :t
-    The objection arises because not all of the following claims are true:
-    %
-    \begin{quote}
-    (1) joint action fosters an understanding of minds;
-
-    (2) all joint action involves shared intention; and
-
-    (3) a function of shared intention is to coordinate two or more agents’ plans.
-    \end{quote}
-    %
-    These claims are inconsistent because if the second and third were both true, abilities to engage in joint action would presuppose, and so could not significantly foster, an understanding of minds.  
-  .notes.handout: :t
-    What are our options?
-  .slide
-    +highlight-row('.claim3')
-    .notes.handout: :t
-      This is a bad option; it either involves rejecting claims about intention that
-      amount to saying there is no such thing as intention, or else it involves breaking the
-      parallel between intention and shared intention.
-      But that parallel is pretty much all we have to anchor or understanding of shared intention.
-  .slide
-    +unhighlight-row('.claim3')
-    +highlight-row('.claim2')
-  .slide
-    p.em-above Bratman already refuted? 
-      span.step2.hide No. 
-      span.step3.hide But we need more.
-    .slide
-      +show('.step2')
-    .slide
-      +show('.step3')
-    .notes: :t
-      At this point we might take Bratman as a rock around which to build.
-      I thought for a long time that this was the right approach.
-      But more recently I discovered an apparently compelling objection to
-      Bratman’s whole approach ...
-      
-    
-      
 

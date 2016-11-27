@@ -1,0 +1,170 @@
+---cson
+layout: 'deck_unit'
+title: "What Is Joint Action? Bratman’s Account"
+tags: []
+description: """
+  On the leading, best developed account of joint action (Bratman’s), joint
+  action requires shared intention and shared intention requires 
+  mindreading abilities, including insight into others’ plans and intentions.
+  """
+---
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/origins_mixins
+
+include ../../../fragments/joint_action_mixins
+
+
+
++slide_middle
+  .notes: :t
+    Minimally, an account of joint action should explain
+    what distingiushes joint action from parallel but merely individual action.
+  p.center What distingiushes joint action from parallel but merely individual action?
+
++slide({bkg:'contrast_cases/slide05.jpg'})
++slide({bkg:'contrast_cases/slide06.jpg'})
++slide({bkg:'contrast_cases/slide07.jpg'})
++slide_middle({bkg:'contrast_cases/slide07.jpg'})
+  +blur('img.bkg')
+  p.center shared intention
+
+//- TODO: here: give gentle introduction to Bratman!
+
+
+
++slide
+  .notes: :t
+    Lots of philosophers and some psychologists think that all joint actions involve 
+    shared intention, and even that characterising joint action is fundamentally a matter 
+    of characterising shared intention.
+  p.notes.handout.show: :t
+    ‘I take a collective action to involve a collective [shared] intention.’
+  .notes.handout.ctd \citep[p.~5]{Gilbert:2006wr}
+  p.right.grey-text (Gilbert 2006, p. 5)
+  .slide
+    p.notes.handout.show: :t
+      ‘The sine qua non of collaborative action is a joint goal [shared intention] and a joint commitment’ 
+    .notes.handout.ctd \citep[p.~181]{tomasello:2008origins}
+    p.right.grey-text (Tomasello 2008, p. 181)
+  .slide
+    p.notes.handout.show: :t
+      ‘the key property of joint action lies in its internal component [...] in the participants’ having 
+      a “collective” or “shared” intention.’ 
+    .notes.handout.ctd \citep[pp.~444--5]{alonso_shared_2009}
+    p.right.grey-text (Alonso 2009, pp. 444-5)
+  .slide
+    p.notes.handout.show: :t
+      ‘Shared intentionality is the foundation upon which joint action is built.’
+    .notes.handout.ctd \citep[p.~381]{carpenter:2009_howjoint}
+    p.right.grey-text (Carpenter 2009, p. 381)
+
++slide_middle
+  +question_mark
+  p.center shared intention
+
+
++slide({bkg:'parallel01.jpg'})
+  .notes: :t
+    It is helpful to draw a parallel with individual action ...
+    Consider Davidson’s question is, Which events are actions? 
+  .notes: :t
+    Suppose we ask, Which events are actions? 
+    (This is Davidson’s question.)
+    Here the contrast is with things that merely happen to an agent.
+    To illustrate, we might be struck by the contrast between your arm being caused to go
+    up by forces beyond your control, and the action you perform when you raise your arm.
+    Or we might be struck by the contrast between mere reflexes, such as the eyeblink reflex,
+    and the action of blinking your eyes (perhaps to greet someone).
++slide({bkg:'parallel02.jpg'})
+  .notes: :t
+    One quite natural and certainly influential way to answer this question is by
+    appeal to intention.  The idea is that events are actions in virtue of being
+    appropriately related to an intention of yours.
+  .notes: :t
+    Note that I’m not confidently endorsing this answer; in fact I’m not even 
+    confident that the question is ultimately the right question to ask.
+    I’m just suggesting this is a reasonably straightforward starting point for us.
++slide({bkg:'parallel03.jpg'})
+  .notes: :t
+    This question about ordinary, individual action is parallel to our current working
+    question about joint action, which we might phrase as ‘Which events are *joint* actions’ ...
++slide({bkg:'parallel04.jpg'})
+  .notes: :t
+    Now we can see one attraction of appealing to shared intention.
+    It allows us to give a parallel answer to the question about joint action:
+    a joint action is an event which is appropriately related to a shared intention.
+  .notes: :t
+    So to the extent that we are persuaded by the standard account of which events are actions, 
+    it is natural to aim for a structurally parallel account of which events are joint actions.
+    To do this we merely have to characterise shared intentions.
+  .notes: :t
+    As we shall see, there are long running, deep conflicts over the nature of shared 
+    intention.  The range of different approaches can be quite daunting.
+    This parallel between intention and shared intention is important because it is 
+    a rare point on wihch almost everyone will agree.
+    \textbf{Despite the disagreement on details, I think one thing almost everyone agrees about 
+    is this: shared intention is to joint action at least approximately what 
+    ordinary individual intention is to ordinary, individual action.}
+    
++slide({bkg:'parallel05.jpg'})
+  .notes: :t
+    It’s important to acknowledge that we haven’t yet said anything very informative 
+    about what shared intention is.  
+    The question was, Which events are joint actions?  
+    The answer was, those which stand in an appropriate relation to a shared intention.  
+    Then we ask what a shared intention is.  
+    And the answer is, it’s something in virtue of which events are joint actions.  
+    I don’t think the circle makes this completely useless;
+    but I’m mentioning the circularity to stress that we don’t yet have an account
+    of what shared intention is.
+    An account of shared intention should to provide deep insight 
+    into the nature of shared agency.
+
+
++slide_middle
+  .notes.handout.show: :t
+    ‘I will … adopt Bratman’s … influential formulation of joint action … 
+    each partner needs to 
+    intend to perform the joint action together ‘‘in accordance with and because of 
+    meshing subplans’’ (p. 338) and this needs to be common knowledge between the participants.’ 
+  .notes.handout.ctd \citep[][p.\ 281]{carpenter:2009_howjoint}
+  p.right.grey-text Carpenter(2009, p. 281)
+
+
++slide_rh_white({step:true})
+  +run_across
+    p(style='margin-bottom:-1em;').center What is shared intention?
+  .slide
+    +left_half
+      p Functional characterisation:
+      .functional-characterisation
+        p shared intention serves to (a) coordinate activities, (b) coordinate planning and (c) structure bargaining
+        p.em-above Constraint:
+        p Inferential integration
+          span ... and normative integration (e.g. 
+            span.agglomeration.italic agglomeration
+            span )
+  .slide
+    +blur('.left-half')
+    .notes: :t
+      In making this idea more precise, Bratman proposes sufficient conditions for us to have
+      a shared intention that we J ...
+  +right_half({step:true})
+    p Substantial account:
+    .shared-intention-conditions.hide
+      +shared-intention-conditions
+  .slide
+    +show('.shared-intention-conditions .condition-1')
+  .slide
+    +show('.shared-intention-conditions .condition-2')
+  .slide
+    +show('.shared-intention-conditions .condition-3')
+    .notes: :t
+      ... the idea is then that an intentional joint action is an action that is appropriately 
+      related to a shared intention.
+
++slide_challenge_etc
+  +el_challenge
+  .slide
+    +el_conjecture

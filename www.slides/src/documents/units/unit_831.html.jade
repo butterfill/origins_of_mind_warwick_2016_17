@@ -1,10 +1,9 @@
 ---cson
 layout: 'deck_unit'
-title: "Development of Joint Action"
+title: "Development of Joint Action: Planning"
 tags: []
 description: """
-  What (if any) joint actions are humans capable of just at the point they are beginning to
-  communicate referentially (typically around the first birthday)?  And when are humans
+  When are humans
   first able to do what Bratman calls ‘interconnected planning’?
   """
 ---
@@ -13,6 +12,58 @@ include ../../../fragments/unit_mixins
 include ../../../fragments/origins_mixins
 
 include ../../../fragments/joint_action_mixins
+
+
++slide_middle
+  p.notes.handout.show: :t
+    Objection: ‘Despite the common impression that joint action needs to be dumbed down
+    for infants due to their ‘‘lack of a robust theory of mind’’
+    ... all the important social-cognitive building
+    blocks for joint action appear to be in place: 
+    1-year-old infants
+    understand quite a bit about others’ goals and intentions and what
+    knowledge they share with others’
+  .notes.handout.ctd \citep[p.~383]{carpenter:2009_howjoint}.
+  .notes: :t
+    Carpenter conflates goals and intentions, so ignores the key difference
+    between actions and plans.
+  .slide
+    p.em-above.notes.handout.show: :t
+      ‘I ... adopt Bratman’s (1992) influential formulation of joint
+      action or shared cooperative activity. 
+      Bratman argued that in order for
+      an activity to be considered shared or joint each partner needs to intend
+      to perform the joint action together ‘‘in accordance with and because of
+      meshing subplans’’ (p. 338) and this needs to be common knowledge between
+      the participants’
+    .notes.handout.ctd \citep[p.~381]{carpenter:2009_howjoint}.
+  p.right.grey-text Carpenter, 2009
+  .notes: :t
+    So: the objection I just offered to taking Bratman’s account of shared intention
+    and joint action to characterise the notion of joint action of interest in explaining
+    development was narrowly theoretical.
+  .notes: :t
+    The objection was that you can’t explain the developmental emergence of mindreading by invoking joint action 
+    if your account of joint action implies that abilities to perform joint actions
+    presuppose sophisticated mindreading.
+  .notes: :t
+    Accepting this theoretical objection would be consistent with accepting
+    Carpenter’s claim. The only consequence is that we would have to reject the
+    conjecture that you can explain the developmental emergence of mindreading
+    by invoking joint action.
+
+
++slide_challenge_etc
+  +el_challenge
+  +el_conjecture
+  +el_objection
+  +attr('.conjecture *', 'style', 'color:inherit')
+  .slide
+    +attr('.conjecture *', 'style', 'color:red')
+  .notes: :t
+    So I think Carpenter is saying: the objection is correct, and we should reject
+    the conjecture.
+  
 
 +slide_middle
   p: :t
@@ -145,187 +196,7 @@ include ../../../fragments/joint_action_mixins
     and 
     1- to 3-year-olds’ joint action abilities.
   .notes: :t
-    Let’s consider one more study on this ...
-
-
-+slide({bkg:'gerson_2016_fig1B.png'})
-  p.source Gerson et al, 2016 figure 1B
-  .notes: :t
-    Subjects: three-year-olds.
-  .notes: :t
-    Four balls, four egg cups.
-    Yellow balls must go in yellow egg cups, brown balls likewise.
-    One ball is brown and yellow and can go in either colour egg cup.
-    But you only have four egg cups, so you have to put it in whatever egg cup
-    will enable you to place the other three balls correctly.
-  .notes: :t
-    Experiment: compare performance in an individual condition (child does all)
-    with performance in a joint condition (child alternates with puppet) and 
-    a control condition with a machine (not joint action, but similar turn-taking
-    required.)
-  .notes: :t
-    ‘The joint play session consisted of nine trials. In the first, fourth, and
-    seventh trial, Kip let the child place the first (and third) ball and Kip
-    placed the second (multi-colored) and fourth ball. Kip always placed the
-    multi-colored ball in the cup that allowed all forthcoming balls to be
-    placed correctly. In the other six trials, Kip placed the first and third
-    balls and the child placed the second and fourth balls. This ensured that
-    the number of trials for which the child had to plan (by placing the
-    multi-colored ball correctly) was matched across the individual and joint
-    conditions.’ \citep{gerson:2016_social}
-
-+slide
-  +img_clip('gerson_2016_fig3.png')
-  p.source Gerson et al, 2016 figure 3
-  .notes: :t
-    Results: When acting alone or alternating with a machine,
-    three-year-olds were above chance at selecting the correct egg cup for the 
-    two-coloured ball.  But in joint action they were not above chance,
-    and their performance was significantly worse than when acting alone.
-  .notes: :t
-    The results indicate that 
-  .notes.handout.ctd: :t
-    ‘proactive planning for two individuals, even
-    when they share a common goal, is more difficult than planning ahead solely
-    for oneself’ \citep[p.~128]{gerson:2016_social}.
-
-+slide_rh_white
-  +run_across
-    p(style='margin-bottom:-1em;').center What is shared intention?
-  +left_half
-    p Functional characterisation:
-    .functional-characterisation
-      p shared intention serves to (a) coordinate activities, (b) 
-       span.coordinate-planning coordinate planning
-       span  and (c) structure bargaining
-      p.em-above Constraint:
-      p Inferential integration
-        span ... and normative integration (e.g. 
-          span.agglomeration.italic agglomeration
-          span )
-  +right_half
-    p Substantial account:
-    .shared-intention-conditions
-      +shared-intention-conditions
-  +highlight('.condition-2', 'pink')
-  +highlight('.coordinate-planning')
-  .notes: :t
-    As I said,
-    All the evidence has suggests that there is a mismatch between 
-    Bratman’s account of joint action 
-    and 
-    1- to 3-year-olds’ joint action abilities.
-  
-
-+slide_middle
-  .hem-around-children
-    p.center No planning ...
-    p.center ... So which joint actions can one- and two-year-olds perform?
-
-
-+slide_middle
-  p.center 4-6 months
-  p.center dyadic interactions
-  .notes: :t
-    Methods: still face; replay (infants detect whether caregiver reacts, so are
-    less satisifed with a replay).
-  .notes: :t
-    \citet[p.~196]{brownell:2011_early} comment: ‘infants become progressively
-    tuned to the timing and structure of dyadic exchange’
-  .slide
-    p.center.em-above 6-12 months
-    p.center triadic interactions 
-    .notes: :t
-      \citet[p.~197]{brownell:2011_early} comment:
-      ‘adult-infant dyadic interactions expand to include objects, events, and
-      individuals outside of the dyad (Moore and Dunham 1995)’
-  .slide
-    p.center.em-above ~ 12-24 months
-    p.center infants initiate and re-start joint actions
-    p.center e.g. ‘peek-a-boo; tickle; rhythmic games; chase’ 
-    p.right.grey-text Brownell, 2011
-    .notes: :t
-      \citet[p.~197]{brownell:2011_early} comment:
-      ‘Eventually, infants begin themselves to initiate joint action with
-      adults and to respond in unique ways when adults violate their
-      expectations for participation in the joint activity. For example, if a
-      parent becomes distracted during peek-a-boo and fails to take her turn,
-      12-month olds may try to re-start the game by vocalizing to the adult or
-      by re- enacting a well-rehearsed part of the game such as placing the
-      cloth over their own face and waiting. One-year olds also begin to point
-      to interesting sights and events to share their interest and affect and
-      they expect adults to respond appropriately by looking (Liszkowski, et al
-      2006).’
-    .notes.handout: :t
-      ‘infants learn about cooperation by participating in joint action
-      structured by skilled and knowledgeable interactive partners before they
-      can represent, understand, or generate it themselves. Cooperative joint
-      action develops in the context of dyadic interaction with adults in which
-      the adult initially takes responsibility for and actively structures the
-      joint activity and the infant progressively comes to master the
-      structure, timing, and communications involved in the joint action with
-      the support and guidance of the adult. ... Eager participants from the
-      beginning, it takes approximately 2 years for infants to become
-      autonomous contributors to sustained, goal-directed joint activity as
-      active, collaborative partners’
-      \citep[p.~200]{brownell:2011_early}.
-    .notes: :t
-      ‘Without the structure and scaffolding provided by the expert adult
-      partner, 1-year-old children are unable to generate and sustain joint
-      action with each other in the service of an external goal. By age two,
-      however, they can do so readily, even with unfamiliar agemates and on
-      novel, unfamiliar tasks’
-      \citep[p.~204]{brownell:2011_early}.
-      
-    
-
-
-+slide
-  p ***
-  p.source Warneken et al, 2006
-  .notes: :t
-    \citet[p.~200]{brownell:2011_early} comment:
-    ‘Across these non-routine tasks, 18-month olds’ behavior with the adult
-    partner was rated as predominantly “uncoordinated” (vs. “coordinated” or
-    “very coordinated”) and the children exhibited “low” cooperative engagement
-    (vs. “medium” or “high”). On those tasks requiring children to anticipate
-    the partner’s actions and to adjust their behavior accordingly, 18-month
-    olds’ performance did not differ from chance. By age two, children operated
-    at “medium” levels of cooperative engagement and were above chance in
-    anticipating and coordinating their behavior with the adult.’
-
-+slide_middle
-  p.center example: drumming together 
-  p.center (from two years of age; Endedijk et al, 2015)
-  .notes.handout: :t
-    ‘While 4-year-olds coordinated the timing of drum hits, children between 2-
-    and 4 years of age showed indications of interpersonal coordination as
-    indicated by the beginnings and endings of drumming bouts. Children
-    showed more overlap in their bouts than would be expected by chance’
-    \citep[p.~720]{endedijk:2015_development}.
-  .notes: :t
-    But note that children under four years of age provided no evidence that they
-    synchronized the timings of their beats with each other (as measured by 
-    cross-correlation of inter-tap intervals).
-
-
-+slide_middle
-  p ***HOW?
-  .notes.handout: :t
-    ‘advances in infants’ ability to coordinate their behavior with one another
-    are associated with multiple measures of developing self-other
-    representations. One- and two-year olds’ symbolic representation of self
-    and other in pretend play (e.g., pretending that a doll is feeding itself)
-    was related to the amount of coordinated behavior they produced with a peer
-    on the structured cooperation tasks described above (Brownell and Carriger
-    1990)’
-    \citep[p.~206]{brownell:2011_early}.
-  .notes.handout: :t
-    ‘children who better produced and comprehended language about their own and
-    others’ feelings and actions, and who could refer to themselves and others
-    using personal pronouns likewise monitored their peer’s behavior more often
-    and produced more joint activity with the peer (Brownell et al 2006)’
-    \citep[p.~206]{brownell:2011_early}.
+    Let’s consider two more studies on this ...
 
 +slide({bkg:'meyer_2016_fig1a.png'})
   p.source Meyer et al, 2016 figure 1A
@@ -387,12 +258,139 @@ include ../../../fragments/joint_action_mixins
     Note that the success concerns anticipating ACTIONS not antcipating PLANS.
 
 
+
++slide_middle
+  p.center Mismatch:
+  p.center Bratman’s account of joint action 
+  p.center vs
+  p.center 1- to 3-year-olds’ joint action abilities
+  .notes: :t
+    All the evidence has suggests that there is a mismatch between 
+    Bratman’s account of joint action 
+    and 
+    1- to 3-year-olds’ joint action abilities.
+  .notes: :t
+    Let’s consider one more study on this ...
+
+
+
+
++slide({bkg:'gerson_2016_fig1B.png'})
+  p.source Gerson et al, 2016 figure 1B
+  .notes: :t
+    Subjects: three-year-olds.
+  .notes: :t
+    Four balls, four egg cups.
+    Yellow balls must go in yellow egg cups, brown balls likewise.
+    One ball is brown and yellow and can go in either colour egg cup.
+    But you only have four egg cups, so you have to put it in whatever egg cup
+    will enable you to place the other three balls correctly.
+  .notes: :t
+    Experiment: compare performance in an individual condition (child does all)
+    with performance in a joint condition (child alternates with puppet) and 
+    a control condition with a machine (not joint action, but similar turn-taking
+    required.)
+  .notes: :t
+    ‘The joint play session consisted of nine trials. In the first, fourth, and
+    seventh trial, Kip let the child place the first (and third) ball and Kip
+    placed the second (multi-colored) and fourth ball. Kip always placed the
+    multi-colored ball in the cup that allowed all forthcoming balls to be
+    placed correctly. In the other six trials, Kip placed the first and third
+    balls and the child placed the second and fourth balls. This ensured that
+    the number of trials for which the child had to plan (by placing the
+    multi-colored ball correctly) was matched across the individual and joint
+    conditions.’ \citep{gerson:2016_social}
+
++slide
+  +img_clip('gerson_2016_fig3.png')
+  p.source Gerson et al, 2016 figure 3
+  .notes: :t
+    Results: When acting alone or alternating with a machine,
+    three-year-olds were above chance at selecting the correct egg cup for the 
+    two-coloured ball.  But in joint action they were not above chance,
+    and their performance was significantly worse than when acting alone.
+  .notes: :t
+    The results indicate that 
+  .notes.handout.ctd: :t
+    ‘proactive planning for two individuals, even
+    when they share a common goal, is more difficult than planning ahead solely
+    for oneself’ \citep[p.~128]{gerson:2016_social}.
+
+
++slide_middle
+  +timer-element('timer3','90s',{hide:false})
+    p.center: :t
+      How does Gerson et al’s study bear on the claim that Bratman’s account of
+      shared intention and joint action characterises the social interactions
+      children perform in the first two years of life?
+  +start-timer('timer3')
+
+
 +slide_rh_white
   +run_across
-    p.center Joint action and interconnected planning
+    p(style='margin-bottom:-1em;').center What is shared intention?
   +left_half
-    p ***cannot explain development of mindreading if presuppose it
+    p Functional characterisation:
+    .functional-characterisation
+      p shared intention serves to (a) coordinate activities, (b) 
+       span.coordinate-planning coordinate planning
+       span  and (c) structure bargaining
+      p.em-above Constraint:
+      p Inferential integration
+        span ... and normative integration (e.g. 
+          span.agglomeration.italic agglomeration
+          span )
   +right_half
-    p In the first and second years of life,
-    p there is joint action
-    p but it does not appear to involve planning agency.
+    p Substantial account:
+    .shared-intention-conditions
+      +shared-intention-conditions
+  +highlight('.condition-2', 'pink')
+  +highlight('.coordinate-planning')
+  .notes: :t
+    As I said,
+    All the evidence has suggests that there is a mismatch between 
+    Bratman’s account of joint action 
+    and 
+    1- to 3-year-olds’ joint action abilities.
+
+
+
++slide_middle
+  .notes: :t
+    I started with Carpenter’s objection ...
+  p.notes.show: :t
+    Objection: ‘Despite the common impression that joint action needs to be dumbed down
+    for infants due to their ‘‘lack of a robust theory of mind’’
+    ... all the important social-cognitive building
+    blocks for joint action appear to be in place: 
+    1-year-old infants
+    understand quite a bit about others’ goals and intentions and what
+    knowledge they share with others’
+  .notes: :t
+    Carpenter conflates goals and intentions, so ignores the key difference
+    between actions and plans.
+  p.em-above.notes.show: :t
+    ‘I ... adopt Bratman’s (1992) influential formulation of joint
+    action or shared cooperative activity. 
+    Bratman argued that in order for
+    an activity to be considered shared or joint each partner needs to intend
+    to perform the joint action together ‘‘in accordance with and because of
+    meshing subplans’’ (p. 338) and this needs to be common knowledge between
+    the participants’
+  p.right.grey-text Carpenter, 2009
+  .notes: :t
+    It turns out, I think, that Carpenter is wrong to this extent.
+    Whatever exactly one-year-olds mindreading abilities, they do not seem 
+    to be making much use of information about others’ intentions in performing
+    joint actions. And so it is wrong to think of their abilities in terms of
+    Bratman’s account of joint actions.
+
+
++slide_challenge_etc
+  +el_challenge
+  +el_conjecture
+  +el_objection
+  .notes: :t
+    So with respect to our overall line of enquiry,
+    it may still be possible to hold on to the conjecture if we can
+    overcome the objection.

@@ -264,179 +264,178 @@ mixin slide_the_question()
 +slide_middle
   +slide_the_question
   .notes What are the alternatives?
-  .notes I want to mention two alternatives ...
 
 
-
-
-+slide_rh_white({step:false})
-  +run_across
-    p.center Informative pointing
-  +left_half
-    +to_comprehend
-  +right_half({step:false})
-    +to_produce
-  .slide
-    +invert('.know, .communicate')
-    .notes: :t
-      We are looking for alternatives to the Gricean characterisation of communication,
-      alternatives that will provide us with a less complicated notion of pointing.
-
-+slide_middle
-  p.center first alternative
-
-+slide
-  .handout \subsection{First alternative view}
-  .notes One alternative is inspired by opponents of the claim, inspired by Grice, that communication by language involves identifying utterer's intentions.
-  .notes Inspired by Grice, you might think that this is fundamental to linguistic communication.
-  .notes But philosophers like Dummett and (for different reasons) Millikan reject this view.
-  p Convention
-  p.em-above.handout.show ‘No speaker needs to form any express intention … in order to mean by a word what it means in the language’
-  p.right Dummett 1986, 473
-  .handout.ctd \citep[p.\ 473]{Dummett:1986mq}
-  p.em-above.handout.show ‘Interpreting speech does not require making any inferences or having any beliefs about words, let alone about speaker intentions’
-  p.right Millikan 1984, p. 62
-  .handout.ctd \citep[p.\ 62]{Millikan:1984ib}
-  .notes We might try to provide an account of pointing in which it's not fundamentally a matter of intention at all.
-  .notes This would be a radical departure from the Gricean view about pointing.  But there is another alternative, one which is less radical.
-
-+slide_middle
-  p.center second alternative
-
-+slide
-  .handout \subsection{Davidsonian view}
-  .notes Like Grice:
-  p.handout.show ‘meaning of whatever sort ultimately rests on intention’
-  p.right Davidson 1992, p. 298
-  .handout.ctd \citep[p.\ 298]{Davidson:1992pl}
-  .slide
-    .notes We need to distinguish ulterior intentions from semantic intentions.
-    ul
-      li ulterior intentions
-      .notes.handout ulterior intentions: ‘intentions which lie as it were beyond the production of words … [such as] the intention of being elected mayor, of amusing a child, of warning a pilot of ice on the wings’ \citep[p.\ 298]{Davidson:1992pl}.
-      li semantic intentions
-      .notes.handout semantic intentions: intentions concerning the meaning of one’s utterance.
-    .notes Why does this distinction matter?
-    .notes Grice’s explicates meaning and communication in terms of ulterior intentions.
-    .notes His project is to give a reductive analysis of these notions, meaning and communication.
-    .notes Ulterior intentions are precisely what is needed for such an analysis of meaning.
-    .notes This is because ulterior intentions ‘do not involve language, in the sense that their description does not have to mention language’ or any semantic concepts like meaning \citep[p.\ 298]{Davidson:1992pl}.
-    .notes But, Davidson points out, we don’t have to attempt an analysis of meaning and communication.
-    .notes After all, Grice’s analysis has been subject to plenty of counterexamples and objections \citep{Schiffer:1987zb}.
-    .notes (Davidson objects that ‘it is not clear that these principles [Grice’s] are designed to handle the gamut of examples we find in literature’ \citep[p.\ 300]{Davidson:1992pl}.
-    .notes \citet{Davidson:1991ic} discusses one literary example at length.  He argues that ‘Joyce takes us back to the foundations and origins of communication; he puts us in the situation of the jungle linguist trying to get the hand of a new language and a novel culture, to assume the perspective of someone who is an alien or an exile’ \citep[p.\ 11]{Davidson:1991ic}.)
-  .slide.em-above
-    p.handout.show ‘The intention to be taken to mean what one wants to be taken to mean is, it seems to me, so clearly the only aim that is common to all verbal behaviour that it is hard for me to see how anyone can deny it.’
-    p.right Davidson 1994, p. 11
-    .handout.ctd \citep[p.\ 11]{Davidson:1994ol}
-    .notes This aim ‘assumes the notion of meaning’, but it is important because ‘it provides a purpose which any speaker must have in speaking, and thus constitutes a norm against which speakers and others can measure the success of their verbal behavior.’ \citep[p.\ 11]{Davidson:1994ol}
-    .notes *todo: this is linked to how Davidson distinguishes first meaning from pragmatic bits; see 'meaning is a psychological concept v2' (for Martin Davies)
-    .notes But how does this idea translate into a claim about what a pointing action is?
-    .notes First consider the wave from earlier ...
-
-
-+slide_rh_white
-  .notes An example contrasting Grice and Davidson on the wave.
-  +left_half
-    p Grice
-    p.em-above Goal: get Ben to come over
-    p.em-above Means: get Ben to recognise that I intend to get Ben to come over
-    p.em-above
-      span.intention Intention
-      span : to get Ben to come over by means of getting Ben to 
-      span.recognise recognise
-      span  that I 
-      span.intention intend
-      span  to get Ben to come over.
-  +right_half
-    p Davidson
-    p.em-above Goal: get Ben to come over
-    p.em-above Semantic Intention: that Ben take this wave to 
-      span.mean mean
-      span  that he should come over.
-    p.em-above Ulterior intention: that Ben come over.
-    .notes These intentions have a means-end ordering; the ulterior intention is further down the means-end chain.
-    .notes Strictly speaking, that Ben should come over might not be the first meaning of the wave (so there are other options here).
-  .slide
-    +highlight('.intention, .recognise', 'blue')
-    .notes As mentioned before, Grice's view involves intentions about recognising intentions.
-  .slide
-    +highlight('.mean')
-    .notes By contrast, Davidson's view requires an intention about meaning.
-    .notes What this involves depends, of course, on how we understand meaning.
-    .notes But maybe there is a way of understanding meaning on which this is not too demanding. (I'm really not sure.)
-  
-+slide_rh_white
-  .notes Now contrast Grice and Davidson on the pointing action from the Hare et al study, where you're supposed to take one of two containers.
-  +left_half
-    p Grice
-    p.em-above Goal: get Ayesha to select the left container
-    p.em-above Means: get Ayesha to recognise that I intend Ayesha to select the left container
-    p.em-above
-      span.intention Intention
-      span : to get Ayesha to selet the left container by means of getting Ayesha to 
-      span.recognise recognise
-      span that I am pointing to the left container with the 
-      span.intention intention
-      span  that she select the left container.
-  +right_half
-    p Davidson
-    p.em-above Goal: get Ayesha to select the left container
-    p.em-above Semantic Intention: that Ayesha take this pointing gesture to 
-      span.refer refer
-      span  to the left container
-    p.em-above Ulterior Intention: that Ayesha select the left container
-    .notes Strictly speaking, that Ben should come over might not be the first meaning of the wave (so there are other options here).
-  .slide
-    +highlight('.intention, .recognise', 'blue')
-    +highlight('.refer')
-    .notes As before, there's a contrast in what must be intended and so what we're committing ourselves to in saying that infants can produce and comprehend informative pointing.
-  
-+slide_middle
-  .notes Can we do anything with this?
-  .notes I haven't shown that we can.
-  .notes It all depends on what an intention to refer is.
-  .notes This is a really hard problem, and not one that I'm going to help you with directly (although I will come back to it in discussing action [analogy between principle of rationality: we need a comparable 'principle of reference'])
-  .notes So I'm suggesting a possible direction but not providing any answers.
-  +question_mark
-  p.center intention to refer
-
-
-+slide_middle
-  p.center Conclusions
-
-+slide
-  p How do infants understand pointing?
-  .notes The question was, Should we accept that pointing (and linguistic communication) involves intentions about intentions?
-  ol.slide.em-above.hem-around-children 
-    li If Grice (and Tomasello et al) are right about communication, then infant pointing involves sophisticated insights into others’ minds.
-    li.slide But there are alternatives to the Gricean story.
-    li.slide If Davidson’s
-      span.asterix *
-      span  alternative is right, communication requires understanding 
-        span.meaning intentions about meaning
-        span  or reference but not necessarily sophisticated insights into others’ minds.
-    .notes Is this enough to save the view about development I wanted to offer.  Maybe, maybe not …
-  .slide
-    +invert('.asterix')
-    .notes (*Davidson himself thinks all communication involves sophisticated insights into others’ minds …)
-  .slide
-    +invert('.meaning')
-    .notes We have to say what meaning or reference is such that infants understand it.  I want to leave this as an open problem.  When we talk about action next time I'll provide a model for dealing with this sort of problem.
-    
-+slide
-  p What do we know about pointing?
-  ol.hem-around-children
-    li 11- and 12-month-old infants can point to (i) request, (ii) inform and (iii) initiate joint engagement.
-    li.slide ... and they can understand these kinds of pointing gesture.
-    li.slide Understanding pointing requires more than 
-      span.slide associating gestures with their referents 
-      span.slide and understanding goal-directed action 
-      span.slide (see: why don’t apes & 6-month-olds point)
-    li.slide But what more is required?
-      p.slide Is it shared intentionality?
-      p.slide And what is that anyway?  Is that something inspired by, and adapted from, Grice?   
-
-
-
-
+//-
+//-
+//- +slide_rh_white({step:false})
+//-   +run_across
+//-     p.center Informative pointing
+//-   +left_half
+//-     +to_comprehend
+//-   +right_half({step:false})
+//-     +to_produce
+//-   .slide
+//-     +invert('.know, .communicate')
+//-     .notes: :t
+//-       We are looking for alternatives to the Gricean characterisation of communication,
+//-       alternatives that will provide us with a less complicated notion of pointing.
+//-
+//- +slide_middle
+//-   p.center first alternative
+//-
+//- +slide
+//-   .handout \subsection{First alternative view}
+//-   .notes One alternative is inspired by opponents of the claim, inspired by Grice, that communication by language involves identifying utterer's intentions.
+//-   .notes Inspired by Grice, you might think that this is fundamental to linguistic communication.
+//-   .notes But philosophers like Dummett and (for different reasons) Millikan reject this view.
+//-   p Convention
+//-   p.em-above.handout.show ‘No speaker needs to form any express intention … in order to mean by a word what it means in the language’
+//-   p.right Dummett 1986, 473
+//-   .handout.ctd \citep[p.\ 473]{Dummett:1986mq}
+//-   p.em-above.handout.show ‘Interpreting speech does not require making any inferences or having any beliefs about words, let alone about speaker intentions’
+//-   p.right Millikan 1984, p. 62
+//-   .handout.ctd \citep[p.\ 62]{Millikan:1984ib}
+//-   .notes We might try to provide an account of pointing in which it's not fundamentally a matter of intention at all.
+//-   .notes This would be a radical departure from the Gricean view about pointing.  But there is another alternative, one which is less radical.
+//-
+//- +slide_middle
+//-   p.center second alternative
+//-
+//- +slide
+//-   .handout \subsection{Davidsonian view}
+//-   .notes Like Grice:
+//-   p.handout.show ‘meaning of whatever sort ultimately rests on intention’
+//-   p.right Davidson 1992, p. 298
+//-   .handout.ctd \citep[p.\ 298]{Davidson:1992pl}
+//-   .slide
+//-     .notes We need to distinguish ulterior intentions from semantic intentions.
+//-     ul
+//-       li ulterior intentions
+//-       .notes.handout ulterior intentions: ‘intentions which lie as it were beyond the production of words … [such as] the intention of being elected mayor, of amusing a child, of warning a pilot of ice on the wings’ \citep[p.\ 298]{Davidson:1992pl}.
+//-       li semantic intentions
+//-       .notes.handout semantic intentions: intentions concerning the meaning of one’s utterance.
+//-     .notes Why does this distinction matter?
+//-     .notes Grice’s explicates meaning and communication in terms of ulterior intentions.
+//-     .notes His project is to give a reductive analysis of these notions, meaning and communication.
+//-     .notes Ulterior intentions are precisely what is needed for such an analysis of meaning.
+//-     .notes This is because ulterior intentions ‘do not involve language, in the sense that their description does not have to mention language’ or any semantic concepts like meaning \citep[p.\ 298]{Davidson:1992pl}.
+//-     .notes But, Davidson points out, we don’t have to attempt an analysis of meaning and communication.
+//-     .notes After all, Grice’s analysis has been subject to plenty of counterexamples and objections \citep{Schiffer:1987zb}.
+//-     .notes (Davidson objects that ‘it is not clear that these principles [Grice’s] are designed to handle the gamut of examples we find in literature’ \citep[p.\ 300]{Davidson:1992pl}.
+//-     .notes \citet{Davidson:1991ic} discusses one literary example at length.  He argues that ‘Joyce takes us back to the foundations and origins of communication; he puts us in the situation of the jungle linguist trying to get the hand of a new language and a novel culture, to assume the perspective of someone who is an alien or an exile’ \citep[p.\ 11]{Davidson:1991ic}.)
+//-   .slide.em-above
+//-     p.handout.show ‘The intention to be taken to mean what one wants to be taken to mean is, it seems to me, so clearly the only aim that is common to all verbal behaviour that it is hard for me to see how anyone can deny it.’
+//-     p.right Davidson 1994, p. 11
+//-     .handout.ctd \citep[p.\ 11]{Davidson:1994ol}
+//-     .notes This aim ‘assumes the notion of meaning’, but it is important because ‘it provides a purpose which any speaker must have in speaking, and thus constitutes a norm against which speakers and others can measure the success of their verbal behavior.’ \citep[p.\ 11]{Davidson:1994ol}
+//-     .notes *todo: this is linked to how Davidson distinguishes first meaning from pragmatic bits; see 'meaning is a psychological concept v2' (for Martin Davies)
+//-     .notes But how does this idea translate into a claim about what a pointing action is?
+//-     .notes First consider the wave from earlier ...
+//-
+//-
+//- +slide_rh_white
+//-   .notes An example contrasting Grice and Davidson on the wave.
+//-   +left_half
+//-     p Grice
+//-     p.em-above Goal: get Ben to come over
+//-     p.em-above Means: get Ben to recognise that I intend to get Ben to come over
+//-     p.em-above
+//-       span.intention Intention
+//-       span : to get Ben to come over by means of getting Ben to
+//-       span.recognise recognise
+//-       span  that I
+//-       span.intention intend
+//-       span  to get Ben to come over.
+//-   +right_half
+//-     p Davidson
+//-     p.em-above Goal: get Ben to come over
+//-     p.em-above Semantic Intention: that Ben take this wave to
+//-       span.mean mean
+//-       span  that he should come over.
+//-     p.em-above Ulterior intention: that Ben come over.
+//-     .notes These intentions have a means-end ordering; the ulterior intention is further down the means-end chain.
+//-     .notes Strictly speaking, that Ben should come over might not be the first meaning of the wave (so there are other options here).
+//-   .slide
+//-     +highlight('.intention, .recognise', 'blue')
+//-     .notes As mentioned before, Grice's view involves intentions about recognising intentions.
+//-   .slide
+//-     +highlight('.mean')
+//-     .notes By contrast, Davidson's view requires an intention about meaning.
+//-     .notes What this involves depends, of course, on how we understand meaning.
+//-     .notes But maybe there is a way of understanding meaning on which this is not too demanding. (I'm really not sure.)
+//-
+//- +slide_rh_white
+//-   .notes Now contrast Grice and Davidson on the pointing action from the Hare et al study, where you're supposed to take one of two containers.
+//-   +left_half
+//-     p Grice
+//-     p.em-above Goal: get Ayesha to select the left container
+//-     p.em-above Means: get Ayesha to recognise that I intend Ayesha to select the left container
+//-     p.em-above
+//-       span.intention Intention
+//-       span : to get Ayesha to selet the left container by means of getting Ayesha to
+//-       span.recognise recognise
+//-       span that I am pointing to the left container with the
+//-       span.intention intention
+//-       span  that she select the left container.
+//-   +right_half
+//-     p Davidson
+//-     p.em-above Goal: get Ayesha to select the left container
+//-     p.em-above Semantic Intention: that Ayesha take this pointing gesture to
+//-       span.refer refer
+//-       span  to the left container
+//-     p.em-above Ulterior Intention: that Ayesha select the left container
+//-     .notes Strictly speaking, that Ben should come over might not be the first meaning of the wave (so there are other options here).
+//-   .slide
+//-     +highlight('.intention, .recognise', 'blue')
+//-     +highlight('.refer')
+//-     .notes As before, there's a contrast in what must be intended and so what we're committing ourselves to in saying that infants can produce and comprehend informative pointing.
+//-
+//- +slide_middle
+//-   .notes Can we do anything with this?
+//-   .notes I haven't shown that we can.
+//-   .notes It all depends on what an intention to refer is.
+//-   .notes This is a really hard problem, and not one that I'm going to help you with directly (although I will come back to it in discussing action [analogy between principle of rationality: we need a comparable 'principle of reference'])
+//-   .notes So I'm suggesting a possible direction but not providing any answers.
+//-   +question_mark
+//-   p.center intention to refer
+//-
+//-
+//- +slide_middle
+//-   p.center Conclusions
+//-
+//- +slide
+//-   p How do infants understand pointing?
+//-   .notes The question was, Should we accept that pointing (and linguistic communication) involves intentions about intentions?
+//-   ol.slide.em-above.hem-around-children
+//-     li If Grice (and Tomasello et al) are right about communication, then infant pointing involves sophisticated insights into others’ minds.
+//-     li.slide But there are alternatives to the Gricean story.
+//-     li.slide If Davidson’s
+//-       span.asterix *
+//-       span  alternative is right, communication requires understanding
+//-         span.meaning intentions about meaning
+//-         span  or reference but not necessarily sophisticated insights into others’ minds.
+//-     .notes Is this enough to save the view about development I wanted to offer.  Maybe, maybe not …
+//-   .slide
+//-     +invert('.asterix')
+//-     .notes (*Davidson himself thinks all communication involves sophisticated insights into others’ minds …)
+//-   .slide
+//-     +invert('.meaning')
+//-     .notes We have to say what meaning or reference is such that infants understand it.  I want to leave this as an open problem.  When we talk about action next time I'll provide a model for dealing with this sort of problem.
+//-
+//- +slide
+//-   p What do we know about pointing?
+//-   ol.hem-around-children
+//-     li 11- and 12-month-old infants can point to (i) request, (ii) inform and (iii) initiate joint engagement.
+//-     li.slide ... and they can understand these kinds of pointing gesture.
+//-     li.slide Understanding pointing requires more than
+//-       span.slide associating gestures with their referents
+//-       span.slide and understanding goal-directed action
+//-       span.slide (see: why don’t apes & 6-month-olds point)
+//-     li.slide But what more is required?
+//-       p.slide Is it shared intentionality?
+//-       p.slide And what is that anyway?  Is that something inspired by, and adapted from, Grice?
+//-
+//-
+//-
+//-

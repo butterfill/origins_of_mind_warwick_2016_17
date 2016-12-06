@@ -13,12 +13,12 @@ description: """
 include ../../../fragments/unit_mixins
 include ../../../fragments/origins_mixins
 
-+slide
-  +pointingOutline
-  .notes Tomasello calls the third kind 'declarative'.
-  .slide
-    p.em-above What about 12-month-olds?
-  .handout From around 11 or 12 months of age infants spontaneously point to request, inform and initiate joint engagement \citep{Liszkowski:2007mm}.
+//- +slide
+//-   +pointingOutline
+//-   .notes Tomasello calls the third kind 'declarative'.
+//-   .handout: :t
+//-     From around 11 or 12 months of age infants spontaneously point to request,
+//-     inform and initiate joint engagement \citep{Liszkowski:2007mm}.
 
 +slide
   +img_clip('liszkowski_2004_fig2.png')
@@ -34,16 +34,19 @@ include ../../../fragments/origins_mixins
   p.em-above Liszkowski’s idea: find out by seeing what satisfies them.
   p.em-above hypotheses:
   ol
-    li
+    li.h1.slide
       span for themselves
       p (prediction: ignoring them makes no difference)
-    li
+    li.h2.slide
+      +fade('.h1')
       span to draw attention to themselves
       p (prediction: looking at them is sufficient to satisfy them)
-    li
+    li.h3.slide
+      +fade('.h2')
       span to direct attention only
       p (prediction: looking at the referent is sufficient)
-    li
+    li.h4.slide
+      +fade('.h3')
       span to initiate joint engagement
       p (prediction: looking at them and the reference is sufficient)
   .notes: :t
@@ -61,6 +64,7 @@ include ../../../fragments/origins_mixins
   .notes ‘When interacting with an adult who always reacted consistently in one of four ways, 12-month-olds pointed most often across trials if the adult actively shared her attention and interest in the event (Joint Attention condition)’ \citep[p.\ 305]{liszkowski:2004_twelve}
   .notes ‘Analyses of infants’ points within each event revealed a complementary set of results. In the conditions not involving joint attention, infants repeated their point more often. This repeating behavior presumably indic- ates that they were dissatisfied with the adult’s response, and so they were persisting in their pointing behavior hoping eventually to obtain the desired response (which was presumably joint attention, since children did not repeat themselves very often in this condition).’ \citep{Liszkowski:2007mm}
   .slide
+    +unfade('li')
     +blur('li span')
     .notes: :t
       Now imagine an experiment with four conditions.
@@ -126,16 +130,21 @@ include ../../../fragments/origins_mixins
 
 +slide_middle
   p.center 12-month-old infants point 
-    span.slide not only to request but also to initiate joint engagement.
-  p.center.slide (And to inform.)
-  .notes: :t
-    Why is this significant?
-    Because it implies two things:
-    First, it implies that infants' pointing is referential communication; that is,
-    communication about an object.
-    (Contrast sharing a smile; we're communicating, but not necessarily referring.)
-    Second, it implies that infants have some understanding of joint engagement.
-    I'll come back to this in later.
+    span.step2.hide not only to request but also 
+    span to initiate joint engagement.
+  p.center.step3.hide (And to inform.)
+  .slide
+    +show('.step2')
+  .slide
+    +show('.step3')
+    .notes: :t
+      Why is this significant?
+      Because it implies two things:
+      First, it implies that infants' pointing is referential communication; that is,
+      communication about an object.
+      (Contrast sharing a smile; we're communicating, but not necessarily referring.)
+      Second, it implies that infants have some understanding of joint engagement.
+      I'll come back to this in later.
 
 //- 
   +slide

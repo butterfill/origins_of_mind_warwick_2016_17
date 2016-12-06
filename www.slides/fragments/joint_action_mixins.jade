@@ -251,3 +251,30 @@ mixin diagram_action_goal(p)
                     font(color='#ffffff') represents
               text(x='58', y='25', fill='#000000', text-anchor='middle', font-size='24px') [Not supported by viewer]
 
+
+mixin radicalInterpretationProject(p)
+  if typeof(p) === 'undefined'
+    - p = {}
+  if !('step' in p)
+    - p.step = false
+  if !('handout' in p)
+    - p.handout = false
+  
+  if p.handout
+    .img.handout(data-src='img/radical_interpretation_handout.png')
+  
+  p.huge-glow-60(style='line-height:.6em') radical interpretation
+  div(class="#{p.step ? 'slide' : ''}")
+    p
+      span.infer Infer
+      span  The Mind from The Evidence
+  div(class="#{p.step ? 'slide' : ''}")
+    p.em-above.indent The Mind: facts about actions, emotions, desires, beliefs, ...
+  div(class="#{p.step ? 'slide' : ''}")
+    p.em-above.indent
+      span.the-evidence The Evidence
+      span: :t
+        : facts about events and states of affairs that could be known without 
+        knowing what any particular individual believes, desires, intends, ...
+  block
+
